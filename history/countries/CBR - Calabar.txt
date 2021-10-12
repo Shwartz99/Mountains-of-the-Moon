@@ -1,0 +1,160 @@
+government = tribal
+add_government_reform = tribal_despotism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+religion = shamanism #Fetishism
+primary_culture = jukun
+capital = 1163	# Calabar
+
+
+1550.1.1 = {
+	monarch = {
+		name = "Kalabari"
+		dynasty = "Kalabari"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1575.1.1 = {
+	monarch = {
+		name = "Owoma"
+		dynasty = "Kalabari"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1590.1.1 = {
+	monarch = {
+		name = "Opukoroye"
+		dynasty = "Kalabari"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Owerri Daba"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Igbessa"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1655.1.1 = {
+	monarch = {
+		name = "Kamalo"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1680.1.1 = {
+	monarch = {
+		name = "Mangi Suku"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Igonibaw"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1726.1.1 = {
+	monarch = {
+		name = "Ngbesa"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1733.1.1 = {
+	monarch = {
+		name = "Omuye"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Bokoye"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1745.1.1 = {
+	monarch = {
+		name = "Daba"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Kalagba"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Amakiri"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1790.1.1 = {
+	monarch = {
+		name = "Amakuru"
+		dynasty = "Kalabari"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

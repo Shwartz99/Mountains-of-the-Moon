@@ -1,0 +1,300 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = hausa
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1151	# Kano
+religious_school = maliki_school
+
+1399.1.1 = {
+	monarch = {
+		name = "Zamnau"
+		dynasty = "Habe"
+		dip = 5
+		adm = 3
+		mil = 1
+	}
+}
+
+1425.1.1 = {
+	monarch = {
+		name = "Shashimi"
+		dynasty = "Habe"
+		dip = 4
+		adm = 2
+		mil = 1
+	}
+}
+
+1450.1.1 = {
+	monarch = {
+		name = "Ada Inda"
+		dynasty = "Habe"
+		dip = 3
+		adm = 3
+		mil = 1
+	}
+}
+
+1475.1.1 = {
+	monarch = {
+		name = "Doguma"
+		dynasty = "Habe"
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Ada Gamu"
+		dynasty = "Habe"
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}
+
+1520.1.1 = {
+	monarch = {
+		name = "Ada Sunguma"
+		dynasty = "Habe"
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}
+
+1530.1.1 = {
+	monarch = {
+		name = "Shafau"
+		dynasty = "Habe"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Ada Sabau"
+		dynasty = "Habe"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+1550.1.1 = {
+	monarch = {
+		name = "Ada Doki"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Nagama"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1570.1.1 = {
+	monarch = {
+		name = "Ada Kube"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1580.1.1 = {
+	monarch = {
+		name = "Hamama"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Dagajirau"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Kamu"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1630.1.1 = {
+	monarch = {
+		name = "Ada Guguwa"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1650.1.1 = {
+	monarch = {
+		name = "Hamida"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1660.1.1 = {
+	monarch = {
+		name = "Abdu Kawo"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1670.1.1 = {
+	monarch = {
+		name = "Nagama"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Hanatari"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Rifau"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Hazo"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1730.1.1 = {
+	monarch = {
+		name = "Dango"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Bawan Allah"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Kalifah"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Tsofo"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1785.1.1 = {
+	monarch = {
+		name = "Jiro"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1790.1.1 = {
+	monarch = {
+		name = "Gwari Abdu"
+		dynasty = "Habe"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1805.1.1 = {
+	monarch = {
+		name = "Mallam Ishaku"
+		dynasty = "Fulani"
+		dip = 0
+		adm = 3
+		mil = 0
+	}
+}
+
+1820.1.1 = {
+	monarch = {
+		name = "Yusufu"
+		dynasty = "Fulani"
+		dip = 0
+		adm = 2
+		mil = 3
+	}
+}

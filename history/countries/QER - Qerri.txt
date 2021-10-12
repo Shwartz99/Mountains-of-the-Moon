@@ -1,0 +1,208 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = nubian
+religion = sunni
+religious_school = maliki_school
+technology_group = east_african
+capital = 1225
+
+1444.11.11 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Jamma’a"
+		dynasty = "Abdallab"
+		dip = 4
+		adm = 5
+		mil = 5
+	}
+}
+
+1550.1.1 = {
+	monarch = {
+		name = "Ajib al-Kafuta"
+		dynasty = "Abdallab"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+1612.1.1 = {
+	monarch = {
+		name = "Muhammad al-Aqil"
+		dynasty = "Abdallab"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1627.1.1 = {
+	monarch = {
+		name = "Abdallah al-Brins"
+		dynasty = "Abdallab"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+
+1644.1.1 = {
+	monarch = {
+		name = "Hago"
+		dynasty = "ibn Uthman"
+		dip = 1
+		adm = 4
+		mil = 3
+		regent = yes
+	}
+}
+
+1649.1.1 = {
+	monarch = {
+		name = "Ajib II"
+		dynasty = "Abdallab"
+		dip = 0
+		adm = 1
+		mil = 2
+	}
+}
+
+1655.1.1 = {
+	monarch = {
+		name = "Mismar"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 2
+		mil = 2
+	}
+}
+
+1660.1.1 = {
+	monarch = {
+		name = "Ali"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1667.1.1 = {
+	monarch = {
+		name = "Hamid as-Simeih"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+1677.1.1 = {
+	monarch = {
+		name = "Ajib III"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+
+1702.1.1 = {
+	monarch = {
+		name = "Bader"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1706.1.1 = {
+	monarch = {
+		name = "Diab Abu Naib"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1715.1.1 = {
+	monarch = {
+		name = "Abdallah III"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+	capital = 2797
+}
+
+1723.1.1 = {
+	monarch = {
+		name = "Mismar II"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+
+1728.1.1 = {
+	monarch = {
+		name = "Ajib IV"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+
+1748.1.1 = {
+	monarch = {
+		name = "Umar"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Amin Mismar"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Abdallah IV"
+		dynasty = "Abdallab"
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}
+
+1799.1.1 = {
+	monarch = {
+		name = "Nasir"
+		dynasty = "Abdallab"
+		dip = 1
+		adm = 3
+		mil = 1
+	}
+}

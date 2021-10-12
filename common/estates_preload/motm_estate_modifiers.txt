@@ -1,0 +1,17 @@
+estate_slaves = {
+	modifier_definition = {
+		type = loyalty
+		key = slaves_loyalty_modifier
+		trigger = {
+			has_estate = estate_slaves
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = slaves_influence_modifier
+		trigger = {
+			has_estate = estate_slaves
+		}
+	}
+}

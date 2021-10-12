@@ -1,0 +1,15 @@
+capital = "Susu"
+culture = susu
+religion = shamanism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 2
+add_core = SSS
+trade_goods = unknown
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = sub_saharan
+
+1460.1.1 = { discovered_by = POR } # Frenão do Pó

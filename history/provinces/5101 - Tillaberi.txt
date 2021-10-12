@@ -1,0 +1,13 @@
+capital = "Tillaberi"
+culture = songhai
+religion = sunni
+owner = SON
+controller = SON
+add_core = SON
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = sugar
+is_city = yes
+discovered_by = sub_saharan

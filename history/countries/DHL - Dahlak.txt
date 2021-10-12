@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = tigray
+religion = sunni
+religious_school = shafii_school
+technology_group = muslim
+capital = 5044
+
+1444.11.11 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

@@ -1,0 +1,21 @@
+# No previous file for Tekrur
+
+culture = fulani
+religion = shamanism #Fetishism
+capital = "Tekrur"
+owner = FUL
+controller = FUL
+add_core = FUL
+tribal_owner = FUL
+trade_goods = slaves
+is_city = yes 
+hre = no
+base_tax = 3 
+base_production = 3
+native_size = 60
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 6
+
+discovered_by = sub_saharan
+discovered_by = muslim

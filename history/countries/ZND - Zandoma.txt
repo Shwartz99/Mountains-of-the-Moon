@@ -1,0 +1,20 @@
+# No previous file for Mossi
+
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = mossi
+religion = shamanism #Fetishism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5095 #Riziam
+
+1444.11.11 = {
+	monarch = {
+		dip = 4
+		adm = 3
+		mil = 2
+		regent = yes
+	}
+}

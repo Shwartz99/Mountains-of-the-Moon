@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = sahara_tribe
+primary_culture = tuareg
+religion = sunni
+technology_group = muslim
+capital = 2246	# Awdaghust
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Taffounnout"
+		dynasty = "al-Berabish"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

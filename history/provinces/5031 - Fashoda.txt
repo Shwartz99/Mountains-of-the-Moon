@@ -1,0 +1,20 @@
+#5031 - Fashoda
+
+owner = NUB
+controller = NUB
+add_core = NUB
+culture = nubian
+religion = shamanism #Fetishism
+capital = "Fashoda"
+native_size = 80
+native_ferocity = 4
+native_hostileness = 9 
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 3
+trade_goods = grain
+is_city = yes
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman

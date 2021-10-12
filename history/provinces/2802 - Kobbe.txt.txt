@@ -1,0 +1,21 @@
+#2802 - Dar Messiria
+
+owner = BAG
+controller = BAG
+add_core = BAG
+culture = nuba
+religion = shamanism #Fetishism
+capital = "Kobbe"
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9 
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 2
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+
+1682.1.1 = { religion = sunni }

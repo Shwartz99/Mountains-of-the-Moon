@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = sahara_tribe
+primary_culture = moroccan
+religion = sunni
+technology_group = muslim
+capital = 5014	# Adrar
+religious_school = maliki_school
+add_accepted_culture = berber
+
+
+1444.11.11 = {
+	monarch = {
+		name = "Sulayman"
+		dynasty = "al-Arusi"
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+	

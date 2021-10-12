@@ -1,0 +1,19 @@
+culture = berber
+capital = "Awdaghust"
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = livestock
+is_city = yes
+owner = ZNG
+controller = ZNG
+add_core = ZNG
+tribal_owner = ZNG
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+discovered_by = sub_saharan
+discovered_by = muslim

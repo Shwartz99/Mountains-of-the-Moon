@@ -1,0 +1,27 @@
+#1160 - Mandara
+
+owner = MND
+controller = MND
+add_core = MND
+culture = kanuri
+religion = shamanism #Fetishism
+capital = "Wandala"
+is_city = yes
+base_manpower = 2
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+1566.1.1 = { controller = BOR } #Mai Idris Alawoma restores Borno authority in region
+1580.1.1 = { unrest = 9 capital = "Dulo" } #Internal struggles destabilize region
+1612.1.1 = { unrest = 0 } #Borno ends internal strife, installs puppet rulers in Mandara
+1682.1.1 = { controller = KWA } #Jukun Invasion
+1684.1.1 = { unrest = 0 } #Jukun Expelled
+1715.1.1 = { religion = sunni } #rulers of Mandara declare Islam state religion
+1780.1.1 = { unrest = 9 } #Mandara rebel against Borno domination
+1804.1.1 = { discovered_by = SOK }

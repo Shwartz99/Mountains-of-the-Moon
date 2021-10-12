@@ -1,0 +1,18 @@
+culture = berber
+capital = "Magta-Lahjar"
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+owner = ZAW
+controller = ZAW
+add_core = ZAW
+tribal_owner = ZAW
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+discovered_by = sub_saharan
+discovered_by = muslim

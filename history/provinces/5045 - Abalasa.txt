@@ -1,0 +1,21 @@
+#5045 - Abalasa
+
+owner = AHA
+controller = AHA
+add_core = AHA
+tribal_owner = AHA
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "Abalasa"
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+discovered_by = sub_saharan
+discovered_by = muslim
+
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

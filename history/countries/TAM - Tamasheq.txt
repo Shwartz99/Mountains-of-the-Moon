@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = tuareg
+religion = sunni
+technology_group = muslim
+capital = 5045	#  Abalasa
+religious_school = maliki_school

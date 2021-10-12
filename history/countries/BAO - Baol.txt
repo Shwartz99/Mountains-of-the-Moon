@@ -1,0 +1,198 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = serer
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5065
+
+1550.1.1 = {
+	monarch = {
+		name = "Niokhor"
+		dynasty = "Ndiaye"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Amari"
+		dynasty = "Fall"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1593.1.1 = {
+	monarch = {
+		name = "Mamalik Thioro"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1607.1.1 = {
+	monarch = {
+		name = "Tie N'Della"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1621.1.1 = {
+	monarch = {
+		name = "Tie Kura"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "M'Bissan Kura"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1649.1.1 = {
+	monarch = {
+		name = "Tiande"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1664.1.1 = {
+	monarch = {
+		name = "M’Bar"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Tie Yaasin Demba"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1693.1.1 = {
+	monarch = {
+		name = "Tie Tieumbeul"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1697.1.1 = {
+	monarch = {
+		name = "Lat Sukaabe"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1719.1.1 = {
+	monarch = {
+		name = "Mali Kumba Dyaring"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Ma-Kodu Kumba"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1749.1.1 = {
+	monarch = {
+		name = "Mawa"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1752.1.1 = {
+	monarch = {
+		name = "M’Bissan N’Della"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1758.1.1 = {
+	monarch = {
+		name = "Ma-Kodu Kumba"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1777.1.1 = {
+	monarch = {
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1809.1.1 = {
+	monarch = {
+		name = "Tie-Yaasin Dieng"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1815.1.1 = {
+	monarch = {
+		name = "Amadi Dyor"
+		dynasty = "Fall"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

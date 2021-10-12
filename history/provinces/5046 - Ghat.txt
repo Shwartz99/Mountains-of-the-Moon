@@ -1,0 +1,22 @@
+#5046 - Ghat
+
+owner = AJJ
+controller = AJJ
+add_core = AJJ
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "Ghat"
+trade_goods = livestock
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+extra_cost = 8
+center_of_trade = 1
+discovered_by = sub_saharan
+discovered_by = muslim
+
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

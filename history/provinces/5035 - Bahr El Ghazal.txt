@@ -1,0 +1,19 @@
+#5035 - Bahr El Ghazal
+
+owner = DNK
+controller = DNK
+add_core = DNK
+culture = acholi #luo
+religion = shamanism #Fetishism
+native_size = 80
+native_ferocity = 4
+native_hostileness = 9 
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = livestock
+is_city = yes
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman

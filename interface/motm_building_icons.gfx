@@ -1,0 +1,115 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_native_earthwork_muslimgfx"
+		texturefile = "gfx//interface//buildings//tribe_earthwork.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_palisade_muslimgfx"
+		texturefile = "gfx//interface//buildings//african_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_fortified_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//african_barracks.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_three_sisters_field_muslimgfx"
+		texturefile = "gfx//interface//buildings//tribe_three_sisters_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_manufactory_muslimgfx"
+		texturefile = "gfx//interface//buildings//manufactory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_irrigation_muslimgfx"
+		texturefile = "gfx//interface//buildings//tribe_irrigation.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_storehouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//african_counting_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_longhouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//tribe_longhouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_sweat_lodge_muslimgfx"
+		texturefile = "gfx//interface//buildings//african_marketplace.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_great_trail_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_ceremonial_fire_pit_muslimgfx"
+		texturefile = "gfx//interface//buildings//tribe_ceremonial_fire_pit.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_native_earthwork_africangfx"
+		texturefile = "gfx//interface//buildings//tribe_earthwork.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_palisade_africangfx"
+		texturefile = "gfx//interface//buildings//african_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_fortified_house_africangfx"
+		texturefile = "gfx//interface//buildings//african_barracks.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_three_sisters_field_africangfx"
+		texturefile = "gfx//interface//buildings//tribe_three_sisters_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_manufactory_africangfx"
+		texturefile = "gfx//interface//buildings//manufactory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_irrigation_africangfx"
+		texturefile = "gfx//interface//buildings//tribe_irrigation.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_storehouse_africangfx"
+		texturefile = "gfx//interface//buildings//african_counting_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_longhouse_africangfx"
+		texturefile = "gfx//interface//buildings//tribe_longhouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_sweat_lodge_africangfx"
+		texturefile = "gfx//interface//buildings//african_marketplace.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_great_trail_africangfx"
+		texturefile = "gfx//interface//buildings//muslim_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_ceremonial_fire_pit_africangfx"
+		texturefile = "gfx//interface//buildings//tribe_ceremonial_fire_pit.tga"
+		loadType = "INGAME"
+	}
+
+}

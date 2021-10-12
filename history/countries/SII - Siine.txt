@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = senegambian
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2239
+
+1444.11.11 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

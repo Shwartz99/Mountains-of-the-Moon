@@ -1,0 +1,31 @@
+# No previous file for Siine
+
+owner = JOL
+controller = JOL
+add_core = JOL
+is_city = yes
+culture = serer 
+religion = shamanism #Fetishism
+capital = "Mbissel"
+trade_goods = cloth
+hre = no
+base_tax = 2 
+base_production = 4
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 3
+add_core = SII
+
+
+
+discovered_by = sub_saharan
+
+1446.1.1 = { discovered_by = POR } # Frenão do Pó
+
+1520.1.1 = {
+	add_core = SII
+	owner = SII
+	controller = SII
+	remove_core = JOL
+}

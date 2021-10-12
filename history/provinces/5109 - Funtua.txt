@@ -1,0 +1,19 @@
+capital = "Funtua"
+culture = hausa
+religion = shamanism
+owner = KTS
+controller = KTS
+add_core = KTS
+is_city = yes
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 3
+trade_goods = cotton
+discovered_by = sub_saharan
+
+1806.1.1 = {	
+	owner = SOK
+	controller = SOK
+	add_core = SOK
+} # The Fulani Empire

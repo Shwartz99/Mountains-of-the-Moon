@@ -1,0 +1,15 @@
+name = "Jukun Invasion of Katsina"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+}
+
+1670.1.1 = {
+	add_attacker = KWA
+	add_defender = KTS
+}
+
+1675.1.1 = {
+	rem_attacker = KWA
+	rem_defender = KTS
+}

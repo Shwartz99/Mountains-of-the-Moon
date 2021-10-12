@@ -1,0 +1,30 @@
+capital = "Kirané"
+culture = soninke
+religion = shamanism
+owner = MAL
+controller = MAL
+add_core = MAL
+add_core = SSS
+hre = no
+base_tax = 2
+base_production = 4
+base_manpower = 3
+trade_goods = livestock
+is_city = no
+discovered_by = sub_saharan
+
+1503.1.1 = {
+	owner = SON
+	controller = SON
+	add_core = SON 
+} #Askiya Muhammad of Songhai seizes control 
+1591.3.15 = {
+	owner = FUL
+	controller = FUL
+	add_core = FUL 
+} #Songhai collapse after Tondibi
+1670.1.1 = {
+	owner = SOF
+	controller = SOF
+	add_core = SOF remove_core = FUL 
+} #Massa establish the Massassi dynasty, Bambara expands

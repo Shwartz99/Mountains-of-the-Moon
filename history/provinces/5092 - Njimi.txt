@@ -1,0 +1,13 @@
+capital = "Njimi"
+culture = kanuri
+religion = sunni
+owner = BOR
+controller = BOR
+add_core = BOR
+is_city = yes
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = salt
+discovered_by = sub_saharan

@@ -1,0 +1,20 @@
+culture = berber
+capital = "Dakhla"
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+owner = LAM
+controller = LAM
+add_core = LAM
+tribal_owner = LAM
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+discovered_by = sub_saharan
+discovered_by = muslim
+
+1445.1.1 = { discovered_by = POR }

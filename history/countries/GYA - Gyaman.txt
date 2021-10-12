@@ -1,0 +1,91 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = aka
+religion = shamanism #Fetishism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2255 #Sampa
+
+
+#Very little information on rulers. Borrowing from diverse kingdoms of the region, here Akyem Kotoku
+1444.1.1 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1650.1.1 = {
+	monarch = {
+		name = "Kosounou"
+		dynasty = "Yakassé"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+1701.1.1 = {
+	monarch = {
+		name = "Biri Kofin Panyin"
+		dynasty = "Zanzan"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Abo Kofi"
+		dynasty = "Yakassé"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+1746.1.1 = {
+	monarch = {
+		name = "Kofi Sono"
+		dynasty = "Zanzan"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+1760.1.1 = {
+	monarch = {
+		name = "Agyeman"
+		dynasty = "Yakassé"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+1790.1.1 = {
+	monarch = {
+		name = "Biri Kofi Kadyo"
+		dynasty = "Zanzan"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
+
+1810.1.1 = {
+	monarch = {
+		name = "Kwadwo Adinkra Kadyo"
+		dynasty = "Yakassé"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}

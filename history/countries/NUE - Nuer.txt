@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = sahara_tribe
+primary_culture = acholi
+religion = shamanism
+technology_group = east_african
+unlock_cult = central_african_ancestor_cult
+unlock_cult = christianity_cult
+unlock_cult = islam_cult
+capital = 5032
+
+1444.11.11 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

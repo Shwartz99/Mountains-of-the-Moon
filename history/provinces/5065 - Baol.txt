@@ -1,0 +1,20 @@
+capital = "Lambaye"
+culture = serer
+religion = shamanism
+owner = JOL
+controller = JOL
+add_core = JOL
+add_core = BAO
+hre = no
+base_tax = 3
+base_production = 4
+base_manpower = 3
+trade_goods = grain
+is_city = yes
+discovered_by = sub_saharan
+
+1550.1.1 = {
+	owner = BAO
+	controller = BAO
+	remove_core = JOL
+}

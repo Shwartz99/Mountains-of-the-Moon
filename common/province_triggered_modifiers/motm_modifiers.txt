@@ -1,0 +1,43 @@
+#Atlantic Slave Export
+atlantic_slave_export_modifier = {
+	potential = {
+		owner = { has_estate_privilege = estate_slaves_atlantic_slave_trade }
+		trade_goods = slaves
+		continent = africa
+	}
+	trigger = {
+		always = yes
+	}
+	local_unrest = -10
+	province_trade_power_value = 5
+}
+#Atlantic Slave Import
+atlantic_slave_import_modifier = {
+	potential = {
+		OR = {
+			owner = {
+				has_estate_privilege = estate_slaves_atlantic_slave_trade
+				colonial_parent = { has_estate_privilege = estate_slaves_atlantic_slave_trade }
+			}
+		}
+		OR = {
+			trade_goods = coffee
+			trade_goods = cotton
+			trade_goods = sugar
+			trade_goods = tobacco
+			trade_goods = tea
+			trade_goods = cocoa
+		}
+		OR = {
+			continent = north_america
+			continent = south_america
+			continent = oceania
+			continent = new_world
+		}
+	}
+	trigger = {
+		always = yes
+	}
+	local_unrest = -10
+	local_production_efficiency = 0.25
+}

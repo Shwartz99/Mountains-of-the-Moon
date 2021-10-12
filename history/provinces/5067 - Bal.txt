@@ -1,0 +1,16 @@
+capital = "Bourem"
+culture = tuareg
+religion = sunni
+owner = SON
+controller = SON
+add_core = SON
+hre = no
+base_tax = 4
+base_production = 5
+base_manpower = 3
+trade_goods = sugar
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+is_city = yes
+discovered_by = sub_saharan

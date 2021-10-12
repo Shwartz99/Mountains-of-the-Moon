@@ -1,0 +1,19 @@
+# - São Tomé
+
+capital = "São Tomé"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+1472.1.1 = { discovered_by = POR } # Fernão do Pó
+1493.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	culture = portugese
+	religion = catholic
+	is_city = yes
+	trade_goods = sugar
+}

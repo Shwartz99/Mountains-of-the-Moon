@@ -1,0 +1,13 @@
+capital = "Gambaga"
+culture = mossi
+religion = shamanism
+owner = WAG
+controller = WAG
+add_core = WAG
+is_city = yes
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = ivory
+discovered_by = sub_saharan

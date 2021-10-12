@@ -1,0 +1,259 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = hausa
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2280	# Biram
+religious_school = maliki_school
+
+
+1390.1.1 = {
+	monarch = {
+		name = "Musa"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1405.1.1 = {
+	monarch = {
+		name = "Kujera"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1420.1.1 = {
+	monarch = {
+		name = "Adam"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1440.1.1 = {
+	monarch = {
+		name = "Ali"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "Tagwai"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Jimami"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Barikurgu"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1515.1.1 = {
+	monarch = {
+		name = "Gamajiya da yau"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1530.1.1 = {
+	monarch = {
+		name = "Bako"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1545.1.1 = {
+	monarch = {
+		name = "Burwai"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1560.1.1 = {
+	monarch = {
+		name = "Gwarma"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1580.1.1 = {
+	monarch = {
+		name = "Buri"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Usuman"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1620.1.1 = {
+	monarch = {
+		name = "Gadbo"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1640.1.1 = {
+	monarch = {
+		name = "Abdu"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1660.1.1 = {
+	monarch = {
+		name = "Tukur"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+
+1680.1.1 = {
+	monarch = {
+		name = "Buba"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Kankarau"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1715.1.1 = {
+	monarch = {
+		name = "Asawa"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1730.1.1 = {
+	monarch = {
+		name = "Muhamman Bako"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1745.1.1 = {
+	monarch = {
+		name = "Kawu"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1765.1.1 = {
+	monarch = {
+		name = "Barwa"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1785.1.1 = {
+	monarch = {
+		name = "al-Hajj Abu Bakar"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1805.1.1 = {
+	monarch = {
+		name = "Musa II"
+		dynasty = "Biram"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}

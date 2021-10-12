@@ -1,0 +1,19 @@
+culture = berber
+capital = "Wadan"
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+trade_goods = salt
+is_city = yes
+owner = WAD
+controller = WAD
+add_core = WAD
+tribal_owner = WAD
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+discovered_by = sub_saharan
+discovered_by = muslim

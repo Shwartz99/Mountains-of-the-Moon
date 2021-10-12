@@ -1,0 +1,19 @@
+#5028 - Dar El Kababish
+
+owner = BAG
+controller = BAG
+add_core = BAG
+culture = sudanese_culture
+religion = sunni
+capital = "Barah"
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9 
+base_manpower = 1
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman

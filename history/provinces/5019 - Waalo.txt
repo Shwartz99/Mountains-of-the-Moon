@@ -1,0 +1,40 @@
+culture = senegambian
+capital = "Ndiourbel"
+religion = shamanism
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 4
+is_city = yes
+trade_goods = cotton
+owner = JOL
+controller = JOL
+add_core = JOL
+discovered_by = sub_saharan
+add_core = WAA
+
+add_permanent_province_modifier = {
+	name = senegal_estuary_modifier
+	duration = -1
+}
+
+1445.1.1 = { discovered_by = POR }
+
+1482.1.1 = { unrest = 4 } #Bemoy revolt against Jolof governors, aided by Portuguese
+1498.1.1 = { unrest = 4 } #Fulani incursions begin 
+1512.1.1 = { unrest = 0 } #leader of Fulani killed in battle, stability returns under Jolof dominance
+1552.1.1 = {
+	add_core = WAA
+	owner = WAA
+	controller = WAA
+	remove_core = JOL
+}
+1593.1.1 = { unrest = 5 } #Fulani expansionism under Samba Lemu destablilizes Waalo and much of Kayor
+1673.1.1 = { unrest = 10 } #Marabouts under Nasir al-Din launch invasion of Waalo and Kayor
+1674.1.1 = { unrest = 4 } #Nasir al-Din seize Waalo and Kayor
+1678.1.1 = { unrest = 8 } #Rebellion against Marabout control with French support restores old dynasties of Waalo and Kayor
+1724.1.1 = { unrest = 4 } #Civil war in Waalo
+1774.1.1 = { unrest = 4 } #Trzaza Moors invade Lower Senegal Valley, become kingmakers in Waalo
+1785.1.1 = { unrest = 7 } #Agitation among marabouts inspired by Torodo success creates unrest in Kayor and Waalo
+1790.1.1 = { unrest = 9 } #Amari Ngoone Ndela launches major persecution of Torodo sympathizers
+1791.1.1 = { unrest = 1 } #Amari defeats the Torodo at Bungoy, ends Torodo threat and secures Kayor control

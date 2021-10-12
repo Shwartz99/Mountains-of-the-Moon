@@ -1,0 +1,14 @@
+capital = "Riziam"
+culture = mossi
+religion = shamanism
+owner = ZND
+controller = ZND
+add_core = ZND
+add_core = YAT
+is_city = yes
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 3
+trade_goods = livestock
+discovered_by = sub_saharan

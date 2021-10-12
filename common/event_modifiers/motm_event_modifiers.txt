@@ -1,0 +1,29 @@
+#override
+senegal_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}
+
+#new
+natives_cav_modifier = {
+	cav_to_inf_ratio = 1
+	cavalry_power = 0.5
+}
+
+sudd_modifier = {
+	hostile_attrition = 1
+	local_hostile_movement_speed = -0.2
+	picture = "climate_tropical"
+}
+
+atlantic_slave_export_modifier = {
+	local_unrest = 10
+	province_trade_power_value = 5
+	picture = "may_perform_slave_raid"
+}
+
+atlantic_slave_import_modifier = {
+	local_unrest = 10
+	local_production_efficiency = 0.25
+	picture = "may_perform_slave_raid"
+}

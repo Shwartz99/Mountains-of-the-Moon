@@ -1,0 +1,13 @@
+capital = "Salaga"
+culture = dagomba
+religion = shamanism
+owner = DGB
+controller = DGB
+add_core = DGB
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = tropical_wood
+is_city = no
+discovered_by = sub_saharan

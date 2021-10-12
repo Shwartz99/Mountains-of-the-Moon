@@ -1,0 +1,139 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = jukun
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5107	# Kwarafa
+religious_school = maliki_school
+
+1444.11.11 = {
+	monarch = {
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Agbu Kendja"
+		dynasty = "Kororofa"
+		dip = 5
+		adm = 3
+		mil = 4
+	}
+}
+
+1630.1.1 = {
+	monarch = {
+		name = "Katapka"
+		dynasty = "Kororofa"
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+1671.1.1 = {
+	monarch = {
+		name = "Agwabi"
+		dynasty = "Kororofa"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1685.1.1 = {
+	monarch = {
+		name = "Dawi"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Agigbi"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1710.1.1 = {
+	monarch = {
+		name = "Nani To"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Dadju"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1735.1.1 = {
+	monarch = {
+		name = "Zike"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Kuwya"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1775.1.1 = {
+	monarch = {
+		name = "Matsweu Adi"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1800.1.1 = {
+	monarch = {
+		name = "Ashu Manu"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1815.1.1 = {
+	monarch = {
+		name = "Zikeenya"
+		dynasty = "Kororofa"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}

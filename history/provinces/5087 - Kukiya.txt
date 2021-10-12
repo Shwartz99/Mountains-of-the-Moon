@@ -1,0 +1,13 @@
+capital = "Kukiya"
+culture = songhai
+religion = sunni
+owner = SON
+controller = SON
+add_core = SON
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 4
+trade_goods = grain
+is_city = yes
+discovered_by = sub_saharan

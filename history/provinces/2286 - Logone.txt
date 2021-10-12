@@ -1,0 +1,19 @@
+# No previous file for Logone
+
+owner = KOT
+controller = KOT
+add_core = KOT
+add_core = BOR
+culture = kanuri 
+religion = shamanism #Fetishism
+capital = "Logone"
+trade_goods = ivory
+hre = no
+base_tax = 2 
+base_production = 2
+is_city = yes
+base_manpower = 3
+
+
+
+discovered_by = sub_saharan

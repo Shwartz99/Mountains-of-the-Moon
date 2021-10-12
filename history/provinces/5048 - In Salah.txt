@@ -1,0 +1,22 @@
+#5048 - In Salah
+
+owner = AJJ
+controller = AJJ
+add_core = AJJ
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "In Salah"
+trade_goods = ivory
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = sub_saharan
+
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

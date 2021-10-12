@@ -1,0 +1,13 @@
+capital = "Onitsha"
+culture = igbo
+religion = shamanism
+owner = IGB
+controller = IGB
+add_core = IGB
+is_city = yes
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = cotton
+discovered_by = sub_saharan

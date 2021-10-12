@@ -1,0 +1,20 @@
+#5053 - Tessalit
+
+owner = ADG
+controller = ADG
+add_core = ADG
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "Tessalit"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = sub_saharan
+discovered_by = muslim
+
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9

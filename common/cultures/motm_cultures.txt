@@ -1,0 +1,15 @@
+dogon_g = {	#dogon
+	graphical_culture = africangfx
+	
+	dogon = {
+		male_names = {
+			Amadou Seydou
+		}
+		female_names = {
+			Fanta
+		}
+		dynasty_names = {
+			Balobal Dambawo-Damba Diarra Doumbo Gaba Guindo Isabere Kassambara Kénoba Koliyaba Kondoo-Kondo Maiga Ombotimbe Ongoiba Ouologuem Pelkouliba Samasségou Tabalaba Tembiné Tembo Togo Toloba Yalkouyé Yombolba
+		}
+	}
+}

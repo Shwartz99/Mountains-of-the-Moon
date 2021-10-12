@@ -1,0 +1,299 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = senegambian
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5019
+
+1415.1.1 = {
+	monarch = {
+		name = "Yerim Kode"
+		dynasty = "Joof"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1485.1.1 = {
+	monarch = {
+		name = "Fara Toko"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1488.1.1 = {
+	monarch = {
+		name = "Fara Penda Teg Rel"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1496.1.1 = {
+	monarch = {
+		name = "Tyaaka Daro Khot"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1503.1.1 = {
+	monarch = {
+		name = "Naatago Fara N'dyak"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1508.1.1 = {
+	monarch = {
+		name = "Naatago Yerim"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1519.1.1 = {
+	monarch = {
+		name = "Fara Penda Dyeng"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1531.1.1 = {
+	monarch = {
+		name = "Tani Fara N'dyak"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1542.1.1 = {
+	monarch = {
+		name = "Fara Koy Dyon"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1549.1.1 = {
+	monarch = {
+		name = "Fara Koy Dyop"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1552.1.1 = {
+	monarch = {
+		name = "Fara Penda Langan Dyam"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1556.1.1 = {
+	monarch = {
+		name = "Fara Ko Ndaama"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1563.1.1 = {
+	monarch = {
+		name = "Fara Aysa Naalem"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1565.1.1 = {
+	monarch = {
+		name = "Naatago Kbaari Daaro"
+		dynasty = "Joof"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1576.1.1 = {
+	monarch = {
+		name = "Beur Tyaaka Loggar"
+		dynasty = "Joof"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1640.1.1 = {
+	monarch = {
+		name = "Yerim Mbanyik Aram Bakar"
+		dynasty = "Joof"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1674.1.1 = {
+	monarch = {
+		name = "Naatago Aram Bakar"
+		dynasty = "Joof"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1708.1.1 = {
+	monarch = {
+		name = "N'dyak Aram Bakar Teedyek"
+		dynasty = "Joof"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1733.1.1 = {
+	monarch = {
+		name = "Yerim N'date Bubu"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1734.1.1 = {
+	monarch = {
+		name = "Meu Mbody Kumba Khedy"
+		dynasty = "Joof"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1735.1.1 = {
+	monarch = {
+		name = "Yerim Mbanyik Anta Dyop"
+		dynasty = "Joof"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1736.1.1 = {
+	monarch = {
+		name = "Yerim Khode Fara Mbuno"
+		dynasty = "Joof"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1737.1.1 = {
+	monarch = {
+		name = "N'dyak Khuri Dyop"
+		dynasty = "Joof"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1780.1.1 = {
+	monarch = {
+		name = "Fara Penda Teg Rel"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1792.1.1 = {
+	monarch = {
+		name = "N'dyak Kumba Khuri Yay"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1801.1.1 = {
+	monarch = {
+		name = "Saayodo Yaasin Mbody"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1806.1.1 = {
+	monarch = {
+		name = "Kruli Mbaaba"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1812.1.1 = {
+	monarch = {
+		name = "Amar Faatim Borso"
+		dynasty = "Joof"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1821.1.1 = {
+	monarch = {
+		name = "Yerim Mbanyik Teg"
+		dynasty = "Joof"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}

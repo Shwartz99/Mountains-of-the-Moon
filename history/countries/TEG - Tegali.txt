@@ -1,0 +1,119 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = nuba
+religion = shamanism
+technology_group = east_african
+unlock_cult = central_african_ancestor_cult
+unlock_cult = christianity_cult
+unlock_cult = islam_cult
+capital = 1216
+
+1444.1.1 = { #semi-mythical
+	monarch = {
+		name = "Muhammad"
+		dynasty = "al-Rubatabi"
+		adm = 5
+		dip = 3
+		mil = 6
+	}
+}
+
+1494.1.1 = { #semi-mythical
+	monarch = {
+		name = "Abu Jarida"
+		dynasty = "Jayli"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1544.1.1 = { #semi-mythical
+	monarch = {
+		name = "Sabo"
+		dynasty = "al-Taqali"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1594.1.1 = { #semi-mythical
+	monarch = {
+		name = "Umara"
+		dynasty = "Jayli"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1644.1.1 = { #semi-mythical
+	monarch = {
+		name = "Awan Allah"
+		dynasty = "Jayli"
+		adm = 6
+		dip = 3
+		mil = 1
+	}
+}
+
+1694.1.1 = { #semi-mythical
+	monarch = {
+		name = "Abu Quran"
+		dynasty = "Jayli"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1744.1.1 = {
+	monarch = {
+		name = "Muhammad"
+		dynasty = "Jayli"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1760.1.1 = {
+	monarch = {
+		name = "Umar I"
+		dynasty = "Jayli"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1783.1.1 = {
+	monarch = {
+		name = "Ismail I"
+		dynasty = "Jayli"
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1800.1.1 = {
+	monarch = {
+		name = "Abakr I"
+		dynasty = "Jayli"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1820.1.1 = {
+	monarch = {
+		name = "Umar II"
+		dynasty = "Jayli"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

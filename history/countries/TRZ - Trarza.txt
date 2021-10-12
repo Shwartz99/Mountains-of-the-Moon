@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 5007	# Trarza
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Abu Hammu"
+		dynasty = "al-Tarariza"
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+	

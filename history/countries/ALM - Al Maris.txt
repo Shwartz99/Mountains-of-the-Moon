@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = sudanese_culture
+add_accepted_culture = nubian
+religion = shiite
+religious_school = ismaili_school
+technology_group = muslim
+unit_type = muslim
+capital = 5026
+
+1440.1.1 = {
+	monarch = {
+		name = "Nasr el Din" #Name taken from a ruler known to have been ousted from this general area by one of his relatives in 1398.
+		dynasty = "Kanz" #Dynasty is really unclear, could've been this.
+		adm = 3
+		dip = 4
+		mil = 4		
+	}
+}

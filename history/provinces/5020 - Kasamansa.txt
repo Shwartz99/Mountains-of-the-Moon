@@ -1,0 +1,13 @@
+culture = serer
+capital = "Siggcoor"
+religion = shamanism
+hre = no
+base_tax = 4
+base_production = 2
+base_manpower = 3
+trade_goods = wine
+is_city = yes
+owner = JOL
+controller = JOL
+add_core = JOL
+discovered_by = sub_saharan

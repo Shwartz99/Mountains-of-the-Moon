@@ -1,0 +1,27 @@
+pay_crown_land = {
+	trigger = {
+		crown_land_share = 10
+		NOT = { crown_land_share = 100 }
+	}
+	
+	effect = {
+		change_estate_land_share = {
+			estate = all
+			share = 2
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 0.75
+		modifier = {
+			factor = 0.5
+			NOT = { crown_land_share = 50 }
+		}
+	}
+}

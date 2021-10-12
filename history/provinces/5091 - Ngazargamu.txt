@@ -1,0 +1,19 @@
+capital = "Ngazargamu"
+culture = kanuri
+religion = sunni
+owner = BOR
+controller = BOR
+add_core = BOR
+is_city = yes
+hre = no
+base_tax = 5
+base_production = 2
+base_manpower = 5
+trade_goods = paper
+discovered_by = sub_saharan
+
+1806.1.1 = {	
+	owner = SOK
+	controller = SOK
+	add_core = SOK
+} # The Fulani Empire

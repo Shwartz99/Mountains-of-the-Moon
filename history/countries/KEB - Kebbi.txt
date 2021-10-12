@@ -1,0 +1,220 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = hausa
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2278	# Kebbi
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = {
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1516.1.1 = {
+	monarch = {
+		name = "Muhammadu Kantu"
+		dynasty = "Kebbi"
+		dip = 5
+		adm = 4
+		mil = 5
+	}
+}
+
+1561.1.1 = {
+	monarch = {
+		name = "Ahmadu I"
+		dynasty = "Kebbi"
+		dip = 4
+		adm = 4
+		mil = 3
+	}
+}
+
+1596.1.1 = {
+	monarch = {
+		name = "Dawuda"
+		dynasty = "Kebbi"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+
+1619.1.1 = {
+	monarch = {
+		name = "Ibrahimu I"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1621.1.1 = {
+	monarch = {
+		name = "Suleimanu I"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1636.1.1 = {
+	monarch = {
+		name = "Muhammadu"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+1649.1.1 = {
+	monarch = {
+		name = "Maliki Dan Ibrahimu"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+1662.1.1 = {
+	monarch = {
+		name = "Umaru Ciwa"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+1674.1.1 = {
+	monarch = {
+		name = "Muhammadu Kaye"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1676.1.1 = {
+	monarch = {
+		name = "Ibrahimu II"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1684.1.1 = {
+	monarch = {
+		name = "Muhammadu na Sifawa"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1686.1.1 = {
+	monarch = {
+		name = "Ahmadu Dan Amaru"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1696.1.1 = {
+	monarch = {
+		name = "Tomo"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Muhammadu Dan Ciwa"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1717.1.1 = {
+	monarch = {
+		name = "Samaila"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Muhammadu Dan Tagande"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1754.1.1 = {
+	monarch = {
+		name = "Abdullahi Toga"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1775.1.1 = {
+	monarch = {
+		name = "Suleimanu II"
+		dynasty = "Kebbi"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1803.1.1 = {
+	monarch = {
+		name = "Abubakar Ukar"
+		dynasty = "Kebbi"
+		dip = 0
+		adm = 1
+		mil = 1
+	}
+}
+
+1804.1.1 = {
+	monarch = {
+		name = "Muhammadu Fodi"
+		dynasty = "Kebbi"
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}

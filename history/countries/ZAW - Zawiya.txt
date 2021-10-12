@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = sahara_theocracy
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 5013	# Tagant
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}	

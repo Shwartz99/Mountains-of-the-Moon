@@ -1,0 +1,67 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 5000
+religious_school = maliki_school
+
+1440.1.1 = {
+	monarch = {
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1515.1.1 = {
+	monarch = {
+		name = "Ahmed"
+		dynasty = "Ath l-Qadi"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1527.1.1 = {
+	monarch = {
+		name = "Elhocine"
+		dynasty = "Ath l-Qadi"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1546.1.1 = {
+	monarch = {
+		name = "Ameur"
+		dynasty = "Ath l-Qadi"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1618.1.1 = {
+	monarch = {
+		name = "Ahmed Atounsi"
+		dynasty = "Ath l-Qadi"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1696.1.1 = {
+	monarch = {
+		name = "Ali"
+		dynasty = "Ath l-Qadi"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

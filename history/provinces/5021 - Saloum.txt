@@ -1,0 +1,21 @@
+culture = serer
+capital = "Kahone"
+religion = shamanism
+hre = no
+base_tax = 3
+base_production = 5
+base_manpower = 4
+trade_goods = cloth
+is_city = yes
+owner = JOL
+controller = JOL
+add_core = JOL
+discovered_by = sub_saharan
+add_core = SLM
+
+1520.1.1 = {
+	add_core = SLM
+	owner = SLM
+	controller = SLM
+	remove_core = JOL
+}

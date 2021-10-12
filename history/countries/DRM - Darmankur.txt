@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 1112	# Darmankur
+religious_school = maliki_school
+add_accepted_culture = senegambian
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Sakhr"
+		dynasty = "Darmankur"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+	

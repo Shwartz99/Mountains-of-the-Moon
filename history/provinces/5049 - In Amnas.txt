@@ -1,0 +1,22 @@
+#5049 - In Amnas
+
+owner = AJJ
+controller = AJJ
+add_core = AJJ
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "In Amnas"
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = sub_saharan
+
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9

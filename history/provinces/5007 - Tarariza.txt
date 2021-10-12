@@ -1,0 +1,24 @@
+culture = berber
+capital = "Trarza"
+religion = sunni
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = fish
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9
+is_city = yes
+owner = TRZ
+controller = TRZ
+add_core = TRZ
+tribal_owner = TRZ
+
+discovered_by = sub_saharan
+discovered_by = muslim
+
+1445.1.1 = { discovered_by = POR }
+
+1490.1.1 = { owner = FUL controller = FUL add_core = FUL } #Rise of Great Fulo
+1600.1.1 = { discovered_by = muslim }

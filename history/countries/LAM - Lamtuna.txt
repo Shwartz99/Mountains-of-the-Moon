@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = sahara_theocracy
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 5015	# Idjil
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Suggut"
+		dynasty = "Lamtuna"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+	

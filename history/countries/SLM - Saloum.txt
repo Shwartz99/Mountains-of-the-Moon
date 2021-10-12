@@ -1,0 +1,29 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = senegambian
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5021
+
+#Rulers of Saloum
+1493.1.1 = {
+	monarch = {
+		name = "Mbegan"
+		dynasty = "Ndour"
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}
+1567.1.1 = {
+	monarch = {
+		name = "Malaw tane"
+		dynasty = "Joof"
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}

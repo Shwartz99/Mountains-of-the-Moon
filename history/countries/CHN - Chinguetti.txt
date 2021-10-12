@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 5017	#  Bilad ash-Shinqit
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Yeften"
+		dynasty = "Jazulah"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+	

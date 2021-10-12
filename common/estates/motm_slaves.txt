@@ -1,0 +1,89 @@
+estate_slaves = {
+	icon = 12
+
+	province_independence_weight = {
+		factor = 0.1
+		modifier = {
+			factor = 50
+			OR = {
+				trade_goods = coffee
+				trade_goods = cotton
+				trade_goods = sugar
+				trade_goods = tobacco
+				trade_goods = tea
+				trade_goods = cocoa
+			}
+		}
+		modifier = {
+			factor = 100
+			trade_goods = slaves
+		}
+	}
+
+	# If true, country will get estate
+	trigger = {
+		NOT = { has_country_modifier = the_abolish_slavery_act }
+		NOT = { has_reform = war_against_the_world_doctrine_reform }
+		NOT = { is_revolutionary_republic_trigger = yes }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+	}
+	country_modifier_neutral = {
+		global_unrest = 5
+	}	
+	country_modifier_angry = {
+		technology_cost = 0.25
+		global_unrest = 10
+	}
+	land_ownership_modifier = {
+	}
+
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = SLAVES_POST_STARTUP
+		trigger = {
+			has_country_flag = slaves_post_startup
+		}
+		influence = 30
+	}
+	influence_modifier = {
+		desc = SLAVES_POST_STARTUP
+		trigger = {
+			has_country_flag = estate_reloading
+		}
+		influence = -200
+	}
+	influence_from_dev_modifier = 0
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	
+	privileges = {
+		estate_slaves_galley_slaves
+		estate_slaves_atlantic_slave_trade
+		estate_slaves_allowed_diet
+	}
+
+	agendas = {
+		estate_slaves_fire_advisor
+	}
+
+	color = { 0 0 0 }
+}

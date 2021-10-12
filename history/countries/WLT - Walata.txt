@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = sahara_tribe_settled
+primary_culture = tuareg
+religion = sunni
+technology_group = muslim
+capital = 2247	# Walata
+religious_school = maliki_school
+
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Wahid"
+		dynasty = "Massufa"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}	

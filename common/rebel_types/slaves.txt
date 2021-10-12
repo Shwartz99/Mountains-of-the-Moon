@@ -1,0 +1,146 @@
+
+######################################################################
+# Slave rebels.
+######################################################################
+slave_rebels = {
+	
+	color = { 255 255 255 }
+	
+	area = nation 					# Stays within the nation
+	government = anti		# Don't care about gov type				
+	defection = none				# Will not defect
+	independence = any				# Does not strive for independence
+	gfx_type = culture_province
+	will_relocate = yes	
+
+	resilient = yes					# Can retreat
+	reinforcing = yes				# Can reinforce
+	general = yes					# Does use generals
+	smart = yes						# Do assault forts, tactically withdraw from battle, etc.
+	unit_transfer = yes				# Units do not remain after enforcing demands.
+	
+	infantry = 1
+	cavalry = 0
+	artillery = 0
+	
+	morale = 0.95
+	
+	# Possible handle actions
+	handle_action_stability = yes
+	handle_action_negotiate = no
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 20		
+		modifier = {
+			factor = 0.2
+			is_core = owner
+		}
+		modifier = {
+			factor = 2.0
+			is_overseas = yes # Prefer this overseas
+		}
+		modifier = {
+			factor = 0
+			NOT = { owner = { OR = { has_country_modifier = the_abolish_slavery_act has_reform = war_against_the_world_doctrine_reform is_revolutionary_republic_trigger = yes } } }
+		}	
+		modifier = {
+			factor = 100.0
+			OR = { has_province_modifier = atlantic_slave_export_modifier has_province_modifier = atlantic_slave_import_modifier }
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				estate_influence = {
+					estate = estate_slaves
+					influence = 20
+				}
+			}
+		}
+	}
+ 
+ 	# This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 2.0
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 4
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 6
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 		NOT = { local_autonomy = 50 }
+		has_terrain = steppe
+ 	}
+	siege_won_effect = {
+		add_local_autonomy = 10	
+		owner = {
+			change_estate_land_share = {
+				estate = estate_slaves
+				share = 10.0
+				province = ROOT
+			}
+		}
+	}	
+	
+	# Country scope
+	can_negotiate_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+
+	# Localisation for their demands
+	demands_description = "cossack_rebels_demand"
+	
+	# Country scope
+	demands_enforced_effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = just_lost_to_rebels
+				duration = 10
+				hidden = yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_rebel_faction = REB
+				trade_goods = slaves
+			}
+			add_local_autonomy = 20
+		}	
+		add_prestige = -20
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_estate_influence_modifier = {
+			estate = estate_slaves
+			desc = EST_VAL_SLAVES_CONCESSIONS
+			influence = 20
+			duration = 5475
+		}
+	}
+}

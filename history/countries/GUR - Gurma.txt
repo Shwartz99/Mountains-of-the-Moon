@@ -1,0 +1,201 @@
+# No previous file for Mossi
+
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = mossi
+religion = shamanism #Fetishism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1136	# Fada N'Gourma
+
+1204.1.1 = {
+	monarch = {
+		name = "Diaba Lompo"
+		dynasty = "Gurma"
+		dip = 4
+		adm = 3
+		mil = 2
+	}
+}
+
+1248.1.1 = {
+	monarch = {
+		name = "Tidarpo"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+}
+
+1292.1.1 = {
+	monarch = {
+		name = "Untani"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1336.1.1 = {
+	monarch = {
+		name = "Banydoba"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Labi Diebo"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1395.1.1 = {
+	monarch = {
+		name = "Tenin"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1425.1.1 = {
+	monarch = {
+		name = "Tokurma"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1470.1.1 = {
+	monarch = {
+		name = "Gima"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1520.1.1 = {
+	monarch = {
+		name = "Gori"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1553.1.1 = {
+	monarch = {
+		name = "Bogora"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1571.1.1 = {
+	monarch = {
+		name = "Kampadiboaghi"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1615.1.1 = {
+	monarch = {
+		name = "Kampadi"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1659.1.1 = {
+	monarch = {
+		name = "Tantiari"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1684.1.1 = {
+	monarch = {
+		name = "Lissoangui"
+		dynasty = "Gurma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1709.1.1 = {
+	monarch = {
+		name = "Yendabri"
+		dynasty = "Buricimba"
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+1736.1.1 = {
+	monarch = {
+		name = "Yembirima"
+		dynasty = "Buricimba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1761.1.1 = {
+	monarch = {
+		name = "Baghama"
+		dynasty = "Buricimba"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1791.1.1 = {
+	monarch = {
+		name = "Yanghama"
+		dynasty = "Buricimba"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1820.1.1 = {
+	monarch = {
+		name = "Yenkirma"
+		dynasty = "Buricimba"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}

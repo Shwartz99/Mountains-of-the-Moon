@@ -1,0 +1,15 @@
+capital = "Kulani"
+culture = songhai
+religion = shamanism
+owner = SON
+controller = SON
+add_core = SON
+hre = no
+base_tax = 4
+base_production = 2
+base_manpower = 5
+trade_goods = grain
+is_city = yes
+discovered_by = sub_saharan
+
+fort_15th = yes

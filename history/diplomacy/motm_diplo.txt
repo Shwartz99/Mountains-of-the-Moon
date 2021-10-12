@@ -1,0 +1,30 @@
+vassal = {
+	first = ZAW
+	second = TRZ
+	start_date = 1444.1.1
+	end_date = 1640.1.1
+}
+vassal = {
+	first = ZAW
+	second = DRM
+	start_date = 1444.1.1
+	end_date = 1640.1.1
+}
+vassal = {
+	first = AJJ
+	second = AHA
+	start_date = 1444.1.1
+	end_date = 1750.1.1
+}
+vassal = {
+	first = ALL
+	second = HUE
+	start_date = 1444.1.1
+	end_date = 1580.1.1
+}
+vassal = {
+	first = BOR
+	second = MND
+	start_date = 1566.1.1
+	end_date = 1781.1.1
+}
