@@ -1,0 +1,180 @@
+Provs that already exist:
+Abomey
+Ader
+Aribanda
+Atakora/Atakora (Yendi)
+Bagirmi (Massenya)
+Bagoe/Tengrela
+Bambuk
+Bauchi
+Bedde
+Bilanga
+Biram
+Bonny
+Borgu
+Brakna/al-Birakna
+Bure
+Calabar
+Cameroon
+Cape Coast
+Dallol
+Daura
+Dendi
+Denkyira
+Do
+Do
+Futa Jallon
+Gabu
+Galam
+Gao
+Gobir
+Grain Coast
+Haayre/Douentza
+Hombori
+Idah
+Ife/Ile Ife
+Ijebu
+Itesan
+Jenne/Djenne
+Joma
+Kala/Kala (Saw)
+Kano
+Kantor
+Karou
+Kasamansa
+Katsina
+Kawar
+Kebbi
+Kiffa
+Kong
+Kumasi
+Liptako
+Lobi
+Logone
+Mandara
+Manga
+Marghi
+Mema
+Muniyo/Mouniya
+Oyo/Oyo Ile
+Rano
+Saloum
+Segu
+Sibiridugu
+Sierra Leone
+Tenere (Assode)
+Tenkodogo
+Timbuktu
+Trarza
+Waalo
+Wagadu
+Wagadugu
+Walata
+Warri
+Whydah
+Wolof/Jolof
+Wukari
+Yao
+Yola
+Zamfara/Zamfara (Dutsi)
+Zarmaganda
+
+New Provs:
+Ada (Dangme)
+Ayorou
+Baghena
+Bal
+Ballou
+Banjul
+Bassam
+Bijagos Islands
+Bilma
+Bonduku
+Bossou
+Cacheu
+Cape Palmas
+Cape Three Points/Elmina ( Akyenkyin (Anomansah) )
+Daboya
+Dianbour
+Fachi
+Gwari
+Hamana (Kouroussa)
+Tibiri
+Kakao (Say)
+Kaniaga
+Kassema (Paga)
+Kiri
+Konyan (Beyla)
+Korhogo
+Kukiya
+Kulani
+Kurmina (Tindirma)
+Lebu/Cape Vert
+Lurum
+Ndar/St. Louis
+Ngazar Ganu
+Njimi
+Offra
+Onisha
+Riziam
+Salaga
+Sibi
+Silla
+Susu
+Tabon
+Tera
+Tillaberi
+Tondibi
+Wubritenga (Zinyare)
+Wuli
+Moti
+Niani
+Ka-Ba
+Kwarafa
+Gambaga
+Funtua
+Baghena
+Bondu
+
+Provs that change name:
+Beafada / Boke
+Benin / Oda
+Bonoman / Bighu
+Dagbon / Tamale
+Gold Coast / Anomabu
+Gurma / Bingo/Fada N'Gourma
+Gyaaman / Sampa
+Ijebu/ Eko/Lagos
+Kabara / Karabara
+Ketu / Ardra
+Massina / Diagha/Zagha
+Moshi / Ilorin
+Nupe / Bida
+Ondo / Owo
+Pindinga / Lafia
+Sah / Goundam
+Tekrur / Futa Tooro
+Yanuri / Yauri
+Yatenga / Bandiagara
+Zazzau / Zaria
+
+New areas:
+cayor_area = Cayor
+ivory_coast_area = Ivory Coast
+yorubaland_area = Yorubaland
+dagbon_area = Dagbon
+south_manden_area = South Manden
+mema_area = Mema
+wagadugu_area = Wagadugu
+gambia_area = Gambia
+
+Areas that change name:
+guinea_coast_area = West Guinea
+west_africa_coast_area = Gold Coast
+lower_niger_area = Benue
+manding_area = North Manden
+baghena_area = Wagadu
+futa_jallon_area = Kantor
+
+west_sahel_region
+sahel_region
