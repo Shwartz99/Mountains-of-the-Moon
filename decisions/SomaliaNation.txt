@@ -1,0 +1,83 @@
+country_decisions = {
+
+	
+               somalia_nation = {
+                NOT = { exists = SOM }
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_somalia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = SOM }
+			
+				primary_culture=somali
+
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no}}
+			
+		}
+
+		provinces_to_highlight = {
+                       
+}
+
+		allow = {
+num_of_owned_provinces_with= {
+	value = 15
+	culture=somali
+	
+}
+			
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+                        
+		}
+		effect = {
+			
+			remove_non_electors_emperors_from_empire_effect = yes
+                        change_tag = SOM
+                  
+                      ajuuran_area= {add_permanent_claim = SOM}  
+                      ifat_area= {add_permanent_claim = SOM} 
+                      majarteen_area= {add_permanent_claim = SOM}  
+                      mogadishu_area= {add_permanent_claim = SOM}
+                      ogaden_area= {add_permanent_claim = SOM}  
+                      somaliland_area= {add_permanent_claim = SOM}    
+ 
+                        SOM= {add_country_modifier = {
+				name = centralization_modifier
+				duration = 7300}
+                              }
+
+                        add_prestige = 25
+
+                        if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2}
+			if = {limit = {has_custom_ideas = no
+	                      NOT = { has_idea_group = SOM_ideas } }
+                          
+                             country_event = { id = ideagroups.1 } #Swap Ideas}
+
+			set_country_flag = formed_somalia_flag
+		}
+
+		ai_will_do = {factor = 1}
+		ai_importance = 400
+	}
+
+
+
+}

@@ -1,0 +1,3 @@
+MDG="countries/Madagascar.txt"
+KIT="countries/Kitara.txt"
+SOM="countries/Somalia.txt"
