@@ -755,8 +755,6 @@ african_tribal_ideas = {
 	}
 }
 
-#Adalite Ideas, written by Valerio C
-
 adal_ideas = {
 	start = {
 	land_morale = 0.10
@@ -887,4 +885,146 @@ ethiopian_princedom_ideas = {
 	ethiopian_firearms= {
 	fire_damage=0.10	
 	}
+}
+
+KIT_ideas = {
+	start = {
+                  legitimacy = 1
+                  land_morale = 0.10
+	}
+	
+	bonus = {
+           yearly_absolutism = 1
+	}	
+
+	trigger = {
+		tag = KIT
+	}
+	free = yes
+	
+	source_of_the_nile  = {
+	global_manpower_modifier = 0.25	
+	}
+	KIT_kitara_army = {
+        discipline = 0.05
+	}
+	no_illegitimate_children = {
+		heir_chance = 0.5
+                stability_cost_modifier=-0.15
+	}
+        cwezy_religion = {
+	tolerance_own=2	
+	}
+	KIT_cultural_assimilation = {
+	num_accepted_cultures = 1
+        years_of_nationalism = -5
+	}
+
+	KIT_grand_court = {
+	advisor_cost = -0.20	
+	}
+	KIT_army_expansion= {
+	global_regiment_cost = -0.10	
+	}
+	
+}
+
+KSJ_ideas = {
+	start = {
+	shock_damage=0.15	
+        infantry_power=0.15
+	}
+	
+	bonus = {
+	discipline=0.05	
+	}
+	
+        free = yes
+
+	trigger = {
+        tag=KSJ
+	}
+
+        KSJ_raids = {
+	global_manpower_modifier = 0.33	
+	}
+        
+        KSJ_warriors = {	
+        infantry_cost = -0.2
+        }
+
+        KSJ_repression = {	
+        years_of_nationalism = -5
+        }
+
+        KSJ_sedentarization = {	
+        core_creation = -0.15
+        }
+
+        KSJ_army_reform = {
+        land_morale=0.15
+        }
+
+        KSJ_expand_army={
+        land_forcelimit_modifier = 0.33
+        }
+	
+        KSJ_firearms={
+ 	fire_damage = 0.10
+}
+	
+	
+}
+
+SOM_ideas = {
+	start = {
+	leader_land_shock=1
+        global_manpower_modifier=0.25	
+	}
+	
+	bonus = {
+	leader_land_fire = 1	
+	}
+	
+        SOM_sea_trade= {
+	global_own_trade_power = 0.2
+        global_ship_cost=-0.2	
+	}
+
+
+        SOM_resilience= {
+	war_exhaustion = -0.05
+	}
+
+        SOM_islam= {
+	tolerance_own = 2
+	}
+
+        SOM_clergy_support= {
+	land_morale=0.15
+        church_loyalty_modifier = 0.1
+	}
+ 
+       somali_offensive_warfare = {
+		infantry_power = 0.1
+                fire_damage=0.1
+	}
+
+       somali_corsairs_of_the_red_sea = {
+		may_perform_slave_raid_on_same_religion=yes
+	}
+
+
+        SOM_centralization= {
+	max_absolutism = 15
+        land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+        tag=SOM
+	}
+
+	free = yes
+	
+	
 }

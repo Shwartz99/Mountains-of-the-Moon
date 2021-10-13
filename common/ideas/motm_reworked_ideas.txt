@@ -11,7 +11,7 @@ ETH_ideas = {
 	trigger = {
 		tag = ETH
 	}
-	free = yes		#will be added at load.
+	free = yes		
 	
 	solomonid_claim = {
 		legitimacy = 1
