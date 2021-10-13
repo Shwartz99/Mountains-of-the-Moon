@@ -210,7 +210,7 @@ IDO_ideas = {
 	free = yes
 
 	children_of_iduh = {
-		discipline = 0.05
+		discipline = 0.5
 	}
 	related_neighbors = {
 		diplomatic_reputation = 1
@@ -752,5 +752,139 @@ african_tribal_ideas = {
 	}
 	west_african_idea_7 = {
 		num_accepted_cultures = 1
+	}
+}
+
+#Adalite Ideas, written by Valerio C
+
+adal_ideas = {
+	start = {
+	land_morale = 0.10
+	land_forcelimit_modifier = 0.20	
+	}
+	
+	bonus = {
+	leader_land_fire=1
+	}
+	
+	trigger = {
+		tag=ADA
+	}
+	free = yes
+	
+    adal_zayla_port = {
+	global_trade_power = 0.20
+	light_ship_cost = -0.1	
+	}
+	
+	adal_arabic_connections = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1	
+	}
+	
+	adal_ethiopian_invasions = {
+	global_manpower_modifier = 0.25
+	}
+	
+	adal_malassay= {
+	discipline=0.05	
+	}
+	
+	adal_ottoman_firearms= {
+	infantry_power = 0.15	
+	}
+	adal_control_red_sea = {
+	naval_forcelimit_modifier = 0.5
+	}
+	adal_adalite_court = {
+	advisor_cost=-0.15	
+	}
+	
+}
+
+sidamo_ideas = {
+	start = {
+	tolerance_heathen = 2
+    tolerance_own = 2	
+	}
+	
+	bonus = {
+	free_adm_policy = 1	
+	}
+	
+	trigger = {
+		primary_culture = sidamo
+                religion=shamanism
+	}
+	free = yes
+	
+	sidamo_luwa_generations = {
+	same_culture_advisor_cost = -0.25	
+	}
+	sidamo_administration = {
+	global_tax_modifier = 0.10	
+	}
+	sidamo_akako_ancestor = {
+	legitimacy=1	
+	}
+	sidamo_arussi_raids = {
+	land_morale=0.1
+    discipline=0.025	
+	}
+	sidamo_centralized_army = {
+	global_manpower_modifier=0.25	
+	}
+	sidamo_amhara_defense = {
+	land_forcelimit_modifier=0.25	
+	}
+	sidamo_horn_diplomacy = {
+	improve_relation_modifier = 0.25	
+	}
+}
+
+ethiopian_princedom_ideas = {
+	start = {
+		land_attrition=-0.15
+        global_tax_modifier = 0.15	
+	}
+	
+	bonus = {
+	yearly_corruption = -0.1	
+	}
+	
+	trigger = {
+        religion_group=christian
+        OR={
+        primary_culture = sidamo   
+        primary_culture = amhara
+        primary_culture = tigray       
+        }
+	}
+
+	free = yes
+	
+	ethiopian_cultural_assimilation= {
+	num_accepted_cultures = 1
+        core_creation=-0.15	
+	}
+	ethiopian_christian_bulwark= {
+	tolerance_own=3	
+	}
+	ethiopian_pagan_conversion= {
+	global_missionary_strength = 0.02
+        missionary_maintenance_cost = -0.2	
+	}
+	ethiopian_christian_soldiers= {
+	discipline = 0.05	
+	}
+	ethiopian_adal_ifat= {
+	warscore_cost_vs_other_religion = -0.25	
+	}
+	ethiopian_fortifications= {
+	fort_maintenance_modifier = -0.15
+    defensiveness = 0.15	
+	}
+	ethiopian_firearms= {
+	fire_damage=0.10	
 	}
 }

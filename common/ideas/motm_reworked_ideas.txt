@@ -1,0 +1,39 @@
+ETH_ideas = {
+	start = {
+		global_autonomy = -0.05
+		land_attrition = -0.15
+	}
+	
+	bonus = {
+		global_unrest = -2
+	}
+	
+	trigger = {
+		tag = ETH
+	}
+	free = yes		#will be added at load.
+	
+	solomonid_claim = {
+		legitimacy = 1
+	}
+	nagusa_negast = {
+		prestige = 1
+		heir_chance = 0.5
+	}
+	hostile_borders = {
+		defensiveness = 0.20
+	}
+	diplomatic_demeanor = {
+		diplomatic_reputation = 1
+	}
+	the_ark_of_the_covenant = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	eth_expansionist_policy = {
+		core_creation = -0.15
+	}
+	eth_reformed_armies = {
+		infantry_power = 0.1
+	}
+}
