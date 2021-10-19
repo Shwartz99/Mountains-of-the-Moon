@@ -27,3 +27,8 @@ atlantic_slave_import_modifier = {
 	local_production_efficiency = 0.25
 	picture = "may_perform_slave_raid"
 }
+
+hausa_fort_modifier = {
+local_defensiveness = 0.2
+garrison_growth = 0.10
+}

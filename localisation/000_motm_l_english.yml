@@ -859,7 +859,13 @@ KSJ_firearms_desc:0"The stranges which come from the West have strange weapons w
  motm.2.d:0 "The Fulani people which have moved into the province of [Root.GetName] have slowly become more and more influential. Traditionally, the Fulani are nomadic pastoralists, but, as they further integrate into our society, many have become fine artisans. We could benefit by encouraging the Fulani to move in to [Root.GetName]."
  motm.2.a:0 "Encourage Fulani influence."
  motm.2.b:0 "Expel them!"
-
+ motm.3.t:0 "Improving the Fortifications of [Root.Capital.GetCapitalName]"
+ motm.3.d:0 "While there are other cities under our dominion, the city of [Root.Capital.GetCapitalName] is by far the most important. It is here that merchants from all of West Africa come to exchange goods, for example by trading salt for gold. Since we have now accumulated a large amount of wealth, one of our army leaders has suggested to improve the walls that surround [Root.Capital.GetCapitalName]. It will cost us some money, but it will protect us from the armies of our neighbors."
+ motm.3.a:0 "Improve the fortifications"
+ motm.3.b:0 "The army does not need all this money"
+ hausa_fort_modifier:0"Improved Fortifications"
+        
+ 
  #monuments
  stone_circles_senegambia:0 "Senegambian Stone Circles"
  walls_benin:0 "Walls of Benin"

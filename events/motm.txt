@@ -136,3 +136,56 @@ province_event = {
 		}
 	}
 }
+
+###Motm flavor events
+
+##Hausa events
+
+#Improving the fortifications
+
+province_event = {
+	id = motm.3
+	title = "motm.3.t"
+	desc = "motm.3.d"
+	picture = FORT_eventPicture
+	
+	trigger = {
+	NOT={has_province_modifier = hausa_fort_modifier}
+	development=10
+	is_capital = yes
+	culture=hausa
+	
+	owner = { 
+	NOT={is_at_war=yes}
+	primary_culture=hausa
+	NOT={development=60}
+	treasury = 100 
+	}
+	}
+
+	mean_time_to_happen = {
+	months = 120 	
+	}
+	
+	option = {
+		name=motm.3.a #Improve The Fortifications
+		add_province_modifier = { 
+		name = hausa_fort_modifier
+		duration = -1  
+		}
+		owner={
+		add_treasury=-50
+		add_mil_power=50
+		}
+		
+	}
+	
+	option = {
+		name=motm.3.b #Leave them as they are
+		owner={
+		add_adm_power=50
+		add_mil_power=-50
+		}
+	}
+	
+}
