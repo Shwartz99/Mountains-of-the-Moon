@@ -454,6 +454,10 @@
  ZAM_ADJ:0 "Zamfara"
  ZND:0 "Zandoma"
  ZND_ADJ:0 "Zandoma"
+ MND:0"Mandara"
+ MND_ADJ:0"Mandaran"
+ KOT:0"Kotoko"
+ KOT_ADJ:0"Kotokoan"
  
  #estates
  estate_slaves:0 "Slaves"
