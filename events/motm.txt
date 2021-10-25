@@ -189,3 +189,57 @@ province_event = {
 	}
 	
 }
+
+#Debate over alliance with Pagans
+
+country_event = {
+	id = motm.4
+	title = "motm.4.t"
+	desc = "motm.4.d"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	trigger = {
+	any_ally = {
+		limit={religion=shamanism}
+	}
+	ROOT={religion_group=muslim}
+	}
+
+	mean_time_to_happen = {
+	months = 0 	
+	}
+	
+	option = {
+		name=motm.4.a #Change policy
+		reverse_add_opinion = {
+		who=ROOT
+		modifier = intolerant_with_pagans
+		}
+		add_estate_loyalty = {
+		estate = estate_church
+		loyalty = 10
+		}
+		add_estate_loyalty_modifier = {
+		estate = estate_church
+		desc = EST_VAL_INTOLERANCE
+		loyalty = 10
+		duration = 3650
+		}
+	}
+		
+	
+	option = {
+		name=motm.4.b #Maintain policy
+		add_estate_loyalty = {
+		estate = estate_church
+		loyalty = -10
+		}
+		add_estate_loyalty_modifier = {
+		estate = estate_church
+		desc = EST_VAL_TOLERANCE
+		loyalty = -10
+		duration = 3650
+		}
+	}
+	
+}

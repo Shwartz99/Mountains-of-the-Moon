@@ -1,0 +1,4 @@
+intolerant_with_pagans={
+opinion=-100
+yearly_decay=4
+}

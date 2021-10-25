@@ -37,3 +37,40 @@ ETH_ideas = {
 		infantry_power = 0.1
 	}
 }
+
+BEN_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.2
+	}
+	bonus = {
+		fire_damage = 0.1
+	}
+	trigger = {
+		tag = BEN
+	}
+	
+	free = yes
+	
+	ben_curb_the_uzama = {
+		legitimacy = 1
+	}
+	ben_isiatua = {
+		siege_ability = 0.15
+	}
+	ben_appointment_of_the_onotueyevbo = {
+		global_tax_modifier = 0.1
+	}
+	ben_the_walls_of_benin = {
+		defensiveness = 0.1
+	}
+	ben_guilds = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ben_adoption_of_benin_customs = {
+		num_accepted_cultures = 1
+	}
+	ben_regulation_of_trade = {
+		trade_efficiency = 0.1
+	}
+}

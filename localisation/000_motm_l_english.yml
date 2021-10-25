@@ -837,6 +837,10 @@ KSJ_expand_army:0"Expand the Army"
 KSJ_expand_army_desc:0"In order to remove any obstacles to our expansion, we need to expand the size of our army."
 KSJ_firearms:0"European Firearms"
 KSJ_firearms_desc:0"The stranges which come from the West have strange weapons which allow them to kill from a huge distance. We should try to adopt them."
+ben_benin_city:0"Benin City"
+ben_benin_city_desc:0 "Our capital is truly a magnificent city. It's the place where our Oba resides and it's home to the large, luxurious palace where he lives. But it's also heavily fortified, making it important in both peace and war."
+ 
+ 
  
  #decisions
  kabylia_nation_title:0 "Unite Kabylia"
