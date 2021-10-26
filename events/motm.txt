@@ -200,7 +200,7 @@ country_event = {
 	
 	trigger = {
 	any_ally = {
-		limit={religion=shamanism}
+	religion=shamanism
 	}
 	ROOT={religion_group=muslim}
 	}
@@ -210,19 +210,26 @@ country_event = {
 	}
 	
 	option = {
-		name=motm.4.a #Change policy
+		name= motm.4.a #Change policy
+		every_ally = {
+		limit={religion=shamanism}
 		reverse_add_opinion = {
-		who=ROOT
-		modifier = intolerant_with_pagans
+		who = ROOT	
+		modifier = intolerant_with_pagans	
+		}
+		add_opinion = {
+		who = ROOT	
+		modifier = intolerant_with_pagans	
+		}
 		}
 		add_estate_loyalty = {
 		estate = estate_church
-		loyalty = 10
+		loyalty = 15
 		}
-		add_estate_loyalty_modifier = {
+		add_estate_influence_modifier = {
 		estate = estate_church
 		desc = EST_VAL_INTOLERANCE
-		loyalty = 10
+		influence = 10
 		duration = 3650
 		}
 	}
@@ -232,12 +239,12 @@ country_event = {
 		name=motm.4.b #Maintain policy
 		add_estate_loyalty = {
 		estate = estate_church
-		loyalty = -10
+		loyalty = -15
 		}
-		add_estate_loyalty_modifier = {
+		add_estate_influence_modifier = {
 		estate = estate_church
 		desc = EST_VAL_TOLERANCE
-		loyalty = -10
+		influence = -10
 		duration = 3650
 		}
 	}
