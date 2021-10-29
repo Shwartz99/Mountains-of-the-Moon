@@ -206,7 +206,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-	months = 0 	
+	months = 120 	
 	}
 	
 	option = {
@@ -220,6 +220,66 @@ country_event = {
 		add_opinion = {
 		who = ROOT	
 		modifier = intolerant_with_pagans	
+		}
+		}
+		add_estate_loyalty = {
+		estate = estate_church
+		loyalty = 15
+		}
+		add_estate_influence_modifier = {
+		estate = estate_church
+		desc = EST_VAL_INTOLERANCE
+		influence = 10
+		duration = 3650
+		}
+	}
+		
+	
+	option = {
+		name=motm.4.b #Maintain policy
+		add_estate_loyalty = {
+		estate = estate_church
+		loyalty = -15
+		}
+		add_estate_influence_modifier = {
+		estate = estate_church
+		desc = EST_VAL_TOLERANCE
+		influence = -10
+		duration = 3650
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = motm.5
+	title = "motm.5.t"
+	desc = "motm.5.d"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	trigger = {
+	any_ally = {
+	religion_group=muslim
+	}
+	ROOT={religion=shamanism}
+	}
+
+	mean_time_to_happen = {
+	months = 0 	
+	}
+	
+	option = {
+		name= motm.4.a #Change policy
+		every_ally = {
+		limit={religion=shamanism}
+		reverse_add_opinion = {
+		who = ROOT	
+		modifier = intolerant_with_muslims	
+		}
+		add_opinion = {
+		who = ROOT	
+		modifier = intolerant_with_muslims	
 		}
 		}
 		add_estate_loyalty = {

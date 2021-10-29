@@ -872,10 +872,14 @@ ben_benin_city_desc:0 "Our capital is truly a magnificent city. It's the place w
  motm.3.a:0 "Improve the fortifications"
  motm.3.b:0 "The army does not need all this money"
  hausa_fort_modifier:0"Improved Fortifications"
- motm.4.t:0 "Alliance with Pagans"
+ motm.4.t:0 "Alliance with the Pagans"
  motm.4.d:0 "When discussing diplomacy, it is clear that pragmatism mattrs more than theology to us. However this has upset many members of the Ulema, who demand that we stop these blasphemous actions and instead focus more on worshpping God and spreading his message."
  motm.4.a:0 "We have made a mistake when we allied with the infidels"
  motm.4.b:0 "The Ulema should not meddle into state affairs"  
+ motm.5.t:0 "Alliance with the Muslim"
+ motm.5.d:0 "When discussing diplomacy, it is clear that pragmatism mattrs more than traditions to us. However this has upset shamans and priests, who demand that we stop these blasphemous actions and instead focus more on worshpping the gods and defending our ancestral traditions."
+ motm.5.a:0 "We have made a mistake when we allied with the Muslim"
+ motm.5.b:0 "The priests should not meddle into state affairs"  
  
  #monuments
  stone_circles_senegambia:0 "Senegambian Stone Circles"
