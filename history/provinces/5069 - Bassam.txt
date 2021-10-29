@@ -1,5 +1,5 @@
 capital = "Bassam"
-culture = senufo
+culture = aka
 religion = shamanism
 hre = no
 base_tax = 1

@@ -3,7 +3,7 @@
 owner = ZGH
 controller = ZGH
 add_core = ZGH
-culture = nuba 
+culture = zaghawa 
 religion = sunni
 capital = "Kutum"
 native_size = 50

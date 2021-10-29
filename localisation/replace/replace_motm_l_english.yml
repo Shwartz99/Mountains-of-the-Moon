@@ -51,6 +51,7 @@
  PROV2254: "Bighu"
  PROV2255: "Sampa"
  PROV2256: "Tamale"
+ PROV2258: "Anomansah"
  PROV2262: "Kabara"
  PROV2289: "Owo"
  PROV2290: "Eko"
@@ -71,6 +72,7 @@
  PROV_ADJ2254: "Bighu"
  PROV_ADJ2255: "Sampa"
  PROV_ADJ2256: "Tamale"
+ PROV_ADJ2258: "Anomansah"
  PROV_ADJ2262: "Kabara"
  PROV_ADJ2289: "Owo"
  PROV_ADJ2290: "Eko"
@@ -91,6 +93,8 @@
  manding_area_adj: "North Manding"
  futa_jallon_area: "Kantor"
  futa_jallon_area_adj: "Kantor"
+ lower_volta_area: "North Akanman"
+ lower_volta_area_adj: "North Akanman"
  
  #trade
  katsina:0 "Chad"
@@ -101,6 +105,7 @@
  trade_company_timbuktu:0 "Niger Charter"
  TRADE_COMPANY_TIMBUKTU_Root_Culture_GetName:0 "[Root.Culture.GetName] Niger Company"
  TRADE_COMPANY_TIMBUKTU_African_Trade_Company:0 "Niger Trade Company"
+ ivory_coast:0 "Guinea"
  
  #culture
  acholi: "Luo"
