@@ -207,6 +207,7 @@ sahara_tribe = {
 	legacy_equivalent = tribal_federation_legacy
 	native_mechanic = yes
 	lock_level_when_selected = yes
+	fixed_rank = 1
 
 	modifiers = {
 		reform_progress_growth = -1.0
@@ -245,6 +246,7 @@ sahara_tribe_settled = {
 	legacy_equivalent = tribal_federation_legacy
 	native_mechanic = yes
 	lock_level_when_selected = yes
+	fixed_rank = 1
 
 	modifiers = {
 		vassal_income = 0.33
@@ -283,6 +285,7 @@ sahara_theocracy = {
 	different_religion_acceptance = -20
 	different_religion_group_acceptance = -50
 	native_mechanic = yes
+	fixed_rank = 1
 	religion = yes
 	has_devotion = yes
 	lock_level_when_selected = yes

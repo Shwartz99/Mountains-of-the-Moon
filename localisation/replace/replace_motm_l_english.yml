@@ -105,6 +105,7 @@
  trade_company_timbuktu:0 "Niger Charter"
  TRADE_COMPANY_TIMBUKTU_Root_Culture_GetName:0 "[Root.Culture.GetName] Niger Company"
  TRADE_COMPANY_TIMBUKTU_African_Trade_Company:0 "Niger Trade Company"
+ ivory_coast:0 "Guinea"
  
  #culture
  acholi: "Luo"

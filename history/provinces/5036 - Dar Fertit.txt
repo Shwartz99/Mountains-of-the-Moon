@@ -1,6 +1,6 @@
 #5036 - Dar Fertit
 
-culture = jukun
+culture = sudanic
 religion = shamanism #Fetishism
 capital = "Wau"
 native_size = 80

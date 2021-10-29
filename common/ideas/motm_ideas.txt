@@ -210,7 +210,7 @@ IDO_ideas = {
 	free = yes
 
 	children_of_iduh = {
-		discipline = 0.5
+		discipline = 0.05
 	}
 	related_neighbors = {
 		diplomatic_reputation = 1
