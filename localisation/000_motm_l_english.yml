@@ -811,7 +811,7 @@
  sidamo_centralized_army_desc:0"It is time we modernize our army by creating a centralized bureaucracy that commands it."
  sidamo_amhara_defense:0"Amhara Imperialism"
  sidamo_amhara_defense_desc:0"The Amhara from the north want our land, and they are much more organized than the Arussi. But this is our land, and we will only surrender after death!"
- sidamo_horn_diplomacy:0"Diplomacy with Horn nations"
+ sidamo_horn_diplomacy:0"Diplomacy with Horn Nations"
  sidamo_horn_diplomacy_desc:0"As time is passing, we are discovering new nations within our region. This might be a great opportunity for us."
  ethiopian_princedom_ideas:0"Ethiopian Princedom Ideas"
  ethiopian_princedom_ideas_start:0"Ethiopian Princedom Traditions"
@@ -873,8 +873,24 @@
  KSJ_firearms_desc:0"The stranges which come from the West have strange weapons which allow them to kill from a huge distance. We should try to adopt them."
  ben_benin_city:0"Benin City"
  ben_benin_city_desc:0 "Our capital is truly a magnificent city. It's the place where our Oba resides and it's home to the large, luxurious palace where he lives. But it's also heavily fortified, making it important in both peace and war."
- 
- 
+ luo_ideas:0"Luo Ideas"
+ luo_ideas_start:0"Luo Traditions"
+ luo_ideas_bonus:0"Luo Ambition"
+ luo_nyasaye:0"Nyasaye"
+ luo_nyasaye_desc:0""
+ luo_japaro:0"Japaro Sages"
+ luo_japaro_desc:0""
+ luo_endogamy:0"Discourage Intertribal Marriages"
+ luo_endogamy_desc:0""
+ luo_clans:0"Luo Clans"
+ luo_clans_desc:0""
+ luo_main_clan:0"The Paramount Chief"
+ luo_main_clan_desc:0""
+ luo_assimilation:0"Assimilate conquered Peoples"
+ luo_assimilation_desc:0""
+ luo_nationalism:0"Luo Identity"
+ luo_nationalism_desc:0""
+
  
  #decisions
  kabylia_nation_title:0 "Unite Kabylia"
@@ -906,10 +922,12 @@
  motm.4.d:0 "When discussing diplomacy, it is clear that pragmatism mattrs more than theology to us. However this has upset many members of the Ulema, who demand that we stop these blasphemous actions and instead focus more on worshpping God and spreading his message."
  motm.4.a:0 "We have made a mistake when we allied with the infidels"
  motm.4.b:0 "The Ulema should not meddle into state affairs"  
+ intolerant_with_pagans:0"Intolerance towards Pagans"
  motm.5.t:0 "Alliance with the Muslim"
- motm.5.d:0 "When discussing diplomacy, it is clear that pragmatism mattrs more than traditions to us. However this has upset shamans and priests, who demand that we stop these blasphemous actions and instead focus more on worshpping the gods and defending our ancestral traditions."
+ motm.5.d:0 "When discussing diplomacy, it is clear that pragmatism mattrs more than traditions to us. However this has upset many shamans and priests, who demand that we stop these blasphemous actions and instead focus more on worshpping the gods and defending our ancestral traditions."
  motm.5.a:0 "We have made a mistake when we allied with the Muslim"
  motm.5.b:0 "The priests should not meddle into state affairs"  
+ intolerant_with_muslims:0"Intolerance toward the Muslim"
  
  #monuments
  stone_circles_senegambia:0 "Senegambian Stone Circles"

@@ -266,13 +266,13 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-	months = 0 	
+	months = 120 	
 	}
 	
 	option = {
-		name= motm.4.a #Change policy
+		name= motm.5.a #Change policy
 		every_ally = {
-		limit={religion=shamanism}
+		limit={religion_group=muslim}
 		reverse_add_opinion = {
 		who = ROOT	
 		modifier = intolerant_with_muslims	
@@ -296,7 +296,7 @@ country_event = {
 		
 	
 	option = {
-		name=motm.4.b #Maintain policy
+		name=motm.5.b #Maintain policy
 		add_estate_loyalty = {
 		estate = estate_church
 		loyalty = -15
