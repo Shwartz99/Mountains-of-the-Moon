@@ -921,6 +921,9 @@
 
  #misc
  CANNOT_FABRICATE_IN_AFRICA:0 "Claims cannot be fabricated on provinces owned by African nations bordering your trade company provinces."
+ CANNOT_JOIN_FEDERATION:0 "Our government type does not allow us to join federations."
+ CANNOT_FORM_FEDERATION:0 "Our government type does not allow us to form federations."
+ CANNOT_INVITE_FEDERATION:0 "Their government type does not allow them to join federations."
  SLAVES_POST_STARTUP:0 "Base: §Y$VAL$%§!"
  FROM_FEROCITY:0 ""
  sudd_modifier:0 "Sudd"
