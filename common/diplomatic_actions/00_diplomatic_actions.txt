@@ -404,3 +404,39 @@ claim_states = {
 		}
 	}
 }
+
+request_to_join_federation = {
+	condition = {
+		tooltip = CANNOT_JOIN_FEDERATION
+		allow = {
+			NOT = {
+				ROOT = {
+					OR = { has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy }
+				}
+			}
+		}
+	}
+}
+
+invite_to_federation = {
+	condition = {
+		tooltip = CANNOT_FORM_FEDERATION
+		allow = {
+			NOT = {
+				ROOT = {
+					OR = { has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy }
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_INVITE_FEDERATION
+		allow = {
+			NOT = {
+				FROM = {
+					OR = { has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy }
+				}
+			}
+		}
+	}
+}

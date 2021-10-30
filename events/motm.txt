@@ -158,7 +158,7 @@ province_event = {
 	owner = { 
 	NOT={is_at_war=yes}
 	primary_culture=hausa
-	NOT={development=60}
+	NOT={total_development=60}
 	treasury = 100 
 	}
 	}
