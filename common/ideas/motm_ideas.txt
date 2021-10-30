@@ -715,45 +715,48 @@ dagomba_ideas = {
 	}
 }
 
-african_tribal_ideas = {
-	start = {
-		global_manpower_modifier = 0.15
-		loot_amount = 0.20
-	}
-	
-	bonus = {
-		diplomats = 1
-	}
-	
-	trigger = {
-		government = native
-		capital_scope = { superregion = africa_superregion }
-	}
-	free = yes
-	
-	west_african_idea_1 = {
-		advisor_pool = 1
-	}
-	west_african_idea_2 = {
-		global_trade_goods_size_modifier = 0.10
-	}
-	west_african_idea_3 = {
-		global_trade_power = 0.1
-	}
-	west_african_idea_4 = {
-		religious_unity = 0.20
-	}
-	west_african_idea_5 = {
-		cavalry_cost = -0.1
-	}
-	west_african_idea_6 = {
-		trade_efficiency = 0.05
-		envoy_travel_time = -0.25
-	}
-	west_african_idea_7 = {
-		num_accepted_cultures = 1
-	}
-}
+#african_tribal_ideas = {
+#
+####Temporarily removed to avoid conflict with luo ideas 
+#
+#	start = {
+#		global_manpower_modifier = 0.15
+#		loot_amount = 0.20
+#	}
+#	
+#	bonus = {
+#		diplomats = 1
+#	}
+#	
+#	trigger = {
+#		government = native
+#		capital_scope = { superregion = africa_superregion }
+#	}
+#	free = yes
+#	
+#	west_african_idea_1 = {
+#		advisor_pool = 1
+#	}
+#	west_african_idea_2 = {
+#		global_trade_goods_size_modifier = 0.10
+#	}
+#	west_african_idea_3 = {
+#		global_trade_power = 0.1
+#	}
+#	west_african_idea_4 = {
+#		religious_unity = 0.20
+#	}
+#	west_african_idea_5 = {
+#		cavalry_cost = -0.1
+#	}
+#	west_african_idea_6 = {
+#		trade_efficiency = 0.05
+#		envoy_travel_time = -0.25
+#	}
+#	west_african_idea_7 = {
+#		num_accepted_cultures = 1
+#	}
+#}
 
 adal_ideas = {
 	start = {
@@ -1026,5 +1029,52 @@ SOM_ideas = {
 
 	free = yes
 	
+	
+}
+
+
+luo_ideas = {
+	start = {
+	infantry_cost = -0.20
+	tribal_development_growth = 0.02		
+	}
+	
+	bonus = {
+	max_absolutism = 10	
+	}
+	
+	trigger = {
+	primary_culture=acholi
+	}
+	
+	free = yes
+	
+	luo_nyasaye = {
+	prestige = 1	
+	}
+	
+	luo_japaro = {
+	same_culture_advisor_cost = -0.25
+	}
+	
+	luo_endogamy = {
+	stability_cost_modifier = -0.15
+	}
+	
+	luo_clans = {
+	nobles_loyalty_modifier = 0.1	
+	}
+	
+	luo_main_clan = {
+	prestige_decay = -0.01
+	}
+	
+	luo_assimilation = {
+	culture_conversion_cost = -0.25
+	}
+	
+	luo_nationalism = {
+	legitimacy=1
+	}
 	
 }
