@@ -361,7 +361,11 @@
  PROV_ADJ5122:0 "Banyo"
  PROV_ADJ5123:0 "Koncha"
  PROV_ADJ5124:0 "Nupeko"
- 
+ PROV5125:0 "Moshiko"
+ PROV_ADJ5125:0 "Moshiko"
+ PROV5126:0 "Malanje"
+ PROV_ADJ5126:0 "Malanje" 
+
  #tags
  BEB:0 "Berabish"
  CHN:0 "Chinguetti"
