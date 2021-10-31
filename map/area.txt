@@ -1529,7 +1529,7 @@ zambia_area = { #3
 }
 
 chokwe_area = { #3
-	4094 4095 4107
+	4094 4095 4107 5125
 }
 
 rwanda_area = { #3
@@ -1545,7 +1545,7 @@ bunyoro_area = { #3
 }
 
 kasai_area = { #5
-	4083 4087 4091 4092 4093
+	4083 4091 4092 4093 5126
 }
 
 sankuru_area = { #3
@@ -1554,7 +1554,7 @@ sankuru_area = { #3
 
 lower_kasai = { #4
 	color = { 66 114 224 }
-	4081 4085 4086 4088
+	4081 4085 4086 4088 4087
 }
 
 ogaden_area = { #5
