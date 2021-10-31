@@ -36,3 +36,52 @@ distribute_land_effect = {
 		value = trigger_value:crown_land_share
 	}
 }
+
+slave_raid_effect = {
+	random_core_province = {
+		limit = {
+			NOT = { trade_goods = gold trade_goods = coal trade_goods = slaves }
+		}
+		if = { limit = { trade_goods = grain } set_province_flag = produced_grain }
+		if = { limit = { trade_goods = wine } set_province_flag = produced_wine }
+		if = { limit = { trade_goods = wool } set_province_flag = produced_wool }
+		if = { limit = { trade_goods = cloth } set_province_flag = produced_cloth }
+		if = { limit = { trade_goods = fish } set_province_flag = produced_fish }
+		if = { limit = { trade_goods = fur } set_province_flag = produced_fur }
+		if = { limit = { trade_goods = salt } set_province_flag = produced_salt }
+		if = { limit = { trade_goods = naval_supplies } set_province_flag = produced_naval_supplies }
+		if = { limit = { trade_goods = copper } set_province_flag = produced_copper }
+		if = { limit = { trade_goods = iron } set_province_flag = produced_iron }
+		if = { limit = { trade_goods = ivory } set_province_flag = produced_ivory }
+		if = { limit = { trade_goods = tea } set_province_flag = produced_tea }
+		if = { limit = { trade_goods = chinaware } set_province_flag = produced_chinaware }
+		if = { limit = { trade_goods = spices } set_province_flag = produced_spices }
+		if = { limit = { trade_goods = coffee } set_province_flag = produced_coffee }
+		if = { limit = { trade_goods = cotton } set_province_flag = produced_cotton }
+		if = { limit = { trade_goods = sugar } set_province_flag = produced_sugar }
+		if = { limit = { trade_goods = tobacco } set_province_flag = produced_tobacco }
+		if = { limit = { trade_goods = cocoa } set_province_flag = produced_cocoa }
+		if = { limit = { trade_goods = silk } set_province_flag = produced_silk }
+		if = { limit = { trade_goods = dyes } set_province_flag = produced_dyes }
+		if = { limit = { trade_goods = tropical_wood } set_province_flag = produced_tropical_wood }
+		if = { limit = { trade_goods = livestock } set_province_flag = produced_livestock }
+		if = { limit = { trade_goods = incense } set_province_flag = produced_incense }
+		if = { limit = { trade_goods = glass } set_province_flag = produced_glass }
+		if = { limit = { trade_goods = paper } set_province_flag = produced_paper }
+		if = { limit = { trade_goods = gems } set_province_flag = produced_gems }
+		if = { limit = { trade_goods = cloves } set_province_flag = produced_cloves }
+		change_trade_goods = slaves
+		add_base_production = 1
+		add_province_modifier = {
+			name = slave_market
+			duration = 3650
+			desc = slave_market_tooltip
+		}
+		hidden_effect = {
+			province_event = {
+				id = motmcleanup.1
+				days = 3650
+			}
+		}
+	}
+}

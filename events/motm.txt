@@ -3,6 +3,7 @@
 ########################################
 
 namespace = motm
+namespace = motmcleanup
 
 #Culture change to sudanese
 province_event = {
@@ -158,7 +159,7 @@ province_event = {
 	owner = { 
 	NOT={is_at_war=yes}
 	primary_culture=hausa
-	NOT={development=60}
+	NOT={total_development=60}
 	treasury = 100 
 	}
 	}
@@ -309,4 +310,63 @@ country_event = {
 		}
 	}
 	
+}
+
+province_event = {
+	id = motmcleanup.1
+	title = motm.1.t
+	desc = motm.1.d
+	picture = CULTURE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		if = { limit = { has_province_flag = produced_grain } change_trade_goods = grain }
+		if = { limit = { has_province_flag = produced_wine } change_trade_goods = wine }
+		if = { limit = { has_province_flag = produced_wool } change_trade_goods = wool }
+		if = { limit = { has_province_flag = produced_cloth } change_trade_goods = cloth }
+		if = { limit = { has_province_flag = produced_fish } change_trade_goods = fish }
+		if = { limit = { has_province_flag = produced_fur } change_trade_goods = fur }
+		if = { limit = { has_province_flag = produced_salt } change_trade_goods = salt }
+		if = { limit = { has_province_flag = produced_naval_supplies } change_trade_goods = naval_supplies }
+		if = { limit = { has_province_flag = produced_copper } change_trade_goods = copper }
+		if = { limit = { has_province_flag = produced_iron } change_trade_goods = iron }
+		if = { limit = { has_province_flag = produced_ivory } change_trade_goods = ivory }
+		if = { limit = { has_province_flag = produced_tea } change_trade_goods = tea }
+		if = { limit = { has_province_flag = produced_chinaware } change_trade_goods = chinaware }
+		if = { limit = { has_province_flag = produced_spices } change_trade_goods = spices }
+		if = { limit = { has_province_flag = produced_coffee } change_trade_goods = coffee }
+		if = { limit = { has_province_flag = produced_cotton } change_trade_goods = cotton }
+		if = { limit = { has_province_flag = produced_sugar } change_trade_goods = sugar }
+		if = { limit = { has_province_flag = produced_tobacco } change_trade_goods = tobacco }
+		if = { limit = { has_province_flag = produced_cocoa } change_trade_goods = cocoa }
+		if = { limit = { has_province_flag = produced_silk } change_trade_goods = silk }
+		if = { limit = { has_province_flag = produced_dyes } change_trade_goods = dyes }
+		if = { limit = { has_province_flag = produced_tropical_wood } change_trade_goods = tropical_wood }
+		if = { limit = { has_province_flag = produced_livestock } change_trade_goods = livestock }
+		if = { limit = { has_province_flag = produced_incense } change_trade_goods = incense }
+		if = { limit = { has_province_flag = produced_glass } change_trade_goods = glass }
+		if = { limit = { has_province_flag = produced_paper } change_trade_goods = paper }
+		if = { limit = { has_province_flag = produced_gems } change_trade_goods = gems }
+		if = { limit = { has_province_flag = produced_cloves } change_trade_goods = cloves }
+		remove_province_modifier = slave_market
+		
+	}
+
+	option = {
+		name = motmcleanup.1.a
+		ai_chance = {
+			factor = 1
+		}
+	}
 }

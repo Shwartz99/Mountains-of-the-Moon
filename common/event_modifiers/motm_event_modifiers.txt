@@ -32,3 +32,12 @@ hausa_fort_modifier = {
 local_defensiveness = 0.2
 garrison_growth = 0.10
 }
+
+empty_slaves_raided = {
+	picture = "raided_for_slaves"
+}
+
+slave_market = {
+	trade_goods_size_modifier = 0.5
+	picture = "raided_for_slaves"
+}

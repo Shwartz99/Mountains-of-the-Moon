@@ -22,6 +22,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_slave_raid"
+		texturefile = "gfx/interface/slave_raid.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_chartered_settlements_muslimgfx"
 		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
 	}
