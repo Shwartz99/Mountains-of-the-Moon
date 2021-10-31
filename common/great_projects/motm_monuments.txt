@@ -148,7 +148,7 @@ walls_benin = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensivness = 0.15
+			local_defensiveness = 0.15
 			local_hostile_attrition = 1
 		}
 		country_modifiers = {
@@ -160,7 +160,7 @@ walls_benin = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensivness = 0.2
+			local_defensiveness = 0.2
 			local_hostile_attrition = 3
 		}
 		country_modifiers = {
@@ -173,7 +173,7 @@ walls_benin = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
 		area_modifier = {
-			local_defensivness = 0.25
+			local_defensiveness = 0.25
 			local_hostile_attrition = 5
 		}
 		country_modifiers = {

@@ -1003,7 +1003,7 @@ native_ideas = {
 	
 	trigger = {
 		government = native
-		NOT = {culture_group=sahelian_group}
+		NOT = {culture_group=sahelian}
 		NOT = { primary_culture = tupinamba }
 		NOT = { primary_culture = guajiro }
 		NOT = { 
