@@ -310,3 +310,39 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id=motm.6
+	title="motm.6.t"
+	desc="motm.6.d"
+	picture=TRADEGOODS_eventPicture
+
+	trigger={
+		any_rival_country = {
+			NOT={truce_with = ROOT }
+			exists=yes
+		}
+		primary_culture=hausa
+		NOT={development=40}	
+		NOT={is_at_war=yes}
+	}
+
+	mean_time_to_happen = {
+	months = 120	
+	}
+
+	option = {
+		name=motm.6.a #Make truce with rival
+		random_rival_country = { 
+		add_truce_with = ROOT
+		}
+		add_stability = 1
+		add_dip_power=50
+	}
+	
+	option = {
+		name=motm.6.b #Refuse the traders' proposal
+		add_dip_power=-50
+	}
+
+}
