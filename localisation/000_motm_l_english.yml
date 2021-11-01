@@ -503,6 +503,10 @@
 
  EST_VAL_SLAVES_CONCESSIONS:0 "Concessions: §Y$VAL$%§!"
  EST_VAL_RAIDED_COAST:0 "Coastal Raiding: §Y$VAL$%§!"
+ EST_VAL_EMPTY_SLAVE_RAID:0 "Raided neighboring province"
+ 
+ empty_slaves_raided:0 "Raided for Slaves"
+ empty_slaves_raided_tooltip:0 "The villages in this province were raided for slaves by a neighboring country."
 
  estate_slaves_atlantic_slave_trade:0 "Atlantic Slave Trade"
  estate_slaves_atlantic_slave_trade_desc:0 "The second leg of the 'Triangular Trade' was the sale of captured people from Africa to the colonies in the Americas to work as slaves. Spanning four centuries, it is estimated that 1.2-2.4 million people died on the voyage."
