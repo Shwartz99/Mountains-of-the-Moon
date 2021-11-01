@@ -439,3 +439,4 @@ invite_to_federation = {
 			}
 		}
 	}
+}
