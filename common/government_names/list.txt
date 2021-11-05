@@ -1,5 +1,0 @@
-cultures
-zaghawa = 
-toubou = derde
-
-countries

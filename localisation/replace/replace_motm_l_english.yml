@@ -79,6 +79,9 @@
  PROV_ADJ2291: "Ardra"
  PROV_ADJ2292: "Ilorin"
  
+ PROV4082:0 "Kasanje"
+ PROV_ADJ4082:0 "Kasanje"
+ 
  #areas
  sennar_area: "White Nile"
  sennar_area_adj: "White Nile"
