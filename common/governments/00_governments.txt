@@ -424,6 +424,7 @@ tribal = {
 				sahara_tribe
 				sahara_tribe_settled
 				sahara_theocracy
+				african_nomads
 			}
 		}
 		tribal_cultural_values = {
@@ -708,6 +709,10 @@ pre_dharma_mapping = {
 	siberian_native_council = {
 		government = tribal
 		legacy_government = siberian_native_council
+	}
+		african_nomads = {
+		government = tribal
+		legacy_government = african_nomads
 	}
 	english_monarchy = {
 		government = monarchy

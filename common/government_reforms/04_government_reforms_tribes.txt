@@ -315,6 +315,34 @@ sahara_theocracy = {
 	}
 }
 
+
+african_nomads_reform = {
+	icon = "tribal_martial_society"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = african_nomads_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = african_nomads
+       	lock_level_when_selected = yes
+
+    generals_become_rulers = yes
+	allow_migration = yes
+	fixed_rank = 1
+	heir = no
+	queen = no
+    royal_marriage=no
+
+	modifiers = {
+    shock_damage=0.1
+	land_maintenance_modifier=-0.075
+    land_attrition = -0.15
+ 	technology_cost = +0.05
+	global_institution_spread = -0.10
+	}
+}
+
 #tribal_cultural_values
 
 martial_society_reform = {
