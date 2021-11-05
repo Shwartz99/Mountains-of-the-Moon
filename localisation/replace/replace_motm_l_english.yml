@@ -79,9 +79,6 @@
  PROV_ADJ2291: "Ardra"
  PROV_ADJ2292: "Ilorin"
  
- PROV4082:0 "Kasanje"
- PROV_ADJ4082:0 "Kasanje"
- 
  #areas
  sennar_area: "White Nile"
  sennar_area_adj: "White Nile"
@@ -119,7 +116,9 @@
  DAH_ideas: "Fon Ideas"
  DAH_ideas_start: "Fon Traditions"
  DAH_ideas_bonus: "Fon Ambition"
- 
+ west_african_idea_5:0"Artisan Guilds"
+ west_african_idea_5_desc:0"Within our country there are many blacksmiths, woodwrights and other artisans. These people often gather in guilds within our cities, and by listening to their advice we can make our economy produce more goods."
+
  #misc
  MAPMODE_GOVERNMENT_DHARMA_NATIVE_TT:0 "$COUNTRY|Y$ is §YNative§!."
  pax_americana:0 "Pax Regionalis"

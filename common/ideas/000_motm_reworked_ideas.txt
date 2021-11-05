@@ -114,7 +114,7 @@ west_african_ideas = {
 		envoy_travel_time = -0.25
 	}
 	west_african_idea_7 = {
-		reduced_liberty_desire = -10
+		reduced_liberty_desire = 10
 		vassal_income = 0.25
 	}
 }

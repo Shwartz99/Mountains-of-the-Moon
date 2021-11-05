@@ -1,0 +1,183 @@
+# Country unit colors.
+
+# example_tag_template = {
+    # color1= { 205 32 26  } #60% of character
+    # color2= { 255 255 255  } #30% of character
+    # color3= { 70 50 40  } #Up to 10% -> try map color here
+# }
+
+################################################
+#### MOTM ######################################
+################################################
+
+# Maqil
+MAQ = {
+    color1= { 2  94  17  }
+    color2= { 126 203 120 }
+    color3= { 2  94  17  }
+}
+# Lamtuna
+LAM = {
+    color1= { 0  65  105  }
+    color2= { 126 203 120 }
+    color3= { 0  65  105 }
+}
+# Zawiya
+ZAW = {
+    color1= { 255  204  221  }
+    color2= { 126 203 120 }
+    color3= { 255  204  221 }
+}
+# Trarza
+TRZ = {
+    color1= { 128 0 32  }
+    color2= { 126 203 120 }
+    color3= { 128 0 32 }
+}
+# Darmankur
+DRM = {
+    color1= { 205 42 62 }
+    color2= { 126 203 120 }
+    color3= { 205 42 62 }
+}
+# Walata
+WLT = {
+    color1= { 0  0  204 }
+    color2= { 126 203 120 }
+    color3= { 0  0  204 }
+}
+# Wadan
+WAD = {
+    color1= { 57  150  155 }
+    color2= { 126 203 120 }
+    color3= { 57  150  155 }
+}
+# Berabish
+BEB = {
+    color1= { 172  107  72 }
+    color2= { 126 203 120 }
+    color3= { 172  107  72 }
+}
+# Chinguetti
+CHN = {
+    color1= { 136  136  136 }
+    color2= { 126 203 120 }
+    color3= { 136  136  136 }
+}
+# Zenaga
+ZNG = {
+    color1= { 67 78 205 }
+    color2= { 126 203 120 }
+    color3= { 67 78 205 }
+}
+# Al Maris
+ALM = {
+    color1= { 32 113 213 }
+    color2= { 58 132 25 }
+    color3= { 236 28 36 }
+}
+# Qerri
+QER = {
+    color1= { 242 195 153 }
+    color2= { 7 0 128 }
+    color3= { 140 255 251 }
+}
+# Baggara
+BAG = {
+    color1= { 197 171 98 }
+    color2= { 89 28 11 }
+    color3= { 255 242 0 }
+}
+# Tegali
+TEG = {
+    color1= { 0 204 0 }
+    color2= { 255 255 0 }
+    color3= { 63 72 204 }
+}
+# Nuer
+NUE = {
+    color1= { 218 18 26 }
+    color2= { 7 137 48 }
+    color3= { 255 174 200 }
+}
+# Dinka
+DNK = {
+    color1= { 0 146 64 }
+    color2= { 248 196 0 }
+    color3= { 136 0 27 }
+}
+# Shilluk
+SHI = {
+    color1= { 218 37 29 }
+    color2= { 0 0 0 }
+    color3= { 255 242 0 }
+}
+# Fazughli
+FAZ = {
+    color1= { 231 228 219 }
+    color2= { 137 48 14 }
+    color3= { 185 122 86 }
+}
+# Zaghawa
+ZGH = {
+    color1= { 238 225 115 }
+    color2= { 70 145 61 }
+    color3= { 195 195 195 }
+}
+# Dar Daju
+DDJ = {
+    color1= { 0 122 61 }
+    color2= { 206 17 38 }
+    color3= { 255 43 111 }
+}
+# Tunjur
+TUJ = {
+    color1= { 255 0 0 }
+    color2= { 0 0 0 }
+    color3= { 134 29 108 }
+}
+# Dahlak
+DHL = {
+    color1= { 128 0 0 }
+    color2= { 255 177 1 }
+    color3= { 23 114 60 }
+}
+# Cyrenaica
+CYR = {
+    color1= { 0 0 0  }
+    color2= { 124 140 162  }
+    color3= { 0 0 0  }
+}
+# Toubou
+TOO = {
+    color1= { 157  154  17 }
+    color2= { 126 203 120  }
+    color3= { 157  154  17 }
+}
+# Ajjer
+KEL = {
+	color1 = { 0 153 204 }
+	color2 = { 248 229 12 }
+	color3 = { 0 153 204 }
+}
+
+# Ahaggar
+AHA = {
+	color1 = { 255 204 0 }
+	color2 = { 248 229 12 }
+	color3 = { 255 204 0 }
+}
+
+# Maghsharan 
+IWE = {
+	color1 = { 206 17 38 }
+	color2 = { 248 229 12 }
+	color3 = { 206 17 38 }
+}
+
+# Adagh
+ADG = {
+	color1 = { 66 90 152 }
+	color2 = { 248 229 12 }
+	color3 = { 66 90 152 }
+}

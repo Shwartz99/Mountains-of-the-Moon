@@ -55,7 +55,7 @@ BOR_ideas = {
 	free = yes
 	
 	land_of_ngazargamu = {
-		global_own_trade_power = 0.2
+		global_own_trade_power = 0.20
 	}
 	
 	sayfawad_dynasty = { 
