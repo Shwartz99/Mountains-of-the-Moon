@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  #mauritania
  PROV1112: "Darmankur"
  PROV1115: "al-Birakina"
@@ -79,9 +79,20 @@
  PROV_ADJ2291: "Ardra"
  PROV_ADJ2292: "Ilorin"
  
- PROV4082:0 "Kasanje"
- PROV_ADJ4082:0 "Kasanje"
- 
+ #Kongo
+ PROV4082: "Malanje"
+ PROV4089: "Mbuji-Mayi"
+ PROV4096: "Mwilambwe"
+ PROV4097: "Kasongo"
+ PROV4102: "Kasama"
+ PROV4078: "Ndendé"
+
+ PROV4082:0 "Malanje"
+ PROV4089:0 "Mbuji-Mayi"
+ PROV4096:0 "Mwilambwe"
+ PROV4097:0 "Kasongo"
+ PROV4102:0 "Kasama"
+ PROV4078:0 "Ndendé"
  #areas
  sennar_area: "White Nile"
  sennar_area_adj: "White Nile"

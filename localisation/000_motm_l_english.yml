@@ -364,8 +364,8 @@
  
  PROV5125:0 "Moshiko"
  PROV_ADJ5125:0 "Moshiko"
- PROV5126:0 "Malanje"
- PROV_ADJ5126:0 "Malanje" 
+ PROV5126:0 "Muteba"
+ PROV_ADJ5126:0 "Muteba" 
  
  #tags
  BEB:0 "Berabish"
@@ -489,6 +489,20 @@
  MND_ADJ:0"Mandaran"
  KOT:0"Kotoko"
  KOT_ADJ:0"Kotokoan"
+ 
+  #Kongo names replacement
+ PROV4082:0 "Malanje"
+ PROV4089:0 "Mbuji-Mayi"
+ PROV4096:0 "Mwilambwe"
+ PROV4097:0 "Kasongo"
+ PROV4102:0 "Kasama"
+ PROV4078:0 "Ndendé"
+ PROV4082: "Malanje"
+ PROV4089: "Mbuji-Mayi"
+ PROV4096: "Mwilambwe"
+ PROV4097: "Kasongo"
+ PROV4102: "Kasama"
+ PROV4078: "Ndendé"
  
  #estates
  estate_slaves:0 "Slaves"
