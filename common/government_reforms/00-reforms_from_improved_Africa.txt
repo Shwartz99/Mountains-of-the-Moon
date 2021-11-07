@@ -6,18 +6,16 @@ african_nomads = {
 	icon = "tribal_martial_society"
 	allow_normal_conversion = no
 	legacy_government = yes
-	allow_convert = no
 	valid_for_new_country = yes
-	native_mechanic = no
-        valid_for_nation_designer = yes
+    valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	allow_normal_conversion = yes
 
         generals_become_rulers = yes
         royal_marriage = no
         heir=no
         queen=no
         fixed_rank = 1
-	allow_migration = yes
 	
 	modifiers = {
 	land_maintenance_modifier=-0.075
