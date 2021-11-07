@@ -38,9 +38,10 @@ distribute_land_effect = {
 }
 
 slave_raid_effect = {
-	random_core_province = {
+	random_owned_province = {
 		limit = {
 			NOT = { trade_goods = gold trade_goods = coal trade_goods = slaves }
+			is_core = ROOT
 		}
 		if = { limit = { trade_goods = grain } set_province_flag = produced_grain }
 		if = { limit = { trade_goods = wine } set_province_flag = produced_wine }
@@ -70,13 +71,15 @@ slave_raid_effect = {
 		if = { limit = { trade_goods = paper } set_province_flag = produced_paper }
 		if = { limit = { trade_goods = gems } set_province_flag = produced_gems }
 		if = { limit = { trade_goods = cloves } set_province_flag = produced_cloves }
-		change_trade_goods = slaves
-		add_base_production = 1
-		add_province_modifier = {
-			name = slave_market
-			duration = 3650
-			desc = slave_market_tooltip
+		hidden_effect = {
+			change_trade_goods = slaves
+			add_base_production = 1
+			add_province_modifier = {
+				name = slave_market_modifier
+				duration = 3650
+			}		
 		}
+		custom_tooltip = ESTATES_PERFORMED_SLAVE_RAID_DESC
 		hidden_effect = {
 			province_event = {
 				id = motmcleanup.1

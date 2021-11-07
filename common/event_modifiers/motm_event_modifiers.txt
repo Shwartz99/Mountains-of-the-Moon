@@ -33,11 +33,11 @@ local_defensiveness = 0.2
 garrison_growth = 0.10
 }
 
-empty_slaves_raided = {
+empty_slaves_raided_modifier = {
 	picture = "raided_for_slaves"
 }
 
-slave_market = {
-	trade_goods_size_modifier = 0.5
+slave_market_modifier = {
+	trade_goods_size_modifier = 1
 	picture = "raided_for_slaves"
 }

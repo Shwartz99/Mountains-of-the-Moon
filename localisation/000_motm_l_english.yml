@@ -538,7 +538,7 @@
  KOT:0"Kotoko"
  KOT_ADJ:0"Kotokoan"
  
-  #Kongo names replacement
+ #Kongo names replacement
  PROV4082:0 "Malanje"
  PROV4089:0 "Mbuji-Mayi"
  PROV4096:0 "Mwilambwe"
@@ -1023,3 +1023,12 @@
  desc_sudd_modifier:0 "The Sudd is a vast swampland which makes it near impossible to get through."
  natives_none:0 "Uninhabited"
  natives_saharan:0 "Saharan Natives"
+ slave_raid:0 "Perform Slave Raid"
+ slave_market_modifier:0 "Slave Market"
+ desc_slave_market_modifier:0 "As the result of a recent slave raid, a slave market has opened in this province.\n\n§YAfter 10 years, the market will subside and the province trade good will change back to its original good.§!"
+ empty_slaves_raided_modifier:0 "Raided For Slaves"
+ desc_empty_slaves_raided_modifier:0 "This province has been raided for slaves, and has suffered population loss as a consequence. It cannot be raided again until this modifier expires."
+ ESTATES_PERFORMED_SLAVE_RAID_DESC:0 "§YSlaves§! will be produced in §Ya random owned province§! for 10 years.\nGain §G1§! Base Production in this province.\nThis province gets §Y'Slave Market'§! for 10 years, giving the following effects:\nLocal Goods Produced Modifier: §G+100.0%§!"
+ HAS_NOT_PERFORMED_SLAVE_RAID:0 "Has not performed a Slave Raid in the last 10 years"
+ HAS_ELIGIBLE_RAIDING_PROVINCE:0 "Has units in a neighboring African province which can be raided"
+ empty_slaves_raided:0 "Raided Tribal Land"
