@@ -7,3 +7,9 @@ intolerant_with_muslims={
 opinion=-120
 yearly_decay=4
 }
+
+empty_slaves_raided = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

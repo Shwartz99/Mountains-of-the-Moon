@@ -606,33 +606,44 @@ interaction = {
 	cooldown_months = 120
 
     trigger = {
-		has_estate = estate_slaves
-		OR = {
-			NOT = { has_country_flag = performed_slave_raid }
-			had_country_flag = {
-				flag = performed_slave_raid
-				days = 3650
+		hidden_trigger = {
+			has_estate = estate_slaves
+		}
+		custom_trigger_tooltip = {
+			tooltip = HAS_NOT_PERFORMED_SLAVE_RAID
+			OR = {
+				NOT = { has_country_flag = performed_slave_raid }
+				had_country_flag = {
+					flag = performed_slave_raid
+					days = 3650
+				}
 			}
 		}
-		any_owned_province = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_ELIGIBLE_RAIDING_PROVINCE
 			OR = {
-				AND = {
-					any_empty_neighbor_province = {
-						units_in_province = ROOT
-						NOT = { has_province_modifier = empty_slaves_raided }
-						continent = africa
+				any_owned_province = {
+					AND = {
+						any_empty_neighbor_province = {
+							units_in_province = ROOT
+							NOT = { has_province_modifier =  empty_slaves_raided_modifier }
+							continent = africa
+							native_size = 1
+						}
+						ROOT = { ai = no }
 					}
-					ROOT = { ai = no }
 				}
-				AND = {
+				any_owned_province = {
 					any_empty_neighbor_province = {
-						NOT = { has_province_modifier = empty_slaves_raided }
+						NOT = { has_province_modifier =  empty_slaves_raided_modifier }
 						continent = africa
+						native_size = 1
 					}
 					ROOT = { ai = yes }
 				}
 			}
 		}
+		is_at_war = no
     }
     effect = {
 		add_estate_influence_modifier = {
@@ -652,19 +663,28 @@ interaction = {
 						}
 						ROOT = { ai = yes }
 					}
-					NOT = { has_province_modifier = empty_slaves_raided }
+					NOT = { has_province_modifier =  empty_slaves_raided_modifier }
 				}
 				if = {
 					limit = {
-						devastation = 90
+						devastation = 75
 					}
 					add_province_modifier = {
-						name = empty_slaves_raided
+						name =  empty_slaves_raided_modifier
 						duration = 3650
-						desc = empty_slaves_raided_tooltip
+						desc =  desc_empty_slaves_raided_modifier
 					}
 				}
-				add_devastation = 10
+				add_devastation = 25
+				if = {
+					limit = { tribal_owner = { exists = yes } }
+					tribal_owner = {
+						add_opinion = {
+							who = ROOT
+							modifier = empty_slaves_raided
+						}
+					}
+				}
 				if = {
 					limit = { ROOT = { ai = no } }
 					create_native = 1
@@ -679,7 +699,6 @@ interaction = {
 		}
 		slave_raid_effect = yes
 		set_country_flag = performed_slave_raid
-        custom_tooltip = ESTATES_PERFORMED_SLAVE_RAID_DESC
     }
 	ai_will_do = {
 		factor = 25

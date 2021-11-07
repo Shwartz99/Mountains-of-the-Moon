@@ -395,7 +395,6 @@ province_event = {
 		if = { limit = { has_province_flag = produced_paper } change_trade_goods = paper }
 		if = { limit = { has_province_flag = produced_gems } change_trade_goods = gems }
 		if = { limit = { has_province_flag = produced_cloves } change_trade_goods = cloves }
-		remove_province_modifier = slave_market
 		
 	}
 
