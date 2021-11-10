@@ -22,9 +22,3 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1580.1.1
 }
-vassal = {
-	first = BOR
-	second = MND
-	start_date = 1566.1.1
-	end_date = 1781.1.1
-}

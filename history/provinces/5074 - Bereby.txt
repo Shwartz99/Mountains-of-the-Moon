@@ -1,5 +1,5 @@
 capital = "Bereby"
-culture = kru
+culture = senufo
 religion = shamanism
 hre = no
 base_tax = 1

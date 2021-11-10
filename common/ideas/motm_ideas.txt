@@ -41,12 +41,12 @@ dahlak_ideas = {
 
 BOR_ideas = {
 	start = {
-		core_creation = -0.15
-		diplomatic_reputation = 1
+		vassal_income = 0.25
+		free_leader_pool = 1
 	}
 
 	bonus = {
-		leader_land_fire = 1
+		legitimacy = 1
 	}
  
 	trigger = {
@@ -55,12 +55,11 @@ BOR_ideas = {
 	free = yes
 	
 	land_of_ngazargamu = {
-		global_own_trade_power = 0.20
+		production_efficiency = 0.1	
 	}
 	
 	sayfawad_dynasty = { 
 		global_unrest = -1
-		legitimacy = 1
 	}	
 	alumas_reforms = {
 		global_trade_goods_size_modifier = 0.10
@@ -71,14 +70,13 @@ BOR_ideas = {
 	}
 	
 	fixed_military_camps = {
-		army_tradition = 0.5
+		shock_damage_received = -0.1
 	}
 	clan_head_council = {
-		nobles_loyalty_modifier = 0.1
 		stability_cost_modifier = -0.1
 	}
 	duties_on_sahara_trade = {
-		global_prov_trade_power_modifier = 0.20
+		global_prov_trade_power_modifier = 0.15
 	}
 }
 
@@ -212,7 +210,7 @@ IDO_ideas = {
 	free = yes
 
 	children_of_iduh = {
-		discipline = 0.05
+		discipline = 0.5
 	}
 	related_neighbors = {
 		diplomatic_reputation = 1
@@ -717,366 +715,42 @@ dagomba_ideas = {
 	}
 }
 
-#african_tribal_ideas = {
-#
-####Temporarily removed to avoid conflict with luo ideas 
-#
-#	start = {
-#		global_manpower_modifier = 0.15
-#		loot_amount = 0.20
-#	}
-#	
-#	bonus = {
-#		diplomats = 1
-#	}
-#	
-#	trigger = {
-#		government = native
-#		capital_scope = { superregion = africa_superregion }
-#	}
-#	free = yes
-#	
-#	west_african_idea_1 = {
-#		advisor_pool = 1
-#	}
-#	west_african_idea_2 = {
-#		global_trade_goods_size_modifier = 0.10
-#	}
-#	west_african_idea_3 = {
-#		global_trade_power = 0.1
-#	}
-#	west_african_idea_4 = {
-#		religious_unity = 0.20
-#	}
-#	west_african_idea_5 = {
-#		cavalry_cost = -0.1
-#	}
-#	west_african_idea_6 = {
-#		trade_efficiency = 0.05
-#		envoy_travel_time = -0.25
-#	}
-#	west_african_idea_7 = {
-#		num_accepted_cultures = 1
-#	}
-#}
-
-adal_ideas = {
+african_tribal_ideas = {
 	start = {
-	land_morale = 0.10
-	land_forcelimit_modifier = 0.20	
+		global_manpower_modifier = 0.15
+		loot_amount = 0.20
 	}
 	
 	bonus = {
-	leader_land_fire=1
+		diplomats = 1
 	}
 	
 	trigger = {
-		tag=ADA
+		government = native
+		capital_scope = { superregion = africa_superregion }
 	}
 	free = yes
 	
-    adal_zayla_port = {
-	global_trade_power = 0.20
-	light_ship_cost = -0.1	
+	west_african_idea_1 = {
+		advisor_pool = 1
 	}
-	
-	adal_arabic_connections = {
-	diplomatic_reputation = 1
-	diplomatic_upkeep = 1	
+	west_african_idea_2 = {
+		global_trade_goods_size_modifier = 0.10
 	}
-	
-	adal_ethiopian_invasions = {
-	global_manpower_modifier = 0.25
+	west_african_idea_3 = {
+		global_trade_power = 0.1
 	}
-	
-	adal_malassay= {
-	discipline=0.05	
+	west_african_idea_4 = {
+		religious_unity = 0.20
 	}
-	
-	adal_ottoman_firearms= {
-	infantry_power = 0.15	
+	west_african_idea_5 = {
+		cavalry_cost = -0.1
 	}
-	adal_control_red_sea = {
-	naval_forcelimit_modifier = 0.5
+	west_african_idea_6 = {
+		trade_efficiency = 0.05
+		envoy_travel_time = -0.25
 	}
-	adal_adalite_court = {
-	advisor_cost=-0.15	
+	west_african_idea_7 = {
+		num_accepted_cultures = 1
 	}
-	
-}
-
-sidamo_ideas = {
-	start = {
-	tolerance_heathen = 2
-    tolerance_own = 2	
-	}
-	
-	bonus = {
-	free_adm_policy = 1	
-	}
-	
-	trigger = {
-		primary_culture = sidamo
-                religion=shamanism
-	}
-	free = yes
-	
-	sidamo_luwa_generations = {
-	same_culture_advisor_cost = -0.25	
-	}
-	sidamo_administration = {
-	global_tax_modifier = 0.10	
-	}
-	sidamo_akako_ancestor = {
-	legitimacy=1	
-	}
-	sidamo_arussi_raids = {
-	land_morale=0.1
-    discipline=0.025	
-	}
-	sidamo_centralized_army = {
-	global_manpower_modifier=0.25	
-	}
-	sidamo_amhara_defense = {
-	land_forcelimit_modifier=0.25	
-	}
-	sidamo_horn_diplomacy = {
-	improve_relation_modifier = 0.25	
-	}
-}
-
-ethiopian_princedom_ideas = {
-	start = {
-		land_attrition=-0.15
-        global_tax_modifier = 0.15	
-	}
-	
-	bonus = {
-	yearly_corruption = -0.1	
-	}
-	
-	trigger = {
-        religion_group=christian
-        OR={
-        primary_culture = sidamo   
-        primary_culture = amhara
-        primary_culture = tigray       
-        }
-	}
-
-	free = yes
-	
-	ethiopian_cultural_assimilation= {
-	num_accepted_cultures = 1
-        core_creation=-0.15	
-	}
-	ethiopian_christian_bulwark= {
-	tolerance_own=3	
-	}
-	ethiopian_pagan_conversion= {
-	global_missionary_strength = 0.02
-        missionary_maintenance_cost = -0.2	
-	}
-	ethiopian_christian_soldiers= {
-	discipline = 0.05	
-	}
-	ethiopian_adal_ifat= {
-	warscore_cost_vs_other_religion = -0.25	
-	}
-	ethiopian_fortifications= {
-	fort_maintenance_modifier = -0.15
-    defensiveness = 0.15	
-	}
-	ethiopian_firearms= {
-	fire_damage=0.10	
-	}
-}
-
-KIT_ideas = {
-	start = {
-                  legitimacy = 1
-                  land_morale = 0.10
-	}
-	
-	bonus = {
-           yearly_absolutism = 1
-	}	
-
-	trigger = {
-		tag = KIT
-	}
-	free = yes
-	
-	source_of_the_nile  = {
-	global_manpower_modifier = 0.25	
-	}
-	KIT_kitara_army = {
-        discipline = 0.05
-	}
-	no_illegitimate_children = {
-		heir_chance = 0.5
-                stability_cost_modifier=-0.15
-	}
-        cwezy_religion = {
-	tolerance_own=2	
-	}
-	KIT_cultural_assimilation = {
-	num_accepted_cultures = 1
-        years_of_nationalism = -5
-	}
-
-	KIT_grand_court = {
-	advisor_cost = -0.20	
-	}
-	KIT_army_expansion= {
-	global_regiment_cost = -0.10	
-	}
-	
-}
-
-KSJ_ideas = {
-	start = {
-	shock_damage=0.15	
-        infantry_power=0.15
-	}
-	
-	bonus = {
-	discipline=0.05	
-	}
-	
-        free = yes
-
-	trigger = {
-        tag=KSJ
-	}
-
-        KSJ_raids = {
-	global_manpower_modifier = 0.33	
-	}
-        
-        KSJ_warriors = {	
-        infantry_cost = -0.2
-        }
-
-        KSJ_repression = {	
-        years_of_nationalism = -5
-        }
-
-        KSJ_sedentarization = {	
-        core_creation = -0.15
-        }
-
-        KSJ_army_reform = {
-        land_morale=0.15
-        }
-
-        KSJ_expand_army={
-        land_forcelimit_modifier = 0.33
-        }
-	
-        KSJ_firearms={
- 	fire_damage = 0.10
-}
-	
-	
-}
-
-SOM_ideas = {
-	start = {
-	leader_land_shock=1
-        global_manpower_modifier=0.25	
-	}
-	
-	bonus = {
-	leader_land_fire = 1	
-	}
-	
-        SOM_sea_trade= {
-	global_own_trade_power = 0.2
-        global_ship_cost=-0.2	
-	}
-
-
-        SOM_resilience= {
-	war_exhaustion = -0.05
-	}
-
-        SOM_islam= {
-	tolerance_own = 2
-	}
-
-        SOM_clergy_support= {
-	land_morale=0.15
-        church_loyalty_modifier = 0.1
-	}
- 
-       somali_offensive_warfare = {
-		infantry_power = 0.1
-                fire_damage=0.1
-	}
-
-       somali_corsairs_of_the_red_sea = {
-		may_perform_slave_raid_on_same_religion=yes
-	}
-
-
-        SOM_centralization= {
-	max_absolutism = 15
-        land_forcelimit_modifier = 0.25
-	}
-
-	trigger = {
-        tag=SOM
-	}
-
-	free = yes
-	
-	
-}
-
-
-luo_ideas = {
-	start = {
-	infantry_cost = -0.20
-	tribal_development_growth = 0.02		
-	}
-	
-	bonus = {
-	max_absolutism = 10	
-	}
-	
-	trigger = {
-	primary_culture=acholi
-	}
-	
-	free = yes
-	
-	luo_nyasaye = {
-	prestige = 1	
-	}
-	
-	luo_japaro = {
-	same_culture_advisor_cost = -0.25
-	}
-	
-	luo_endogamy = {
-	stability_cost_modifier = -0.15
-	}
-	
-	luo_clans = {
-	nobles_loyalty_modifier = 0.1	
-	}
-	
-	luo_main_clan = {
-	prestige_decay = -0.01
-	}
-	
-	luo_assimilation = {
-	culture_conversion_cost = -0.25
-	}
-	
-	luo_nationalism = {
-	legitimacy=1
-	}
-	
 }

@@ -1,8 +1,8 @@
 # No previous file for Logone
 
-owner = KOT
-controller = KOT
-add_core = KOT
+owner = YAO
+controller = YAO
+add_core = YAO
 add_core = BOR
 culture = kanuri 
 religion = shamanism #Fetishism
@@ -17,3 +17,10 @@ base_manpower = 3
 
 
 discovered_by = sub_saharan
+
+
+1505.1.1 = {
+	owner = BOR
+	controller = BOR
+	add_core = BOR
+} #Idris Katakarmabe retakes Kanem

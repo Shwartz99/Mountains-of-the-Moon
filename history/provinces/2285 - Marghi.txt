@@ -1,8 +1,8 @@
 # No previous file for Marghi
 
-owner = MND
-controller = MND
-add_core = MND
+owner = BOR
+controller = BOR
+add_core = BOR
 is_city = yes
 culture = kanuri 
 religion = shamanism #Fetishism
@@ -20,8 +20,7 @@ base_manpower = 2
 
 discovered_by = sub_saharan
 
-1682.1.1 = { controller = KWA } #Jukun Invasion
-1684.1.1 = { unrest = 0 } #Jukun Expelled
+
 1806.1.1 = {	
 	owner = SOK
 	controller = SOK

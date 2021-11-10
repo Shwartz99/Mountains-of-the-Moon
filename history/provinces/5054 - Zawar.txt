@@ -3,7 +3,7 @@
 add_core = TOO
 owner = TOO
 controller = TOO
-culture = toubou
+culture = kanuri
 religion = sunni
 capital = "Zawar"
 trade_goods = grain

@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = sahara_theocracy
 primary_culture = berber
 religion = sunni

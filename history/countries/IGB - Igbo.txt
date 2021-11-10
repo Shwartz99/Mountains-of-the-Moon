@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = tribal_despotism
 primary_culture = igbo
 religion = shamanism

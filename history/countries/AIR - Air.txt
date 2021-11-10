@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = sahara_tribe_settled
 primary_culture = tuareg
 religion = sunni

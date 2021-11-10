@@ -1,6 +1,6 @@
 #1126 - Ivory Coast
 
-culture = kru
+culture = senufo
 religion = shamanism #Fetishism
 capital = "Assinie"
 trade_goods = unknown

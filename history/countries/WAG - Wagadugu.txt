@@ -12,10 +12,9 @@ capital = 1137 #Wagadugu
 
 1444.11.11 = {
 	monarch = {
-		dip = 3
+		dip = 4
 		adm = 3
-		mil = 3
-		regent = yes
+		mil = 2
 	}
 }
 1500.1.1 = {

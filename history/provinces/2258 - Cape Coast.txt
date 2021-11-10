@@ -3,7 +3,7 @@
 
 culture = aka
 religion = shamanism #Fetishism
-capital = "Anomansah"
+capital = "Axim"
 trade_goods = unknown
 hre = no
 base_tax = 2 

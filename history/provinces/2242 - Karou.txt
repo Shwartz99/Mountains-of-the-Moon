@@ -1,6 +1,6 @@
 # No previous file for Karou
 
-culture = kru
+culture = senufo
 religion = shamanism #Fetishism
 capital = "Karou"
 trade_goods = unknown

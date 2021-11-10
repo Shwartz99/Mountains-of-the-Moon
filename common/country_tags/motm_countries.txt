@@ -58,6 +58,3 @@ TEN = "countries/Tenkodogo.txt"
 WAG = "countries/Wagadugu.txt"
 ZAM = "countries/Zamfara.txt"
 ZND = "countries/Zandoma.txt"
-
-KOT = "countries/Kotoko.txt"
-MND = "countries/Mandara.txt"

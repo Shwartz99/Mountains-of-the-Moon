@@ -1,6 +1,6 @@
 #5061 - Azande
 
-culture = sudanic
+culture = jukun
 religion = shamanism #Fetishism
 capital = "Rafaï"
 native_size = 80

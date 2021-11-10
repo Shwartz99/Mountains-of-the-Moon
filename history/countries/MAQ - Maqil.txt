@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = sahara_tribe
 primary_culture = moroccan
 religion = sunni

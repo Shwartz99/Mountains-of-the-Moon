@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = tribal_despotism
 primary_culture = fon
 religion = shamanism #Fetishism
@@ -8,15 +7,6 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1140 #Allada
-
-1444.11.11 = {
-	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
-	}
-}
 
 1600.1.1 = {
 	monarch = {
@@ -86,7 +76,6 @@ capital = 1140 #Allada
 		ADM = 1
 		MIL = 2
 	}
-	government_rank = 2
 }
 
 1774.1.1 = {

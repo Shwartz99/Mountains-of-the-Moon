@@ -1,11 +1,10 @@
 government = tribal
-government_rank = 1
 add_government_reform = sahara_tribe
 primary_culture = kanuri
 religion = sunni
 religious_school = maliki_school
 technology_group = muslim
-capital = 5056
+capital = 2801
 unit_type = muslim
 
 1444.11.11 = {

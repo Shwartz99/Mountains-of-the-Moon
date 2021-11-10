@@ -3,7 +3,7 @@
 owner = NUE
 controller = NUE
 add_core = NUE
-culture = acholi #luo
+culture = nubian
 religion = shamanism #Fetishism
 capital = "Barah"
 native_size = 50

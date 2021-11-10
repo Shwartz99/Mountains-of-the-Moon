@@ -455,7 +455,6 @@ guinea_region = {
 		cayor_area
 		ivory_coast_area
 		atacora_oueme_area
-		biafara_area
 	}
 	monsoon = {
 		00.06.01
@@ -1571,7 +1570,6 @@ chad_region = {
 		bornu_area
 		adamawa_plateau_area
 		waddai_area
-		benue_area
 	}
 	monsoon = {
 		00.06.01
@@ -1586,7 +1584,6 @@ volta_region = {
 		upper_volta_area
 		lower_volta_area
 		dagbon_area
-		south_akanman
 	}
 	monsoon = {
 		00.06.01

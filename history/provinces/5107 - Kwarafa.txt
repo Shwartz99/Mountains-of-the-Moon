@@ -1,4 +1,4 @@
-capital = "Wukari"
+capital = "Kwarafa"
 culture = jukun
 religion = shamanism
 owner = KWA

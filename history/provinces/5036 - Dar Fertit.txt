@@ -1,6 +1,6 @@
 #5036 - Dar Fertit
 
-culture = sudanic
+culture = nuba
 religion = shamanism #Fetishism
 capital = "Wau"
 native_size = 80

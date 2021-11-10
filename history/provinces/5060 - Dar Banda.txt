@@ -1,6 +1,6 @@
 #5060 - Dar Banda
 
-culture = sudanic
+culture = jukun
 religion = shamanism #Fetishism
 capital = "Abiras"
 native_size = 80

@@ -1,5 +1,4 @@
 government = tribal
-government_rank = 1
 add_government_reform = tribal_federation
 primary_culture = sudanese_culture
 add_accepted_culture = nuba
