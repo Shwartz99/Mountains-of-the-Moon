@@ -361,11 +361,12 @@ african_nomads = {
         fixed_rank = 1
 	
 	modifiers = {
-	land_maintenance_modifier=-0.075
-    land_attrition = -0.15
+	global_manpower_modifier=0.20
+	land_maintenance_modifier=-0.10
+	land_morale=0.10
  	technology_cost = +0.05
-	global_institution_spread = -0.10
-	shock_damage=0.1
+	global_institution_spread = -0.15
+	defensiveness=-0.5
 	}
 	ai = {
 		factor = 0
