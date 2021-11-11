@@ -496,7 +496,7 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "crown_land_interactions"
-			position = { x = 270 y = 180 }
+			position = { x = 253 y = 180 }
 			size = { width = 200 height = 100 }
 			slotsize = { width = 48 height = 48 }
 			max_slots_horizontal = 4

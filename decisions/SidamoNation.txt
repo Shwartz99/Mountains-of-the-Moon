@@ -1,81 +1,80 @@
 country_decisions = {
 
-	
-                sidamo_nation = {
-                NOT = { exists = SID }
+	sidamo_nation = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_sidamo_flag }
+			NOT = { exists = SID }
 			OR = {
 				ai = no
-				is_playing_custom_nation = no}
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = SID }
-			
-				primary_culture=sidamo
+
+			primary_culture = sidamo
 
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
 				AND = {
 					is_former_colonial_nation = yes
-					ai = no}}
-			
+					ai = no
+				}
+			}
 		}
 
 		provinces_to_highlight = {
-                      
-                 
-}
+			every_province = {
+				culture = sidamo
+				NOT = { owned_by = ROOT }
+			}
+		}
 
 		allow = {
-num_of_owned_provinces_with= {
-	value = 6
-	culture=sidamo
-	
-}
-			owns_core_province=1218 #Sidamo
-                      
+			num_of_owned_provinces_with = {
+				value = 6
+				culture = sidamo
+			}
+			owns_core_province = 1218 #Sidamo
 
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-                        
 		}
 		effect = {
-			
 			remove_non_electors_emperors_from_empire_effect = yes
-                        change_tag = SID
-                  
-                      kaffa_area= {add_permanent_claim = SID} 
-                      sidamo_area= {add_permanent_claim = SID}  
-                        
-                        SID= {add_country_modifier = {
-				name = centralization_modifier
-				duration = 7300}
-                              }
+			change_tag = SID
 
-                        add_prestige = 20
+			kaffa_area= {add_permanent_claim = SID} 
+			sidamo_area= {add_permanent_claim = SID}  
 
-                        if = {
+			SID = {
+				add_country_modifier = {
+					name = centralization_modifier
+					duration = 7300
+				}
+			}
+
+			add_prestige = 20
+
+			if = {
 				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2}
-	
-
+				set_government_rank = 2
+			}
 			set_country_flag = formed_sidamo_flag
- 
-capital_scope={add_base_tax=1
-add_base_production=1}
+
+			capital_scope={
+				add_base_tax = 1
+				add_base_production = 1
+			}
 		}
 
-		ai_will_do = {factor = 1}
+		ai_will_do = { factor = 1 }
 		ai_importance = 400
 	}
-
-
-
 }

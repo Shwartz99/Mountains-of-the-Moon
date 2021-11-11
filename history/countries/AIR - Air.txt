@@ -4,6 +4,9 @@ add_government_reform = sahara_tribe_settled
 primary_culture = tuareg
 religion = sunni
 technology_group = muslim
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
 capital = 2274	# Agades
 religious_school = maliki_school
 

@@ -1,7 +1,7 @@
 government = tribal
 government_rank = 1
 add_government_reform = sahara_tribe
-primary_culture = kanuri
+primary_culture = zaghawa
 religion = sunni
 religious_school = maliki_school
 technology_group = muslim

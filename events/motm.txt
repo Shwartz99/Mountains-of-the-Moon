@@ -324,7 +324,7 @@ country_event = {
 			exists=yes
 		}
 		primary_culture=hausa
-		NOT={development=40}	
+		NOT={total_development=40}	
 		NOT={is_at_war=yes}
 	}
 

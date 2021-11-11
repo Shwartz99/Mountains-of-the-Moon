@@ -47,7 +47,7 @@ WLT = {
     color3= { 0  0  204 }
 }
 # Wadan
-WAD = {
+WDN = {
     color1= { 57  150  155 }
     color2= { 126 203 120 }
     color3= { 57  150  155 }
@@ -252,13 +252,6 @@ GOB = {
 	color3 = { 180 193 89 }
 }
 
-#Gurma
-GUR = {
-	color1 = { 255 50 0 }
-	color2 = { 86 78 68 }
-	color3 = { 73 122 168 }
-}
-
 #Gyaman
 GYA = {
 	color1 = { 0 0 0 }
@@ -329,32 +322,11 @@ TAM = {
 	color3 = { 30 31 162 }
 }
 
-#Tenkodogo
-TEN = {
-	color1 = { 237 194 160 }
-	color2 = { 92 43 46 }
-	color3 = { 83 157 103 }
-}
-
-#Wagadugu
-WAG = {
-	color1 = { 183 114 25 }
-	color2 = { 46 111 137 }
-	color3 = { 81 118 85 }
-}
-
 #Zamfara
 ZAM = {
 	color1 = { 255 63 64 }
 	color2 = { 255 255 255 }
 	color3 = { 144 85 116 }
-}
-
-#Zandoma
-ZND = {
-	color1 = { 32 113 213 }
-	color2 = { 255 0 0 }
-	color3 = { 180 153 189 }
 }
 
 #Mandara

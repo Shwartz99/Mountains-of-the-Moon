@@ -1,9 +1,9 @@
 capital = "Gambaga"
 culture = mossi
 religion = shamanism
-owner = WAG
-controller = WAG
-add_core = WAG
+owner = WGD
+controller = WGD
+add_core = WGD
 is_city = yes
 hre = no
 base_tax = 2

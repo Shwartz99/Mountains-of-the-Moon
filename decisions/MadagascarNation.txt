@@ -1,11 +1,11 @@
 country_decisions = {
 
 	madagascar_nation = {
-                NOT = { exists = MDG }
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
 			normal_or_historical_nations = yes
+			NOT = { exists = MDG }
 			NOT = { has_country_flag = formed_madagascar_flag}
 			OR = {
 				ai = no
@@ -27,9 +27,9 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-
-			
-}
+			culture = madagasque
+			NOT = { owned_by = ROOT }
+		}
 
 		allow = {
 			is_at_war = no
@@ -37,38 +37,36 @@ country_decisions = {
 			is_nomad = no
 			
 			num_of_owned_provinces_with = {
-                        value = 12
-                        culture = madagasque}
+                value = 12
+                culture = madagasque
+			}
 		}
 		effect = {
-			
 			remove_non_electors_emperors_from_empire_effect = yes
-                        change_tag = MDG
-                  
-                        madagascar_region= {add_permanent_claim = MDG} 
-                       
-                        
-                        MDG= {add_country_modifier = {
-				name = centralization_modifier
-				duration = 7300}
-                              }
-
-                        
-                        
-                        add_prestige = 25
-
-                        if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2}
-			if = {limit = {has_custom_ideas = no
-	                      NOT = { has_idea_group = MDG_ideas } }
-                          
-                             country_event = { id = ideagroups.1 } #Swap Ideas}
-
-			set_country_flag = formed_madagascar_flag
- 
-capital_scope={add_base_tax=1
-add_base_production=1}
+            change_tag = MDG
+            madagascar_region= {add_permanent_claim = MDG} 
+            MDG= {
+				add_country_modifier = {
+					name = centralization_modifier
+					duration = 7300}
+				}
+                add_prestige = 25
+				if = {
+					limit = { NOT = { government_rank = 2 } }
+					set_government_rank = 2
+				}
+				if = {
+					limit = {
+						has_custom_ideas = no
+	                    NOT = { has_idea_group = MDG_ideas }
+					}
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				set_country_flag = formed_madagascar_flag
+				capital_scope={
+					add_base_tax=1
+					add_base_production=1
+				}
 		}
 
 		ai_will_do = {factor = 1}
