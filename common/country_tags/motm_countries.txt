@@ -57,4 +57,10 @@ TAM = "countries/Tamasheq.txt"
 TEN = "countries/Tenkodogo.txt"
 WAG = "countries/Wagadugu.txt"
 ZAM = "countries/Zamfara.txt"
+<<<<<<< Updated upstream
 ZND = "countries/Zandoma.txt"
+=======
+
+KOT = "countries/Kotoko.txt"
+MND = "countries/Mandara.txt"
+>>>>>>> Stashed changes
