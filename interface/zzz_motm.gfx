@@ -18,9 +18,18 @@ spriteTypes = {
 		texturefile = "gfx//interface//natives.tga"
 		noOfFrames = 8
 		loadType = "INGAME"
-		
 	}
 	
+	spriteType = {
+		name = "privilege_atlantic_slave_trade"
+		texturefile = "gfx/interface/privileges/privilege_atlantic_slave_trade.dds"
+	}
+	
+	spriteType = {
+		name = "privilege_galley_slaves"
+		texturefile = "gfx/interface/privileges/privilege_galley_slaves.dds"
+	}
+
 	spriteType = {
 		name = "GFX_slave_raid"
 		texturefile = "gfx/interface/slave_raid.dds"

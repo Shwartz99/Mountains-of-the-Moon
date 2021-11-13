@@ -184,7 +184,7 @@ estate_slaves_atlantic_slave_trade = {
 	}
 }
 estate_slaves_allowed_diet = {
-	icon = privilege_allowed_diet
+	icon = privilege_royal_authority
 	loyalty = 0.1
 	influence = 0.3
 	is_valid = {

@@ -151,41 +151,41 @@ province_event = {
 	picture = FORT_eventPicture
 	
 	trigger = {
-	NOT={has_province_modifier = hausa_fort_modifier}
-	development=10
-	is_capital = yes
-	culture=hausa
-	
-	owner = { 
-	NOT={is_at_war=yes}
-	primary_culture=hausa
-	NOT={total_development=60}
-	treasury = 100 
-	}
+		NOT = { has_province_modifier = hausa_fort_modifier }
+		development = 10
+		is_capital = yes
+		culture = hausa
+		
+		owner = {
+			NOT = { is_at_war = yes }
+			primary_culture = hausa
+			NOT = { total_development = 60 }
+			treasury = 100 
+		}
 	}
 
 	mean_time_to_happen = {
-	months = 120 	
+		months = 120 	
 	}
 	
 	option = {
-		name=motm.3.a #Improve The Fortifications
+		name = motm.3.a #Improve The Fortifications
 		add_province_modifier = { 
 		name = hausa_fort_modifier
 		duration = -1  
 		}
-		owner={
-		add_treasury=-50
-		add_mil_power=50
+		owner = {
+			add_treasury = -50
+			add_mil_power = 50
 		}
 		
 	}
 	
 	option = {
-		name=motm.3.b #Leave them as they are
-		owner={
-		add_adm_power=50
-		add_mil_power=-50
+		name = motm.3.b #Leave them as they are
+		owner = {
+			add_adm_power = 50
+			add_mil_power = -50
 		}
 	}
 	
@@ -200,38 +200,38 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
-	any_ally = {
-	religion=shamanism
-	}
-	ROOT={religion_group=muslim}
+		any_ally = {
+			religion = shamanism
+		}
+		ROOT = { religion_group = muslim }
 	}
 
 	mean_time_to_happen = {
-	months = 120 	
+		months = 120 	
 	}
 	
 	option = {
-		name= motm.4.a #Change policy
+		name = motm.4.a #Change policy
 		every_ally = {
-		limit={religion=shamanism}
-		reverse_add_opinion = {
-		who = ROOT	
-		modifier = intolerant_with_pagans	
-		}
-		add_opinion = {
-		who = ROOT	
-		modifier = intolerant_with_pagans	
-		}
+			limit = { religion = shamanism }
+			reverse_add_opinion = {
+				who = ROOT	
+				modifier = intolerant_with_pagans	
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = intolerant_with_pagans
+			}
 		}
 		add_estate_loyalty = {
-		estate = estate_church
-		loyalty = 15
+			estate = estate_church
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-		estate = estate_church
-		desc = EST_VAL_INTOLERANCE
-		influence = 10
-		duration = 3650
+			estate = estate_church
+			desc = EST_VAL_INTOLERANCE
+			influence = 10
+			duration = 3650
 		}
 	}
 		
@@ -239,14 +239,14 @@ country_event = {
 	option = {
 		name=motm.4.b #Maintain policy
 		add_estate_loyalty = {
-		estate = estate_church
-		loyalty = -15
+			estate = estate_church
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-		estate = estate_church
-		desc = EST_VAL_TOLERANCE
-		influence = -10
-		duration = 3650
+			estate = estate_church
+			desc = EST_VAL_TOLERANCE
+			influence = -10
+			duration = 3650
 		}
 	}
 	
@@ -260,53 +260,53 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
-	any_ally = {
-	religion_group=muslim
-	}
-	ROOT={religion=shamanism}
+		any_ally = {
+			religion_group = muslim
+		}
+		ROOT = { religion = shamanism }
 	}
 
 	mean_time_to_happen = {
-	months = 120 	
+		months = 120 
 	}
 	
 	option = {
-		name= motm.5.a #Change policy
+		name = motm.5.a #Change policy
 		every_ally = {
-		limit={religion_group=muslim}
-		reverse_add_opinion = {
-		who = ROOT	
-		modifier = intolerant_with_muslims	
-		}
-		add_opinion = {
-		who = ROOT	
-		modifier = intolerant_with_muslims	
-		}
+			limit = { religion_group = muslim }
+			reverse_add_opinion = {
+				who = ROOT	
+				modifier = intolerant_with_muslims	
+			}
+			add_opinion = {
+				who = ROOT	
+				modifier = intolerant_with_muslims	
+			}
 		}
 		add_estate_loyalty = {
-		estate = estate_church
-		loyalty = 15
+			estate = estate_church
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-		estate = estate_church
-		desc = EST_VAL_INTOLERANCE
-		influence = 10
-		duration = 3650
+			estate = estate_church
+			desc = EST_VAL_INTOLERANCE
+			influence = 10
+			duration = 3650
 		}
 	}
 		
 	
 	option = {
-		name=motm.5.b #Maintain policy
+		name = motm.5.b #Maintain policy
 		add_estate_loyalty = {
-		estate = estate_church
-		loyalty = -15
+			estate = estate_church
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
-		estate = estate_church
-		desc = EST_VAL_TOLERANCE
-		influence = -10
-		duration = 3650
+			estate = estate_church
+			desc = EST_VAL_TOLERANCE
+			influence = -10
+			duration = 3650
 		}
 	}
 	
@@ -318,35 +318,37 @@ country_event = {
 	desc="motm.6.d"
 	picture=TRADEGOODS_eventPicture
 
-	trigger={
+	trigger = {
 		any_rival_country = {
-			NOT={truce_with = ROOT }
-			exists=yes
+			NOT = { truce_with = ROOT }
+			exists = yes
 		}
-		primary_culture=hausa
-		NOT={total_development=40}	
-		NOT={is_at_war=yes}
+		primary_culture = hausa
+		NOT = { total_development = 40 }	
+		NOT = { is_at_war = yes }
 	}
 
 	mean_time_to_happen = {
-	months = 120	
+		months = 120	
 	}
 
 	option = {
-		name=motm.6.a #Make truce with rival
-		random_rival_country = { 
-		add_truce_with = ROOT
+		name = motm.6.a #Make truce with rival
+		random_rival_country = {
+			add_truce_with = ROOT
 		}
 		add_stability = 1
-		add_dip_power=50
+		add_dip_power = 50
 	}
 	
 	option = {
-		name=motm.6.b #Refuse the traders' proposal
-		add_dip_power=-50
+		name = motm.6.b #Refuse the traders' proposal
+		add_dip_power = -50
 	}
 
 }
+
+####Cleanup events
 
 province_event = {
 	id = motmcleanup.1
