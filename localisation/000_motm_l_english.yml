@@ -976,6 +976,7 @@
 
  #govt names
  DERDE:0 "Derde"
+ GREAT_DERDE:0 "Great Derde"
 
  #misc
  CANNOT_FABRICATE_IN_AFRICA:0 "Claims cannot be fabricated on provinces owned by African nations bordering your trade company provinces."
@@ -1000,3 +1001,5 @@
  po_slave_raid_desc:0 ""
  CB_ALLOWED_po_slave_raid:0 ""
  PEACE_po_slave_raid:0 ""
+ non_native_tribal_yes:0 "Has Tribal Land."
+ mechanic_non_native_tribal:0 "Has Tribal Land."

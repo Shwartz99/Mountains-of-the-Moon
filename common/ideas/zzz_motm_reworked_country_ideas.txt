@@ -1,3 +1,4 @@
+#fallback idea sets from MOTM
 west_african_ideas = {
 	start = {
 		shock_damage = 0.10

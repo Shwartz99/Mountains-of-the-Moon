@@ -1,4 +1,5 @@
 # These ideas are loaded after all country ideas, but before default idea.
+# New idea sets from MOTM
 
 dahlak_ideas = {
 	start = {

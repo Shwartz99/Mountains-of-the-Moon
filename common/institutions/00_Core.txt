@@ -92,6 +92,7 @@ feudalism = {
 				culture_group = hindusthani
 				NOT = { owner = { has_reform = tribal_kingdom } } #Ladakh
 			}
+			owner = { technology_group = sub_saharan religion_group = muslim }
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
