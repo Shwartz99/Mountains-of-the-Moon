@@ -1518,16 +1518,27 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 100
+			factor = 0
 		}
 	}
 	
 	option = {	#We should not create a bigger rift between our people
 		name = flavor_eth.40.b
 		add_stability = 1
-
+		2771 = {
+			add_province_modifier = {
+				name = eth_accepted_society
+				duration = 9125
+			}
+		}
+		2772 = {
+			add_province_modifier = {
+				name = eth_accepted_society
+				duration = 9125
+			}
+		}
 		ai_chance = {
-			factor = 0
+			factor = 100
 		}
 	}
 }

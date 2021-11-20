@@ -55,12 +55,25 @@ estate_slaves_atlantic_slave_trade = {
 	loyalty = -0.1
 	influence = 0.25
 	is_valid = {
-		any_owned_province = {
-			OR = {
-				continent = north_america
-				continent = south_america
-				continent = oceania
-				continent = new_world
+		OR = {
+			any_owned_province = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+				}
+			}
+			any_subject_country = {
+				is_colonial_nation = yes
+				any_owned_province = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+						continent = new_world
+					}
+				}
 			}
 		}
 		any_owned_province = {

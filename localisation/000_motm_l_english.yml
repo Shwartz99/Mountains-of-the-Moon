@@ -997,3 +997,6 @@
  HAS_NOT_PERFORMED_SLAVE_RAID:0 "Has not performed a Slave Raid in the last 10 years"
  HAS_ELIGIBLE_RAIDING_PROVINCE:0 "Has units in a neighboring African province which can be raided"
  empty_slaves_raided:0 "Raided Tribal Land"
+ po_slave_raid_desc:0 ""
+ CB_ALLOWED_po_slave_raid:0 ""
+ PEACE_po_slave_raid:0 ""

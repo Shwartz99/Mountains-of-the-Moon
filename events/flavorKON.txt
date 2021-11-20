@@ -135,12 +135,14 @@ country_event = {
 
 
 	trigger = {
+		tag = KON
 		if = {
 			limit = {
 				has_dlc = "Origins"
 			}
 			NOT = { religion = catholic }
 			NOT = { has_country_flag = kon_secured_coast_from_missionaries }
+			has_global_flag = kon_kongo_got_discovered_by_europeans
 			dominant_religion = catholic
 			is_female = no
 		}
