@@ -23,7 +23,7 @@
 
 estate_slaves_galley_slaves = {
 	icon = privilege_galley_slaves
-	loyalty = -0.1
+	loyalty = 0
 	influence = 0.15
 	is_valid = {
 		num_of_galley = 1
@@ -47,7 +47,7 @@ estate_slaves_galley_slaves = {
 	}
 	cooldown_years = 10
 	ai_will_do = {
-		factor = 1
+		factor = 25
 	}
 }
 estate_slaves_atlantic_slave_trade = {
@@ -193,7 +193,7 @@ estate_slaves_atlantic_slave_trade = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 25
 	}
 }
 estate_slaves_allowed_diet = {

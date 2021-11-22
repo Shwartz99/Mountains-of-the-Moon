@@ -1,0 +1,2 @@
+can_colonize_province = {
+}
