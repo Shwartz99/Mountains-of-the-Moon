@@ -7,6 +7,8 @@
  sahara_tribe_settled_desc:0 "A political system where a large tribal society has settled down and formed a kingdom, with one strong ruler who rules through law, with Saharan aspects."
  sahara_theocracy:0 "Saharan Tribal Theocracy"
  sahara_theocracy_desc:0 "A political system where a tribe is controlled by an individual ruler through divine power and the blessing of the ulema, with Saharan aspects."
+ savanna_tribe:0 "Savanna Tribe"
+ savanna_tribe_desc:0 "A governmental form where a tribe rules with a certain degree of internal autonomy but are nationally governed by a central authority, based in the African savanna."
  tribe_settle_down_reform:0 "Settle Down"
  tribe_settle_down_reform_desc:0 "Sometimes following the storm is not as important as finding shelter for it. The time has come for us to settle down and build more permanent villages."
  tribe_trading_with_foreigners_reform:0 "Trading with Neighbors"

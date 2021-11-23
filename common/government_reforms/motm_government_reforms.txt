@@ -127,6 +127,41 @@ sahara_theocracy = {
 	}
 }
 
+savanna_tribe = {
+	icon = "savanna_tribe"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = savanna_tribe
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		capital_scope = { superregion = africa_superregion }
+		OR = { religion_group = muslim religion = shamanism }
+	}
+	legacy_equivalent = tribal_federation_legacy
+	native_mechanic = yes
+	lock_level_when_selected = yes
+	fixed_rank = 1
+
+	modifiers = {
+		leader_cost = -0.25
+		global_institution_spread = -0.5
+		global_regiment_cost = -0.5
+	}
+	custom_attributes = {
+		non_native_tribal = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Conquest of Paradise" }
+		allow_migration = yes
+		custom_attributes = {
+			enable_tribal_grazing = no
+		}
+	}
+}
+
 african_nomads = {
 	icon = "tribal_martial_society"
 	allow_normal_conversion = no

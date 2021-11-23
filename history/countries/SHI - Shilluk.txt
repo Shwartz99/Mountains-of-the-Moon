@@ -1,6 +1,6 @@
 government = tribal
 government_rank = 1
-add_government_reform = sahara_tribe
+add_government_reform = savanna_tribe
 primary_culture = acholi
 religion = shamanism
 technology_group = east_african
