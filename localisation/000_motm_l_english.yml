@@ -586,6 +586,16 @@
  estate_privileges_and_agendas_events.3.k:0 "The Proposal of the Slaves"
  estate_slaves_fire_advisor:0 "Fire our Administrative Advisor"
  estate_slaves_fire_advisor_desc:0 "[Root.Adm_Advisor.GetTitle] [Root.Adm_Advisor.GetName] has encouraged policies that benefit slaveholders and encourage brutal treatment for the [Root.GetSlavesName]. They demand that we fire [Root.Adm_Advisor.GetHerHim]!"
+ estate_slaves_develop_x:0 "Develop [agenda_province.GetName]"
+ estate_slaves_develop_x_desc:0 "The [Root.GetSlavesName] request that we invest in the living conditions of slaves in [agenda_province.GetName]."
+ estate_slaves_destroy_tradecompany_in_y:0 "Destroy Trade Station in [agenda_province.GetName]"
+ estate_slaves_destroy_tradecompany_in_y_desc:0 "The [Root.GetSlavesName] demand that we destroy the Trade Station where slaves are sold in [agenda_province.GetName]."
+ estate_slaves_stop_building_tradecompany_in_x:0 "Stop construction of Trade Station in [agenda_province.GetName]"
+ estate_slaves_stop_building_tradecompany_in_x_desc:0 "The [Root.GetSlavesName] demand that we stop construction of the Trade Station where slaves are sold in [agenda_province.GetName]."
+ estate_slaves_decrease_autonomy_in_province_x:0 "Decrease Autonomy in [agenda_province.GetName]"
+ estate_slaves_decrease_autonomy_in_province_x_desc:0 "The [Root.GetSlavesName] of [agenda_province.GetName] complain at the brutal treatment by the slave owners. They clamor for us to regulate them by lowering autonomy."
+
+ local_slaves_displeased:0 "Local Slaves Displeased"
 
  #culture
  sudanese_culture:0 "Sudanese"
@@ -979,6 +989,8 @@
  #govt names
  DERDE:0 "Derde"
  GREAT_DERDE:0 "Great Derde"
+ ETSU:0 "Etsu"
+ GREAT_ETSU:0 "Great Etsu"
 
  #misc
  CANNOT_FABRICATE_IN_AFRICA:0 "Claims cannot be fabricated on provinces owned by African nations bordering your trade company provinces."

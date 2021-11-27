@@ -83,6 +83,9 @@ estate_slaves = {
 
 	agendas = {
 		estate_slaves_fire_advisor
+		estate_slaves_develop_x
+		estate_slaves_destroy_tradecompany_in_y
+		estate_slaves_stop_building_tradecompany_in_x
 	}
 
 	color = { 0 0 0 }

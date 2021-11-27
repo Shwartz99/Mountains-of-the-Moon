@@ -1,2 +1,31 @@
 can_colonize_province = {
+	condition = {
+		potential = {
+			FROM  = { ai = yes }
+			ROOT = { area = macaronesia_area }
+		}
+		allow = {
+			FROM = {
+				OR = {
+					owns = 366
+					owns = 4565
+					owns = 5062
+				}
+			}
+		}
+	}
+	condition = {
+		potential = {
+			FROM  = {
+				capital_scope = {
+					NOT = { continent = africa }
+				}
+				ai = yes
+			}
+			ROOT = { superregion = africa_superregion }
+		}
+		allow = {
+			ROOT = { has_port = yes }
+		}
+	}
 }
