@@ -1,0 +1,355 @@
+reworked_ETH_ideas = {
+	start = {
+		global_autonomy = -0.05
+		land_attrition = -0.15
+	}
+	
+	bonus = {
+		global_unrest = -2
+	}
+	
+	trigger = {
+		tag = ETH
+	}
+	free = yes		#will be added at load.
+	
+	solomonid_claim = {
+		legitimacy = 1
+	}
+	nagusa_negast = {
+		heir_chance = 0.5
+		prestige = 1
+	}
+	hostile_borders = {
+		defensiveness = 0.20
+
+	}
+	diplomatic_demeanor = {
+		diplomatic_reputation = 1
+	}
+	the_ark_of_the_covenant = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	eth_expansionist_policy = {
+		core_creation = -0.15
+	}
+	eth_reformed_armies = {
+		infantry_power = 0.1
+	}
+}
+reworked_MAL_ideas = {
+	start = {
+		land_attrition = -0.10
+		tolerance_heathen = 2
+	}
+	
+	bonus = {
+		infantry_power = 0.10
+	}
+	
+	trigger = {
+		tag = MAL
+	}
+	free = yes		# will be added at load
+
+	restore_malian_suzerainity = {
+		vassal_income = 0.20
+	}
+	gold_of_bure = {
+		production_efficiency = 0.1
+	}
+	reclamation_of_land = {
+		global_manpower_modifier = 0.10
+	}
+	mandinka_warrior_spirit = {
+		discipline = 0.05
+	}
+	lost_fleet_of_abubukari_ii = {
+		navy_tradition = 0.5
+	}
+	seek_new_markets_for_salt = {
+		merchants = 1
+	}
+	west_african_slave_trade = {
+		trade_efficiency = 0.1
+	}
+}
+reworked_DAH_ideas = {
+	start = {
+		advisor_cost = -0.10
+		defensiveness = 0.1
+	}
+
+	bonus = {
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+		primary_culture = fon
+	}
+	free = yes		#wibe added at load.
+	
+	children_of_the_panther = {
+		legitimacy = 1
+	}
+	slave_hunts = {
+		global_manpower_modifier = 0.15
+	}
+	migan_and_mehu = {
+		stability_cost_modifier = -0.1
+	}
+	lagredis = {
+		global_spy_defence = 0.3		
+	}
+	the_amazons = {
+		discipline = 0.05
+	}
+	the_yovogan = {
+		global_institution_spread = 0.1
+	}
+	palaces_of_abomey = {
+		prestige = 1
+	}
+}
+reworked_KBO_ideas = {
+	start = {
+		legitimacy = 1
+		development_cost = -0.15
+	}
+
+	bonus = {
+		technology_cost = -0.1
+	}
+ 
+	trigger = {
+		tag = KBO
+	}
+	free = yes
+	
+	legacy_of_kanem_bornu = {
+		prestige = 1
+	}
+	duties_on_sahara_trade = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	fixed_military_camps = {
+		shock_damage_received = -0.1
+	}
+	establishment_kanuri_elite = {
+		cavalry_power = 0.15
+	}
+	protect_against_nomads = { 
+		defensiveness = 0.10
+		infantry_power = 0.05
+	}
+	alumas_reforms = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	found_madrassas = {
+		idea_cost = -0.1
+	}
+
+}
+reworked_hausa_ideas = {
+	start = {
+		diplomats = 1
+		global_own_trade_power = 0.1
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		primary_culture = hausa
+	}
+	
+	free = yes		#will be added at load.
+	
+	heirs_of_bayajida = {
+		diplomatic_upkeep = 1
+	}
+	
+	regnal_chronicles = { 
+		prestige = 1
+	}
+	
+	sarakunan_babba = {
+		production_efficiency = 0.1
+	}
+	
+	sarakunan_kasuwa = {
+		caravan_power = 0.2
+	}
+	
+	sarkin_yaki = {
+		shock_damage_received = -0.1
+	}
+
+	sarkin_bayi = {
+		build_cost = -0.1
+	}
+	
+	borno_refugees = { 
+		global_institution_spread = 0.1
+	}
+
+}
+reworked_BEN_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.2
+	}
+	bonus = {
+		fire_damage = 0.1
+	}
+	trigger = {
+		tag = BEN
+	}
+	
+	free = yes
+	
+	ben_curb_the_uzama = {
+		legitimacy = 1
+	}
+	ben_isiatua = {
+		siege_ability = 0.15
+	}
+	ben_appointment_of_the_onotueyevbo = {
+		global_tax_modifier = 0.1
+	}
+	ben_the_walls_of_benin = {
+		defensiveness = 0.1
+	}
+	ben_guilds = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ben_adoption_of_benin_customs = {
+		num_accepted_cultures = 1
+	}
+	ben_regulation_of_trade = {
+		trade_efficiency = 0.1
+	}
+}
+reworked_SOM_ideas = {
+	start = {
+		leader_land_shock = 1
+        global_manpower_modifier = 0.25	
+	}
+	bonus = {
+		leader_land_fire = 1	
+	}
+	trigger = {
+		tag = SOM
+	}
+	free = yes
+	SOM_sea_trade = {
+		global_own_trade_power = 0.2
+		global_ship_cost=-0.2	
+	}
+	SOM_resilience = {
+		war_exhaustion = -0.05
+	}
+	SOM_islam = {
+		tolerance_own = 2
+	}
+	SOM_clergy_support = {
+		land_morale = 0.15
+		church_loyalty_modifier = 0.1
+	}
+	somali_offensive_warfare = {
+		infantry_power = 0.1
+		fire_damage=0.1
+	}
+	somali_corsairs_of_the_red_sea = {
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	SOM_centralization= {
+		max_absolutism = 10
+		land_forcelimit_modifier = 0.25
+	}
+}
+
+reworked_KIT_ideas = {
+	start = {
+		legitimacy = 1
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		yearly_absolutism = 1
+	}	
+
+	trigger = {
+		tag = KIT
+	}
+	free = yes
+	
+	source_of_the_nile  = {
+		global_manpower_modifier = 0.25	
+	}
+	KIT_kitara_army = {
+		discipline = 0.05
+	}
+	no_illegitimate_children = {
+		heir_chance = 0.5
+		stability_cost_modifier = -0.15
+	}
+	cwezy_religion = {
+		tolerance_own = 2	
+	}
+	KIT_cultural_assimilation = {
+		num_accepted_cultures = 1
+        years_of_nationalism = -5
+	}
+	KIT_grand_court = {
+		advisor_cost = -0.20	
+	}
+	KIT_army_expansion = {
+		global_regiment_cost = -0.10	
+	}	
+}
+reworked_adal_ideas = {
+	start = {
+		land_morale = 0.10
+		land_forcelimit_modifier = 0.20	
+	}
+
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = ADA
+	}
+	free = yes
+
+    adal_zayla_port = {
+		global_trade_power = 0.20
+		light_ship_cost = -0.1	
+	}
+
+	adal_arabic_connections = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1	
+	}
+
+	adal_ethiopian_invasions = {
+		global_manpower_modifier = 0.25
+	}
+
+	adal_malassay = {
+		discipline = 0.05	
+	}
+
+	adal_ottoman_firearms = {
+		infantry_power = 0.15	
+	}
+	adal_control_red_sea = {
+		naval_forcelimit_modifier = 0.5
+	}
+	adal_adalite_court = {
+		advisor_cost = -0.15	
+	}
+}

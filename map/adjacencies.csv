@@ -1,7 +1,7 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
-366;4565;sea;1471;-1;-1;-1;-1;Gran Canaria-Tenerife
+366;4565;sea;1471;2560;1109;2550;1112;Gran Canaria-Tenerife
 6;12;sea;1258;3008;1633;3000;1630;Sk�ne-Sjaelland
 12;14;sea;1258;2980;1631;2975;1631;Sjaelland-Fyn
 14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus
@@ -110,6 +110,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
 631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 1230;5044;sea;4333;3424;900;3430;903;Massawa-Dahlak
-366;5062;sea;1471;-1;-1;-1;-1;Lanzarote-Gran Canaria
-1114;5070;sea;1468;-1;-1-;-1;-1;Gabu-Bissagos
+366;5062;sea;1471;2586;1117;2566;1109;Lanzarote-Gran Canaria
+1114;5070;sea;1468;2565;833;2558;834;Gabu-Bissagos
 -1;-1;;-1;-1;-1;-1;-1;-1;

@@ -1,0 +1,46 @@
+# Slave Raid
+cb_slave_raid = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_estate = estate_slaves
+		OR = {
+			ROOT = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			has_estate_privilege = estate_slaves_atlantic_slave_trade
+		}
+		FROM = {
+			capital_scope = {
+				continent = africa
+			}
+			any_owned_province = {
+				base_production = 2
+				NOT = { trade_goods = gold }
+				continent = africa
+				controlled_by = ROOT
+				any_neighbor_province = { owned_by = ROOT }
+				NOT = { has_province_modifier =  slaves_raided_modifier }
+				NOT = { has_province_modifier =  empty_slaves_raided_modifier }
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = slave_raid
+}

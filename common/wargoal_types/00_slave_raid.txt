@@ -49,11 +49,11 @@
 # --------------------------------------------------------------
 
 slave_raid = {
-	type = take_capital
+	type = take_border
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 0.75
+	peace_cost_factor = 0.5
 	
 	deny_annex = yes
 	

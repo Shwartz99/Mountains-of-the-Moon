@@ -5,6 +5,11 @@ senegal_estuary_modifier = {
 }
 
 #new
+volta_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
 natives_cav_modifier = {
 	cav_to_inf_ratio = 1
 	cavalry_power = 0.5
@@ -40,4 +45,10 @@ empty_slaves_raided_modifier = {
 slave_market_modifier = {
 	trade_goods_size_modifier = 1
 	picture = "raided_for_slaves"
+}
+
+slaves_raided_modifier = {
+	picture = "raided_for_slaves"
+	local_unrest = 5
+	local_tax_modifier = -0.15
 }

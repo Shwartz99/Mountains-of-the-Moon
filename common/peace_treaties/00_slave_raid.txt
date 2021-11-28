@@ -66,12 +66,14 @@ po_slave_raid = {
 		custom_trigger_tooltip = {
 			tooltip = HAS_ENOUGH_PROVINCES_TO_RAID
 			FROM = {
-				num_of_owned_provinces_with = {
-					value = 3
+				any_owned_province = {
 					base_production = 2
 					NOT = { trade_goods = gold }
+					continent = africa
 					controlled_by = THIS
+					any_neighbor_province = { owned_by = THIS }
 					NOT = { has_province_modifier =  slaves_raided_modifier }
+					NOT = { has_province_modifier =  empty_slaves_raided_modifier }
 				}
 			}
 		}
@@ -79,17 +81,20 @@ po_slave_raid = {
 	effect = { # Defaults to empty effect (which makes error log entry but is safe)
 		add_estate_influence_modifier = {
 			estate = estate_slaves
-			desc = EST_VAL_EMPTY_SLAVE_RAID
+			desc = EST_VAL_SLAVE_RAID
 			influence = 10
 			duration = 7300
 		}
-		random_province = {
+		every_province = {
 			limit = {
 				owned_by = FROM
 				controlled_by = THIS
+				any_neighbor_province = { owned_by = THIS }
 				base_production = 2
 				NOT = { trade_goods = gold }
+				continent = africa
 				NOT = { has_province_modifier =  slaves_raided_modifier }
+				NOT = { has_province_modifier =  empty_slaves_raided_modifier }
 			}
 			add_province_modifier = {
 				name =  slaves_raided_modifier

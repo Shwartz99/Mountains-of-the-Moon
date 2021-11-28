@@ -969,7 +969,7 @@ cb_horde_vs_civ = {
 		}
 		OR = {
 			is_nomad = yes
-			has_government_attribute = non_native_tribal
+			NOT = { has_government_attribute = non_native_tribal }
 		}
 		is_revolutionary = no
 	}

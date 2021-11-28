@@ -1,5 +1,5 @@
 can_colonize_province = {
-	condition = {
+	condition = { #only allowed to colonize canaries if a province is already owned
 		potential = {
 			FROM  = { ai = yes }
 			ROOT = { area = macaronesia_area }
@@ -14,7 +14,7 @@ can_colonize_province = {
 			}
 		}
 	}
-	condition = {
+	condition = { #non-africans only allowed to colonize coast of north africa
 		potential = {
 			FROM  = {
 				capital_scope = {
@@ -26,6 +26,111 @@ can_colonize_province = {
 		}
 		allow = {
 			ROOT = { has_port = yes }
+		}
+	}
+	condition = { #castile/spain only allowed to colonize in north africa after colonizing 5 provs in new world
+		potential = {
+			FROM  = {
+				OR = {
+					tag = CAS
+					tag = SPA
+					primary_culture = castillian
+				}
+				ai = yes
+			}
+			ROOT = {
+				superregion = africa_superregion
+				NOT = { area = macaronesia_area }
+			}
+		}
+		allow = {
+			FROM = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = new_world
+					}
+				}
+			}
+		}
+	}
+	condition = { #portugal only allowed to colonize in new world (not brazil) after colonizing 3 provs in guinea (5 if rnw) and 3 provs in brazil (not required if rnw)
+		potential = {
+			FROM  = {
+				OR = {
+					tag = POR
+					primary_culture = portugese
+				}
+				ai = yes
+			}
+			ROOT = {
+				OR = {
+					continent = north_america
+					AND = { continent = south_america NOT = { region = brazil_region } }
+					continent = new_world
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				OR = {
+					AND = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 3
+							region = guinea_region
+						}
+						is_random_new_world = no
+					}
+					AND = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 5
+							region = guinea_region
+						}
+						is_random_new_world = yes
+					}
+				}
+				OR = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 3
+						region = brazil_region
+					}
+					is_random_new_world = yes
+				}
+			}
+		}
+	}
+	condition = { #castile/spain only allowed to colonize in north america after owning 5 provs in central america, 5 provs in andes, 5 provs in amazonia
+		potential = {
+			FROM  = {
+				OR = {
+					tag = CAS
+					tag = SPA
+					primary_culture = castillian
+				}
+				ai = yes
+				is_random_new_world = no
+			}
+			ROOT = {
+				superregion = north_america_superregion
+			}
+		}
+		allow = {
+			FROM = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					superregion = south_america_superregion
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					superregion = andes_superregion
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					superregion = central_america_superregion
+				}
+			}
 		}
 	}
 }
