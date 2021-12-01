@@ -19,6 +19,7 @@ aristocracy_ideas = {
 		OR = {
 			has_government_attribute = enables_aristocratic_idea_group
 			government = tribal
+			has_government_attribute = non_native_tribal
 		}
 		NOT = { government = theocracy }
 		NOT = { has_reform = steppe_horde }
