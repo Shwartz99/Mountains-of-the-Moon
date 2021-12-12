@@ -1,6 +1,3 @@
-
-#This one or the next one will always be valid
-
 #fire advisor
 estate_slaves_fire_advisor = {
 	can_select = {
