@@ -348,6 +348,31 @@ country_event = {
 
 }
 
+country_event = {
+	id=motm.7
+	title="motm.7.t"
+	desc="motm.7.d"
+	picture= INVENTION_eventPicture
+
+	is_triggered_only=yes
+
+	option = {
+	name = motm.7.a #Administrative investment
+	add_adm_tech = 1
+	}
+	
+	option = {
+	name = motm.7.b #Diplomatic investment
+	add_dip_tech = 1
+	}
+
+	option = {
+	name = motm.7.c #Military investment
+    add_mil_tech = 1
+	}
+
+}
+
 ####Cleanup events
 
 province_event = {

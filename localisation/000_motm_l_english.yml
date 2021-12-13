@@ -626,7 +626,35 @@
  zaghawa:0 "Zaghawa"
  kru:0 "Kru"
  sudanic:0 "Sudanic"
- 
+
+#missions
+MIR_conquer_port_title:0"Own ports"
+MIR_conquer_port_desc:0" "
+MIR_dominate_madagascar_title:0"Dominate Madagascar"
+MIR_dominate_madagascar_desc:0" "
+domination_of_madagascar:0"Domination over Madagascar"
+DOMINATION_OF_MADAGASCAR_TOOLTIP:"Our nation has managed to dominate most of Madagascar, beginning a new era for the island."
+MIR_mozambique_foothold_title:0"Foothold on the Continent"
+MIR_mozambique_foothold_desc:0" "
+MIR_conquer_sofala_and_quelimane_title:0"Conquer Sofala and Quelimane"
+MIR_conquer_sofala_and_quelimane_desc:0" "
+madagascar_zambezi_trade:0"Access to Zambezi trade"
+MADAGASCAR_ZAMBEZI_TRADE_TOOLTIP:0"The Zambezi trading routes have become accessible to our nation"
+MIR_zambezi_gold_title:0"The Gold Trade"
+MIR_zambezi_gold_desc:0" "
+madagascar_zambezi_gold:0"Access to Zambezi gold mines"
+MADAGASCAR_ZAMBEZI_GOLD_TOOLTIP:0"Our nation has gained access to many gold mines, resulting in an income boost"
+MIR_trade_fleet_title:0"Create a Trade Fleet"
+MIR_trade_fleet_desc:0" "
+MIR_zanzibar_trade_title:0" East African Trade"
+MIR_zanzibar_trade_desc:0" "
+MIR_war_fleet_title:0"Create a War Fleet"
+MIR_war_fleet_desc:0" "
+MIR_develop_country_title:0" Develop the Country"
+MIR_develop_country_desc:0" "
+
+
+
  #ideas
  dahlak_ideas:0 "Dahlak Ideas"
  dahlak_ideas_start:0 "Dahlak Traditions"
@@ -1020,7 +1048,13 @@
  motm.6.d:0 "Our attempts at strengthening our state often make other rulers hostile towards us. These diplomatic tensions are inevitable if we want to become more powerful, but are a concern to the traders that visit our markets and those of the other Hausa states, including those that belong to a rival monarch. Recently those traders have pleaded our monarch to make a truce with this ruler so that they can freely exchange goods. This might hamper our expansion opportunities, but could prove useful to our economy."
  motm.6.a:0 "It is better to maintain these trade relations"
  motm.6.b:0 "Trade cannot get in the way of expansion" 
- 
+MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP:0"We will be able to increase our technology level by one point in a chosen category"
+ motm.7.t:0 "Technological Advancement"
+ motm.7.d:0 "We have recently came into contact with more advanced people from the Swahiil coast. This has resulted in a boost to our technological development, and it is up to the [Root.Monarch.GetTitle] to decide where to invest"
+ motm.7.a:0 "Invest in the Administration"
+ motm.7.b:0 "Invest in the Court" 
+ motm.7.c:0 "Invest in the Military" 
+
  #monuments
  stone_circles_senegambia:0 "Senegambian Stone Circles"
  meroe_ruins:0 "Meroë Ruins"

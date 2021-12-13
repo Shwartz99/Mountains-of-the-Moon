@@ -1,0 +1,14 @@
+domination_of_madagascar={
+	idea_cost = -0.1
+	core_creation = -0.1
+}
+
+madagascar_zambezi_trade={
+global_foreign_trade_power = 0.1
+caravan_power = 0.1
+}
+
+madagascar_zambezi_gold={
+monthly_gold_inflation_modifier = -0.1
+global_trade_goods_size_modifier = 0.1
+}
