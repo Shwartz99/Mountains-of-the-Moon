@@ -736,7 +736,7 @@ country_event = {
 	}
 
 	option = {
-		name = estate_privileges_and_agendas_events.3.j
+		name = estate_privileges_and_agendas_events.3.k
 		trigger = { has_country_flag = estate_slaves_present_agenda }
 		start_estate_agenda = estate_slaves
 		ai_chance = {
