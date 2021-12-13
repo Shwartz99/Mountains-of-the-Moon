@@ -1059,6 +1059,7 @@
  po_slave_raid_desc:0 ""
  CB_ALLOWED_po_slave_raid:0 ""
  PEACE_po_slave_raid:0 ""
+ SLAVE_RAID_WAR_NAME:0 "$ORDER$$FIRST$ Slave Raid of $SECOND$ Lands"
  non_native_tribal_yes:0 "Has Tribal Land."
  mechanic_non_native_tribal:0 "Has Tribal Land."
  mechanic_non_native_tribal_yes:0 "Has Tribal Land."

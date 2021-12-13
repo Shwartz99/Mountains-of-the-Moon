@@ -3,7 +3,7 @@ cb_slave_raid = {
 	valid_for_subject = no
 
 	prerequisites = {
-		has_estate = estate_slaves
+		ROOT = { has_estate = estate_slaves }
 		OR = {
 			ROOT = {
 				capital_scope = {
@@ -20,7 +20,7 @@ cb_slave_raid = {
 				base_production = 2
 				NOT = { trade_goods = gold }
 				continent = africa
-				controlled_by = ROOT
+				controlled_by = FROM
 				any_neighbor_province = { owned_by = ROOT }
 				NOT = { has_province_modifier =  slaves_raided_modifier }
 				NOT = { has_province_modifier =  empty_slaves_raided_modifier }

@@ -964,12 +964,15 @@ cb_horde_vs_civ = {
 
 	prerequisites = {
 		is_neighbor_of = FROM
-		FROM = {
-			is_nomad = no
-		}
 		OR = {
-			is_nomad = yes
-			NOT = { has_government_attribute = non_native_tribal }
+			AND = {
+				FROM = { is_nomad = no }
+				ROOT = { is_nomad = yes }
+			}
+			AND = {
+				FROM = { NOT = { has_government_attribute = non_native_tribal } }
+				ROOT = { has_government_attribute = non_native_tribal }
+			}
 		}
 		is_revolutionary = no
 	}
@@ -1498,9 +1501,9 @@ cb_native_american_tribal_feud = {
 
 	prerequisites = {
 		has_dlc = "Conquest of Paradise"
-		is_native_tribe = yes
+		OR = { is_native_tribe = yes has_government_attribute = non_native_tribal }
 		FROM = {
-			is_native_tribe = yes
+			OR = { is_native_tribe = yes has_government_attribute = non_native_tribal }
 			if = {
 				limit = { 
 					capital_scope = {

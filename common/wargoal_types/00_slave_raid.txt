@@ -56,8 +56,16 @@ slave_raid = {
 	peace_cost_factor = 0.5
 	
 	deny_annex = yes
-	
+        allowed_provinces = {
+		base_production = 2
+		NOT = { trade_goods = gold }
+		continent = africa
+		any_neighbor_province = { owned_by = ROOT }
+		NOT = { has_province_modifier =  slaves_raided_modifier }
+		NOT = { has_province_modifier =  empty_slaves_raided_modifier }
+	}
 	peace_options = {
 		po_slave_raid
 	}
+	war_name = SLAVE_RAID_WAR_NAME
 }

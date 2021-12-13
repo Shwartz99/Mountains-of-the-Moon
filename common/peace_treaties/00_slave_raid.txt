@@ -37,7 +37,7 @@ po_slave_raid = {
 	requires_is_allowed = no # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
 	
 	is_visible = { # Defaults to equivalent of "always = yes"
-		has_estate = estate_slaves
+		THIS = { has_estate = estate_slaves }
 		OR = {
 			THIS = {
 				capital_scope = {
