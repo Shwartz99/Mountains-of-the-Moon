@@ -7,12 +7,3 @@ primary_culture = toubou
 capital = 5055	# Tazirbu
 religious_school = maliki_school
 unit_type = muslim
-
-1444.11.11 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}

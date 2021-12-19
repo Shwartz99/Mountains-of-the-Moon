@@ -10,16 +10,6 @@ unlock_cult = nyame_cult
 capital = 2278	# Kebbi
 religious_school = maliki_school
 
-
-1444.11.11 = {
-	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
-	}
-}
-
 1516.1.1 = {
 	monarch = {
 		name = "Muhammadu Kantu"

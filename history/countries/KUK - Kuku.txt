@@ -7,15 +7,6 @@ technology_group = muslim
 capital = 5000
 religious_school = maliki_school
 
-1440.1.1 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
-
 1515.1.1 = {
 	monarch = {
 		name = "Ahmed"

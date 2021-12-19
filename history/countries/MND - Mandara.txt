@@ -10,11 +10,93 @@ primary_culture = kanuri
 capital = 1160
 religious_school = maliki_school
 
-1444.11.11 = {
+1500.1.1 = {
 	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
+		name = "Sukda"
+		dynasty = "Wandala"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1580.1.1 = {
+	monarch = {
+		name = "Ti-Maya"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Sankré"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1619.1.1 = {
+	monarch = {
+		name = "Aldawa Nanda"
+		dynasty = "Wandala"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Naldawa Nazariza"
+		dynasty = "Wandala"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1715.1.1 = {
+	religion = sunni
+	monarch = {
+		name = "Mai Bukar Aji"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1737.1.1 = {
+	monarch = {
+		name = "Mahmadi Makia"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1757.1.1 = {
+	monarch = {
+		name = "Ti-Kse Bldi"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1773.1.1 = {
+	monarch = {
+		name = "Bukar D’Gjiama"
+		dynasty = "Wandala"
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }

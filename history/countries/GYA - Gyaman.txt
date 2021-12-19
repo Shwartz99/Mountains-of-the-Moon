@@ -11,14 +11,6 @@ capital = 2255 #Sampa
 
 
 #Very little information on rulers. Borrowing from diverse kingdoms of the region, here Akyem Kotoku
-1444.1.1 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
 
 1650.1.1 = {
 	monarch = {

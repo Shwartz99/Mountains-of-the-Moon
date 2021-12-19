@@ -9,15 +9,6 @@ fixed_capital = 1222	# Sennar
 
 #Sultans of Senar
 
-1444.11.11 = {
-	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
-	}
-}
-
 1503.1.1 = {
 	monarch = {
 		name = "'Amâra I Dûnqas"

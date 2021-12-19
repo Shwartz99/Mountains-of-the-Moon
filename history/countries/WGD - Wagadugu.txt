@@ -1,7 +1,7 @@
 # No previous file for Mossi
 
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = tribal_despotism
 primary_culture = mossi
 religion = shamanism #Fetishism
 technology_group = sub_saharan
@@ -10,7 +10,17 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1137 #Wagadugu
 
-1444.1.1 = {
+1441.1.1 = {
+	monarch = {
+		name = "Niandfo"
+		dynasty = "Oubritenga"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1500.1.1 = {
 	monarch =  {
 		name = "Wubri I"
 		dynasty = "Moogo"

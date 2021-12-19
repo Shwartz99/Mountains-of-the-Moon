@@ -9,12 +9,3 @@ religion = shamanism
 primary_culture = kanuri
 capital = 2287
 religious_school = maliki_school
-
-1444.11.11 = {
-	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
-	}
-}

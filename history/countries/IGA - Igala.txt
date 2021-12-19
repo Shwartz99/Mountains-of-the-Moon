@@ -9,15 +9,6 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1152 #Idah
 
-1444.11.11 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
-
 1507.1.1 = {
 	monarch = {
 		name = "Aji"
