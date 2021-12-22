@@ -71,6 +71,7 @@ po_slave_raid = {
 					NOT = { trade_goods = gold }
 					continent = africa
 					controlled_by = THIS
+					is_empty = no
 					any_neighbor_province = { owned_by = THIS }
 					NOT = { has_province_modifier =  slaves_raided_modifier }
 					NOT = { has_province_modifier =  empty_slaves_raided_modifier }

@@ -1,4 +1,4 @@
-capital = "Onitsha"
+capital = "Arochukwu"
 culture = igbo
 religion = shamanism
 owner = IGB

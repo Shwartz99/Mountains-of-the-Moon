@@ -10,4 +10,13 @@ is_city = yes
 owner = JOL
 controller = JOL
 add_core = JOL
+add_core = SLM
 discovered_by = sub_saharan
+
+set_local_autonomy = 80
+
+1550.1.1 = {
+	owner = SLM
+	controller = SLM
+	add_core = SLM
+}

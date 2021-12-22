@@ -3,6 +3,9 @@ cb_slave_raid = {
 	valid_for_subject = no
 
 	prerequisites = {
+		NOT = {
+			AND = { is_year = 1444 is_month = 11 }
+		}
 		ROOT = { has_estate = estate_slaves }
 		OR = {
 			ROOT = {
@@ -22,6 +25,7 @@ cb_slave_raid = {
 				continent = africa
 				controlled_by = FROM
 				any_neighbor_province = { owned_by = ROOT }
+				is_empty = no
 				NOT = { has_province_modifier =  slaves_raided_modifier }
 				NOT = { has_province_modifier =  empty_slaves_raided_modifier }
 			}

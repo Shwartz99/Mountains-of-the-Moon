@@ -10,3 +10,9 @@ native_ferocity = 4
 native_hostileness = 9 
 trade_goods = unknown
 discovered_by = sub_saharan
+
+1750.1.1 = {
+	owner = WAD
+	controller = WAD
+	add_core = WAD
+}

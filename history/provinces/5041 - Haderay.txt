@@ -1,5 +1,6 @@
 #5041 - Haderay
 
+add_core = BGI
 culture = bilala #bagirmi
 religion = shamanism #Fetishism
 capital = "Badanga"
@@ -12,3 +13,8 @@ native_ferocity = 4
 native_hostileness = 9 
 trade_goods = unknown
 discovered_by = sub_saharan
+
+1513.1.1 = {
+	owner = BGI
+	controller = BGI
+}

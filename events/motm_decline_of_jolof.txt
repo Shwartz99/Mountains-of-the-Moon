@@ -1,0 +1,357 @@
+########################################
+# Mountains of the Moon Decline of Jolof Disaster Events
+########################################
+
+namespace = motm_decline_of_jolof
+
+#Disaster start
+country_event = {
+	id = motm_decline_of_jolof.1
+	title = motm_decline_of_jolof.1.t
+	desc = motm_decline_of_jolof.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		if = {
+			limit = { owns_core_province = 1113 NOT = { exists = KAY } }
+			release = KAY
+			KAY = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 2239 NOT = { exists = SII } }
+			release = SII
+			SII = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+		}
+		else_if = {
+			limit = { OR = { owns_core_province = 5020 owns_core_province = 5021 } NOT = { exists = SLM } }
+			release = SLM
+			SLM = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 5065 NOT = { exists = BAO } }
+			release = BAO
+			BAO = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 5019 NOT = { exists = WAA } }
+			release = WAA
+			WAA = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+		}
+		add_prestige = -100
+		add_legitimacy = -50
+		add_stability = -5
+		event_target:jolof_first_revolt = {
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+		}
+		declare_war_with_cb = {
+			who = event_target:jolof_first_revolt
+			casus_belli = cb_annex
+		}
+		if = {
+			limit = { ai = yes NOT = { is_monarch_leader = yes } }
+			define_ruler_to_general = {
+				fire = 0
+				shock = 1
+				manuever = 1
+				siege = 0
+			}
+		}
+	}
+	option = {
+		name = motm_decline_of_jolof.1.a
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motm_decline_of_jolof.1.b
+		switch_tag = event_target:jolof_first_revolt
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Disaster end
+country_event = {
+	id = motm_decline_of_jolof.2
+	title = motm_decline_of_jolof.2.t
+	desc = motm_decline_of_jolof.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		add_legitimacy = 25
+		add_stability = 2
+	}
+	option = {
+		name = motm_decline_of_jolof.2.a
+	}
+}
+
+#Monthly events
+country_event = {
+	id = motm_decline_of_jolof.3
+	title = motm_decline_of_jolof.3.t
+	desc = motm_decline_of_jolof.3.d
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			owns_core_province = 1113
+			owns_core_province = 2239
+			owns_core_province = 5019
+			owns_core_province = 5020
+			owns_core_province = 5021
+			owns_core_province = 5065
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = { has_country_flag = jolof_first_revolt exists = yes }
+			save_event_target_as = jolof_first_revolt
+		}
+		if = {
+			limit = { owns_core_province = 1113 NOT = { has_won_war_against = { who = KAY max_years_since = 100 } } NOT = { exists = KAY } }
+			release = KAY
+			KAY = { save_event_target_as = jolof_subsequent_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 2239 NOT = { has_won_war_against = { who = SII max_years_since = 100 } } NOT = { exists = SII } }
+			release = SII
+			SII = { save_event_target_as = jolof_subsequent_revolt }
+		}
+		else_if = {
+			limit = { OR = { owns_core_province = 5020 owns_core_province = 5021 } NOT = { has_won_war_against = { who = SLM max_years_since = 100 } } NOT = { exists = SLM } }
+			release = SLM
+			SLM = { save_event_target_as = jolof_subsequent_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 5065 NOT = { has_won_war_against = { who = BAO max_years_since = 100 } } NOT = { exists = BAO } }
+			release = BAO
+			BAO = { save_event_target_as = jolof_subsequent_revolt }
+		}
+		else_if = {
+			limit = { owns_core_province = 5019 NOT = { has_won_war_against = { who = WAA max_years_since = 100 } } NOT = { exists = WAA } }
+			release = WAA
+			WAA = { save_event_target_as = jolof_subsequent_revolt }
+		}
+		event_target:jolof_subsequent_revolt = {
+			if = {
+				limit = { event_target:jolof_first_revolt = { exists = yes } }
+				create_alliance = event_target:jolof_first_revolt
+				join_all_defensive_wars_of = event_target:jolof_first_revolt
+			}
+			else = {
+				set_country_flag = jolof_first_revolt
+				JOL = {
+					declare_war_with_cb = {
+						who = event_target:jolof_subsequent_revolt
+						casus_belli = cb_annex
+					}
+				}
+			}
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+		}
+	}
+	option = {
+		name = motm_decline_of_jolof.3.a
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motm_decline_of_jolof.1.b
+		switch_tag = event_target:jolof_subsequent_revolt
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Random chance monthly events
+country_event = { #pretender rebels
+	id = motm_decline_of_jolof.4
+	title = motm_decline_of_jolof.4.t
+	desc = motm_decline_of_jolof.4.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			save_event_target_as = jolof_pretenders
+		}
+	}
+
+	option = { #i reign supreme
+		name = motm_decline_of_jolof.4.a
+		event_target:jolof_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = { #make concessions
+		name = motm_decline_of_jolof.4.b
+		add_legitimacy = -20
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #noble rebels
+	id = motm_decline_of_jolof.5
+	title = motm_decline_of_jolof.5.t
+	desc = motm_decline_of_jolof.5.d
+	picture = LIBERUM_VETO_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			save_event_target_as = jolof_nobles
+		}
+	}
+
+	option = {
+		name = motm_decline_of_jolof.5.a
+		event_target:jolof_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = motm_decline_of_jolof.5.b
+		add_local_autonomy = 33
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #fulani raid
+	id = motm_decline_of_jolof.6
+	title = motm_decline_of_jolof.6.t
+	desc = motm_decline_of_jolof.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				any_neighbor_province = {
+					owned_by = FUL
+				}
+				any_empty_neighbor_province = {
+					tribal_land_of = FUL
+				}
+			}
+			NOT = { has_province_modifier = slaves_raided_modifier }
+		}
+		NOT = {
+			reverse_has_opinion = {
+				who = FUL
+				value = 10
+			}
+		}
+	}
+
+	option = { #damn them
+		name = motm_decline_of_jolof.6.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					any_neighbor_province = {
+						owned_by = FUL
+					}
+					any_empty_neighbor_province = {
+						tribal_land_of = FUL
+					}
+				}
+			}
+			add_province_modifier = { name = slaves_raided_modifier duration = 3650 }
+			add_devastation = 10
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = { #we can fight them too
+		name = motm_decline_of_jolof.6.b
+		random_owned_province = {
+			limit = {
+				OR = {
+					any_neighbor_province = {
+						owned_by = FUL
+					}
+					any_empty_neighbor_province = {
+						tribal_land_of = FUL
+					}
+				}
+			}
+			add_province_modifier = { name = slaves_raided_modifier duration = 1825 }
+			add_devastation = 5
+		}
+		declare_war_with_cb = {
+			who = FUL
+			casus_belli = cb_insult
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = motm_decline_of_jolof.7
+	title = motm_decline_of_jolof.7.t
+	desc = motm_decline_of_jolof.7.d
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		JOL = { country_event = { id = motm_decline_of_jolof.8 } kill_ruler = yes }
+		white_peace = JOL
+		every_ally = {
+			limit = { war_with = JOL }
+			white_peace = JOL
+		}
+	}
+
+	option = { #independence at last
+		name = motm_decline_of_jolof.7.a
+		ai_chance = { factor = 1 }
+	}
+	
+}
+
+country_event = {
+	id = motm_decline_of_jolof.8
+	title = motm_decline_of_jolof.8.t
+	desc = motm_decline_of_jolof.8.d
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #noooo
+		name = motm_decline_of_jolof.8.a
+		add_stability = -2
+		ai_chance = { factor = 1 }
+	}
+}
