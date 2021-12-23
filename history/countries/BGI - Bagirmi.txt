@@ -1,0 +1,194 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = bilala
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1159
+religious_school = maliki_school
+
+1513.1.1 = {
+	monarch = {
+		name = "Birni Besse"
+		dynasty = "Kenga"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+1528.1.1 = {
+	monarch = {
+		name = "Lubatko"
+		dynasty = "Kenga"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Malo"
+		dynasty = "Kenga"
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+
+1561.1.1 = {
+	monarch = {
+		name = "Abdallah"
+		dynasty = "Kenga"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1580.1.1 = {
+	religion = sunni
+}
+
+1602.1.1 = {
+	monarch = {
+		name = "Omar"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Dalai"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1631.1.1 = {
+	monarch = {
+		name = "Bourkomanda I"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1661.1.1 = {
+	monarch = {
+		name = "Abderrahman Woli"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1670.1.1 = {
+	monarch = {
+		name = "Dalo Birni"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1676.1.1 = {
+	monarch = {
+		name = "Abdel Kadir Woli"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1704.1.1 = {
+	monarch = {
+		name = "Bar"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1719.1.1 = {
+	monarch = {
+		name = "Wanga"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1734.1.1 = {
+	monarch = {
+		name = "Bourkomanda Tad Lele"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1739.1.1 = {
+	monarch = {
+		name = "Loel"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}
+
+1749.1.1 = {
+	monarch = {
+		name = "Muhammad al-Amin"
+		dynasty = "Kenga"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+
+1784.1.1 = {
+	monarch = {
+		name = "Abderrahman Guarang"
+		dynasty = "Kenga"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1806.1.1 = {
+	monarch = {
+		name = "Ngarba Bira"
+		dynasty = "Kenga"
+		dip = 2
+		adm = 0
+		mil = 1
+	}
+}
+
+1807.1.1 = {
+	monarch = {
+		name = "Bourkomanda II"
+		dynasty = "Kenga"
+		dip = 1
+		adm = 0
+		mil = 1
+	}
+}

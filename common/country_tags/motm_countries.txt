@@ -25,6 +25,7 @@ ZGH = "countries/Zaghawa.txt"
 DDJ = "countries/DarDaju.txt"
 TUJ = "countries/Tunjur.txt"
 DHL = "countries/Dahlak.txt"
+BGI = "countries/Bagirmi.txt"
 
 AJJ = "countries/Ajjer.txt"
 AHA = "countries/Ahaggar.txt"

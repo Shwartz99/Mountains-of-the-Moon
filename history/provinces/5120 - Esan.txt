@@ -1,12 +1,12 @@
 # No previous file for Warri
 
-owner = BEN
-controller = BEN
-add_core = BEN
+owner = IGB
+controller = IGB
+add_core = IGB
 is_city = yes
 culture = igbo 
 religion = shamanism #Fetishism
-capital = "Idoa"
+capital = "Onitsha"
 trade_goods = grain
 hre = no
 base_tax = 1 

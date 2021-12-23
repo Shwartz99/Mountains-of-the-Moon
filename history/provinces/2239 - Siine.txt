@@ -17,15 +17,14 @@ native_hostileness = 9
 base_manpower = 3
 add_core = SII
 
-
+set_local_autonomy = 80
 
 discovered_by = sub_saharan
 
 1446.1.1 = { discovered_by = POR } # Frenão do Pó
 
-1520.1.1 = {
+1550.1.1 = {
 	add_core = SII
 	owner = SII
 	controller = SII
-	remove_core = JOL
 }

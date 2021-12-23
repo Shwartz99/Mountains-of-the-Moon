@@ -19,11 +19,16 @@ is_city = yes
 discovered_by = east_african
 discovered_by = sub_saharan
 
+1490.1.1 = {
+	owner = TUJ
+	controller = TUJ
+	add_core = TUJ
+}
+
 1596.1.1 = {
 	owner = DAR
 	controller = DAR
 	add_core = DAR
 	discovered_by = NUB
-	is_city = yes
 	discovered_by = ETH
 }

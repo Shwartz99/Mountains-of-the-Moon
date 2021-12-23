@@ -18,10 +18,9 @@ base_manpower = 2
 discovered_by = east_african
 discovered_by = sub_saharan
 
-1501.1.1 = {
+1635.1.1 = {
 	owner = WAD
 	controller = WAD
-	add_core = WAD
 }
 
-1635.1.1 = { religion = sunni }
+1682.1.1 = { religion = sunni }

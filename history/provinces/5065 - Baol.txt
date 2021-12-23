@@ -13,8 +13,14 @@ trade_goods = grain
 is_city = yes
 discovered_by = sub_saharan
 
+set_local_autonomy = 80
+
 1550.1.1 = {
 	owner = BAO
 	controller = BAO
-	remove_core = JOL
+}
+
+1786.1.1 = {
+	owner = KAY
+	controller = KAY
 }

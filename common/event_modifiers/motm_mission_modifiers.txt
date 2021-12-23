@@ -12,3 +12,9 @@ madagascar_zambezi_gold={
 monthly_gold_inflation_modifier = -0.1
 global_trade_goods_size_modifier = 0.1
 }
+
+jolof_centralized_empire = {
+	yearly_absolutism = 0.5
+	years_of_nationalism = -5
+	reduced_liberty_desire = 10
+}

@@ -3,7 +3,6 @@
 owner = TUJ
 controller = TUJ
 add_core = TUJ
-add_core = WAD
 add_core = DAR
 culture = fur 
 religion = shamanism #Fetishism
@@ -21,12 +20,6 @@ extra_cost = 8
 center_of_trade = 1
 discovered_by = east_african
 discovered_by = sub_saharan
-
-1501.1.1 = {
-	owner = WAD
-	controller = WAD
-	add_core = WAD
-}
 
 1596.1.1 = {
 	owner = DAR

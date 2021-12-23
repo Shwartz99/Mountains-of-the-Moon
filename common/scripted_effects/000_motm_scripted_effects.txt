@@ -1061,3 +1061,37 @@ slave_raid_effect = {
 		}
 	}
 }
+
+release_largest_country = { #thanks seelowe, eu4 mod coop god
+    every_owned_province = {
+        limit = {
+            is_capital = no
+        }
+        every_core_country = {
+            limit = {
+                exists = no
+            }
+            change_variable = { which = count value = 1 }
+        }
+    }
+    save_event_target_as = jolof_first_revolt
+    every_owned_province = {
+        limit = {
+            is_capital = no
+        }
+        every_core_country = {
+            if = {
+                limit = {
+                    check_variable = { which = count which = event_target:jolof_first_revolt }
+                }
+                save_event_target_as = jolof_first_revolt
+            }
+            set_variable = { which = count value = 0 }
+        }
+    }
+    event_target:jolof_first_revolt = {
+		every_core_province = {
+			cede_province = PREV
+		}
+	}
+}

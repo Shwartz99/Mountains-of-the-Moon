@@ -28,3 +28,27 @@ vassal = {
 	start_date = 1566.1.1
 	end_date = 1781.1.1
 }
+vassal = {
+	first = BOR
+	second = BGI
+	start_date = 1573.1.1
+	end_date = 1751.1.1
+}
+guarantee = {
+	first = BOR
+	second = BGI
+	start_date = 1751.1.1
+	end_date = 1871.1.1
+}
+guarantee = {
+	first = KAY
+	second = BAO
+	start_date = 1550.1.1
+	end_date = 1686.1.1
+}
+union = {
+	first = BAO
+	second = KAY
+	start_date = 1686.1.1
+	end_date = 1702.1.1
+}

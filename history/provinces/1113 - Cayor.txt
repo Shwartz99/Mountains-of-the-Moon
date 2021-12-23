@@ -16,6 +16,7 @@ discovered_by = sub_saharan
 extra_cost = 10
 add_core = KAY
 
+set_local_autonomy = 80
 
 1445.1.1 = { discovered_by = POR }
 
@@ -26,7 +27,6 @@ add_core = KAY
 	add_core = KAY
 	owner = KAY
 	controller = KAY
-	remove_core = JOL
 }
 1593.1.1 = { unrest = 5 } #Fulani expansionism under Samba Lemu destablilizes Waalo and much of Kayor
 1651.1.1 = { fort_15th = yes } # Representing Fort Jakob
