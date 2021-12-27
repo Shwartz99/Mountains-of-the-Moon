@@ -4,6 +4,7 @@ decline_of_jolof = {
 		tag = JOL
 		is_year = 1520
 		is_free_or_tributary_trigger = yes
+		NOT = { has_any_disaster = yes }
 		OR = {
 			AND = { NOT = { has_country_flag = jol_reined_in_coast_flag } NOT = { has_dlc = "Origins" } }
 			AND = { has_reform = tribal_confederacy has_dlc = "Origins" }
@@ -16,7 +17,6 @@ decline_of_jolof = {
 	
 	can_stop = {
 		OR = {
-			has_any_disaster = yes
 			AND = { has_country_flag = jol_reined_in_coast_flag NOT = { has_dlc = "Origins" } }
 			AND = { NOT = { has_reform = tribal_confederacy } has_dlc = "Origins" } 
 		}

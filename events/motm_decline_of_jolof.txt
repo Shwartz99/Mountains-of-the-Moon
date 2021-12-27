@@ -324,6 +324,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	immediate = {
 		JOL = { country_event = { id = motm_decline_of_jolof.8 } kill_ruler = yes }
