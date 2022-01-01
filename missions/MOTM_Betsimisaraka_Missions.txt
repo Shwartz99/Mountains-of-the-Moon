@@ -1,39 +1,40 @@
-sakalava_main_missions = {
+betsimisaraka_main_missions = {
     slot = 4                   
     generic = no
     ai = yes                
     has_country_shield = yes   
     
     potential = {
-        OR={
-        tag=SKA
-        tag=MFY
-        }
+        tag=BTS
     }
     
    
-       SKA_control_the_west  = {
+        BTS_control_the_northeast = {
         icon = mission_invade_kanem          
         position = 1 
         
         required_missions = {
-            
+           
         }
         
         trigger = {
-        owns=4028
-        owns=4021
-        owns=1193
-        owns=1194
-        
-        total_development = 40
+        owns=4024
+        owns=4025 
+        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	        value = 6
+            OR={
+              area=sakalava_area
+              area=betsimasaraka_area
+              area=madagascar_highlands_area
+            }
+          }
         }
         
         effect = {
         add_adm_power = 100
         add_dip_power = 100
         add_mil_power = 100
-        add_army_tradition=5
+        add_navy_tradition = 10   
         }
     }
 
@@ -42,7 +43,7 @@ sakalava_main_missions = {
         position = 2 
         
         required_missions = {
-        SKA_control_the_west  
+        BTS_control_the_northeast 
         }
         
         trigger = {
@@ -141,17 +142,14 @@ sakalava_main_missions = {
     }
 }
 
-sakalava_secondary_missions = {
+betsimisaraka_secondary_missions = {
     slot = 5
     generic = no
     ai = yes 
     has_country_shield = yes   
 
     potential = {
-         OR={
-        tag=SKA
-        tag=MFY
-        }
+        tag=BTS
     }
 
         MIR_trade_fleet= {

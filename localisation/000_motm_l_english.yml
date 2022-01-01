@@ -629,6 +629,7 @@
  kru:0 "Kru"
  sudanic:0 "Sudanic"
 
+<<<<<<< Updated upstream
  #missions
  MIR_conquer_port_title:0"Own ports"
  MIR_conquer_port_desc:0" "
@@ -676,6 +677,39 @@
  motm_jol_songhai_and_mossi_desc:0 "The Songhai are the last challenger to our claim of successor to Mali, from their petty capital in Gao. Meanwhile, the Mossi which have plagued our predecessors have found our land as an easy target to raid. These insults and incursions shall happen no more! Let them feel the might of Jolof!"
  motm_jol_west_african_great_power_title:0 "Hegemon of West Africa"
  motm_jol_west_african_great_power_desc:0 "We are the greatest power in West Africa, and none shall stop us. We will defend the coast from the European invaders, and the petty kings will fall under our rule."
+=======
+#missions
+MIR_conquer_port_title:0"Own ports"
+MIR_conquer_port_desc:0" "
+MIR_dominate_madagascar_title:0"Dominate Madagascar"
+MIR_dominate_madagascar_desc:0" "
+domination_of_madagascar:0"Domination over Madagascar"
+DOMINATION_OF_MADAGASCAR_TOOLTIP:"Our nation has managed to dominate most of Madagascar, beginning a new era for the island."
+MIR_mozambique_foothold_title:0"Foothold on the Continent"
+MIR_mozambique_foothold_desc:0" "
+MIR_conquer_sofala_and_quelimane_title:0"Conquer Sofala and Quelimane"
+MIR_conquer_sofala_and_quelimane_desc:0" "
+madagascar_zambezi_trade:0"Access to Zambezi trade"
+MADAGASCAR_ZAMBEZI_TRADE_TOOLTIP:0"The Zambezi trading routes have become accessible to our nation"
+MIR_zambezi_gold_title:0"The Gold Trade"
+MIR_zambezi_gold_desc:0" "
+madagascar_zambezi_gold:0"Access to Zambezi gold mines"
+MADAGASCAR_ZAMBEZI_GOLD_TOOLTIP:0"Our nation has gained access to many gold mines, resulting in an income boost"
+MIR_trade_fleet_title:0"Create a Trade Fleet"
+MIR_trade_fleet_desc:0" "
+MIR_zanzibar_trade_title:0" East African Trade"
+MIR_zanzibar_trade_desc:0" "
+MIR_war_fleet_title:0"Create a War Fleet"
+MIR_war_fleet_desc:0" "
+MIR_develop_country_title:0" Develop the Country"
+MIR_develop_country_desc:0" "
+SKA_control_the_west_title:0"Control the West Coast"
+SKA_control_the_west_desc:0""
+SKA_control_the_west_title:0"Control the West Coast"
+SKA_control_the_west_desc:0""
+BTS_control_the_northeast_title:0"Control the Northeast"
+BTS_control_the_northeast_desc:0""
+>>>>>>> Stashed changes
 
  #ideas
  dahlak_ideas:0 "Dahlak Ideas"
