@@ -677,7 +677,7 @@
  motm_jol_songhai_and_mossi_desc:0 "The Songhai are the last challenger to our claim of successor to Mali, from their petty capital in Gao. Meanwhile, the Mossi which have plagued our predecessors have found our land as an easy target to raid. These insults and incursions shall happen no more! Let them feel the might of Jolof!"
  motm_jol_west_african_great_power_title:0 "Hegemon of West Africa"
  motm_jol_west_african_great_power_desc:0 "We are the greatest power in West Africa, and none shall stop us. We will defend the coast from the European invaders, and the petty kings will fall under our rule."
-=======
+
 #missions
 MIR_conquer_port_title:0"Own ports"
 MIR_conquer_port_desc:0" "
@@ -701,7 +701,7 @@ MIR_zanzibar_trade_title:0" East African Trade"
 MIR_zanzibar_trade_desc:0" "
 MIR_war_fleet_title:0"Create a War Fleet"
 MIR_war_fleet_desc:0" "
-MIR_develop_country_title:0" Develop the Country"
+MIR_develop_country_title:0"Develop the Country"
 MIR_develop_country_desc:0" "
 SKA_control_the_west_title:0"Control the West Coast"
 SKA_control_the_west_desc:0""
@@ -709,7 +709,11 @@ SKA_control_the_west_title:0"Control the West Coast"
 SKA_control_the_west_desc:0""
 BTS_control_the_northeast_title:0"Control the Northeast"
 BTS_control_the_northeast_desc:0""
->>>>>>> Stashed changes
+ANT_convert_six_provinces_title:0"Convert Southern Madagascar"
+ANT_convert_six_provinces_desc:0""
+ANT_convert_twelve_provinces_title:0"Convert all of Madagascar"
+ANT_convert_twelve_provinces_desc:0""
+
 
  #ideas
  dahlak_ideas:0 "Dahlak Ideas"
