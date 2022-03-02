@@ -280,52 +280,6 @@ on_country_released = {
 	}
 }
 
-# ROOT = province, FROM = country
-on_trade_good_changed = {
-	on_trade_good_changed_estate_privileges_effect = yes
-	if = {
-		limit = {
-			OR = {
-				has_province_modifier = wine_bonus_prod
-				has_province_modifier = grain_bonus_prod
-			}
-			FROM = { NOT = { has_reform = monastic_breweries_reform } }
-		}
-		remove_province_modifier = wine_bonus_prod
-		remove_province_modifier = grain_bonus_prod
-	}
-	hidden_effect = {
-		if = {
-			limit = {
-				trade_goods = wine
-				FROM = { has_reform = monastic_breweries_reform }
-			}
-			add_province_modifier = { 
-				name = wine_bonus_prod
-				duration = -1
-				hidden = yes
-			}
-		}
-		else = {
-			remove_province_modifier = wine_bonus_prod
-		}
-		if = {
-			limit = {
-				trade_goods = grain
-				FROM = { has_reform = monastic_breweries_reform }
-			}
-			add_province_modifier = { 
-				name = grain_bonus_prod
-				duration = -1
-				hidden = yes
-			}
-		}
-		else = {
-			remove_province_modifier = grain_bonus_prod
-		}
-	}
-}
-
 # this = country
 on_rebels_break_country = {
 	add_country_modifier = {
