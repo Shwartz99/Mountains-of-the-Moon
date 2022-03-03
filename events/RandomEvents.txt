@@ -11861,11 +11861,6 @@ country_event = {
 		add_treasury = -50
 		add_prestige = 5
 		event_target:flagship_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
 			heavy_ship = ROOT
 		}
 	}
@@ -11881,11 +11876,6 @@ country_event = {
 		add_treasury = -20
 		add_prestige = 2
 		event_target:flagship_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
 			light_ship = ROOT
 		}
 	}
@@ -11897,11 +11887,6 @@ country_event = {
 		add_treasury = -10
 		add_prestige = 1
 		event_target:flagship_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
 			galley = ROOT
 		}
 	}

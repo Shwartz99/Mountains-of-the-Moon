@@ -113,7 +113,7 @@ on_battle_lost_unit = {
         limit = {
             unit_owner = {
                 tag = JOL
-                has_disaster = motm_decline_of_jolof
+                has_disaster = decline_of_jolof
             }
             is_ruler_commanding_unit = yes
 			enemy_unit = {

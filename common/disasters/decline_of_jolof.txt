@@ -25,7 +25,10 @@ decline_of_jolof = {
 	progress = {
 		modifier = {
 			factor = 5
-			custom_trigger_tooltip = "decline_of_jolof_base_progress"
+			OR = {
+				AND = { NOT = { has_country_flag = jol_reined_in_coast_flag } NOT = { has_dlc = "Origins" } }
+				AND = { has_reform = tribal_confederacy has_dlc = "Origins" }
+			}
 		}
 		modifier = {
 			factor = 1
