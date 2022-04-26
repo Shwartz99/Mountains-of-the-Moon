@@ -1165,6 +1165,9 @@
  sudd_modifier:0 "Sudd"
  desc_sudd_modifier:0 "The Sudd is a vast swampland which makes it near impossible to get through."
  
+ conquista_realenga:0 "Conquista Realenga"
+ desc_conquista_realenga:0 "The conquest of these islands has been funded by the Crown, thus stimulating the growth of our colonies."
+ 
  #country mission modifiers
  jolof_centralized_empire:0 "Centralized Empire"
  jolof_centralized_empire_tooltip:0 "We have succeeded in installing absolutism in our country, as our ruler is supreme."

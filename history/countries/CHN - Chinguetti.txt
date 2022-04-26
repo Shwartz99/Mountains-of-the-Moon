@@ -5,6 +5,7 @@ primary_culture = berber
 religion = sunni
 technology_group = muslim
 capital = 5017	#  Bilad ash-Shinqit
+fixed_capital = 5017
 religious_school = maliki_school
 
 

@@ -10,6 +10,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1136	# Fada N'Gourma
+fixed_capital = 1136
 
 1204.1.1 = {
 	monarch = {

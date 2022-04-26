@@ -35,9 +35,13 @@ gc_spain_1 = {
 			custom_trigger_tooltip = {
 				tooltip = spa_plus_ultra_tooltip
 				OR = {
-					AND = {
-						owns_core_province = 366
-						owns_core_province = 4565
+					366 = {
+						owned_by = ROOT
+						is_colony = yes
+					}
+					4565 = {
+						owned_by = ROOT
+						is_colony = yes
 					}
 					any_owned_province = {
 						OR = {
@@ -53,6 +57,18 @@ gc_spain_1 = {
 			add_country_modifier = {
 				name = "spa_plus_ultra"
 				duration = 7300
+			}
+			366 = {
+				add_province_triggered_modifier = {
+					name = conquista_realenga
+					duration = -1
+				}
+			}
+			4565 = {
+				add_province_triggered_modifier = {
+					name = conquista_realenga
+					duration = -1
+				}
 			}
 		}
 	}

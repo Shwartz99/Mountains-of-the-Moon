@@ -8,6 +8,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1113
+fixed_capital = 1113
 
 #Rulers of Cayor
 1549.1.1 = {

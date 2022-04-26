@@ -3,7 +3,7 @@
 owner = KBU
 controller = KBU
 add_core = KBU
-culture = mali
+culture = serer
 is_city = yes
 base_manpower = 4
 religion = shamanism #Fetishism

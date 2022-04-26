@@ -29,10 +29,8 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			every_province = {
-				culture = sidamo
-				NOT = { owned_by = ROOT }
-			}
+			culture = sidamo
+			NOT = { owned_by = ROOT }
 		}
 
 		allow = {
@@ -41,17 +39,17 @@ country_decisions = {
 				culture = sidamo
 			}
 			owns_core_province = 1218 #Sidamo
-
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
+		
 		effect = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			change_tag = SID
 
-			kaffa_area= {add_permanent_claim = SID} 
-			sidamo_area= {add_permanent_claim = SID}  
+			hadiya_area = { add_permanent_claim = SID } 
+			southern_ethiopia_area = { add_permanent_claim = SID }  
 
 			SID = {
 				add_country_modifier = {
@@ -68,7 +66,7 @@ country_decisions = {
 			}
 			set_country_flag = formed_sidamo_flag
 
-			capital_scope={
+			capital_scope = {
 				add_base_tax = 1
 				add_base_production = 1
 			}

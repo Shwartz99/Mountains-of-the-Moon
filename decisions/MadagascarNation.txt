@@ -6,7 +6,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			normal_or_historical_nations = yes
 			NOT = { exists = MDG }
-			NOT = { has_country_flag = formed_madagascar_flag}
+			NOT = { has_country_flag = formed_madagascar_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no}
@@ -14,20 +14,25 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = MDG }
-			
+			OR = {
 				primary_culture = madagasque
-
+				primary_culture = madagascan
+			}
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
 				AND = {
 					is_former_colonial_nation = yes
-					ai = no}}
-			
+					ai = no
+				}
+			}
 		}
 
 		provinces_to_highlight = {
-			culture = madagasque
+			OR = {
+				primary_culture = madagasque
+				primary_culture = madagascan
+			}
 			NOT = { owned_by = ROOT }
 		}
 
@@ -38,14 +43,20 @@ country_decisions = {
 			
 			num_of_owned_provinces_with = {
                 value = 12
-                culture = madagasque
+				OR = {
+					primary_culture = madagasque
+					primary_culture = madagascan
+				}
 			}
 		}
 		effect = {
 			remove_non_electors_emperors_from_empire_effect = yes
             change_tag = MDG
-            madagascar_region= {add_permanent_claim = MDG} 
-            MDG= {
+			madagascar_highlands_area = { add_permanent_claim = MDG }
+			betsimasaraka_area = { add_permanent_claim = MDG }
+			sakalava_area = { add_permanent_claim = MDG }
+			southern_madagascar = { add_permanent_claim = MDG }
+            MDG = {
 				add_country_modifier = {
 					name = centralization_modifier
 					duration = 7300}
@@ -63,13 +74,13 @@ country_decisions = {
 					country_event = { id = ideagroups.1 } #Swap Ideas
 				}
 				set_country_flag = formed_madagascar_flag
-				capital_scope={
-					add_base_tax=1
-					add_base_production=1
+				capital_scope = {
+					add_base_tax = 1
+					add_base_production = 1
 				}
 		}
 
-		ai_will_do = {factor = 1}
+		ai_will_do = { factor = 1 }
 		ai_importance = 400
 	}
 }

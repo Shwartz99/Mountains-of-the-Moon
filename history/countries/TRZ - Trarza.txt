@@ -5,6 +5,7 @@ primary_culture = berber
 religion = sunni
 technology_group = muslim
 capital = 5007	# Trarza
+fixed_capital = 5007
 religious_school = maliki_school
 
 

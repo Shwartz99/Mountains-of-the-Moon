@@ -8,6 +8,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 2278	# Kebbi
+fixed_capital = 2278
 religious_school = maliki_school
 
 1516.1.1 = {
