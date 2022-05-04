@@ -1,0 +1,510 @@
+########################################
+# Mountains of the Moon Events
+########################################
+
+namespace = motmreligionmechanic
+
+country_event = {
+	id = motmreligionmechanic.1
+	title = motmreligionmechanic.1.t
+	desc = motmreligionmechanic.1.d
+	picture = FLAG_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { has_province_flag = counted }  #ignore provinces that already got their dev counted
+					NOT = { has_province_modifier = motm_religion_reward_province }
+					is_state = yes
+					ROOT = {
+						OR = {
+							primary_culture = PREV
+							accepted_culture = PREV
+							AND = {
+								has_cultural_union = yes
+								culture_group = PREV
+							}
+						}
+					}
+					OR = {
+						culture_group = mande
+						culture_group = sahelian
+						culture_group = senegambian_group
+						culture_group = voltaic
+						culture_group = west_african
+						culture_group = southern_african
+						culture_group = kongo_group
+						culture_group = great_lakes_group
+						culture_group = african
+						culture_group = cushitic
+						culture_group = sudanese
+						culture_group = dogon_g
+						culture = tuareg
+						culture = berber
+						culture = sanhaja
+						culture = kabyle
+						culture = mzabi
+						culture = shilha
+						culture = al_misr_arabic
+					}
+				}
+				export_to_variable = { which = count value = development }
+				set_province_flag = counted  #already counted this province
+				set_province_flag = count_result  #this province collects count of its culture
+				save_event_target_as = counter
+				PREV = {
+					every_owned_province = {
+						limit = {
+							culture = event_target:counter  #same culture as collector
+							NOT = { province_id = event_target:counter }  #but not collector itself
+						}
+						event_target:counter = {
+							export_to_variable = { which = temp value = development who = PREV }
+							change_variable = { which = count which = temp }  #add dev to collector count
+						}
+						set_province_flag = counted  #already counted this province
+					}
+				}
+			}
+			capital_scope = { save_event_target_as = count_result_0 }  #default option if for some reason the above fails
+			culture_count_helper = { num = 1 default = 0 }  #get 5 highest dev counts
+			culture_count_helper = { num = 2 default = 1 }
+			culture_count_helper = { num = 3 default = 2 }
+			culture_count_helper = { num = 4 default = 3 }
+			culture_count_helper = { num = 5 default = 4 }
+			every_owned_province = {  #cleanup
+				clr_province_flag = counted
+				clr_province_flag = count_result
+				set_variable = { which = count value = 0 }
+			}
+		}
+	}
+
+	option = {
+		name = motmreligionmechanic.1.mali
+		trigger = { motm_friendly_culture = { culture = mali } }
+		motm_religion_reward = { culture = mali }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.soninke
+		trigger = { motm_friendly_culture = { culture = soninke } }
+		motm_religion_reward = { culture = soninke }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bambara
+		trigger = { motm_friendly_culture = { culture = bambara } }
+		motm_religion_reward = { culture = bambara }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bozo
+		trigger = { motm_friendly_culture = { culture = bozo } }
+		motm_religion_reward = { culture = bozo }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.dyola
+		trigger = { motm_friendly_culture = { culture = dyola } }
+		motm_religion_reward = { culture = dyola }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.susu
+		trigger = { motm_friendly_culture = { culture = susu } }
+		motm_religion_reward = { culture = susu }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.hausa
+		trigger = { motm_friendly_culture = { culture = hausa } }
+		motm_religion_reward = { culture = hausa }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.kanuri
+		trigger = { motm_friendly_culture = { culture = kanuri } }
+		motm_religion_reward = { culture = kanuri }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bilala
+		trigger = { motm_friendly_culture = { culture = bilala } }
+		motm_religion_reward = { culture = bilala }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.songhai
+		trigger = { motm_friendly_culture = { culture = songhai } }
+		motm_religion_reward = { culture = songhai }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.jukun
+		trigger = { motm_friendly_culture = { culture = jukun } }
+		motm_religion_reward = { culture = jukun }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.toubou
+		trigger = { motm_friendly_culture = { culture = toubou } }
+		motm_religion_reward = { culture = toubou }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.zaghawa
+		trigger = { motm_friendly_culture = { culture = zaghawa } }
+		motm_religion_reward = { culture = zaghawa }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.sudanic
+		trigger = { motm_friendly_culture = { culture = sudanic } }
+		motm_religion_reward = { culture = sudanic }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.senegambian
+		trigger = { motm_friendly_culture = { culture = senegambian } }
+		motm_religion_reward = { culture = senegambian }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.fulani
+		trigger = { motm_friendly_culture = { culture = fulani } }
+		motm_religion_reward = { culture = fulani }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.serer
+		trigger = { motm_friendly_culture = { culture = serer } }
+		motm_religion_reward = { culture = serer }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.mossi
+		trigger = { motm_friendly_culture = { culture = mossi } }
+		motm_religion_reward = { culture = mossi }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.dagomba
+		trigger = { motm_friendly_culture = { culture = dagomba } }
+		motm_religion_reward = { culture = dagomba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.senufo
+		trigger = { motm_friendly_culture = { culture = senufo } }
+		motm_religion_reward = { culture = senufo }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.kru
+		trigger = { motm_friendly_culture = { culture = kru } }
+		motm_religion_reward = { culture = kru }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.yorumba
+		trigger = { motm_friendly_culture = { culture = yorumba } }
+		motm_religion_reward = { culture = yorumba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.aka
+		trigger = { motm_friendly_culture = { culture = aka } }
+		motm_religion_reward = { culture = aka }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.nupe
+		trigger = { motm_friendly_culture = { culture = nupe } }
+		motm_religion_reward = { culture = nupe }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.fon
+		trigger = { motm_friendly_culture = { culture = fon } }
+		motm_religion_reward = { culture = fon }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.igbo
+		trigger = { motm_friendly_culture = { culture = igbo } }
+		motm_religion_reward = { culture = igbo }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.sawabantu
+		trigger = { motm_friendly_culture = { culture = sawabantu } }
+		motm_religion_reward = { culture = sawabantu }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.makua
+		trigger = { motm_friendly_culture = { culture = makua } }
+		motm_religion_reward = { culture = makua }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.nguni
+		trigger = { motm_friendly_culture = { culture = nguni } }
+		motm_religion_reward = { culture = nguni }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bemba
+		trigger = { motm_friendly_culture = { culture = bemba } }
+		motm_religion_reward = { culture = bemba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.khoisan
+		trigger = { motm_friendly_culture = { culture = khoisan } }
+		motm_religion_reward = { culture = khoisan }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.shona
+		trigger = { motm_friendly_culture = { culture = shona } }
+		motm_religion_reward = { culture = shona }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.nyasa
+		trigger = { motm_friendly_culture = { culture = nyasa } }
+		motm_religion_reward = { culture = nyasa }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.lunda
+		trigger = { motm_friendly_culture = { culture = lunda } }
+		motm_religion_reward = { culture = lunda }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.luba
+		trigger = { motm_friendly_culture = { culture = luba } }
+		motm_religion_reward = { culture = luba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.kongolese
+		trigger = { motm_friendly_culture = { culture = kongolese } }
+		motm_religion_reward = { culture = kongolese }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.yaka
+		trigger = { motm_friendly_culture = { culture = yaka } }
+		motm_religion_reward = { culture = yaka }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.kuba
+		trigger = { motm_friendly_culture = { culture = kuba } }
+		motm_religion_reward = { culture = kuba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.mbundu
+		trigger = { motm_friendly_culture = { culture = mbundu } }
+		motm_religion_reward = { culture = mbundu }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.chokwe
+		trigger = { motm_friendly_culture = { culture = chokwe } }
+		motm_religion_reward = { culture = chokwe }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.mbangala
+		trigger = { motm_friendly_culture = { culture = mbangala } }
+		motm_religion_reward = { culture = mbangala }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.rwandan
+		trigger = { motm_friendly_culture = { culture = rwandan } }
+		motm_religion_reward = { culture = rwandan }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.ganda
+		trigger = { motm_friendly_culture = { culture = ganda } }
+		motm_religion_reward = { culture = ganda }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.masaba
+		trigger = { motm_friendly_culture = { culture = masaba } }
+		motm_religion_reward = { culture = masaba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.madagasque
+		trigger = { motm_friendly_culture = { culture = madagasque } }
+		motm_religion_reward = { culture = madagasque }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.takama
+		trigger = { motm_friendly_culture = { culture = takama } }
+		motm_religion_reward = { culture = takama }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bena
+		trigger = { motm_friendly_culture = { culture = bena } }
+		motm_religion_reward = { culture = bena }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.bantu
+		trigger = { motm_friendly_culture = { culture = bantu } }
+		motm_religion_reward = { culture = bantu }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.swahili
+		trigger = { motm_friendly_culture = { culture = swahili } }
+		motm_religion_reward = { culture = swahili }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.somali
+		trigger = { motm_friendly_culture = { culture = somali } }
+		motm_religion_reward = { culture = somali }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.harari
+		trigger = { motm_friendly_culture = { culture = harari } }
+		motm_religion_reward = { culture = harari }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.afar
+		trigger = { motm_friendly_culture = { culture = afar } }
+		motm_religion_reward = { culture = afar }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.oromo
+		trigger = { motm_friendly_culture = { culture = oromo } }
+		motm_religion_reward = { culture = oromo }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.tigray
+		trigger = { motm_friendly_culture = { culture = tigray } }
+		motm_religion_reward = { culture = tigray }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.sidamo
+		trigger = { motm_friendly_culture = { culture = sidamo } }
+		motm_religion_reward = { culture = sidamo }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.amhara
+		trigger = { motm_friendly_culture = { culture = amhara } }
+		motm_religion_reward = { culture = amhara }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.acholi
+		trigger = { motm_friendly_culture = { culture = acholi } }
+		motm_religion_reward = { culture = acholi }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.nubian
+		trigger = { motm_friendly_culture = { culture = nubian } }
+		motm_religion_reward = { culture = nubian }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.beja
+		trigger = { motm_friendly_culture = { culture = beja } }
+		motm_religion_reward = { culture = beja }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.nuba
+		trigger = { motm_friendly_culture = { culture = nuba } }
+		motm_religion_reward = { culture = nuba }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.fur
+		trigger = { motm_friendly_culture = { culture = fur } }
+		motm_religion_reward = { culture = fur }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.maban
+		trigger = { motm_friendly_culture = { culture = maban } }
+		motm_religion_reward = { culture = maban }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.tuareg
+		trigger = { motm_friendly_culture = { culture = tuareg } }
+		motm_religion_reward = { culture = tuareg }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.berber
+		trigger = { motm_friendly_culture = { culture = berber } }
+		motm_religion_reward = { culture = berber }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.sanhaja
+		trigger = { motm_friendly_culture = { culture = sanhaja } }
+		motm_religion_reward = { culture = sanhaja }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.kabyle
+		trigger = { motm_friendly_culture = { culture = kabyle } }
+		motm_religion_reward = { culture = kabyle }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.mzabi
+		trigger = { motm_friendly_culture = { culture = mzabi } }
+		motm_religion_reward = { culture = mzabi }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.shilha
+		trigger = { motm_friendly_culture = { culture = shilha } }
+		motm_religion_reward = { culture = shilha }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.dogon
+		trigger = { motm_friendly_culture = { culture = dogon } }
+		motm_religion_reward = { culture = dogon }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.al_misr_arabic
+		trigger = { motm_friendly_culture = { culture = al_misr_arabic } }
+		motm_religion_reward = { culture = al_misr_arabic }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = motmreligionmechanic.1.x
+		ai_chance = { factor = 1 }
+	}
+}

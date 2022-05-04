@@ -47,7 +47,7 @@
  building_native_ceremonial_fire_pit_shamanism:1 "Temple"
  
  #areas
-  mauritania_region:0 "Mauritania"
+ mauritania_region:0 "Mauritania"
  mauritania_region_name:0 "Mauritania"
  mauritania_region_adj:0 "Mauritanian"
  al_saqiyah_area:0 "Al-Saqiyah Al-Hamra"
@@ -676,6 +676,16 @@
  motm_jol_songhai_and_mossi_desc:0 "The Songhai are the last challenger to our claim of successor to Mali, from their petty capital in Gao. Meanwhile, the Mossi which have plagued our predecessors have found our land as an easy target to raid. These insults and incursions shall happen no more! Let them feel the might of Jolof!"
  motm_jol_west_african_great_power_title:0 "Hegemon of West Africa"
  motm_jol_west_african_great_power_desc:0 "We are the greatest power in West Africa, and none shall stop us. We will defend the coast from the European invaders, and the petty kings will fall under our rule."
+ motm_mal_conquer_tmb_title:0 "Retake Timbuktu"
+ motm_mal_conquer_tmb_desc:0 "The great city of Timbuktu was once an essential part of our empire as it was a center of trans-Saharan trade and Islamic scholarship. As we decline, the city has essentially become autonomous, under control of the Maghsharan Tuaregs. Now it is time to retake this invaluable city and reintegrate it into our [Root.GovernmentName]."
+ motm_mal_conquer_jol_title:0 "Subjugate Senegambia"
+ motm_mal_conquer_jol_desc:0 "The region of Senegambia used to be controlled by many small Wolof, Serer, Toucouleur, and Fulani kingdoms under our rule but they have since united under one banner: the Jolof Empire. Since its unification, Jolof has increasingly been gaining autonomy, and they are now de facto sovereign. We must bring these lands back into our fold."
+ motm_mal_reintegrate_son_title:0 "Reintegrate Songhai"
+ motm_mal_reintegrate_son_desc:0 "Another state which was former [Root.GetAdjective] territory is [SON.GetName]. Unlike [JOL.GetName] and Timbuktu however, [SON.GetName] intends to grow in power and fill the West African power vacuum caused by our initial decline. If our realm shall survive, we need to banish the [SON.GetAdjective] threat and reintegrate the [SON.GetAdjective] people into our nation."
+ motm_mal_restore_the_mali_empire_title:0 "Restore the Empire"
+ motm_mal_restore_the_mali_empire_desc:0 "We once were the greatest power and the cultural heart of West Africa. Through unfortunately bad successions, our empire was declining and could have vanished entirely. We managed to prevail, and even turned the tide of our fate.\n But, the forces that caused the initial decline of the empire are now massing again and raiding our lands on the Sahara and Mossi fronts. Now it is time to force their submission and prevent future degradation of our lands!"
+ motm_mal_discover_the_new_world_title:0 "Discover the New World"
+ motm_mal_discover_the_new_world_desc:0 "We are the greatest empire Africa, and the entire world, has seen. But now is not time to grow complacent with our expansion and fall into stagnation.\n Legend has it that the predecessor of Mansa Musa, Ko Mamadi, believed in a spherical Earth and wished to discover West through the Atlantic Ocean. With a fleet of two thousand ships, he sailed to the west and never returned, leaving Musa as our Mansa. Thanks to our advancements since his disembarkment, we will chart the Atlantic and find new lands, ripe for conquest and subjugation!"
 
  #missions
  MIR_conquer_port_title:0"Own ports"

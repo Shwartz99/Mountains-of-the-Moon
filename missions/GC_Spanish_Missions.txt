@@ -36,12 +36,16 @@ gc_spain_1 = {
 				tooltip = spa_plus_ultra_tooltip
 				OR = {
 					366 = {
-						owned_by = ROOT
-						is_colony = yes
+						OR = {
+							owned_by = ROOT
+							is_colony = yes
+						}
 					}
 					4565 = {
-						owned_by = ROOT
-						is_colony = yes
+						OR = {
+							owned_by = ROOT
+							is_colony = yes
+						}
 					}
 					any_owned_province = {
 						OR = {
@@ -58,18 +62,8 @@ gc_spain_1 = {
 				name = "spa_plus_ultra"
 				duration = 7300
 			}
-			366 = {
-				add_province_triggered_modifier = {
-					name = conquista_realenga
-					duration = -1
-				}
-			}
-			4565 = {
-				add_province_triggered_modifier = {
-					name = conquista_realenga
-					duration = -1
-				}
-			}
+			366 = { add_province_triggered_modifier = conquista_realenga }
+			4565 = { add_province_triggered_modifier = conquista_realenga }
 		}
 	}
 	gc_cas_spa_caribbean_discovery = {
