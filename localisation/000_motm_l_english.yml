@@ -629,7 +629,6 @@
  kru:0 "Kru"
  sudanic:0 "Sudanic"
 
-<<<<<<< Updated upstream
  #missions
  MIR_conquer_port_title:0"Own ports"
  MIR_conquer_port_desc:0" "
@@ -677,6 +676,26 @@
  motm_jol_songhai_and_mossi_desc:0 "The Songhai are the last challenger to our claim of successor to Mali, from their petty capital in Gao. Meanwhile, the Mossi which have plagued our predecessors have found our land as an easy target to raid. These insults and incursions shall happen no more! Let them feel the might of Jolof!"
  motm_jol_west_african_great_power_title:0 "Hegemon of West Africa"
  motm_jol_west_african_great_power_desc:0 "We are the greatest power in West Africa, and none shall stop us. We will defend the coast from the European invaders, and the petty kings will fall under our rule."
+ OYO_revenge_on_nupe_title:0"Revenge on Nupe"
+ OYO_revenge_on_nupe_desc:0""
+ OYO_ten_thousand_horsemen_title:0"A Force of Horsemen"
+ OYO_ten_thousand_horsemen_desc:0""
+ OYO_vassals_title:0"Acquire Subjects"
+ OYO_vassals_desc:0""
+ OYO_conquer_hausaland_title:0"Conquer Hausaland"
+ OYO_conquer_hausaland_desc:0""
+ OYO_defeat_songhai_title:0"Defeat the Songhai"
+ OYO_defeat_songhai_desc:0""
+ OYO_develop_Oyo_Ile_title:0"Develop Oyo Ile"
+ OYO_develop_Oyo_Ile_desc:0""
+ OYO_slave_trade_title:0"Exploit the Slave Trade"
+ OYO_slave_trade_desc:0""
+ OYO_mil_technology_title:0"Reform the Military"
+ OYO_mil_technology_desc:0""
+ oyo_cavalry:0"The Heavy Cavalry of Oyo"
+ oyo_authority:0"Authority of the Alaafin"
+ oyo_ile:0"Growth of Oyo Ile"
+ oyo_slave_trade:0"Nigerian Slave Trade"
 
 #missions
 MIR_conquer_port_title:0"Own ports"

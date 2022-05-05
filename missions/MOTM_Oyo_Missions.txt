@@ -1,0 +1,208 @@
+oyo_main_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Origins" }
+	}
+	potential = {
+		NOT = { has_dlc = "Origins" }
+		NOT = { map_setup = map_setup_random }
+		tag = OYO
+	}
+	has_country_shield = yes
+
+	OYO_revenge_on_nupe = {
+		icon = mission_invade_kanem
+		position = 1
+
+		required_missions = {
+
+		}
+
+		trigger = {
+			NOT = {
+				NUP = {
+					exists = yes
+				}
+			}
+		}
+
+		effect = {
+			add_mil_power = 100
+			add_mil_power = 100
+			add_mil_power = 100
+			add_prestige = 20
+		}
+	}
+
+	OYO_ten_thousand_horsemen = {
+		icon = mission_conquer_timbuktu
+		position = 2
+
+		required_missions = {
+			OYO_revenge_on_nupe
+		}
+
+		trigger = {
+			num_of_cavalry = 10
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oyo_cavalry
+				duration = 7300
+			}
+		}
+	}
+	OYO_vassals = {
+		icon = mission_african_soldier
+		position = 3
+
+		required_missions = {
+			OYO_ten_thousand_horsemen
+		}
+
+		trigger = {
+			num_of_subjects = 3
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oyo_authority
+				duration = 14600
+			}
+		}
+	}
+
+	OYO_conquer_hausaland = {
+		icon = mission_conquer_benin
+		position = 4
+
+		required_missions = {
+			OYO_vassals
+		}
+
+
+		trigger = {
+			owns = 2278
+			owns = 1154
+		}
+
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 20
+		}
+
+	}
+
+	OYO_defeat_songhai = {
+		icon = mission_conquer_timbuktu
+		position = 5
+
+		required_missions = {
+			OYO_conquer_hausaland
+		}
+
+		trigger = {
+			war_score_against = {
+				who = SON
+				value = 80 }
+			1133={
+				controlled_by = OYO}
+			}
+
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 35
+		}
+
+	}
+
+}
+
+oyo_economy_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = OYO
+	}
+
+
+	OYO_develop_Oyo_Ile = {
+		icon = mission_the_songhai_campaign
+		position = 3
+
+		required_missions = {
+			OYO_ten_thousand_horsemen
+		}
+
+		trigger = {
+			1144={development = 15
+			has_building = marketplace
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oyo_ile
+				duration = 14600}
+		}
+
+	}
+
+	OYO_slave_trade = {
+		icon = mission_african_soldier
+		position = 4
+
+		required_missions = {
+			OYO_vassals
+		}
+
+		trigger = {
+			slaves=5
+			1147= { #Guinea
+			trade_share = {
+			country =  ROOT
+			share = 50
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oyo_slave_trade
+				duration = 3650
+			}
+		}
+	}
+
+	OYO_mil_technology = {
+		icon = mission_conquer_benin
+		position = 5
+
+		required_missions = {
+			OYO_conquer_hausaland
+		}
+
+		trigger = {
+			mil_tech=15
+			current_age = age_of_reformation
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oyo_cavalry
+				duration = 14600
+		}
+
+	}
+
+}
