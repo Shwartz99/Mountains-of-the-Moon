@@ -1,0 +1,436 @@
+motm_mal_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Origins" }
+	}
+	potential = {
+		NOT = { has_dlc = "Origins" }
+		NOT = { map_setup = map_setup_random }
+		tag = MAL
+	}
+	has_country_shield = yes
+
+	motm_mal_conquer_tmb = {
+		icon = mission_conquer_timbuktu
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 1132
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			owns_core_province = 1132
+		}
+		effect = {
+			add_adm_power = 200
+			add_great_project_tier = {
+				type = sankore_madrasah
+				tier = 1
+			}
+			gambia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jolof_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cayor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			futa_jallon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = JOL
+					JOL = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = JOL
+				}
+			}
+		}
+	}
+	motm_mal_conquer_jol = {
+		icon = mission_control_the_barbary_coast
+		required_missions = { motm_mal_conquer_tmb }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = jolof_area
+				area = gambia_area
+				area = cayor_area
+				area = futa_jallon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			jolof_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}
+				type = all
+			}
+			gambia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}				type = all
+			}
+			cayor_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}				type = all
+			}
+			futa_jallon_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					is_empty = yes
+				}				type = all
+			}
+		}
+		effect = {
+			add_dip_power = 200
+			jenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			niger_bend_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = KNG
+					KNG = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = KNG
+				}
+			}
+		}
+	}
+	motm_mal_reintegrate_son = {
+		icon = mission_the_songhai_campaign
+		required_missions = { motm_mal_conquer_jol }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = dendi_area
+				area = niger_bend_area
+				area = jenne_area
+				area = gao_area
+				area = kong_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 1133
+			owns_or_non_sovereign_subject_of = 2252
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = dendi_area
+					area = niger_bend_area
+					area = jenne_area
+					area = gao_area
+					area = kong_area
+				}
+				value = 15
+			}
+			NOT = { exists = SON }
+		}
+		effect = {
+			add_mil_power = 200
+			every_known_country = {
+				limit = {
+					is_free_or_tributary_trigger = yes
+					primary_culture = mossi
+				}
+				ROOT = {
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						target = PREV
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = FUL
+					FUL = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = FUL
+				}
+			}
+			if = {
+				limit = {
+					exists = ZNG
+					ZNG = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = ZNG
+				}
+			}
+			if = {
+				limit = {
+					exists = BEB
+					BEB = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = BEB
+				}
+			}
+			if = {
+				limit = {
+					exists = WLT
+					WLT = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = WLT
+				}
+			}
+			honbori_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zandoma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wagadugu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_volta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_sudan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	motm_mal_restore_the_mali_empire = {
+		icon = mission_mal_restore_the_mali_empire
+		required_missions = { motm_mal_reintegrate_son }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				region = mauritania_region
+				region = sahel_region
+				region = niger_region
+				region = volta_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			total_development = 500
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = mauritania_region
+					value = 5
+				}
+				calc_true_if = {
+					all_subject_country = {
+						has_government_attribute = non_native_tribal
+						culture_group = maghrebi
+					}
+					amount = 3
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = sahel_region
+				value = 5
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = volta_region
+				value = 10
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = niger_region
+				value = 15
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_prestige = 50
+			mauritania_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guinea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			niger_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			volta_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_sudan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sahel_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chad_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			create_explorer = { tradition = 50 }
+			add_temporary_colonist = {
+				duration = 36500
+			}
+		}
+	}
+	motm_mal_discover_the_new_world = {
+		icon = mission_caribbean_cn
+		required_missions = { motm_mal_restore_the_mali_empire }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					is_random_new_world = no
+					continent = south_america
+				}
+				AND = {
+					is_random_new_world = yes
+					continent = new_world
+				}
+			}
+			NOT = { has_discovered = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = { is_random_new_world = no }
+				south_america = {
+					has_discovered = ROOT
+					owned_by = ROOT
+				}
+			}
+			else = {
+				new_world = {
+					has_discovered = ROOT
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			create_conquistador = { tradition = 50 }
+			add_country_modifier = {
+				name = colonial_enthusiasm
+				duration = 9125
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@ unlock_cult = nyame_cult
 religion = shamanism #Fetishism
 primary_culture = jukun
 capital = 1163	# Calabar
-
+fixed_capital = 1163
 
 1550.1.1 = {
 	monarch = {

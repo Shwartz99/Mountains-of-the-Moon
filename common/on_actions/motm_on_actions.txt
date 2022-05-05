@@ -113,7 +113,7 @@ on_battle_lost_unit = {
         limit = {
             unit_owner = {
                 tag = JOL
-                has_disaster = motm_decline_of_jolof
+                has_disaster = decline_of_jolof
             }
             is_ruler_commanding_unit = yes
 			enemy_unit = {
@@ -277,52 +277,6 @@ on_country_released = {
 			loyalty = -20
 		}
 		set_country_flag = slaves_post_startup
-	}
-}
-
-# ROOT = province, FROM = country
-on_trade_good_changed = {
-	on_trade_good_changed_estate_privileges_effect = yes
-	if = {
-		limit = {
-			OR = {
-				has_province_modifier = wine_bonus_prod
-				has_province_modifier = grain_bonus_prod
-			}
-			FROM = { NOT = { has_reform = monastic_breweries_reform } }
-		}
-		remove_province_modifier = wine_bonus_prod
-		remove_province_modifier = grain_bonus_prod
-	}
-	hidden_effect = {
-		if = {
-			limit = {
-				trade_goods = wine
-				FROM = { has_reform = monastic_breweries_reform }
-			}
-			add_province_modifier = { 
-				name = wine_bonus_prod
-				duration = -1
-				hidden = yes
-			}
-		}
-		else = {
-			remove_province_modifier = wine_bonus_prod
-		}
-		if = {
-			limit = {
-				trade_goods = grain
-				FROM = { has_reform = monastic_breweries_reform }
-			}
-			add_province_modifier = { 
-				name = grain_bonus_prod
-				duration = -1
-				hidden = yes
-			}
-		}
-		else = {
-			remove_province_modifier = grain_bonus_prod
-		}
 	}
 }
 

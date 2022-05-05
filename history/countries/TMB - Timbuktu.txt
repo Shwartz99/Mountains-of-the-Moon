@@ -4,5 +4,9 @@ add_government_reform = tribal_despotism
 primary_culture = tuareg
 religion = sunni
 technology_group = muslim
-
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1132	# Niani
+fixed_capital = 1132 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school

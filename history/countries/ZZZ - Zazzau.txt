@@ -9,6 +9,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1154	# Niani
+fixed_capital = 1154
 religious_school = maliki_school
 
 #Extremely speculative attempt to reconcile some very conflicting sources on the dating. (Basically by assuminng there were two Bakwa Turunku)
