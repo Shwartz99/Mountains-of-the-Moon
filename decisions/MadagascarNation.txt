@@ -30,8 +30,8 @@ country_decisions = {
 
 		provinces_to_highlight = {
 			OR = {
-				primary_culture = madagasque
-				primary_culture = madagascan
+				culture = madagasque
+				culture = madagascan
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -44,8 +44,8 @@ country_decisions = {
 			num_of_owned_provinces_with = {
                 value = 12
 				OR = {
-					primary_culture = madagasque
-					primary_culture = madagascan
+					culture = madagasque
+					culture = madagascan
 				}
 			}
 		}
