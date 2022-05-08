@@ -380,7 +380,6 @@ reworked_malagasy_ideas = {
 	}
 	malagasy_pirate_ports = {
 		navy_tradition = 1
-		light_ship_cost = -0.1
 	}
 	malagasy_raid_warfare = {
 		infantry_power = 0.10
