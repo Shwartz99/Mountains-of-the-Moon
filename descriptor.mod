@@ -15,5 +15,5 @@ tags={
 	"Military"
 }
 name="Europa Universalis IV: Mountains of the Moon"
-supported_version="1.31.*"
+supported_version="1.33.*"
 remote_file_id="2600802191"
