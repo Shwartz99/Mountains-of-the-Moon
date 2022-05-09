@@ -1,232 +1,236 @@
 antemoro_main_missions = {
-    slot = 4                   
-    generic = no
-    ai = yes                
-    has_country_shield = yes   
-    
-    potential = {
-        tag=ANT
-    }
-    
-   
-        ANT_convert_six_provinces = {
-        icon = mission_invade_kanem          
-        position = 1 
-        
-        required_missions = {
-           
-        }
-        
-        trigger = {
-        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	        value = 6
-            religion = sunni
-            OR={
-              area=sakalava_area
-              area=betsimasaraka_area
-              area=southern_madagascar
-              area=madagascar_highlands_area
-            }
-          }
-        }
-        
-        effect = {
-        add_adm_power = 100
-        add_dip_power = 100
-        add_mil_power = 100
-        add_prestige=15   
-        }
-    }
-
-    ANT_convert_twelve_provinces = {
-        icon = mission_conquer_benin          
-        position = 2 
-        
-        required_missions = {
-        ANT_convert_six_provinces
-        }
-        
-        trigger = {
-        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	        value = 12
-            religion = sunni
-            OR={
-              area=sakalava_area
-              area=betsimasaraka_area
-              area=southern_madagascar
-              area=madagascar_highlands_area
-            }
-          }
-        legitimacy=85
-        stability = 1
-        }
-        
-        effect = {
-          add_country_modifier = { 
-    name = domination_of_madagascar
-    duration = 14600  
-            } 
-
-            add_prestige=25
-            add_stability=1
-            add_legitimacy=20
-        }
-    }
-
-    MIR_mozambique_foothold = {
-        icon = mission_conquer_timbuktu         
-        position = 3 
-        
-        required_missions = {
-        ANT_convert_twelve_provinces 
-        }
-        
-        trigger = {
-         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-	        value = 1
-            OR={
-              area=quelimane_area
-              area=mozambique_area}    
-        }
-     }
-        
-        effect = {
-           country_event = { 
-            id = motm.7
-            days = 300
-            random = 300
-            tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
-            }    
-        }
-    }
-
-        MIR_conquer_sofala_and_quelimane = {
-        icon = mission_central_asian_city        
-        position = 4 
-        
-        required_missions = {
-        MIR_mozambique_foothold  
-        }
-        
-        trigger = {
-        owns=1186
-        owns=1192
-        }
-        
-        effect = {
-         add_country_modifier = { 
-    name = madagascar_zambezi_trade
-    duration = -1 
-            }   
-        }
-    }
-
-        MIR_zambezi_gold = {
-        icon = mission_war_chest         
-        position = 5 
-        
-        required_missions = {
-        MIR_conquer_sofala_and_quelimane
-        }
-        
-        trigger = {
-        gold=3
-        }
-        
-        effect = {
-          add_country_modifier = { 
-    name = madagascar_zambezi_gold
-    duration = 14600 
-            }    
-        }
-    }
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Origins" }
+	}
+	potential = {
+		NOT = { has_dlc = "Origins" }
+		NOT = { map_setup = map_setup_random }
+		tag=ANT
+	}
+	
+	
+	ANT_convert_six_provinces = {
+		icon = mission_invade_kanem
+		position = 1
+		
+		required_missions = {
+			
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+				religion = sunni
+				OR={
+					area=sakalava_area
+					area=betsimasaraka_area
+					area=southern_madagascar
+					area=madagascar_highlands_area
+				}
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige=15
+		}
+	}
+	
+	ANT_convert_twelve_provinces = {
+		icon = mission_conquer_benin
+		position = 2
+		
+		required_missions = {
+			ANT_convert_six_provinces
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				religion = sunni
+				OR={
+					area=sakalava_area
+					area=betsimasaraka_area
+					area=southern_madagascar
+					area=madagascar_highlands_area
+				}
+			}
+			legitimacy=85
+			stability = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = domination_of_madagascar
+				duration = 14600
+			}
+			
+			add_prestige=25
+			add_stability=1
+			add_legitimacy=20
+		}
+	}
+	
+	ANT_mozambique_foothold = {
+		icon = mission_conquer_timbuktu
+		position = 3
+		
+		required_missions = {
+			ANT_convert_twelve_provinces
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				OR={
+					area=quelimane_area
+				area=mozambique_area}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = motm.7
+				days = 300
+				random = 300
+				tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
+			}
+		}
+	}
+	
+	ANT_conquer_sofala_and_quelimane = {
+		icon = mission_central_asian_city
+		position = 4
+		
+		required_missions = {
+			ANT_mozambique_foothold
+		}
+		
+		trigger = {
+			owns=1186
+			owns=1192
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = madagascar_zambezi_trade
+				duration = -1
+			}
+		}
+	}
+	
+	ANT_zambezi_gold = {
+		icon = mission_war_chest
+		position = 5
+		
+		required_missions = {
+			ANT_conquer_sofala_and_quelimane
+		}
+		
+		trigger = {
+			gold=3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = madagascar_zambezi_gold
+				duration = 14600
+			}
+		}
+	}
 }
 
 antemoro_secondary_missions = {
-    slot = 5
-    generic = no
-    ai = yes 
-    has_country_shield = yes   
-
-    potential = {
-        tag=ANT
-    }
-
-        MIR_trade_fleet= {
-        icon = mission_galleys_in_port          
-        position = 3
-        
-        required_missions = {
-        ANT_convert_twelve_provinces 
-        }
-        
-        trigger = {
-        num_of_light_ship = 16    
-        }
-        
-        effect = {
-        add_navy_tradition = 10
-        add_dip_power=100   
-        }
-    }
-
-        MIR_zanzibar_trade = {
-        icon = mission_high_income        
-        position = 4
-        
-        required_missions = {
-        MIR_trade_fleet=   
-        }
-        
-        trigger = {
-        1201={is_strongest_trade_power = ROOT}
-        }
-        
-        effect = {
-        add_mercantilism=5
-        add_dip_power=100  
-        }
-    }
-
-        MIR_war_fleet = {
-        icon = mission_establish_high_seas_navy         
-        position = 5 
-        
-        required_missions = {
-         MIR_zanzibar_trade   
-        }
-        
-        trigger = {
-        num_of_heavy_ship=8    
-        }
-        
-        effect = {
-        add_navy_tradition = 10
-        create_admiral = { tradition = 50 }    
-        }
-    }
-
-        MIR_develop_country= {
-        icon = mission_early_game_buildings         
-        position = 6 
-        
-        required_missions = {
-        MIR_war_fleet    
-        }
-        
-        trigger = {
-        capital_scope={development=16}   
-        total_development =120
-        }
-        
-        effect = {
-           country_event = { 
-            id = motm.7
-            days = 300
-            random = 300
-            tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
-            }    
-        change_government_reform_progress = 75  
-        }
-    }
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag=ANT
+	}
+	
+	ANT_trade_fleet= {
+		icon = mission_galleys_in_port
+		position = 3
+		
+		required_missions = {
+			ANT_convert_twelve_provinces
+		}
+		
+		trigger = {
+			num_of_light_ship = 16
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			add_dip_power=100
+		}
+	}
+	
+	ANT_zanzibar_trade = {
+		icon = mission_high_income
+		position = 4
+		
+		required_missions = {
+			ANT_trade_fleet=
+		}
+		
+		trigger = {
+			1201={is_strongest_trade_power = ROOT}
+		}
+		
+		effect = {
+			add_mercantilism=5
+			add_dip_power=100
+		}
+	}
+	
+	ANT_war_fleet = {
+		icon = mission_establish_high_seas_navy
+		position = 5
+		
+		required_missions = {
+			ANT_zanzibar_trade
+		}
+		
+		trigger = {
+			num_of_heavy_ship=8
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			create_admiral = { tradition = 50 }
+		}
+	}
+	
+	ANT_develop_country= {
+		icon = mission_early_game_buildings
+		position = 6
+		
+		required_missions = {
+			ANT_war_fleet
+		}
+		
+		trigger = {
+			capital_scope={development=16}
+			total_development =120
+		}
+		
+		effect = {
+			country_event = {
+				id = motm.7
+				days = 300
+				random = 300
+				tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
+			}
+			change_government_reform_progress = 75
+		}
+	}
 }
