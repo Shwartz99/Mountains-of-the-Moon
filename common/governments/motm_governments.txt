@@ -49,6 +49,7 @@ tribal = {
 				civil_society_reform
 				tribe_civil_society_reform
 				tribe_settle_down_reform
+				svikiro_zeal_reform
 			}
 		}
 		tribal_religion = {

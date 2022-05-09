@@ -334,7 +334,7 @@ religious_societies_reform = {
 	}
 	modifiers = {
 		stability_cost_modifier = -0.1
-		religious_unity = 0.15
+		tolerance_own=1
 	}
 	ai = {
 		factor = 1
@@ -357,6 +357,25 @@ lip_service_reform = {
 	}
 	modifiers = {
 		land_maintenance_modifier = -0.1
+	}
+}
+
+svikiro_zeal_reform = {
+	icon = "fist_in_air"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = non_native_tribal }
+		primary_culture=shona
+	}
+	modifiers = {
+		recover_army_morale_speed = 0.10
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
 	}
 }
 
@@ -507,7 +526,7 @@ centralize_tribal_power_reform = {
 	potential = { NOT = { has_government_attribute = non_native_tribal } }
 	modifiers = {
 		core_creation = -0.05
-		stability_cost_modifier = -0.05
+		stability_cost_modifier = -0.10
 	}
 	ai = {
 		factor = 1.0
