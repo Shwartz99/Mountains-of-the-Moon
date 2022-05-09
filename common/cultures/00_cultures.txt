@@ -8488,19 +8488,17 @@ senegambian_group = {
 	serer = {
 		primary = SII
 		dynasty_names = {
-			Joof Faye Ngum Sène Dione N'Diaye Tine Loum Ndaw Diene Thiaw Senghor Ndour Ndione Gadio Sarr Kama Chorr Charreh Dièye Guelowar
+			Joof Faye Ngum Sène Dione N'Diaye Tine Loum Ndaw Diene Thiaw Senghor Ndour Ndione Gadio Sarr Kama Chorr Charreh Dièye Guelowar Jobe Mbooj
 		}
 		male_names = {
-			"N'Dyelen Mbey" "Tase Daagulen" Sare N'Diklam Tyukuli Leeyti Birayma Bukaar Leele al-Buri Lat Gireun Bakar 
-			Bakan Birawa Bakaa Mba Mbanyi
-			"Ndaah Njemeh" "Patar Kholleh" "Jinaax Jalaan"  Niokhobai
+			Mbacke "Kumba Ndoffene" Gejopal Jegan "Ama Kodu" Latsouk Jaligue Malawtan "Ama-Joof" Jegan Jaw "Sayerr" "Pangha Yaya" Boukar
+			"Ndaah Njemeh" "Patar Kholleh" "Jinaax Jalaan"  Niokhobai Ndiadiane "Barka Bo"
+			Mbegan "Malaw tane"	
 		}
 		female_names = {
-			"Fatoumata Sall" Fatim Fatoumata Halima Hawa Ina Kadi Kilia Kolonkan Lorane Mariam Nafissa Namandjé Namiss 
-			Nana Asha Chausiku Eshe Furaha Imani Kamaria Marjani Mchumba Mwanajuma Nia Nuru Nyah Sanaa Sauda Subira Zuri
-			Gnilane
+			Gnilane Ngoné Njembot Ndaté Ndoye Mbat Mboye Fatoumata Fatim Ndoung 
 		}
-	}			
+	}
 }
 
 voltaic = {

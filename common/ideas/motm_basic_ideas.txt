@@ -1,0 +1,10 @@
+maritime_ideas = { #all hail Draíocht of the eu4 mod coop
+	trigger = {
+		NOT = { AND = { is_tribal = no primitives = yes } }
+	}
+}
+naval_ideas = {
+	trigger = {
+		NOT = { AND = { is_tribal = no primitives = yes } }
+	}
+}

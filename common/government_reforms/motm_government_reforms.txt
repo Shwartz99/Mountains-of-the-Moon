@@ -23,6 +23,7 @@ sahara_tribe = {
 	}
 	custom_attributes = {
 		non_native_tribal = yes
+		enables_aristocratic_idea_group = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -63,6 +64,7 @@ sahara_tribe_settled = {
 	}
 	custom_attributes = {
 		non_native_tribal = yes
+		enables_aristocratic_idea_group = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -111,6 +113,7 @@ sahara_theocracy = {
 	}
 	custom_attributes = {
 		non_native_tribal = yes
+		enables_aristocratic_idea_group = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -152,6 +155,7 @@ savanna_tribe = {
 	}
 	custom_attributes = {
 		non_native_tribal = yes
+		enables_aristocratic_idea_group = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Conquest of Paradise" }
