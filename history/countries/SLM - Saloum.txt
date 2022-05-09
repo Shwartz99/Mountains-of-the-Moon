@@ -7,6 +7,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 5021
+fixed_capital = 5021
 
 #Rulers of Saloum
 1493.1.1 = {

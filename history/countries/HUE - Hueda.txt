@@ -7,15 +7,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1141
-
-1444.1.1 = {
-	monarch = {
-		DIP = 3
-		ADM = 3
-		MIL = 3
-		regent = yes
-	}
-}
+fixed_capital = 1141
 
 1580.1.1 = {
 	monarch = {

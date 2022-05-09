@@ -42,6 +42,7 @@ discovered_by = muslim
 	controller = ---
 	is_city = no
 	remove_core = FRA
+	tribal_owner = LAM
 }
 1685.10.5 = { #Captain seizes the abandoned fort and makes a deal with Brandenburg
 	owner = BRA
@@ -78,4 +79,5 @@ discovered_by = muslim
 	controller = ---
 	is_city = no
 	remove_core = FRA
+	tribal_owner = LAM
 }

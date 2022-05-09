@@ -1,0 +1,1097 @@
+#Scripted effects for estates
+
+# Will apply effect if estate is present
+# effect: Will apply effect to each estate present if defined
+# <estate>_effect: Will apply effect to specific estate present if defined
+each_estate_effect = {
+	if = {
+		limit = {
+			has_estate = estate_brahmins
+		}
+		[[effect]
+			$effect$
+		]
+		[[brahmins_effect]
+			$brahmins_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_church
+		}
+		[[effect]
+			$effect$
+		]
+		[[church_effect]
+			$church_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_maratha
+		}
+		[[effect]
+			$effect$
+		]
+		[[maratha_effect]
+			$maratha_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_nobles
+		}
+		[[effect]
+			$effect$
+		]
+		[[nobles_effect]
+			$nobles_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_rajput
+		}
+		[[effect]
+			$effect$
+		]
+		[[rajput_effect]
+			$rajput_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_burghers
+		}
+		[[effect]
+			$effect$
+		]
+		[[burghers_effect]
+			$burghers_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_vaisyas
+		}
+		[[effect]
+			$effect$
+		]
+		[[vaisyas_effect]
+			$vaisyas_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_cossacks
+		}
+		[[effect]
+			$effect$
+		]
+		[[cossacks_effect]
+			$cossacks_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_nomadic_tribes
+		}
+		[[effect]
+			$effect$
+		]
+		[[tribes_effect]
+			$tribes_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_dhimmi
+		}
+		[[effect]
+			$effect$
+		]
+		[[dhimmi_effect]
+			$dhimmi_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_jains
+		}
+		[[effect]
+			$effect$
+		]
+		[[jains_effect]
+			$jains_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_slaves
+		}
+		[[effect]
+			$effect$
+		]
+		[[slaves_effect]
+			$slaves_effect$
+		]
+	}
+}
+
+#Slaves
+add_estate_slaves_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_slaves
+		}
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_slaves_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_slaves
+		}
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = -10
+		}
+	}
+}
+
+# Expects country scope
+seize_land_effect = {
+	hidden_effect = {
+		set_variable = {
+			which = seize_land_effect_variable
+			value = $scale$
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = seize_land_effect_variable
+					value = 1
+				}
+			}
+			change_variable = {
+				which = seize_land_effect_variable
+				value = -1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_in_capital_area = yes
+							is_state_core = root
+						}
+						is_capital = no
+						NOT = {
+							area_for_scope_province = {
+								owned_by = root
+								has_province_flag = seize_land_spawn_unrest_and_rebels
+							}
+						}
+						area_for_scope_province = {
+							any_neighbor_province = {
+								owned_by = root
+								has_province_flag = seize_land_spawn_unrest_and_rebels
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							is_in_capital_area = yes
+							is_state_core = root
+						}
+						is_capital = no
+						NOT = {
+							area_for_scope_province = {
+								owned_by = root
+								has_province_flag = seize_land_spawn_unrest_and_rebels
+							}
+						}
+						area_for_scope_province = {
+							any_neighbor_province = {
+								owned_by = root
+								has_province_flag = seize_land_spawn_unrest_and_rebels
+							}
+						}
+						highest_supply_limit_in_area = yes
+					}
+					spawn_rebels_from_unhappy_estate = { size = 2 }
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = seize_land_spawn_unrest_and_rebels
+						if = {
+							limit = {
+								NOT = { has_province_flag = has_estate_unrest_flag }
+							}
+							add_named_unrest = { name = estate_land_seized value = 10 }
+							set_province_flag = has_estate_unrest_flag
+						}
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						OR = {
+							is_in_capital_area = yes
+							is_state_core = root
+						}
+						NOT = {
+							area_for_scope_province = {
+								owned_by = root
+								has_province_flag = seize_land_spawn_unrest_and_rebels
+							}
+						}
+						highest_supply_limit_in_area = yes
+					}
+					spawn_rebels_from_unhappy_estate = { size = 2 }
+					area = {
+						limit = {
+							owned_by = ROOT
+						}
+						set_province_flag = seize_land_spawn_unrest_and_rebels
+						if = {
+							limit = {
+								NOT = { has_province_flag = has_estate_unrest_flag }
+							}
+							add_named_unrest = { name = estate_land_seized value = 10 }
+							set_province_flag = has_estate_unrest_flag
+						}
+					}
+				}
+			}
+		}
+		every_owned_province = {
+			limit = { has_province_flag = seize_land_spawn_unrest_and_rebels }
+			clr_province_flag = seize_land_spawn_unrest_and_rebels
+		}
+	}
+}
+
+spawn_rebels_from_unhappy_estate = {
+	random_list = {
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_nobles
+					NOT = {
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 30
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = { primary_culture = polish }
+				}
+				spawn_rebels = {
+					type = polish_noble_rebels
+					size = $size$
+					estate = estate_nobles
+					as_if_faction = yes
+				}
+			}
+			else = {
+				spawn_rebels = {
+					type = noble_rebels
+					size = $size$
+					estate = estate_nobles
+					as_if_faction = yes
+				}
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_church
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 30
+						}
+					}
+				}
+			}
+			owner = {
+				trigger_switch = {
+					on_trigger = religion
+					anglican =      { PREV = { spawn_rebels = { type = anglican_rebels size = $size$ as_if_faction = yes } } }
+					hussite =      { PREV = { spawn_rebels = { type = hussite_rebels size = $size$ as_if_faction = yes } } }
+					animism =       { PREV = { spawn_rebels = { type = animism_rebels size = $size$ as_if_faction = yes } } }
+					buddhism =      { PREV = { spawn_rebels = { type = buddhism_rebels size = $size$ as_if_faction = yes } } }
+					catholic =      { PREV = { spawn_rebels = { type = catholic_rebels size = $size$ as_if_faction = yes } } }
+					confucianism =  { PREV = { spawn_rebels = { type = confucianism_rebels size = $size$ as_if_faction = yes } } }
+					coptic =        { PREV = { spawn_rebels = { type = coptic_rebels size = $size$ as_if_faction = yes } } }
+					hinduism =      { PREV = { spawn_rebels = { type = hinduism_rebels size = $size$ as_if_faction = yes } } }
+					ibadi =         { PREV = { spawn_rebels = { type = ibadi_rebels size = $size$ as_if_faction = yes } } }
+					inti =          { PREV = { spawn_rebels = { type = inti_rebels size = $size$ as_if_faction = yes } } }
+					jewish =        { PREV = { spawn_rebels = { type = jewish_rebels size = $size$ as_if_faction = yes } } }
+					mahayana =      { PREV = { spawn_rebels = { type = mahayana_rebels size = $size$ as_if_faction = yes } } }
+					mesoamerican_religion = { PREV = { spawn_rebels = { type = maya_rebels size = $size$ as_if_faction = yes } } }
+					nahuatl =       { PREV = { spawn_rebels = { type = nahuatl_rebels size = $size$ as_if_faction = yes } } }
+					norse_pagan_reformed = { PREV = { spawn_rebels = { type = norse_pagan_reformed_rebels size = $size$ as_if_faction = yes } } }
+					orthodox =      { PREV = { spawn_rebels = { type = orthodox_rebels size = $size$ as_if_faction = yes } } }
+					protestant =    { PREV = { spawn_rebels = { type = protestant_rebels size = $size$ as_if_faction = yes } } }
+					reformed =      { PREV = { spawn_rebels = { type = reformed_rebels size = $size$ as_if_faction = yes } } }
+					shamanism =     { PREV = { spawn_rebels = { type = shamanism_rebels size = $size$ as_if_faction = yes } } }
+					shiite =        { PREV = { spawn_rebels = { type = shiite_rebels size = $size$ as_if_faction = yes } } }
+					shinto =        { PREV = { spawn_rebels = { type = shinto_rebels size = $size$ as_if_faction = yes } } }
+					sikhism =       { PREV = { spawn_rebels = { type = sikhism_rebels size = $size$ as_if_faction = yes } } }
+					sunni =         { PREV = { spawn_rebels = { type = sunni_rebels size = $size$ as_if_faction = yes } } }
+					tengri_pagan_reformed = { PREV = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ as_if_faction = yes } } }
+					totemism =      { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ as_if_faction = yes } } }
+					vajrayana =     { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ as_if_faction = yes } } }
+					zoroastrian =   { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ as_if_faction = yes } } }
+					dreamtime =      { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ as_if_faction = yes } } }
+				}
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_rajput
+					NOT = {
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = $size$
+				estate = estate_rajput
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_maratha
+					NOT = {
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = $size$
+				estate = estate_maratha
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = particularist_rebels
+				size = $size$
+				estate = estate_burghers
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_jains
+					NOT = {
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = particularist_rebels
+				size = $size$
+				estate = estate_jains
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_vaisyas
+					NOT = {
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = particularist_rebels
+				size = $size$
+				estate = estate_vaisyas
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_dhimmi
+					NOT = {
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = particularist_rebels
+				size = $size$
+				estate = estate_dhimmi
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_brahmins
+					NOT = {
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = hinduism_rebels
+				size = $size$
+				estate = estate_brahmins
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_cossacks
+					NOT = {
+						estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = cossack_rebels
+				size = $size$
+				estate = estate_cossacks
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_nomadic_tribes
+					NOT = {
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = tribal_rebels
+				size = $size$
+				estate = estate_nomadic_tribes
+				as_if_faction = yes
+			}
+		}
+		1 = {
+			trigger = {
+				owner = {
+					has_estate = estate_slaves
+					NOT = {
+						estate_loyalty = {
+							estate = estate_slaves
+							loyalty = 30
+						}
+					}
+				}
+			}
+			spawn_rebels = {
+				type = slave_rebels
+				size = $size$
+				estate = estate_slaves
+				as_if_faction = yes
+			}
+		}
+	}
+}
+
+pick_random_estate_if_present = {
+	random_list = {
+		1 = { 
+			trigger = {
+				has_estate = estate_brahmins
+				NOT = { has_country_flag = estate_brahmins_$flag$ }
+			}
+			set_country_flag = estate_brahmins_$flag$
+			[[estate_action]
+			$estate_action$ = estate_brahmins
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_church
+				NOT = { has_country_flag = estate_church_$flag$ }
+			}
+			set_country_flag = estate_church_$flag$
+			[[estate_action]
+			$estate_action$ = estate_church
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_maratha
+				NOT = { has_country_flag = estate_maratha_$flag$ }
+			}
+			set_country_flag = estate_maratha_$flag$ 
+			[[estate_action]
+			$estate_action$ = estate_maratha
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_nobles
+				NOT = { has_country_flag = estate_nobles_$flag$ }
+			}
+			set_country_flag = estate_nobles_$flag$
+			[[estate_action]
+			$estate_action$ = estate_nobles
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_burghers
+				NOT = { has_country_flag = estate_burghers_$flag$ }
+			}
+			set_country_flag = estate_burghers_$flag$
+			[[estate_action]
+			$estate_action$ = estate_burghers
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_vaisyas
+				NOT = { has_country_flag = estate_vaisyas_$flag$ }
+			}
+			set_country_flag = estate_vaisyas_$flag$
+			[[estate_action]
+			$estate_action$ = estate_vaisyas
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_cossacks
+				NOT = { has_country_flag = estate_cossacks_$flag$ }
+			}
+			set_country_flag = estate_cossacks_$flag$
+			[[estate_action]
+			$estate_action$ = estate_cossacks
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_nomadic_tribes
+				NOT = { has_country_flag = estate_nomadic_tribes_$flag$ }
+			}
+			set_country_flag = estate_nomadic_tribes_$flag$
+			[[estate_action]
+			$estate_action$ = estate_nomadic_tribes
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_dhimmi
+				NOT = { has_country_flag = estate_dhimmi_$flag$ }
+			}
+			set_country_flag = estate_dhimmi_$flag$
+			[[estate_action]
+			$estate_action$ = estate_dhimmi
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_jains
+				NOT = { has_country_flag = estate_jains_$flag$ }
+			}
+			set_country_flag = estate_jains_$flag$
+			[[estate_action]
+			$estate_action$ = estate_jains
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_rajput
+				NOT = { has_country_flag = estate_rajput_$flag$ }
+			}
+			set_country_flag = estate_rajput_$flag$
+			[[estate_action]
+			$estate_action$ = estate_rajput
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_slaves
+				has_country_flag = slaves_allowed_diet
+				NOT = { has_country_flag = estate_slaves_$flag$ }
+			}
+			set_country_flag = estate_slaves_$flag$
+			[[estate_action]
+			$estate_action$ = estate_slaves
+			]
+		}
+	}
+}
+
+# estate = what estate
+# Will give the estate 1% land
+give_estate_land_share_small = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 1
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will give the estate 2% land
+give_estate_land_share_medium = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 2
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will give the estate 3% land
+give_estate_land_share_large = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 3
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will give the estate 5% land
+give_estate_land_share_massive = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 5
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will give the estate 10% land
+give_estate_land_share_gigantic = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 10
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+give_estate_land_share_init = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = 20
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will take the 1% land from estate
+take_estate_land_share_small = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = -1
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will take away 2% land from estate
+take_estate_land_share_medium = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = -2
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will take the 3% land from estate
+take_estate_land_share_large = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = -3
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will take the 5% land from estate
+take_estate_land_share_massive = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = -5
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# estate = what estate
+# Will take the 10% land from estate
+take_estate_land_share_gigantic = {
+	 change_estate_land_share = {
+		estate = $estate$
+		share = -10
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+#Country scope
+#example of usage: change_rajputs_or_marathas_or_nobles_land_share_effect = { share = 10 }
+change_rajputs_or_marathas_or_nobles_land_share_effect = {
+	if = {
+		limit = {
+			has_estate = estate_rajput
+		}
+		change_estate_land_share = {
+			estate = estate_rajput
+			share = $share$
+		}
+	}
+	else_if = {
+		limit = {
+			has_estate = estate_maratha
+		}
+		change_estate_land_share = {
+			estate = estate_maratha
+			share = $share$
+		}
+	}
+	else = {
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = $share$
+		}
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+change_vaisyas_or_burghers_land_share_effect = {
+	if = {
+		limit = {
+			has_estate = estate_vaisyas
+		}
+		change_estate_land_share = {
+			estate = estate_vaisyas
+			share = $share$
+		}
+	}
+	else = {
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = $share$
+		}
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+change_jains_or_burghers_land_share_effect = {
+	if = {
+		limit = {
+			has_estate = estate_jains
+		}
+		change_estate_land_share = {
+			estate = estate_jains
+			share = $share$
+		}
+	}
+	else = {
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = $share$
+		}
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+change_brahmins_or_church_land_share_effect = {
+	if = {
+		limit = {
+			has_estate = estate_brahmins
+		}
+		change_estate_land_share = {
+			estate = estate_brahmins
+			share = $share$
+		}
+	}
+	else = {
+		change_estate_land_share = {
+			estate = estate_church
+			share = $share$
+		}
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+change_dhimmi_or_church_land_share_effect = {
+	if = {
+		limit = {
+			has_estate = estate_dhimmi
+		}
+		change_estate_land_share = {
+			estate = estate_dhimmi
+			share = $share$
+		}
+	}
+	else = {
+		change_estate_land_share = {
+			estate = estate_church
+			share = $share$
+		}
+	}
+	hidden_effect = {
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+#MOTM
+
+distribute_land_effect = {
+	change_estate_land_share = {
+		estate = $estate$
+		share = -100
+	}
+	export_to_variable = {
+		which = crown_land_final
+		value = trigger_value:crown_land_share
+	}
+	subtract_variable = {
+		which = crown_land_final
+		which = crown_land_initial
+	}
+	set_country_flag = estate_reloading
+	while = {
+		limit = {
+			check_variable = {
+				which = crown_land_final
+				value = 0.1
+			}
+		}
+		change_estate_land_share = {
+			estate = all
+			share = 0.1
+		}
+		subtract_variable = {
+			which = crown_land_final
+			value = 0.1
+		}
+	}
+	clr_country_flag = estate_reloading
+	export_to_variable = {
+		which = crown_land_initial
+		value = trigger_value:crown_land_share
+	}
+}
+
+slave_raid_effect = {
+	random_owned_province = {
+		limit = {
+			NOT = { trade_goods = gold trade_goods = coal trade_goods = slaves }
+			is_core = ROOT
+		}
+		if = { limit = { trade_goods = grain } set_province_flag = produced_grain }
+		if = { limit = { trade_goods = wine } set_province_flag = produced_wine }
+		if = { limit = { trade_goods = wool } set_province_flag = produced_wool }
+		if = { limit = { trade_goods = cloth } set_province_flag = produced_cloth }
+		if = { limit = { trade_goods = fish } set_province_flag = produced_fish }
+		if = { limit = { trade_goods = fur } set_province_flag = produced_fur }
+		if = { limit = { trade_goods = salt } set_province_flag = produced_salt }
+		if = { limit = { trade_goods = naval_supplies } set_province_flag = produced_naval_supplies }
+		if = { limit = { trade_goods = copper } set_province_flag = produced_copper }
+		if = { limit = { trade_goods = iron } set_province_flag = produced_iron }
+		if = { limit = { trade_goods = ivory } set_province_flag = produced_ivory }
+		if = { limit = { trade_goods = tea } set_province_flag = produced_tea }
+		if = { limit = { trade_goods = chinaware } set_province_flag = produced_chinaware }
+		if = { limit = { trade_goods = spices } set_province_flag = produced_spices }
+		if = { limit = { trade_goods = coffee } set_province_flag = produced_coffee }
+		if = { limit = { trade_goods = cotton } set_province_flag = produced_cotton }
+		if = { limit = { trade_goods = sugar } set_province_flag = produced_sugar }
+		if = { limit = { trade_goods = tobacco } set_province_flag = produced_tobacco }
+		if = { limit = { trade_goods = cocoa } set_province_flag = produced_cocoa }
+		if = { limit = { trade_goods = silk } set_province_flag = produced_silk }
+		if = { limit = { trade_goods = dyes } set_province_flag = produced_dyes }
+		if = { limit = { trade_goods = tropical_wood } set_province_flag = produced_tropical_wood }
+		if = { limit = { trade_goods = livestock } set_province_flag = produced_livestock }
+		if = { limit = { trade_goods = incense } set_province_flag = produced_incense }
+		if = { limit = { trade_goods = glass } set_province_flag = produced_glass }
+		if = { limit = { trade_goods = paper } set_province_flag = produced_paper }
+		if = { limit = { trade_goods = gems } set_province_flag = produced_gems }
+		if = { limit = { trade_goods = cloves } set_province_flag = produced_cloves }
+		hidden_effect = {
+			change_trade_goods = slaves
+			add_base_production = 1
+			add_province_modifier = {
+				name = slave_market_modifier
+				duration = 3650
+			}		
+		}
+		custom_tooltip = ESTATES_PERFORMED_SLAVE_RAID_DESC
+		hidden_effect = {
+			province_event = {
+				id = motmcleanup.1
+				days = 3650
+			}
+		}
+	}
+}
+
+release_largest_country = { #thanks seelowe, eu4 mod coop god
+    every_owned_province = {
+        limit = {
+            is_capital = no
+        }
+        every_core_country = {
+            limit = {
+                exists = no
+            }
+            change_variable = { which = count value = 1 }
+        }
+    }
+    save_event_target_as = jolof_first_revolt
+    every_owned_province = {
+        limit = {
+            is_capital = no
+        }
+        every_core_country = {
+            if = {
+                limit = {
+                    check_variable = { which = count which = event_target:jolof_first_revolt }
+                }
+                save_event_target_as = jolof_first_revolt
+            }
+            set_variable = { which = count value = 0 }
+        }
+    }
+    event_target:jolof_first_revolt = {
+		every_core_province = {
+			cede_province = PREV
+		}
+	}
+}

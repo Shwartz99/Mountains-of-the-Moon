@@ -40,6 +40,33 @@ cb_restore_personal_union = {
 	war_goal = take_capital_personal_union
 }
 
+#Hundred Years War
+cb_hundred_years_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 240
+
+	prerequisites = {
+		OR = {
+			government = monarchy
+			has_reform = dutch_republic
+		}
+		is_revolutionary = no
+		FROM = {
+			OR = {
+				government = monarchy
+				has_reform = ambrosian_republic
+				# has_reform = military_dictatorship_reform
+				has_country_flag = neapolitan_republic
+			}
+			is_subject = no
+		}
+	}
+
+	war_goal = take_capital_hundred_years_war
+}
+
 # Defected province
 cb_defection = {
 	valid_for_subject = no
@@ -695,6 +722,7 @@ cb_liberation = {
 # Holy War
 cb_crusade = {
 	valid_for_subject = no
+	holy_war = yes
 
 	prerequisites = {
 		NOT = { has_reform = religious_permanent_revolution_reform }
@@ -736,6 +764,7 @@ cb_crusade = {
 # Holy War
 cb_crusade_pheasants = {
 	valid_for_subject = no
+	holy_war = yes
 	is_triggered_only = yes
 	months = 60
 
@@ -962,15 +991,16 @@ cb_horde_vs_civ = {
 
 	prerequisites = {
 		is_neighbor_of = FROM
-		FROM = {
-			NOT = {
-				is_nomad = yes
-				has_reform = sahara_tribe
-				has_reform = sahara_tribe_settled
-				has_reform = sahara_theocracy
+		OR = {
+			AND = {
+				FROM = { is_nomad = no }
+				ROOT = { is_nomad = yes }
+			}
+			AND = {
+				FROM = { NOT = { has_government_attribute = non_native_tribal } }
+				ROOT = { has_government_attribute = non_native_tribal }
 			}
 		}
-		OR = { is_nomad = yes has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy  }
 		is_revolutionary = no
 	}
 
@@ -982,9 +1012,9 @@ cb_tribal_feud = {
 	valid_for_subject = no
 
 	prerequisites = {
-		OR = { is_nomad = yes has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy  }
+		is_nomad = yes
 		FROM = {
-			OR = { is_nomad = yes has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy  }
+			is_nomad = yes
 		}
 		is_neighbor_of = FROM
 		is_revolutionary = no
@@ -1213,6 +1243,7 @@ cb_chinese_unification = {
 					NOT = { primary_culture = manchu }
 				}
 			}
+			has_government_attribute = has_unify_china_cb
 		}
 		
 		FROM = { #Applies against other powers in China unless they have the Mandate of Heaven
@@ -1229,8 +1260,14 @@ cb_chinese_unification = {
 				}
 			}
 			NOT = { has_country_modifier = the_mandate_of_heaven }
+			is_emperor_of_china = no
 		}
 		is_neighbor_of = FROM
+	}
+
+	attacker_disabled_po = {
+		po_become_tributary_state
+		po_subjugate_tributary_state
 	}
 
 	war_goal = superiority_chinese_unification
@@ -1285,6 +1322,25 @@ cb_force_tributary = {
 		is_emperor_of_china = yes
 		FROM = { is_subject = no }
 		is_neighbor_of = FROM
+		OR = {
+			ai = no
+			AND = {
+				OR = {
+					NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+					AND = {
+						ROOT = { capital_scope = { superregion = china_superregion } }
+						NOT = { FROM = { any_owned_province = { superregion = china_superregion } } }
+					}
+				}
+				OR = {
+					NOT = { ROOT = { capital_scope = { region = japan_region } } }
+					AND = {
+						ROOT = { capital_scope = { region = japan_region } }
+						NOT = { FROM = { any_owned_province = { region = japan_region } } }
+					}
+				}
+			}
+		}
 	}
 	
 	war_goal = take_capital_force_tributary
@@ -1344,6 +1400,15 @@ cb_force_join_hre = {
 	}
 
 	war_goal = take_capital_force_join_hre
+}
+
+cb_reintegrate_into_hre = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+
+	war_goal = take_capital_reintegrate_into_hre
 }
 
 # A HRE prince has been annexed
@@ -1489,9 +1554,9 @@ cb_native_american_tribal_feud = {
 
 	prerequisites = {
 		has_dlc = "Conquest of Paradise"
-		is_native_tribe = yes
+		OR = { is_native_tribe = yes has_government_attribute = non_native_tribal }
 		FROM = {
-			is_native_tribe = yes
+			OR = { is_native_tribe = yes has_government_attribute = non_native_tribal }
 			if = {
 				limit = { 
 					capital_scope = {
@@ -1526,7 +1591,7 @@ cb_push_back_colonizers = {
 	prerequisites = {
 		has_dlc = "Conquest of Paradise"
 		is_native_tribe = yes
-		NOT = { has_reform = sahara_tribe has_reform = sahara_tribe_settled has_reform = sahara_theocracy  }
+		NOT = { has_government_attribute = non_native_tribal }
 		FROM = {
 			is_native_tribe = no
 			OR = {

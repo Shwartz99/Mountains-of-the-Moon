@@ -7,11 +7,83 @@ unlock_cult = central_african_ancestor_cult
 unlock_cult = islam_cult
 capital = 2932
 
-1444.11.11 = {
+1500.1.1 = {
 	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
+		name = "Karama"
+		dynasty = "Tunjur"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1515.1.1 = {
+	monarch = {
+		name = "Gamal ad-Din"
+		dynasty = "Tunjur"
+		DIP = 2
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1530.1.1 = {
+	monarch = {
+		name = "Durdur"
+		dynasty = "Tunjur"
+		DIP = 1
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1545.1.1 = {
+	monarch = {
+		name = "al-Kamin"
+		dynasty = "Tunjur"
+		DIP = 1
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Muhammad"
+		dynasty = "Tunjur"
+		DIP = 1
+		ADM = 1
+		MIL = 3
+	}
+	religion = sunni
+}
+
+1580.1.1 = {
+	monarch = {
+		name = "Yakub al- Mwakir"
+		dynasty = "Tunjur"
+		DIP = 2
+		ADM = 2
+		MIL = 1
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Hamid"
+		dynasty = "Tunjur"
+		DIP = 2
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Daud"
+		dynasty = "Tunjur"
+		DIP = 1
+		ADM = 0
+		MIL = 1
 	}
 }

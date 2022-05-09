@@ -12,15 +12,6 @@ religious_school = maliki_school
 
 #Kings of Kaabu
 
-1444.11.11 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
-
 1537.1.1 = {
 	monarch = {
 		name = "Sama Koli"

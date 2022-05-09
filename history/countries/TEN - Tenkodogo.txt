@@ -1,7 +1,8 @@
 # No previous file for Mossi
 
 government = tribal
-add_government_reform = tribal_kingdom
+government_rank = 1
+add_government_reform = tribal_despotism
 primary_culture = mossi
 religion = shamanism #Fetishism
 technology_group = sub_saharan
@@ -9,12 +10,104 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 2267 #Tenkodogo
+fixed_capital = 2267
 
-1444.11.11 = {
+1500.1.1 = {
 	monarch = {
-		dip = 4
-		adm = 3
+		name = "Yadega"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+} 
+
+1540.1.1 = {
+	monarch = {
+		name = "Yolomfaogoma"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
 		mil = 2
-		regent = yes
+	}
+}
+
+1580.1.1 = {
+	monarch = {
+		name = "Kourita"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1620.1.1 = {
+	monarch = {
+		name = "Geda"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1660.1.1 = {
+	monarch = {
+		name = "Geda"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Wobgho"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1754.1.1 = {
+	monarch = {
+		name = "Kango"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1787.1.1 = {
+	monarch = {
+		name = "Saaga"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1803.1.1 = {
+	monarch = {
+		name = "Kaongo"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1806.1.1 = {
+	monarch = {
+		name = "Tuguri"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 2
 	}
 }

@@ -1,0 +1,11 @@
+government = tribal
+government_rank = 1
+add_government_reform = tribal_despotism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+religion = shamanism
+primary_culture = kanuri
+capital = 2287
+religious_school = maliki_school

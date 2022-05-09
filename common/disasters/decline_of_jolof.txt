@@ -1,0 +1,82 @@
+decline_of_jolof = {
+	potential = {
+		normal_or_historical_nations = yes
+		tag = JOL
+		is_year = 1520
+		is_free_or_tributary_trigger = yes
+		NOT = { has_any_disaster = yes }
+		OR = {
+			AND = { NOT = { has_country_flag = jol_reined_in_coast_flag } NOT = { has_dlc = "Origins" } }
+			AND = { has_reform = tribal_confederacy has_dlc = "Origins" }
+		}
+	}
+	
+	can_start = {
+		is_at_war = no 
+	}
+	
+	can_stop = {
+		OR = {
+			AND = { has_country_flag = jol_reined_in_coast_flag NOT = { has_dlc = "Origins" } }
+			AND = { NOT = { has_reform = tribal_confederacy } has_dlc = "Origins" } 
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 5
+			OR = {
+				AND = { NOT = { has_country_flag = jol_reined_in_coast_flag } NOT = { has_dlc = "Origins" } }
+				AND = { has_reform = tribal_confederacy has_dlc = "Origins" }
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 30 }
+		}
+		modifier = {
+			factor = 1
+			average_autonomy = 50
+		}
+		modifier = {
+			factor = 1
+			average_autonomy = 75
+		}
+	}
+	
+	can_end = {
+		OR = {
+			AND = { custom_trigger_tooltip = { tooltip = jol_rein_in_coast has_country_flag = jol_reined_in_coast_flag } NOT = { has_dlc = "Origins" } }
+			AND = { NOT = { has_reform = tribal_confederacy } has_dlc = "Origins" } 
+		}
+	}
+	
+	modifier = {
+		global_unrest = 5
+		legitimacy = -1
+		stability_cost_modifier = 0.5
+	}
+	
+	on_start = motm_decline_of_jolof.1
+	on_end = motm_decline_of_jolof.2
+	
+	on_monthly = {
+		events = {
+			motm_decline_of_jolof.3
+		}
+		random_events = {
+			2000 = 0
+			50 = motm_decline_of_jolof.4
+			50 = motm_decline_of_jolof.5
+			50 = motm_decline_of_jolof.6
+		}
+	}
+}

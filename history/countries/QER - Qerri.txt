@@ -4,16 +4,7 @@ primary_culture = nubian
 religion = sunni
 religious_school = maliki_school
 technology_group = east_african
-capital = 1225
-
-1444.11.11 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
+capital = 1225 
 
 1480.1.1 = {
 	monarch = {

@@ -4,12 +4,3 @@ primary_culture = nubian
 religion = coptic
 technology_group = east_african
 capital = 1217
-
-1444.11.11 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}

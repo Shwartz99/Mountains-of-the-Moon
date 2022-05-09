@@ -3,6 +3,7 @@
 owner = BAG
 controller = BAG
 add_core = BAG
+add_core = DAR
 culture = fur 
 religion = shamanism #Fetishism
 capital = "Al-Fashir"
@@ -16,5 +17,14 @@ base_production = 2
 base_manpower = 2
 discovered_by = east_african
 discovered_by = sub_saharan
+
+1596.1.1 = {
+	owner = DAR
+	controller = DAR
+	add_core = DAR
+	discovered_by = NUB
+	is_city = yes
+	discovered_by = ETH
+}
 
 1682.1.1 = { religion = sunni }

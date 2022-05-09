@@ -1,0 +1,238 @@
+sakalava_main_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Origins" }
+	}
+	potential = {
+		NOT = { has_dlc = "Origins" }
+		NOT = { map_setup = map_setup_random }
+		OR={
+			tag=SKA
+			tag=MFY
+		}
+	}
+	
+	
+	SKA_control_the_west  = {
+		icon = mission_invade_kanem
+		position = 1
+		
+		required_missions = {
+			
+		}
+		
+		trigger = {
+			owns=4028
+			owns=4021
+			owns=1193
+			owns=1194
+			
+			total_development = 40
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_army_tradition=5
+		}
+	}
+	
+	SKA_dominate_madagascar = {
+		icon = mission_conquer_benin
+		position = 2
+		
+		required_missions = {
+			SKA_control_the_west
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				OR={
+					area=sakalava_area
+					area=betsimasaraka_area
+					area=southern_madagascar
+					area=madagascar_highlands_area
+				}
+			}
+			legitimacy=85
+			stability = 1
+			NOT={average_autonomy = 10}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = domination_of_madagascar
+				duration = 14600
+			}
+			
+			add_prestige=25
+			add_stability=1
+			add_legitimacy=20
+		}
+	}
+	
+	SKA_mozambique_foothold = {
+		icon = mission_conquer_timbuktu
+		position = 3
+		
+		required_missions = {
+			SKA_dominate_madagascar
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				OR={
+					area=quelimane_area
+				area=mozambique_area}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = motm.7
+				days = 300
+				random = 300
+				tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
+			}
+		}
+	}
+	
+	SKA_conquer_sofala_and_quelimane = {
+		icon = mission_central_asian_city
+		position = 4
+		
+		required_missions = {
+			SKA_mozambique_foothold
+		}
+		
+		trigger = {
+			owns=1186
+			owns=1192
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = madagascar_zambezi_trade
+				duration = -1
+			}
+		}
+	}
+	
+	SKA_zambezi_gold = {
+		icon = mission_war_chest
+		position = 5
+		
+		required_missions = {
+			SKA_conquer_sofala_and_quelimane
+		}
+		
+		trigger = {
+			gold=3
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = madagascar_zambezi_gold
+				duration = 14600
+			}
+		}
+	}
+}
+
+sakalava_secondary_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		OR={
+			tag=SKA
+			tag=MFY
+		}
+	}
+	
+	SKA_trade_fleet= {
+		icon = mission_galleys_in_port
+		position = 3
+		
+		required_missions = {
+			SKA_dominate_madagascar
+		}
+		
+		trigger = {
+			num_of_light_ship = 16
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			add_dip_power=100
+		}
+	}
+	
+	SKA_zanzibar_trade = {
+		icon = mission_high_income
+		position = 4
+		
+		required_missions = {
+			SKA_trade_fleet=
+		}
+		
+		trigger = {
+			1201={is_strongest_trade_power = ROOT}
+		}
+		
+		effect = {
+			add_mercantilism=5
+			add_dip_power=100
+		}
+	}
+	
+	SKA_war_fleet = {
+		icon = mission_establish_high_seas_navy
+		position = 5
+		
+		required_missions = {
+			SKA_zanzibar_trade
+		}
+		
+		trigger = {
+			num_of_heavy_ship=8
+		}
+		
+		effect = {
+			add_navy_tradition = 10
+			create_admiral = { tradition = 50 }
+		}
+	}
+	
+	SKA_develop_country= {
+		icon = mission_early_game_buildings
+		position = 6
+		
+		required_missions = {
+			SKA_war_fleet
+		}
+		
+		trigger = {
+			capital_scope={development=16}
+			total_development =120
+		}
+		
+		effect = {
+			country_event = {
+				id = motm.7
+				days = 300
+				random = 300
+				tooltip = MADAGASCAR_TECHNOLOGY_ADVANCEMENT_TOOLTIP
+			}
+			change_government_reform_progress = 75
+		}
+	}
+}

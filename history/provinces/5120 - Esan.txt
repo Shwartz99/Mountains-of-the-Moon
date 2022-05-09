@@ -1,0 +1,21 @@
+# No previous file for Warri
+
+owner = IGB
+controller = IGB
+add_core = IGB
+is_city = yes
+culture = igbo 
+religion = shamanism #Fetishism
+capital = "Onitsha"
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 3
+native_size = 40
+native_ferocity = 2
+native_hostileness = 9
+base_manpower = 3
+
+
+ 
+discovered_by = sub_saharan

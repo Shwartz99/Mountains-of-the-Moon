@@ -3,6 +3,7 @@
 owner = TUJ
 controller = TUJ
 add_core = TUJ
+add_core = WAD
 culture = maban 
 religion = shamanism #Fetishism
 capital = "Ouara"
@@ -17,4 +18,9 @@ base_manpower = 2
 discovered_by = east_african
 discovered_by = sub_saharan
 
-1635.1.1 = { religion = sunni }
+1635.1.1 = {
+	owner = WAD
+	controller = WAD
+}
+
+1682.1.1 = { religion = sunni }

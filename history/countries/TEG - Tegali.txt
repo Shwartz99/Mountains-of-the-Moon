@@ -1,5 +1,6 @@
 government = tribal
-add_government_reform = sahara_tribe_settled
+government_rank = 1
+add_government_reform = tribal_kingdom
 primary_culture = nuba
 religion = shamanism
 technology_group = east_african

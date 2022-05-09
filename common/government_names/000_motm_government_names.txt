@@ -1,0 +1,129 @@
+# For specific combinations of culture, religion and other such triggers
+# Will pick the first valid one it finds in list
+
+#Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
+
+toubou = {
+
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = DERDE
+		2 = DERDE
+		3 = GREAT_DERDE
+	}
+
+	ruler_female = {
+		1 = DERDE
+		2 = DERDE
+		3 = GREAT_DERDE
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		culture = toubou
+		government = tribal
+	}
+}
+
+nupe = {
+
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = ETSU
+		2 = ETSU
+		3 = GREAT_ETSU
+	}
+
+	ruler_female = {
+		1 = ETSU
+		2 = ETSU
+		3 = GREAT_ETSU
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		culture = nupe
+		government = tribal
+	}
+}
+
+african_nomads_names = {
+	
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = african_nomads
+	}
+}

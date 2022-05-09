@@ -41,3 +41,14 @@ atlantic_slave_import_modifier = {
 	local_unrest = -10
 	local_production_efficiency = 0.25
 }
+conquista_realenga = {
+	potential = {
+		owner = {
+			mission_completed = gc_cas_spa_plus_ultra
+		}
+	}
+	trigger = {
+		always = yes
+	}
+	local_colonial_growth = 50
+}

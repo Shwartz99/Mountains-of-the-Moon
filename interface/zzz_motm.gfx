@@ -18,47 +18,33 @@ spriteTypes = {
 		texturefile = "gfx//interface//natives.tga"
 		noOfFrames = 8
 		loadType = "INGAME"
-		
 	}
 	
 	spriteType = {
-		name = "GFX_chartered_settlements_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
+		name = "GFX_disaster_decline_of_jolof"
+		texturefile = "gfx//interface//disasters//decline_of_jolof.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
 	}
 	
 	spriteType = {
-		name = "GFX_federal_constitution_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
+		name = "privilege_atlantic_slave_trade"
+		texturefile = "gfx/interface/privileges/privilege_atlantic_slave_trade.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_joint_grain_depots_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
+		name = "privilege_galley_slaves"
+		texturefile = "gfx/interface/privileges/privilege_galley_slaves.dds"
+	}
+
+	spriteType = {
+		name = "GFX_slave_raid"
+		texturefile = "gfx/interface/slave_raid.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_mutual_trust_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_pax_americana_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_shared_knowledge_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_unified_warbands_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_united_resistance_muslimgfx"
-		texturefile = "gfx/interface/federal_advancement_icons/federal_constitution.dds"
+		name = "government_reform_savanna_tribe"
+		texturefile = "gfx/interface/government_reform_icons/savanna_tribe.dds"
 	}
 	
 	spriteType = {
@@ -72,23 +58,14 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_great_project_sankore_madrassa"	
-		texturefile = "gfx//interface//great_projects//great_project_sankore_madrassa.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_great_project_stone_circles_senegambia"	
 		texturefile = "gfx//interface//great_projects//great_project_stone_circles_senegambia.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_great_project_walls_benin"	
-		texturefile = "gfx//interface//great_projects//great_project_walls_benin.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_great_project_tomb_of_askia"	
 		texturefile = "gfx//interface//great_projects//great_project_tomb_of_askia.dds"
 	}
+	
 }
 

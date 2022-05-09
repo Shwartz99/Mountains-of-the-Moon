@@ -7,7 +7,7 @@ unlock_cult = nyame_cult
 religion = shamanism #Fetishism
 primary_culture = igbo
 capital = 1151	# Bonny
-
+fixed_capital = 1151
 
 1440.1.1 = {
 	monarch = {

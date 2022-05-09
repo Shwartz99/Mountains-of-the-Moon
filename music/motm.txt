@@ -1,0 +1,9 @@
+song = {
+	name = "eu3_africa"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}

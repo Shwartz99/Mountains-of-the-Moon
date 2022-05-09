@@ -31,11 +31,11 @@ estate_slaves = {
 	country_modifier_happy = {
 	}
 	country_modifier_neutral = {
-		global_unrest = 5
+		global_unrest = 2
 	}	
 	country_modifier_angry = {
 		technology_cost = 0.25
-		global_unrest = 10
+		global_unrest = 5
 	}
 	land_ownership_modifier = {
 	}
@@ -83,6 +83,10 @@ estate_slaves = {
 
 	agendas = {
 		estate_slaves_fire_advisor
+		estate_slaves_develop_x
+		estate_slaves_destroy_tradecompany_in_y
+		estate_slaves_stop_building_tradecompany_in_x
+		estate_slaves_decrease_autonomy_in_province_x
 	}
 
 	color = { 0 0 0 }

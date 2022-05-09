@@ -1,0 +1,375 @@
+#When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
+
+# country
+on_startup = {
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = -20
+		}
+		set_country_flag = slaves_post_startup
+		export_to_variable = {
+			which = crown_land_initial
+			value = trigger_value:crown_land_share
+		}
+	}
+}
+
+# #Unit Scope OnAction for Battle Lost
+on_battle_lost_unit = {
+    if = {
+        limit = {
+            unit_owner = {
+                tag = MNG
+                has_ruler_flag = mng_militry_incompetence
+            }
+            is_ruler_commanding_unit = yes
+			enemy_unit = {
+				unit_owner = {
+					tag = OIR
+				}
+			}
+        }
+        OIR = {
+            country_event = { id = flavor_oir.2 }
+        }
+    }
+    if = {
+        limit = {
+            unit_owner = {
+                tag = JOL
+                has_disaster = decline_of_jolof
+            }
+            is_ruler_commanding_unit = yes
+			enemy_unit = {
+				unit_owner = {
+					tag = KAY
+				}
+			}
+        }
+        KAY = {
+			country_event = { id = motm_decline_of_jolof.7 }
+		}
+    }
+}
+
+# Nation is integrated after being in union
+on_integrate = {
+	events = {
+		610
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		distribute_land_effect = { estate = estate_slaves }
+	}
+}
+
+# province
+on_adm_development = {
+	owner = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
+
+# province
+on_dip_development = {
+	owner = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
+
+# province
+on_mil_development = {
+	owner = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
+
+# ROOT = New vassal, FROM = Overlord
+on_create_vassal = {
+	if = {
+		limit = {
+			tag = PAP
+		}
+		change_government = theocracy
+		change_religion = catholic
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+	}
+	FROM = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+	ROOT = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			add_estate_loyalty = {
+				estate = estate_slaves
+				loyalty = -20
+			}
+			set_country_flag = slaves_post_startup
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
+		}
+	}
+}
+
+# ROOT = Country establishing it
+# First province in state is set
+on_holy_order_established = {
+	ROOT = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
+
+# THIS = Raiding country, FROM = Sea province
+on_raid_coast = {
+	if = {
+		limit = {
+			has_faction = pr_buccaneers
+		}
+		add_faction_influence = {
+			faction = pr_buccaneers
+			influence = 1
+		}
+	}
+	if = {
+		limit = {
+			has_estate = estate_slaves
+		}
+		add_estate_influence_modifier = {
+			estate = estate_slaves
+			desc = EST_VAL_RAIDED_COAST
+			influence = 20
+			duration = 365
+		}
+	}
+}
+
+# this = Released country, FROM = Releasing country
+on_country_released = {
+	if = {
+		limit = {
+			tag = PAP
+		}
+		change_government = theocracy
+		change_religion = catholic
+		add_government_reform = papacy_reform
+		adopt_reform_progress = FROM
+	}
+	if = {
+		limit = {
+			FROM = { has_reform = religious_permanent_revolution_reform }
+			NOT = { tag = PAP }
+		}
+		change_religion = FROM
+		adopt_reform_progress = FROM
+		add_country_modifier = {
+			name = global_holy_war_released_modifier
+			duration = 3650
+			hidden = yes
+		}
+		capital_scope = {
+			change_religion = FROM
+		}
+	}
+	FROM = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = -20
+		}
+		set_country_flag = slaves_post_startup
+	}
+}
+
+# this = country
+on_rebels_break_country = {
+	add_country_modifier = {
+		name = just_lost_to_rebels
+		duration = 10
+		hidden = yes
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		distribute_land_effect = { estate = estate_slaves }
+	}
+}
+
+# this = new client state, from = parent country
+on_create_client_state = {
+	FROM = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = -20
+		}
+		set_country_flag = slaves_post_startup
+	}
+}
+
+on_country_creation = {
+	if = {
+		limit = {
+			tag = PAP
+			OR = {
+				NOT = {
+					religion = catholic
+				}
+				NOT = {
+					has_reform = papacy_reform
+				}
+				NOT = {
+					government = theocracy
+				}
+			}
+		}
+		change_religion = catholic
+		change_government = theocracy
+		add_government_reform = papacy_reform
+	}
+	if = {
+		limit = { has_estate = estate_slaves }
+		add_estate_loyalty = {
+			estate = estate_slaves
+			loyalty = -20
+		}
+		set_country_flag = slaves_post_startup
+	}
+}
+
+#FROM = country pillaged, ROOT = country doing the pillaging
+on_pillaged_capital = {
+	slave_raid_pillage_capital_effect = yes
+	FROM = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+	ROOT = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
+
+#FROM = country dev was transferred from, ROOT = country doing the transferring
+on_transfer_development = {
+	FROM = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+	ROOT = {
+		if = {
+			limit = { has_estate = estate_slaves }
+			distribute_land_effect = { estate = estate_slaves }
+		}
+	}
+}
