@@ -23,6 +23,12 @@ vassal = {
 	end_date = 1580.1.1
 }
 vassal = {
+	first = YEM
+	second = DAH
+	start_date = 1513.1.1
+	end_date = 1526.1.1
+}
+vassal = {
 	first = BOR
 	second = MND
 	start_date = 1566.1.1

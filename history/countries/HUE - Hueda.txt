@@ -9,6 +9,16 @@ unlock_cult = nyame_cult
 capital = 1141
 fixed_capital = 1141
 
+1444.1.1 = { #generated
+	monarch = {
+		name = "Haholo"
+		dynasty = "Hueda"
+		DIP = 2
+		ADM = 1
+		MIL = 2
+	}
+}
+
 1580.1.1 = {
 	monarch = {
 		name = "Haholo"

@@ -6,3 +6,13 @@ religion = sunni
 technology_group = muslim
 capital = 5045	#  Abalasa
 religious_school = maliki_school
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Salah"
+		dynasty = "Kel Rela"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

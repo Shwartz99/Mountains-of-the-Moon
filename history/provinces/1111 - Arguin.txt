@@ -3,7 +3,7 @@
 culture = berber
 religion = sunni
 capital = "Arguin"
-trade_goods = unknown
+trade_goods = fish
 hre = no
 owner = LAM
 controller = LAM

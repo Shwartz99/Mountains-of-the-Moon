@@ -8,3 +8,194 @@ unlock_cult = central_african_ancestor_cult
 unlock_cult = christianity_cult
 unlock_cult = islam_cult
 capital = 5034
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Nyikango"
+		dynasty = "Shilluk"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1545.1.1 = {
+	monarch = {
+		name = "Nyikango"
+		dynasty = "Shilluk"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1575.1.1 = {
+	monarch = {
+		name = "Caalo"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1590.1.1 = {
+	monarch = {
+		name = "Dak"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1605.1.1 = {
+	monarch = {
+		name = "Nyidoro"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1615.1.1 = {
+	monarch = {
+		name = "Ocollo"
+		dynasty = "Shilluk"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Diwaad"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1650.1.1 = {
+	monarch = {
+		name = "Bwoch"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1660.1.1 = {
+	monarch = {
+		name = "Abudhok"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1670.1.1 = {
+	monarch = {
+		name = "Dhokoth"
+		dynasty = "Shilluk"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Tugo"
+		dynasty = "Shilluk"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1710.1.1 = {
+	monarch = {
+		name = "Okon"
+		dynasty = "Shilluk"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1715.1.1 = {
+	monarch = {
+		name = "Nyadway"
+		dynasty = "Shilluk"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1745.1.1 = {
+	monarch = {
+		name = "Muko"
+		dynasty = "Shilluk"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Waak"
+		dynasty = "Shilluk"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1760.1.1 = {
+	monarch = {
+		name = "Dyetguth"
+		dynasty = "Shilluk"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Kudit"
+		dynasty = "Shilluk"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1780.1.1 = {
+	monarch = {
+		name = "Yor Nyakwaci"
+		dynasty = "Shilluk"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1820.1.1 = {
+	monarch = {
+		name = "Aney"
+		dynasty = "Shilluk"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}

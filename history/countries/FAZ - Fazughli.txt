@@ -5,3 +5,13 @@ primary_culture = nubian
 religion = coptic
 technology_group = east_african
 capital = 1217
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Panigiros"
+		dynasty = "Dotawo"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}

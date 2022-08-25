@@ -11,6 +11,16 @@ capital = 2278	# Kebbi
 fixed_capital = 2278
 religious_school = maliki_school
 
+1444.1.1 = {
+	monarch = {
+		name = "Muhammadu Kantu"
+		dynasty = "Kebbi"
+		dip = 5
+		adm = 4
+		mil = 5
+	}
+}
+
 1516.1.1 = {
 	monarch = {
 		name = "Muhammadu Kantu"

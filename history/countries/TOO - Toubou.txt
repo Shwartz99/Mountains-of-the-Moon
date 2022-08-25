@@ -7,3 +7,13 @@ primary_culture = toubou
 capital = 5055	# Tazirbu
 religious_school = maliki_school
 unit_type = muslim
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Oueddei"
+		dynasty = "Toubou"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

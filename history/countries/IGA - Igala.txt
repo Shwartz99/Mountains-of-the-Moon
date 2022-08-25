@@ -9,6 +9,16 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1152 #Idah
 
+1444.1.1 = { #generated
+	monarch = {
+		name = "Aji"
+		dynasty = "Ata"
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
 1507.1.1 = {
 	monarch = {
 		name = "Aji"

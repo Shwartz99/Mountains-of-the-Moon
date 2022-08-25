@@ -16,6 +16,7 @@ capital = 1216
 		adm = 5
 		dip = 3
 		mil = 6
+		religion = sunni
 	}
 }
 
@@ -26,6 +27,7 @@ capital = 1216
 		adm = 4
 		dip = 3
 		mil = 4
+		religion = sunni
 	}
 }
 
@@ -36,6 +38,7 @@ capital = 1216
 		adm = 3
 		dip = 3
 		mil = 4
+		religion = sunni
 	}
 }
 
@@ -46,6 +49,7 @@ capital = 1216
 		adm = 4
 		dip = 2
 		mil = 3
+		religion = sunni
 	}
 }
 
@@ -56,6 +60,7 @@ capital = 1216
 		adm = 6
 		dip = 3
 		mil = 1
+		religion = sunni
 	}
 }
 
@@ -66,6 +71,7 @@ capital = 1216
 		adm = 2
 		dip = 3
 		mil = 2
+		religion = sunni
 	}
 }
 
@@ -76,6 +82,7 @@ capital = 1216
 		adm = 4
 		dip = 3
 		mil = 5
+		religion = sunni
 	}
 }
 
@@ -86,6 +93,7 @@ capital = 1216
 		adm = 5
 		dip = 1
 		mil = 3
+		religion = sunni
 	}
 }
 
@@ -96,6 +104,7 @@ capital = 1216
 		adm = 2
 		dip = 2
 		mil = 5
+		religion = sunni
 	}
 }
 
@@ -106,6 +115,7 @@ capital = 1216
 		adm = 4
 		dip = 3
 		mil = 3
+		religion = sunni
 	}
 }
 
@@ -116,5 +126,6 @@ capital = 1216
 		adm = 3
 		dip = 2
 		mil = 3
+		religion = sunni
 	}
 }

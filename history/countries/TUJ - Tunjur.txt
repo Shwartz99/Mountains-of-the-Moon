@@ -8,6 +8,16 @@ unlock_cult = central_african_ancestor_cult
 unlock_cult = islam_cult
 capital = 2932
 
+1444.1.1 = { #generated
+	monarch = {
+		name = "Karama"
+		dynasty = "Tunjur"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}
+
 1500.1.1 = {
 	monarch = {
 		name = "Karama"

@@ -6,3 +6,13 @@ religion = sunni
 technology_group = muslim
 capital = 356
 religious_school = maliki_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Marwan"
+		dynasty = "Banu Sulaym"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

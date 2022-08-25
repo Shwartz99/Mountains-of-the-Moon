@@ -1,3 +1,50 @@
+abolish_slavery_effect = {
+	custom_tooltip = abolished_slavery_act_tooltip
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				trade_goods = slaves
+			}
+			change_trade_goods = unknown
+			remove_building = tradecompany
+		}
+		if = {
+			limit = { has_province_modifier = slave_market_modifier }
+			trigger_switch = {
+				on_trigger = has_province_flag
+				produced_grain = { change_trade_goods = grain }
+				produced_wine = { change_trade_goods = wine }
+				produced_wool = { change_trade_goods = wool }
+				produced_cloth = { change_trade_goods = cloth }
+				produced_fish = { change_trade_goods = fish }
+				produced_fur = { change_trade_goods = fur }
+				produced_salt = { change_trade_goods = salt }
+				produced_naval_supplies = { change_trade_goods = naval_supplies }
+				produced_copper = { change_trade_goods = copper }
+				produced_iron = { change_trade_goods = iron }
+				produced_ivory = { change_trade_goods = ivory }
+				produced_tea = { change_trade_goods = tea }
+				produced_chinaware = { change_trade_goods = chinaware }
+				produced_spices = { change_trade_goods = spices }
+				produced_coffee = { change_trade_goods = coffee }
+				produced_cotton = { change_trade_goods = cotton }
+				produced_sugar = { change_trade_goods = sugar }
+				produced_tobacco = { change_trade_goods = tobacco }
+				produced_cocoa = { change_trade_goods = cocoa }
+				produced_silk = { change_trade_goods = silk }
+				produced_dyes = { change_trade_goods = dyes }
+				produced_tropical_wood = { change_trade_goods = tropical_wood }
+				produced_livestock = { change_trade_goods = livestock }
+				produced_incense = { change_trade_goods = incense }
+				produced_glass = { change_trade_goods = glass }
+				produced_paper = { change_trade_goods = paper }
+				produced_gems = { change_trade_goods = gems }
+				produced_cloves = { change_trade_goods = cloves }
+			}
+		}
+	}
+}
+
 #Scripted effects for estates
 
 # Will apply effect if estate is present
@@ -971,6 +1018,23 @@ change_dhimmi_or_church_land_share_effect = {
 	}
 }
 
+re_add_loyalty_from_seized_land = {
+	hidden_effect = {
+		add_estate_loyalty = { estate = estate_slaves loyalty = 20 }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles } }			add_estate_loyalty = { estate = estate_nobles			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins } }		add_estate_loyalty = { estate = estate_brahmins			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers } }		add_estate_loyalty = { estate = estate_burghers			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_church } }			add_estate_loyalty = { estate = estate_church			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks } }		add_estate_loyalty = { estate = estate_cossacks			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi } }			add_estate_loyalty = { estate = estate_dhimmi			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_jains } }			add_estate_loyalty = { estate = estate_jains			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha } }		add_estate_loyalty = { estate = estate_maratha			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes } }	add_estate_loyalty = { estate = estate_nomadic_tribes	 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput } }			add_estate_loyalty = { estate = estate_rajput			 loyalty = 20 } }
+		if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas } }		add_estate_loyalty = { estate = estate_vaisyas			 loyalty = 20 } }
+	}
+}
+
 #MOTM
 
 distribute_land_effect = {
@@ -1016,41 +1080,44 @@ slave_raid_effect = {
 			NOT = { trade_goods = gold trade_goods = coal trade_goods = slaves }
 			is_core = ROOT
 		}
-		if = { limit = { trade_goods = grain } set_province_flag = produced_grain }
-		if = { limit = { trade_goods = wine } set_province_flag = produced_wine }
-		if = { limit = { trade_goods = wool } set_province_flag = produced_wool }
-		if = { limit = { trade_goods = cloth } set_province_flag = produced_cloth }
-		if = { limit = { trade_goods = fish } set_province_flag = produced_fish }
-		if = { limit = { trade_goods = fur } set_province_flag = produced_fur }
-		if = { limit = { trade_goods = salt } set_province_flag = produced_salt }
-		if = { limit = { trade_goods = naval_supplies } set_province_flag = produced_naval_supplies }
-		if = { limit = { trade_goods = copper } set_province_flag = produced_copper }
-		if = { limit = { trade_goods = iron } set_province_flag = produced_iron }
-		if = { limit = { trade_goods = ivory } set_province_flag = produced_ivory }
-		if = { limit = { trade_goods = tea } set_province_flag = produced_tea }
-		if = { limit = { trade_goods = chinaware } set_province_flag = produced_chinaware }
-		if = { limit = { trade_goods = spices } set_province_flag = produced_spices }
-		if = { limit = { trade_goods = coffee } set_province_flag = produced_coffee }
-		if = { limit = { trade_goods = cotton } set_province_flag = produced_cotton }
-		if = { limit = { trade_goods = sugar } set_province_flag = produced_sugar }
-		if = { limit = { trade_goods = tobacco } set_province_flag = produced_tobacco }
-		if = { limit = { trade_goods = cocoa } set_province_flag = produced_cocoa }
-		if = { limit = { trade_goods = silk } set_province_flag = produced_silk }
-		if = { limit = { trade_goods = dyes } set_province_flag = produced_dyes }
-		if = { limit = { trade_goods = tropical_wood } set_province_flag = produced_tropical_wood }
-		if = { limit = { trade_goods = livestock } set_province_flag = produced_livestock }
-		if = { limit = { trade_goods = incense } set_province_flag = produced_incense }
-		if = { limit = { trade_goods = glass } set_province_flag = produced_glass }
-		if = { limit = { trade_goods = paper } set_province_flag = produced_paper }
-		if = { limit = { trade_goods = gems } set_province_flag = produced_gems }
-		if = { limit = { trade_goods = cloves } set_province_flag = produced_cloves }
+		trigger_switch = {
+			on_trigger = trade_goods
+			grain = { set_province_flag = produced_grain }
+			wine = { set_province_flag = produced_wine }
+			wool = { set_province_flag = produced_wool }
+			cloth = { set_province_flag = produced_cloth }
+			fish = { set_province_flag = produced_fish }
+			fur = { set_province_flag = produced_fur }
+			salt = { set_province_flag = produced_salt }
+			naval_supplies = { set_province_flag = produced_naval_supplies }
+			copper = { set_province_flag = produced_copper }
+			iron = { set_province_flag = produced_iron }
+			ivory = { set_province_flag = produced_ivory }
+			tea = { set_province_flag = produced_tea }
+			chinaware = { set_province_flag = produced_chinaware }
+			spices = { set_province_flag = produced_spices }
+			coffee = { set_province_flag = produced_coffee }
+			cotton = { set_province_flag = produced_cotton }
+			sugar = { set_province_flag = produced_sugar }
+			tobacco = { set_province_flag = produced_tobacco }
+			cocoa = { set_province_flag = produced_cocoa }
+			silk = { set_province_flag = produced_silk }
+			dyes = { set_province_flag = produced_dyes }
+			tropical_wood = { set_province_flag = produced_tropical_wood }
+			livestock = { set_province_flag = produced_livestock }
+			incense = { set_province_flag = produced_incense }
+			glass = { set_province_flag = produced_glass }
+			paper = { set_province_flag = produced_paper }
+			gems = { set_province_flag = produced_gems }
+			cloves = { set_province_flag = produced_cloves }
+		}
 		hidden_effect = {
 			change_trade_goods = slaves
 			add_base_production = 1
 			add_province_modifier = {
 				name = slave_market_modifier
 				duration = 3650
-			}		
+			}
 		}
 		custom_tooltip = ESTATES_PERFORMED_SLAVE_RAID_DESC
 		hidden_effect = {

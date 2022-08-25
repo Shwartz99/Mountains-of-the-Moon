@@ -1,0 +1,26 @@
+name = "Abyssinian-Adal War"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+1529.3.9 = {
+	add_attacker = ADA
+	add_attacker = TUR
+	add_attacker = DHL
+	add_defender = ETH
+	add_defender = MED
+}
+
+1541.5.22 = {
+	add_defender = POR
+	rem_attacker = DHL
+}
+
+1543.2.21 = {
+	rem_attacker = ADA
+	rem_attacker = TUR
+	rem_defender = ETH
+	rem_defender = MED
+	rem_defender = POR
+}

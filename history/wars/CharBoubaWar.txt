@@ -1,0 +1,26 @@
+name = "Char Bouba War"
+war_goal = {
+	type = superiority_crusade
+	casus_belli = cb_crusade
+}
+
+1644.1.1 = {
+	add_attacker = ZAW
+	add_attacker = LAM
+	add_defender = MAQ
+}
+
+1673.1.1 = {
+	add_defender = FUL
+	add_defender = WAA
+	add_defender = TRZ
+}
+
+1674.1.1 = {
+	rem_attacker = ZAW
+	rem_attacker = LAM
+	rem_defender = MAQ
+	rem_defender = FUL
+	rem_defender = WAA
+	rem_defender = TRZ
+}

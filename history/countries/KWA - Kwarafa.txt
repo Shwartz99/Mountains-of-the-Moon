@@ -10,6 +10,16 @@ unlock_cult = nyame_cult
 capital = 5107	# Kwarafa
 religious_school = maliki_school
 
+1444.1.1 = {
+	monarch = {
+		name = "Agbu Kendja"
+		dynasty = "Kororofa"
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
 1600.1.1 = {
 	monarch = {
 		name = "Agbu Kendja"

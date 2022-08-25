@@ -13,6 +13,7 @@ owner = ZAW
 controller = ZAW
 add_core = ZAW
 tribal_owner = ZAW
+trade_goods = grain
 
 discovered_by = sub_saharan
 discovered_by = muslim

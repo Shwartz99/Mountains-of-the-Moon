@@ -7,3 +7,13 @@ religious_school = maliki_school
 technology_group = muslim
 capital = 5056
 unit_type = muslim
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Goukouni"
+		dynasty = "Zaghawa"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

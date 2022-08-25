@@ -12,6 +12,16 @@ unlock_cult = nyame_cult
 capital = 2267 #Tenkodogo
 fixed_capital = 2267
 
+1444.1.1 = {
+	monarch = {
+		name = "Yadega"
+		dynasty = "Naaba"
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+} 
+
 1500.1.1 = {
 	monarch = {
 		name = "Yadega"

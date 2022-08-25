@@ -6,9 +6,19 @@ religious_school = maliki_school
 technology_group = east_african
 capital = 1225 
 
+1444.1.1 = {
+	monarch = {
+		name = "Jamma'a"
+		dynasty = "Abdallab"
+		dip = 4
+		adm = 5
+		mil = 5
+	}
+}
+
 1480.1.1 = {
 	monarch = {
-		name = "Jamma’a"
+		name = "Jamma'a"
 		dynasty = "Abdallab"
 		dip = 4
 		adm = 5

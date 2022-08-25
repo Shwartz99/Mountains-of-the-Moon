@@ -10,12 +10,13 @@ unlock_cult = islam_cult
 capital = 2237
 
 #Denyanke Kings
-1444.11.11 = {
+1444.1.1 = {
 	monarch = {
-		dip = 3
-		adm = 3
-		mil = 3
-		regent = yes
+		name = "Koli Tengella"
+		dynasty = "Denianke"
+		dip = 2
+		adm = 1
+		mil = 5
 	}
 }
 

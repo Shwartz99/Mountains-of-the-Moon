@@ -12,6 +12,16 @@ capital = 2255 #Sampa
 
 #Very little information on rulers. Borrowing from diverse kingdoms of the region, here Akyem Kotoku
 
+1444.1.1 = {
+	monarch = {
+		name = "Kosounou"
+		dynasty = "Yakassé"
+		DIP = 2
+		ADM  = 1
+		MIL = 2
+	}
+}
+
 1650.1.1 = {
 	monarch = {
 		name = "Kosounou"

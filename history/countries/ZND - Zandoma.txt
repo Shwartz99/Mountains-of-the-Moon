@@ -11,3 +11,13 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 5095 #Riziam
 fixed_capital = 5095
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Yanghama"
+		dynasty = "Zandoma"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}

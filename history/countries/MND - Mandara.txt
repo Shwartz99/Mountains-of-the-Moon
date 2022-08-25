@@ -10,6 +10,16 @@ primary_culture = kanuri
 capital = 1160
 religious_school = maliki_school
 
+1444.1.1 = {
+	monarch = {
+		name = "Sukda"
+		dynasty = "Wandala"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
 1500.1.1 = {
 	monarch = {
 		name = "Sukda"

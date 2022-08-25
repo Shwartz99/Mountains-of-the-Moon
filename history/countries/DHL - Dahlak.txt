@@ -7,3 +7,13 @@ religious_school = shafii_school
 technology_group = muslim
 capital = 5044
 fixed_capital = 5044
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Ahmad"
+		dynasty = "Dahlak"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}

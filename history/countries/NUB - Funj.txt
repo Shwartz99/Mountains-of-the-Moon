@@ -9,6 +9,18 @@ fixed_capital = 1222	# Sennar
 
 #Sultans of Senar
 
+1444.1.1 = {
+	monarch = {
+		name = "'Amâra I Dûnqas"
+		dynasty = "Senar"
+		adm = 3
+		dip = 4
+		mil = 5
+		leader = {	name = "'Amâra I Dûnqas"       	type = general	fire = 2	shock = 2	manuever = 4	siege = 0}
+	}
+
+}
+
 1503.1.1 = {
 	monarch = {
 		name = "'Amâra I Dûnqas"

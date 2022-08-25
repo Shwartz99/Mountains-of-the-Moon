@@ -7,3 +7,13 @@ technology_group = east_african
 unlock_cult = central_african_ancestor_cult
 unlock_cult = islam_cult
 capital = 5038
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Bakhit"
+		dynasty = "Daju"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}

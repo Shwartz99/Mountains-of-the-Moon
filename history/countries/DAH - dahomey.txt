@@ -9,6 +9,16 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1140 #Allada
 
+1444.1.1 = {
+	monarch = {
+		name = "Do-Aklin"
+		dynasty = "Ahosu"
+		DIP = 2
+		ADM = 1
+		MIL = 2
+	}
+}
+
 1600.1.1 = {
 	monarch = {
 		name = "Do-Aklin"

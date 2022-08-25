@@ -7,6 +7,16 @@ technology_group = muslim
 capital = 5000
 religious_school = maliki_school
 
+1444.1.1 = { #generated
+	monarch = {
+		name = "Ahmed"
+		dynasty = "Ath l-Qadi"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
 1515.1.1 = {
 	monarch = {
 		name = "Ahmed"

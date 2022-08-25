@@ -6,3 +6,13 @@ religion = sunni
 technology_group = muslim
 capital = 5046	# Ghat
 religious_school = maliki_school
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Ikhenoukhen"
+		dynasty = "Kel Ajjer"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

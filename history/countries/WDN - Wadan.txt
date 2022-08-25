@@ -6,3 +6,13 @@ religion = sunni
 technology_group = muslim
 capital = 5016	# Wadan
 religious_school = maliki_school
+
+1444.11.11 = {
+	monarch = { #generated
+		name = "Uqess'un"
+		dynasty = "Wadan"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

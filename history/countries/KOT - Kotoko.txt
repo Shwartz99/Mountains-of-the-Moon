@@ -9,3 +9,17 @@ religion = shamanism
 primary_culture = kanuri
 capital = 2287
 religious_school = maliki_school
+
+1444.1.1 = { #generated
+	monarch = {
+		name = "Moussakala"
+		dynasty = "Goulfey"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1650.1.1 = {
+	religion = sunni
+}

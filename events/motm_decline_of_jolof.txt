@@ -19,27 +19,27 @@ country_event = {
 		if = {
 			limit = { owns_core_province = 1113 NOT = { exists = KAY } }
 			release = KAY
-			KAY = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+			KAY = { save_global_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 2239 NOT = { exists = SII } }
 			release = SII
-			SII = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+			SII = { save_global_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
 		}
 		else_if = {
 			limit = { OR = { owns_core_province = 5020 owns_core_province = 5021 } NOT = { exists = SLM } }
 			release = SLM
-			SLM = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+			SLM = { save_global_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 5065 NOT = { exists = BAO } }
 			release = BAO
-			BAO = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+			BAO = { save_global_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 5019 NOT = { exists = WAA } }
 			release = WAA
-			WAA = { save_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
+			WAA = { save_global_event_target_as = jolof_first_revolt set_country_flag = jolof_first_revolt }
 		}
 		add_prestige = -100
 		add_legitimacy = -50
@@ -91,6 +91,7 @@ country_event = {
 	immediate = {
 		add_legitimacy = 25
 		add_stability = 2
+		clear_global_event_target = jolof_first_revolt
 	}
 	option = {
 		name = motm_decline_of_jolof.2.a
@@ -120,32 +121,32 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = { has_country_flag = jolof_first_revolt exists = yes }
-			save_event_target_as = jolof_first_revolt
+			save_global_event_target_as = jolof_first_revolt
 		}
 		if = {
 			limit = { owns_core_province = 1113 NOT = { has_won_war_against = { who = KAY max_years_since = 100 } } NOT = { exists = KAY } }
 			release = KAY
-			KAY = { save_event_target_as = jolof_subsequent_revolt }
+			KAY = { save_global_event_target_as = jolof_subsequent_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 2239 NOT = { has_won_war_against = { who = SII max_years_since = 100 } } NOT = { exists = SII } }
 			release = SII
-			SII = { save_event_target_as = jolof_subsequent_revolt }
+			SII = { save_global_event_target_as = jolof_subsequent_revolt }
 		}
 		else_if = {
 			limit = { OR = { owns_core_province = 5020 owns_core_province = 5021 } NOT = { has_won_war_against = { who = SLM max_years_since = 100 } } NOT = { exists = SLM } }
 			release = SLM
-			SLM = { save_event_target_as = jolof_subsequent_revolt }
+			SLM = { save_global_event_target_as = jolof_subsequent_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 5065 NOT = { has_won_war_against = { who = BAO max_years_since = 100 } } NOT = { exists = BAO } }
 			release = BAO
-			BAO = { save_event_target_as = jolof_subsequent_revolt }
+			BAO = { save_global_event_target_as = jolof_subsequent_revolt }
 		}
 		else_if = {
 			limit = { owns_core_province = 5019 NOT = { has_won_war_against = { who = WAA max_years_since = 100 } } NOT = { exists = WAA } }
 			release = WAA
-			WAA = { save_event_target_as = jolof_subsequent_revolt }
+			WAA = { save_global_event_target_as = jolof_subsequent_revolt }
 		}
 		event_target:jolof_subsequent_revolt = {
 			if = {

@@ -1,7 +1,7 @@
 culture = berber
 religion = sunni
 capital = "Nwadibu"
-trade_goods = unknown
+trade_goods = fish
 hre = no
 owner = LAM
 controller = LAM

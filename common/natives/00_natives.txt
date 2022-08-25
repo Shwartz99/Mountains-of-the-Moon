@@ -1,17 +1,7 @@
-natives_none = {
-	graphical_culture = westerngfx
-	color = { 0 0 0 }
-	icon = 1
-	unit = western_medieval_infantry
-	
-	provinces = {
-		481 1095 1096 1098 1100 1101 1102 1103 1306 1997 1998 1999 2002 2025
-	}
-}
 natives_american_inuit = {
 	graphical_culture = inuitgfx
 	color = { 0 255  255 }
-	icon = 5
+	icon = 4
 	
 	unit = native_indian_archer
 	
@@ -29,7 +19,7 @@ natives_american_inuit = {
 natives_american_na = {
 	graphical_culture = northamericagfx
 	color = { 0 255  0 }
-	icon = 2
+	icon = 1
 	
 	unit = native_indian_archer
 	
@@ -121,7 +111,7 @@ natives_american_na = {
 natives_american_ma = {
 	graphical_culture = southamericagfx
 	color = { 255  255  0 }
-	icon = 6
+	icon = 5
 	
 	unit = native_indian_archer
 	
@@ -140,7 +130,7 @@ natives_american_ma = {
 natives_american_sa = {
 	graphical_culture = southamericagfx
 	color = { 255  0  0 }
-	icon = 7
+	icon = 6
 	
 	unit = native_indian_archer
 	
@@ -175,7 +165,7 @@ natives_american_sa = {
 natives_african = {
 	graphical_culture = africangfx
 	color = { 180  180  80 }
-	icon = 3
+	icon = 2
 	
 	unit = african_spearmen
 	
@@ -218,7 +208,7 @@ natives_african = {
 natives_asian = {
 	graphical_culture = indiangfx
 	color = { 255  255  80 }
-	icon = 4
+	icon = 3
 	
 	unit = east_asian_spearmen
 	
@@ -324,7 +314,7 @@ natives_asian = {
 natives_siberian = {
 	graphical_culture = inuitgfx
 	color = { 127  255  255 }
-	icon = 5
+	icon = 4
 	
 	unit = mongol_bow
 	
@@ -405,7 +395,7 @@ natives_siberian = {
 natives_saharan = {
 	graphical_culture = muslimgfx
 	color = { 208  192  172 }
-	icon = 8
+	icon = 7
 	
 	unit = african_tuareg_cavalry
 	
@@ -441,4 +431,117 @@ natives_saharan = {
 		5045 5046 5047 5048 5049 5050 5051 5052 5053 5054 5055 5056 5057 5058 5059 5062
 		5089 5091 5092
 	}
+}
+
+natives_481 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 8
+	unit = western_medieval_infantry
+	
+	provinces = { 481 }
+}
+natives_1095 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 9
+	unit = western_medieval_infantry
+	
+	provinces = { 1095 }
+}
+natives_1096 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 10
+	unit = western_medieval_infantry
+	
+	provinces = { 1096 }
+}
+natives_1098 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 11
+	unit = western_medieval_infantry
+	
+	provinces = { 1098 }
+}
+natives_1100 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 12
+	unit = western_medieval_infantry
+	
+	provinces = { 1100 }
+}
+natives_1101 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 13
+	unit = western_medieval_infantry
+	
+	provinces = { 1101 }
+}
+natives_1102 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 14
+	unit = western_medieval_infantry
+	
+	provinces = { 1102 }
+}
+natives_1103 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 15
+	unit = western_medieval_infantry
+	
+	provinces = { 1103 }
+}
+natives_1306 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 16
+	unit = western_medieval_infantry
+	
+	provinces = { 1306 }
+}
+natives_1997 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 17
+	unit = western_medieval_infantry
+	
+	provinces = { 1997 }
+}
+natives_1998 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 18
+	unit = western_medieval_infantry
+	
+	provinces = { 1998 }
+}
+natives_1999 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 19
+	unit = western_medieval_infantry
+	
+	provinces = { 1999 }
+}
+natives_2002 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 20
+	unit = western_medieval_infantry
+	
+	provinces = { 2002 }
+}
+natives_2025 = {
+	graphical_culture = westerngfx
+	color = { 0 0 0 }
+	icon = 21
+	unit = western_medieval_infantry
+	
+	provinces = { 2025 }
 }

@@ -19,6 +19,7 @@ estate_dhimmi = {
 		has_dlc = "The Cossacks"
 		OR = {
 			NOT = { has_estate = estate_brahmins }
+			NOT = { technology_group = sub_saharan }
 			has_country_flag = gained_dhimmi_estate
 		}
 		NOT = { has_government_attribute = is_merchant_republic }
@@ -34,7 +35,6 @@ estate_dhimmi = {
 		NOT = { has_reform = celestial_empire }
 		religion_group = muslim
 		NOT = { has_reform = revolutionary_empire_reform }
-		NOT = { technology_group = sub_saharan }
 	}
 
 	# These scale with loyalty & power
