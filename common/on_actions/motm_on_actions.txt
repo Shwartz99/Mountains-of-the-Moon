@@ -30,6 +30,7 @@ on_startup = {
 	}
 	events = {
 		muslim_school_events.20 #Pick School
+		flavor_got.1 #Event for Gotland to select their mission tree
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
@@ -76,6 +77,20 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
+	#if = {
+	#	limit = {
+	#		OR = {
+	#			primary_culture = norse
+	#			AND = {
+	#				culture_group = scandinavian
+	#				religion = norse_pagan_reformed
+	#			}
+	#		}
+	#		NOT = { has_idea_group = norse_ideas }
+	#		is_playing_custom_nation = no
+	#	}
+	#	country_event = { id = ideagroups.1 } #Swap Ideas
+	#}
 	if = {
 		limit = { has_estate = estate_slaves }
 		add_estate_loyalty = {
@@ -141,6 +156,19 @@ on_integrate = {
 
 # province
 on_adm_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_tax = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_tax = 1 
+	}
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -151,6 +179,19 @@ on_adm_development = {
 
 # province
 on_dip_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_production = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_production = 1 
+	}
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -161,6 +202,19 @@ on_dip_development = {
 
 # province
 on_mil_development = {
+	if = {
+		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
+		random_list = {
+			20 = { add_base_manpower = 1 }
+			80 = { }
+		}
+	}
+	if = {
+		limit = { 
+			owner = { has_country_modifier = lit_increased_dev_modifier }
+		}
+		add_base_manpower = 1 
+	}
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -226,6 +280,25 @@ on_raid_coast = {
 	}
 	if = {
 		limit = {
+			has_government_attribute = raiding_increases_pp
+		}
+		add_power_projection = {
+			type = high_sea_power_projection
+			amount = 1
+		}
+	}
+	if = {
+		limit = {
+			has_mission = dan_raid_the_north_sea
+			NOT = { mission_completed = dan_raid_the_north_sea } 
+		}
+		change_variable = {
+			which = num_of_raided_coasts
+			value = 1
+		}
+	}
+	if = {
+		limit = {
 			has_estate = estate_slaves
 		}
 		add_estate_influence_modifier = {
@@ -263,6 +336,10 @@ on_country_released = {
 		capital_scope = {
 			change_religion = FROM
 		}
+	}
+	if = {
+		limit = { NOT = { is_year = 1445 } }
+		set_country_flag = released_in_1444
 	}
 	FROM = {
 		if = {
