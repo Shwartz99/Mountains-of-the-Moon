@@ -1,7 +1,7 @@
 government = tribal
 government_rank = 1
 add_government_reform = sahara_tribe_settled
-primary_culture = berber
+primary_culture = sanhaja
 religion = sunni
 technology_group = muslim
 capital = 5007	# Trarza
