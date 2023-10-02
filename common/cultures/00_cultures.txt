@@ -3249,7 +3249,28 @@ maghrebi = {
 	tunisian = {
 		primary = TUN
 		dynasty_names = {
-			"Hafsid" "Karamanli" "Muradid" "Husainid" "Banu Muhammad"
+			"Hafsid" "Muradid" "Husainid" "Banu Muhammad"
+		}
+		male_names = {
+			Muhammad 'Alî Ahmad Yahyâ Zkariyâ' 'Abd al-'Aziz 'Abd al-Mu'min Hamûda Husayn 'Usman Salih Sulaiman 
+			Isma'îl Yûsuf Abû Bakr Ala ad-Din Butrus Fakhri Fayiz Hadj Hafiz Harun Hasan Hashim Ibrahim Ja'far 
+			Mahir Mas'ud Murad Mustafa Qadir Rasim Salah Shadi Tahir Torgud Yunus Khalil Amud Anaba Annaber Antalas Anwa Aras 
+			Asad Asaru Asirem Aszellay Atissi Awdia Awgustin August Awinagh Awlagh Awzal Aylal Ayt'ere Az'ar Az'regh Azenkwed 
+			Azim Azrur Badda Badis Bagay Barakat Beddis Berkan Bezz'i Br'ir'uc Bukkus Buwayh Buxtuc Capussa Cucung Dali Fahd 
+			Fath Fella Firhun Firmus Frawsen Gaia Galussa Gauda Gaya Ghani Ghanim Ghaysan Ghumer Gildun Gulusa H'emmu Haidar 
+			Hamad Hashim Hiba Hiempsal Himmi Hotha Hussamaddin Ibiza Ibrahim Abraham Iccaam Ifni Ifser Ighlaf Igider Igmi Iher 
+			Iken Ilyas Ilyas Immeghar Immel
+		}
+		female_names = {
+			Hikmat Inas Aesha Aisha Amira Badeea Badia Badra Bahac Bahiyya Bajila Bakka Baraah Barakah Baria Bashira Monica 	
+			Myassa Najiba R'uza Ra'isa Rahima Randja Rula Sadiqa Salaama Sekkura Siddiqa Silya Siman T'awes T'item Tadefi Tadla 
+			Tadmut Tafrara Tafsut Tagwillult Taheyyatt Takama Taklit Talalit 
+		}
+	}
+	tripolitanian = {
+		primary = TRP
+		dynasty_names = {
+			"Karamanli"
 		}
 		male_names = {
 			Muhammad 'Alî Ahmad Yahyâ Zkariyâ' 'Abd al-'Aziz 'Abd al-Mu'min Hamûda Husayn 'Usman Salih Sulaiman 
