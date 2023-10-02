@@ -139,7 +139,14 @@
  west_african: "Guinean"
  senegambian: "Wolof"
  berber: "Zenata"
- algerian: "Libyan"
+ hassaniya: "Hassaniya"
+ sanhaja: "Sanhaja"
+ mzabi: "Mzabi"
+ kabyle: "Kabyle"
+ tripolitanian: "Tripolitanian"
+ susi: "Susi"
+ tafilalti: "Tafilalti"
+  
  
  #ideas
  west_african_idea_5: "Artisan Guilds"
