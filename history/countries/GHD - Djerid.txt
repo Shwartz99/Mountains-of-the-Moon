@@ -2,6 +2,7 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = tunisian
+add_accepted_culture = mzabi
 religion = sunni
 technology_group = muslim
 capital = 352	# Gafsa
