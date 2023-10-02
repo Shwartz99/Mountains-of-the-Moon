@@ -99,6 +99,20 @@
  PROV_ADJ4097: "Kasongo"
  PROV_ADJ4102: "Kasama"
  PROV_ADJ4078: "Ndendé"
+
+ #Maghreb
+ PROV348: "Taroudant"
+ PROV4563: "Trara"
+ PROV2448: "Murzuq"
+ PROV2463: "Ouled Nail"
+ PROV4563: "Gharb"
+ PROV342: "Salé"
+ PROV4564: "Chaouia"
+ PROV4157: "Middle Atlas"
+ PROV4168: "High Plateau"
+
+ PROV1292: "Cape St. Vincent"
+ 
  #areas
  sennar_area: "White Nile"
  sennar_area_name: "White Nile"
@@ -122,6 +136,7 @@
  futa_jallon_area_adj: "Kantorian"
  lower_volta_area_name: "North Akanman"
  lower_volta_area_adj: "North Akan"
+ 
  
  #trade
  katsina: "Chad"
