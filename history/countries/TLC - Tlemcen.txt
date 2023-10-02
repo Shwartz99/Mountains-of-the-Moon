@@ -3,6 +3,7 @@ add_government_reform = barbary_sultanate_reform
 technology_group = muslim
 religion = sunni
 primary_culture = berber
+add_accepted_culture = algerian
 capital = 336 # Tlemcen
 fixed_capital = 336 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
@@ -115,7 +116,7 @@ change_estate_land_share = {
 
 1516.1.1 = {
 	monarch = {
-		name = "Mûsa III"
+		name = "MÃ»sa III"
 		dynasty = "Zayyanid"
 		adm = 2
 		dip = 1
@@ -125,7 +126,7 @@ change_estate_land_share = {
 
 1527.1.1 = {
 	monarch = {
-		name = "'Abd Allâh III"
+		name = "'Abd AllÃ¢h III"
 		dynasty = "Zayyanid"
 		adm = 2
 		dip = 0
