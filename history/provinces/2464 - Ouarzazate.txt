@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR
-culture = berber
+culture = tafilalti
 religion = sunni
 capital = "Ouarzazate"
 trade_goods = grain
