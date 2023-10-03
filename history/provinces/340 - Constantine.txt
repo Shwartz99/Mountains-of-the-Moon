@@ -2,7 +2,7 @@
 
 owner = TUN
 controller = TUN 
-culture = berber
+culture = kabyle
 religion = sunni
 capital = "Constantine"
 trade_goods = grain
