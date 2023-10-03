@@ -1,8 +1,8 @@
 #356 - Cyrenaica
 
-owner = MAM
-controller = MAM
-culture = al_misr_arabic
+owner = CYR
+controller = CYR
+culture = tripolitanian
 religion = sunni
 capital = "Benghazi"
 trade_goods = livestock
