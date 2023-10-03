@@ -2,7 +2,7 @@
 
 owner = MZB
 controller = MZB
-culture = berber
+culture = mzabi
 religion = ibadi
 capital = "Ghardaia"
 trade_goods = livestock
