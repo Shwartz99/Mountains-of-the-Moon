@@ -2,7 +2,7 @@
 
 owner = MAM
 controller = MAM
-culture = al_misr_arabic
+culture = tripolitanian
 religion = sunni
 capital = "Marsa Matruh"
 trade_goods = fish
