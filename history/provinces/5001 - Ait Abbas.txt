@@ -2,9 +2,9 @@
 
 owner = AIT
 controller = AIT
-culture = berber
+culture = kabyle
 religion = sunni
-capital = "Kal‚a"
+capital = "Kal√¢a"
 trade_goods = iron
 hre = no
 base_tax = 2 
