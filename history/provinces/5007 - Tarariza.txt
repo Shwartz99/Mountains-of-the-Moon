@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Trarza"
 religion = sunni
 hre = no
