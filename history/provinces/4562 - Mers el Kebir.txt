@@ -2,7 +2,7 @@
 
 owner = TLC
 controller = TLC
-culture = algerian
+culture = berber
 religion = sunni
 capital = "Nemdora"
 trade_goods = cloth
