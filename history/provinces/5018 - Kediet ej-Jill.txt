@@ -1,4 +1,4 @@
-culture = berber
+culture = hassaniya
 capital = "Zwarat"
 religion = sunni
 hre = no
