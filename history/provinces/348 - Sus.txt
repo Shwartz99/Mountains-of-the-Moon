@@ -1,8 +1,8 @@
 #348 - Sus
 
-owner = MOR
-controller = MOR
-culture = susi
+owner = SOS
+controller = SOS
+culture = shilha
 religion = sunni
 capital = "Taroudant"
 trade_goods = sugar
