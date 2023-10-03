@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Shinqit"
 religion = sunni
 hre = no
