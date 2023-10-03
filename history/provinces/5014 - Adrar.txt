@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Atar"
 religion = sunni
 hre = no
