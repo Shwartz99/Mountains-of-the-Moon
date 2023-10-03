@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR
-culture = berber
+culture = susi
 religion = sunni
 capital = "Agadir"
 trade_goods = sugar
