@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR
-culture = berber
+culture = susi
 religion = sunni
 capital = "Sidi Ifni"
 trade_goods = fish
