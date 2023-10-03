@@ -1,4 +1,4 @@
-culture = sanhaja
+culture = hassaniya
 capital = "as-Samara"
 religion = sunni
 hre = no
