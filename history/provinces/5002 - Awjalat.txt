@@ -2,7 +2,7 @@
 
 owner = CYR
 controller = CYR
-culture = tunisian
+culture = mzabi
 religion = sunni
 capital = "Awjalat"
 trade_goods = ivory
