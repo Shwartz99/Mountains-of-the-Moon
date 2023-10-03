@@ -1,8 +1,8 @@
 #355 - Sirt
 
-owner = FZA
-controller = FZA
-culture = tunisian
+owner = CYR
+controller = CYR
+culture = tripolitanian
 religion = sunni
 capital = "Ben Jawad"
 trade_goods = fish
