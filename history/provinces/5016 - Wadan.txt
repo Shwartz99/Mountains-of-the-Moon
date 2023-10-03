@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Wadan"
 religion = sunni
 hre = no
