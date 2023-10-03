@@ -2,7 +2,7 @@
 
 owner = KUK
 controller = KUK
-culture = berber
+culture = kabyle
 religion = sunni
 capital = "Kuku"
 trade_goods = grain
