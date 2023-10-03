@@ -1,4 +1,4 @@
-culture = berber
+culture = hassaniya
 capital = "Bir Moghrein"
 religion = sunni
 hre = no
