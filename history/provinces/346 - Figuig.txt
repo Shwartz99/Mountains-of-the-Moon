@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR 
-culture = moroccan
+culture = tafilalti
 religion = sunni
 capital = "Tafilalt"
 trade_goods = gold
