@@ -2,7 +2,7 @@
 
 owner = GHD
 controller = GHD
-culture = tunisian
+culture = mzabi
 religion = sunni
 capital = "Nalut"
 trade_goods = livestock
