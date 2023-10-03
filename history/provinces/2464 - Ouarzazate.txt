@@ -1,7 +1,7 @@
 # - Ouarzazate
 
-owner = MOR
-controller = MOR
+owner = SOS
+controller = SOS
 culture = shilha
 religion = sunni
 capital = "Ouarzazate"
