@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Kiffa"
 religion = sunni
 hre = no
