@@ -2,7 +2,7 @@
 
 owner = TUN
 controller = TUN
-culture = berber
+culture = kabyle
 religion = sunni
 capital = "Bejaia"
 trade_goods = iron
@@ -25,6 +25,6 @@ discovered_by = ottoman
 1510.1.1 = {
 	owner = KBA
 	controller = KBA
-	capital = "Kal‚a"
+	capital = "Kal√¢a"
 }
 1600.1.1 = { capital = "Medjana" }
