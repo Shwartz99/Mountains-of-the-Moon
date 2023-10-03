@@ -1,8 +1,8 @@
 #347 - Ifni
 
-owner = MOR
-controller = MOR
-culture = susi
+owner = SOS
+controller = SOS
+culture = shilha
 religion = sunni
 capital = "Sidi Ifni"
 trade_goods = fish
