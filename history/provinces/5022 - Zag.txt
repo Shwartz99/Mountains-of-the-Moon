@@ -1,4 +1,4 @@
-culture = berber
+culture = susi
 capital = "as-Zaq"
 religion = sunni
 trade_goods = unknown
