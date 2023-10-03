@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Magta-Lahjar"
 religion = sunni
 hre = no
