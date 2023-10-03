@@ -1,7 +1,7 @@
 # - Draa
 
-owner = MOR
-controller = MOR
+owner = TFL
+controller = TFL
 culture = shilha
 religion = sunni
 capital = "Tagmadert"
