@@ -2,7 +2,7 @@
 
 owner = TGT
 controller = TGT
-culture = berber
+culture = mzabi
 religion = ibadi
 capital = "Ouargla"
 trade_goods = slaves
