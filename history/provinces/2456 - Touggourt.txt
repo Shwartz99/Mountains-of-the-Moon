@@ -2,7 +2,7 @@
 
 owner = TGT
 controller = TGT
-culture = algerian
+culture = mzabi
 religion = sunni
 capital = "Touggourt"
 trade_goods = spices
