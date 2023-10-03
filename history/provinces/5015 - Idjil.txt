@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Idjil"
 religion = sunni
 hre = no
