@@ -1,4 +1,4 @@
-culture = berber
+culture = sanhaja
 capital = "Awdaghust"
 religion = sunni
 hre = no
