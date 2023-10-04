@@ -1,4 +1,4 @@
-culture = sanhaja
+culture = hassaniya
 capital = "Atar"
 religion = sunni
 hre = no
