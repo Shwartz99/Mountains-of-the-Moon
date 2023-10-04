@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = barbary_sultanate_reform
 primary_culture = tunisian
+add_accepted_culture = kabyle
 religion = sunni
 technology_group = muslim
 capital = 341	# Tunis
@@ -32,8 +33,8 @@ change_estate_land_share = {
 
 1435.9.18 = {
 	heir = {
-		name = "Yahy‚"
-		monarch_name = "Yahy‚ III"
+		name = "Yahy√¢"
+		monarch_name = "Yahy√¢ III"
 		dynasty = "Hafsid"
 		birth_date = 1435.9.18
 		death_date = 1489.1.1
@@ -46,7 +47,7 @@ change_estate_land_share = {
 
 1488.1.1 = {
 	monarch = {
-		name = "Yahy‚ III"
+		name = "Yahy√¢ III"
 		dynasty = "Hafsid"
 		adm = 2
 		dip = 0
@@ -80,8 +81,8 @@ change_estate_land_share = {
 
 1489.1.1 = {
 	heir = {
-		name = "Zakariy‚'"
-		monarch_name = "Zakariy‚ II"
+		name = "Zakariy√¢'"
+		monarch_name = "Zakariy√¢ II"
 		dynasty = "Hafsid"
 		birth_date = 1470.1.1
 		death_date = 1494.5.17
@@ -94,7 +95,7 @@ change_estate_land_share = {
 
 1490.10.15 = {
 	monarch = {
-		name = "Zakariy‚' II"
+		name = "Zakariy√¢' II"
 		dynasty = "Hafsid"
 		adm = 1
 		dip = 2
