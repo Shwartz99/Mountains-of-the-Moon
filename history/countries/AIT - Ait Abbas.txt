@@ -2,6 +2,7 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = kabyle
+add_accepted_culture = algerian
 religion = sunni
 technology_group = muslim
 capital = 5001
