@@ -2,7 +2,7 @@
 
 owner = CYR
 controller = CYR
-culture = al_misr_arabic
+culture = tripolitanian
 religion = sunni
 capital = "Bardiyah"
 trade_goods = livestock
