@@ -6,7 +6,7 @@ religion = sunni
 technology_group = muslim
 capital = 5014	# Adrar
 religious_school = maliki_school
-add_accepted_culture = berber
+add_accepted_culture = sanhaja
 
 
 1444.11.11 = {
