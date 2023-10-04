@@ -2,7 +2,7 @@
 
 owner = FZA
 controller = FZA 
-culture = tunisian
+culture = tripolitanian
 religion = sunni
 capital = "Murzuk"
 trade_goods = ivory
