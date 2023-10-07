@@ -1,4 +1,4 @@
-culture = shilha
+culture = hassaniya
 capital = "as-Zaq"
 religion = sunni
 trade_goods = unknown
