@@ -1385,36 +1385,28 @@ djerba_area = { #3
 	353 2453 2954
 }
 
-algiers_area = { #3
-	336 2465 4562
+algiers_area = { #5
+	336 2465 4562 337 2461
 }
 
-barbary_coast_area = { #3
-	337 2461 338
+hautes_plaines_area = { #4
+	2459 2462 2463 338
 }
 
-hautes_plaines_area = { #3
-	2459 2462 2463 
+tafilalt_area = { #5
+	346 349 2460 2464 2466
 }
 
-tafilalt_area = { #3
-	346 349 2460
+western_morocco_area = { #5
+	342 4564 4563 343 2467
 }
 
-sus_area = { #4
-	348 2464 2466 4568
+marrekesh_area = { #5
+	344 2468 345 2469 4568
 }
 
-western_morocco_area = { #3
-	342 345 2469 4564
-}
-
-marrekesh_area = { #3
-	343 344 2467 2468
-}
-
-northern_morocco_area = { #5
-	334 335 1751 4563 4561
+northern_morocco_area = { #4
+	334 335 1751 4561
 }
 
 ########################################
@@ -3714,7 +3706,7 @@ adrar_tamar_area = { 1111 5005 5006 5008 5014 } #5
 shinqit_area = { 5024 5016 5017 5018 } #4
 tagant_area = { 2247 5010 5011 5012 5013 } #5
 trarza_area = { 1096 1112 5007 5019 } #4
-southern_morocco_area = { 347 1110 2470 5022 } #4
+southern_morocco_area = { 347 1110 2470 5022 348 } #5
 
 itbay_area = { 1232 1226 1229 2324 5029 } #5
 butana_area = { 1222 1225 2797 4033 } #4
