@@ -136,7 +136,12 @@
  futa_jallon_area_adj: "Kantorian"
  lower_volta_area_name: "North Akanman"
  lower_volta_area_adj: "North Akan"
- 
+
+ western_morocco_area: "Fez"
+ northern_morocco_area: "Rif"
+ southern_morocco_area: "Sus"
+ algiers_area: "Oran"
+ hautes_plaines_area: "Algiers"
  
  #trade
  katsina: "Chad"
