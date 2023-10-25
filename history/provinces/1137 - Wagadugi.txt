@@ -9,6 +9,7 @@ culture = mossi #mossi
 religion = shamanism #Fetishism
 capital = "Wagadugu"
 trade_goods = grain
+center_of_trade = 1
 hre = no
 base_tax = 3 
 base_production = 3
