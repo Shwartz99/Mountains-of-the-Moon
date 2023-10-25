@@ -3,7 +3,7 @@
 owner = MKU
 controller = MKU
 add_core = MKU
-culture = nyasa
+culture = makua
 religion = shamanism #Fetishism
 capital = "Lolo"
 is_city = yes
