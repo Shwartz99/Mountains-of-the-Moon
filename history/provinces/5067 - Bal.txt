@@ -1,5 +1,5 @@
 capital = "Bourem"
-culture = tuareg
+culture = songhai
 religion = sunni
 owner = SON
 controller = SON
