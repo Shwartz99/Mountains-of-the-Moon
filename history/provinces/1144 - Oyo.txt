@@ -9,6 +9,7 @@ capital = "Oyo"
 is_city = yes
 base_manpower = 4
 trade_goods = copper
+center_of_trade = 1
 hre = no
 base_tax = 3 
 base_production = 3
