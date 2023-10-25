@@ -3,7 +3,6 @@
 owner = KOT
 controller = KOT
 add_core = KOT
-add_core = BOR
 culture = jukun 
 religion = shamanism #Fetishism
 capital = "Logone"
