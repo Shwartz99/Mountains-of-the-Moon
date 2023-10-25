@@ -4,6 +4,7 @@ owner = YAO
 controller = YAO
 add_core = YAO
 add_core = KBO
+add_core = BOR
 culture = kanuri
 religion = sunni
 capital = "Ngala"
