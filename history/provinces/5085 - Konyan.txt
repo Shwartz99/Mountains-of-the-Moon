@@ -1,6 +1,6 @@
-capital = "Beyla"
+capital = "Musadugu"
 culture = dyola
-religion = sunni
+religion = shamanism
 owner = MAL
 controller = MAL
 add_core = MAL
