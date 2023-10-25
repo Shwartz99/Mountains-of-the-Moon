@@ -1,6 +1,6 @@
 capital = "Kukiya"
 culture = songhai
-religion = sunni
+religion = shamanism
 owner = SON
 controller = SON
 add_core = SON
