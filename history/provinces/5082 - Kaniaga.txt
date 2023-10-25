@@ -1,6 +1,6 @@
 capital = "Kirané"
 culture = soninke
-religion = shamanism
+religion = sunni
 owner = MAL
 controller = MAL
 add_core = MAL
