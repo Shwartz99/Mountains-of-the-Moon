@@ -8484,7 +8484,27 @@ sahelian = {
 		}
 	}
 	sudanic = {
-	
+	}
+	nupe = {
+		primary = NUP
+		dynasty_names = {
+			Etsu Ubah Solaja Umaru
+			Aliu Solaja Okara Ajuwa
+			Ezinwa Kanu Opara
+		}
+		male_names = {
+			"Edegi" "Abdu Waliyi" "Alyu" "Ganamace" "Ibrahima" "Idirisu" "Abd Allahi 'Tsado" "Abu Bakr Kolo" 
+			"Jibirin dan Au Bakr Kolo" "Ma'azu" "Majiya" "Ilyasu" "Ali Kolo Tankari" "Mamma" "Jimada" "Jia" "Masaba" 
+			"Maza" "Ma'azu 'Isa" "Tsoede" "'Usuman Zaki" "'Umaru Majigi" "Maliki" "Abu Bakr" "Muhammadu" "Bello" 
+			"Malam" "'Usman Sarki" "'Umaru Sanda Ndayako" "Yahaya" 
+		}
+		female_names = {
+			Abagbe Abegi Abeje Oluremi Winona Isi Abeni Abimbola Abiodun Ade Adebola Adebowale Adedayo Adetokunbo 
+			Alaba Ayo Ayodele Ayomide Ayotunde Bolanle Bosede Dada Dayo Ekundayo Eniola Enitan Folami Gbemisola Idowu 
+			Ife Ige Kayin Mojisola Monifa Olamide Olayinka Olubunmi Olufunke Olufunmilayo Olufunmilola Oluwafunmilayo 
+			Oluwakanyinsola Oluwasegun Oluwaseun Oluwaseyi Oluwatoyin Oluwayemisi Omobolanle Omolara Oni Opeyemi 
+			Simisola Temitope Titilayo Yejide Yewande
+		}
 	}
 }
 
@@ -8638,27 +8658,6 @@ west_african = {
 			Chinasa Chinedu Chinonso Chinwe Chinweike Chinwendu Chinweuba Chinyelu Chinyere Chioma Chizoba Ebele Ekene 
 			Ekenedilichukwu Fumnanya Funanya Ndidi Ngozi Nkechi Nkechinyere Nkemdilim Nkiru Nkiruka Nneka Nnenna 
 			Nnenne Nwanneka Ogechi Ogechukwukama Oluchi Onyeka Onyekachi Onyekachukwu Udo Uzoma
-		}
-	}
-	nupe = {
-		primary = NUP
-		dynasty_names = {
-			Etsu Ubah Solaja Umaru
-			Aliu Solaja Okara Ajuwa
-			Ezinwa Kanu Opara
-		}
-		male_names = {
-			"Edegi" "Abdu Waliyi" "Alyu" "Ganamace" "Ibrahima" "Idirisu" "Abd Allahi 'Tsado" "Abu Bakr Kolo" 
-			"Jibirin dan Au Bakr Kolo" "Ma'azu" "Majiya" "Ilyasu" "Ali Kolo Tankari" "Mamma" "Jimada" "Jia" "Masaba" 
-			"Maza" "Ma'azu 'Isa" "Tsoede" "'Usuman Zaki" "'Umaru Majigi" "Maliki" "Abu Bakr" "Muhammadu" "Bello" 
-			"Malam" "'Usman Sarki" "'Umaru Sanda Ndayako" "Yahaya" 
-		}
-		female_names = {
-			Abagbe Abegi Abeje Oluremi Winona Isi Abeni Abimbola Abiodun Ade Adebola Adebowale Adedayo Adetokunbo 
-			Alaba Ayo Ayodele Ayomide Ayotunde Bolanle Bosede Dada Dayo Ekundayo Eniola Enitan Folami Gbemisola Idowu 
-			Ife Ige Kayin Mojisola Monifa Olamide Olayinka Olubunmi Olufunke Olufunmilayo Olufunmilola Oluwafunmilayo 
-			Oluwakanyinsola Oluwasegun Oluwaseun Oluwaseyi Oluwatoyin Oluwayemisi Omobolanle Omolara Oni Opeyemi 
-			Simisola Temitope Titilayo Yejide Yewande
 		}
 	}
 	fon = {
