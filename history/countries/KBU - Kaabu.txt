@@ -1,8 +1,8 @@
 government = tribal
 government_rank = 1
 add_government_reform = tribal_kingdom
-primary_culture = serer
-add_accepted_culture = mali
+primary_culture = mali
+add_accepted_culture = serer
 religion = shamanism
 technology_group = sub_saharan
 unlock_cult = yemoja_cult
