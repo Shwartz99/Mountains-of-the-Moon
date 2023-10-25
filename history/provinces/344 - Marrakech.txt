@@ -6,6 +6,7 @@ culture = moroccan
 religion = sunni
 capital = "Marrakech"
 trade_goods = sugar
+center_of_trade = 1
 hre = no
 base_tax = 5 
 base_production = 5
