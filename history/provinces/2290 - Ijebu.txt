@@ -1,6 +1,9 @@
 # No previous file for Ijebu
 
-is_city = no
+is_city = yes
+owner = BEN
+controller = BEN
+add_core = BEN
 culture = yorumba 
 religion = shamanism #Fetishism
 capital = "Ijebu"
