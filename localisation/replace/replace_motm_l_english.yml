@@ -129,14 +129,15 @@
  west_africa_coast_area: "Gold Coast"
  west_africa_coast_area_name: "Gold Coast"
  west_africa_coast_area_adj: "Gold Coast"
- manding_area: "North Manding"
- manding_area_name: "North Manding"
- manding_area_adj: "North Mandinka"
- futa_jallon_area_name: "Kantor"
+ manding_area: "Bure"
+ manding_area_name: "Bure"
+ manding_area_adj: "Bure"
+ futa_jallon_area_name: "Kantora"
  futa_jallon_area_adj: "Kantorian"
  lower_volta_area_name: "North Akanman"
  lower_volta_area_adj: "North Akan"
-
+ 
+ #Maghreb 
  western_morocco_area: "Fez"
  northern_morocco_area: "Rif"
  southern_morocco_area: "Sus"
@@ -167,6 +168,7 @@
  kabyle: "Kabyle"
  tripolitanian: "Tripolitanian"
  shilha: "Shilha"  
+ sudanic: "Fertit"
  
  #ideas
  west_african_idea_5: "Artisan Guilds"
