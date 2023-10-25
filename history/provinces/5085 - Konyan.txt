@@ -1,5 +1,5 @@
 capital = "Musadugu"
-culture = dyola
+culture = mali
 religion = shamanism
 owner = MAL
 controller = MAL
