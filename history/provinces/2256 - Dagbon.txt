@@ -8,6 +8,7 @@ culture = dagomba
 religion = shamanism #Fetishism
 capital = "Tamale"
 trade_goods = dyes
+center_of_trade = 1
 hre = no
 base_tax = 1 
 base_production = 1
