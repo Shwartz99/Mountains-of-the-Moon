@@ -1,6 +1,6 @@
 capital = "Tibiri"
 culture = hausa
-religion = sunni
+religion = shamanism
 owner = GOB
 controller = GOB
 add_core = GOB
