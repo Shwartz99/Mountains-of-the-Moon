@@ -1,1 +1,2 @@
 #5063 - Tiniri
+discovered_by = sub_saharan
