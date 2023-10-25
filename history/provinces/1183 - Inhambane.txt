@@ -1,5 +1,9 @@
 #1183 - Inhambane
 
+owner = SFA
+controller = SFA
+add_core = SFA
+is_city = yes
 culture = nguni
 religion = shamanism #Fetishism
 capital = "Inhambane"
@@ -8,9 +12,6 @@ hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 1
-native_size = 30
-native_ferocity = 4
-native_hostileness = 9
 discovered_by = east_african
 discovered_by = central_african
 discovered_by = ETH
