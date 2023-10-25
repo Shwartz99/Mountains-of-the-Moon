@@ -2,6 +2,7 @@ government = tribal
 government_rank = 1
 add_government_reform = tribal_kingdom
 primary_culture = aka
+add_accepted_culture = senufo
 religion = shamanism #Fetishism
 technology_group = sub_saharan
 unlock_cult = yemoja_cult
