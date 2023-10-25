@@ -8,6 +8,7 @@ culture = senufo
 religion = shamanism #Fetishism
 capital = "Kong"
 trade_goods = ivory
+center_of_trade = 1
 hre = no
 base_tax = 2 
 base_production = 2
