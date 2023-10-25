@@ -3,7 +3,7 @@
 owner = KAF
 controller = KAF
 add_core = KAF
-culture = sidamo 
+culture = luo 
 religion = shamanism #Fetishism
 capital = "Gambela"
 is_city = yes
