@@ -3,7 +3,7 @@
 owner = TUN
 controller = TUN 
 culture = mzabi
-religion = ibadi
+religion = sunni
 capital = "Zuwarah"
 trade_goods = fish
 hre = no
