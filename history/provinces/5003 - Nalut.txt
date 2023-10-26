@@ -3,7 +3,7 @@
 owner = GHD
 controller = GHD
 culture = mzabi
-religion = sunni
+religion = ibadi
 capital = "Nalut"
 trade_goods = livestock
 hre = no
