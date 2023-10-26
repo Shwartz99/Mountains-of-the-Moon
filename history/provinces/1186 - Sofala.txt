@@ -3,6 +3,7 @@
 owner = SFA
 controller = SFA
 add_core = SFA
+add_core = ZIM
 culture = shona
 religion = sunni
 capital = "Sofala"
