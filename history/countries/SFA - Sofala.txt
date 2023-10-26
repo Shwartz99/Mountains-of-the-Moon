@@ -1,7 +1,9 @@
 government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
-primary_culture = nyasa
+primary_culture = swahili
+add_accepted_culture = shona
+add_accepted_culture = nguni
 religion = sunni
 technology_group = east_african
 unit_type = sub_saharan
