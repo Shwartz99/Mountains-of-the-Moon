@@ -21,7 +21,7 @@ religious_school = maliki_school
 		adm = 1
 		mil = 3
 	}
-	religion = sunni
+	religion = shamanism
 }
 
 1537.1.1 = {
@@ -32,7 +32,7 @@ religious_school = maliki_school
 		adm = 1
 		mil = 3
 	}
-	religion = sunni
+	religion = shamanism
 }
 
 1567.1.1 = {
