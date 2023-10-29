@@ -1,8 +1,8 @@
 # No previous file for Gwiriko
 
-owner = KNG
-controller = KNG
-add_core = KNG
+owner = MAL
+controller = MAL
+add_core = MAL
 is_city = yes
 culture = senufo 
 religion = shamanism #Fetishism
