@@ -8,7 +8,6 @@ unlock_cult = nyame_cult
 religion = shamanism
 primary_culture = jukun
 capital = 1160
-religious_school = maliki_school
 
 1444.1.1 = {
 	monarch = {
@@ -79,6 +78,8 @@ religious_school = maliki_school
 		dip = 2
 		mil = 2
 	}
+	religion = sunni
+	religious_school = maliki_school
 }
 
 1737.1.1 = {
