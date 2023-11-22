@@ -2,7 +2,7 @@
 
 owner = TLC
 controller = TLC
-culture = berber
+culture = mzabi
 religion = sunni
 capital = "Figuig"
 trade_goods = livestock
