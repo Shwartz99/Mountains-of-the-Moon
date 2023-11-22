@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR
-culture = moroccan
+culture = mzabi
 religion = sunni
 capital = "Oulad Mhedi"
 trade_goods = livestock
