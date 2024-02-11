@@ -2,6 +2,7 @@ government = monarchy
 add_government_reform = barbary_sultanate_reform
 primary_culture = tunisian
 add_accepted_culture = kabyle
+add_accepted_culture = tripolitanian
 religion = sunni
 technology_group = muslim
 capital = 341	# Tunis
