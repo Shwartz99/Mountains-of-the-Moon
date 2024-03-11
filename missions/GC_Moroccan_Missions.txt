@@ -74,7 +74,7 @@ gc_morocco_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2466
+				province_id = 346
 				province_id = 1110
 			}
 		}
@@ -87,7 +87,7 @@ gc_morocco_1 = {
 				limit = {
 					has_dlc = "Dharma"
 				}
-				2466 = {
+				346 = {
 					OR = {
 						province_has_center_of_trade_of_level = 2
 						has_building = marketplace
@@ -95,7 +95,7 @@ gc_morocco_1 = {
 				}
 			}
 			else = {
-				2466 = {
+				346 = {
 					has_building = marketplace
 				}
 			}
