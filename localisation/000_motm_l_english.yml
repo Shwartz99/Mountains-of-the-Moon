@@ -1161,6 +1161,8 @@
  sidamo_nation_desc: "It is finally time the Sidamo people unite against their enemies. We shall be the overlord of all Sidamo!"
  madagascar_nation_title: "Form Malagasy Nation"
  madagascar_nation_desc: "Madagascar has been hitherto divided into many kingdoms. Now that we rule them all, the border of our nation can be only one: the sea!"
+ colonize_eko_decision_title: "Colonize [2290.GetName]"
+ colonize_eko_decision_desc: "The marshlands of [2290.GetName] are a prime cause of friction between us and Fon slave traders to the west. We should set up a military outpost there to allow us greater control of local markets."
 
  #events
  motm.1.t: "Arab Tribal Influx"
@@ -1250,6 +1252,9 @@
  
  conquista_realenga: "Conquista Realenga"
  desc_conquista_realenga: "The conquest of these islands has been funded by the Crown, thus stimulating the growth of our colonies."
+ 
+ improved_drainage_eko_modifier: "Improved Drainage"
+ desc_improved_drainage_eko_modifier: "Reclaiming the marshes of this province has transformed it into a rich farmland."
  
  #country mission modifiers
  jolof_centralized_empire: "Centralized Empire"

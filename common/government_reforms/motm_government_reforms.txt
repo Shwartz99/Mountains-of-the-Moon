@@ -24,6 +24,7 @@ sahara_tribe = {
 	custom_attributes = {
 		non_native_tribal = yes
 		enables_aristocratic_idea_group = yes
+		enables_estate_nomadic_tribes = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -65,6 +66,9 @@ sahara_tribe_settled = {
 	custom_attributes = {
 		non_native_tribal = yes
 		enables_aristocratic_idea_group = yes
+		enables_estate_church = yes
+		enables_estate_nobles = yes
+		enables_estate_burghers = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -114,6 +118,9 @@ sahara_theocracy = {
 	custom_attributes = {
 		non_native_tribal = yes
 		enables_aristocratic_idea_group = yes
+		enables_estate_church = yes
+		enables_estate_nobles = yes
+		enables_estate_burghers = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -156,6 +163,7 @@ savanna_tribe = {
 	custom_attributes = {
 		non_native_tribal = yes
 		enables_aristocratic_idea_group = yes
+		enables_estate_nomadic_tribes = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Conquest of Paradise" }
@@ -574,12 +582,14 @@ tribe_trading_with_foreigners_reform = {
 			limit = { NOT = { owner = { exists = yes } } }
 			settle_province = ROOT
 		}
+		set_country_flag = was_native_country
 		if = {
 			limit = {
 				native_sponsor_scope = {
 					exists = yes
 				}
 			}
+			on_native_government_change_effect = yes
 			change_government = native_sponsor_scope
 			embrace_institutions_of = native_sponsor_scope
 			change_government_reform_progress = -350 # Doing it like this to avoid that migration code triggers
@@ -607,6 +617,7 @@ tribe_becomes_monarchy_reform = {
 	}
 	effect = {
 		set_country_flag = populists_in_government
+		on_native_government_change_effect = yes
 		if = {
 			limit = { OR = { has_government_attribute = non_native_tribal } }
 			every_tribal_land_province = {
@@ -692,6 +703,16 @@ tribe_becomes_monarchy_reform = {
 			change_unit_type = chinese
 		}
 		change_government = monarchy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
 	}
 	ai = {
 		factor = 1
@@ -707,6 +728,7 @@ tribe_becomes_republic_reform = {
 	}
 	effect = {
 		set_country_flag = populists_in_government
+		on_native_government_change_effect = yes
 		if = {
 			limit = { OR = { has_government_attribute = non_native_tribal } }
 			every_tribal_land_province = {
@@ -794,6 +816,16 @@ tribe_becomes_republic_reform = {
 		change_government = republic
 		if = {
 			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
+		if = {
+			limit = {
 				have_had_reform = stateless_society
 			}
 			add_government_reform = peasants_republic
@@ -833,6 +865,7 @@ tribe_becomes_theocracy_reform = {
 	}
 	effect = {
 		set_country_flag = populists_in_government
+		on_native_government_change_effect = yes
 		if = {
 			limit = { OR = { has_government_attribute = non_native_tribal } }
 			every_tribal_land_province = {
@@ -918,6 +951,16 @@ tribe_becomes_theocracy_reform = {
 			change_unit_type = chinese
 		}
 		change_government = theocracy
+		if = {
+			limit = {
+				tag = AVE
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_gbr.20
+				}
+			}
+		}
 	}
 	ai = {
 		factor = 1

@@ -2,6 +2,7 @@
 
 owner = CYR
 controller = CYR
+add_core = CYR
 culture = tripolitanian
 religion = sunni
 capital = "Ben Jawad"
@@ -11,7 +12,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = FZA
 add_core = TRP
 add_local_autonomy = 25
 

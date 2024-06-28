@@ -1,20 +1,24 @@
-#2449 - Jufra
+#2449 - Mizda
 
 owner = TUN
 controller = TUN 
 culture = tripolitanian
 religion = sunni
-capital = "Hun"
+capital = "Mizda"
 trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = FZA
+add_core = TUN
 add_local_autonomy = 25
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1558.1.1 = {
+	owner = TRP
+	controller = TRP
+} #Turgut Reis conquers Gharayan

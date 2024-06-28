@@ -26,6 +26,8 @@ tag_with_plural_name_trigger = {
 		tag = TIM
 		tag = TUR
 		tag = YAS
+		tag = AVE
+		tag = EIC
 		tag = BEB
 		tag = DNK
 		tag = LAM
@@ -98,6 +100,9 @@ has_river_estuary_trigger = {
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
 			has_province_modifier = amur_estuary_modifier
+			#China
+			has_province_modifier = mng_bogue_modifier
+			has_province_modifier = expanded_nile_estuary_modifier
 			has_province_modifier = volta_estuary_modifier
 		}
 	}
@@ -168,6 +173,8 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
 			has_province_modifier = amur_estuary_modifier
+			has_province_modifier = mng_bogue_modifier
+			has_province_modifier = expanded_nile_estuary_modifier
 			has_province_modifier = volta_estuary_modifier
 		}
 	}
@@ -186,6 +193,10 @@ has_any_estates = {
 		has_estate = estate_nomadic_tribes
 		has_estate = estate_rajput
 		has_estate = estate_vaisyas
+		has_estate = estate_janissaries
+		has_estate = estate_eunuchs
+		has_estate = estate_qizilbash
+		has_estate = estate_ghulams
 		has_estate = estate_slaves
 	}
 }

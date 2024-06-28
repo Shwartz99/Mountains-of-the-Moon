@@ -58,3 +58,10 @@ union = {
 	start_date = 1686.1.1
 	end_date = 1702.1.1
 }
+dependency = {
+	subject_type = tributary_state
+	first = MAM
+	second = CYR
+	start_date = 1444.1.1
+	end_date = 1517.1.1
+}

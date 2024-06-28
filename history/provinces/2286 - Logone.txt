@@ -3,7 +3,7 @@
 owner = KOT
 controller = KOT
 add_core = KOT
-culture = jukun 
+culture = kanuri 
 religion = shamanism #Fetishism
 capital = "Logone"
 trade_goods = ivory

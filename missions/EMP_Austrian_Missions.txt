@@ -7,9 +7,15 @@ emp_hab_poland_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -125,9 +131,15 @@ emp_hab_empire_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -513,9 +525,15 @@ emp_hab_prestige_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -763,9 +781,15 @@ emp_hab_minorities_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -843,7 +867,7 @@ emp_hab_minorities_branch = {
 					NOT = { accepted_culture = hungarian }
 					NOT = { primary_culture = hungarian }
 				}
-				add_accepted_culture_or_dip_power = { culture = hungarian }
+				add_accepted_culture_or_dip_power = { culture = hungarian  value = 100 }
 				if = {
 					limit = {
 						153 = { culture = austrian }
@@ -867,7 +891,13 @@ emp_hab_minorities_branch = {
 					NOT = { accepted_culture = slovak }
 					NOT = { primary_culture = slovak }
 				}
-				add_accepted_culture_or_dip_power = { culture = slovak }
+				if = {
+					limit = { has_updated_culture = { culture = slavic } }
+					add_accepted_culture_or_dip_power = { culture = slovak_new value = 100 }
+				}
+				else = {
+					add_accepted_culture_or_dip_power = { culture = slovak value = 100 }
+				}
 				if = {
 					limit = {
 						1772 = { culture = austrian }
@@ -951,9 +981,15 @@ emp_hab_german_expansion_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1174,9 +1210,15 @@ emp_hab_german_expansion_branch_2 = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1397,9 +1439,15 @@ emp_hab_western_expansion_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1409,14 +1457,6 @@ emp_hab_western_expansion_branch = {
 	emp_hab_connect_further_austria = {
 		icon = connect_further_austria
 		
-		ai_weight = {
-			factor = 3
-			modifier = {
-				factor = 0.33
-				NOT = { owns = 1880 }
-			}
-		}
-
 		position = 9
 		
 		required_missions = {  }
@@ -1475,6 +1515,10 @@ emp_hab_western_expansion_branch = {
 			modifier = {
 				is_emperor = yes	#But not when you are the emperor
 				factor = 0
+			}
+			modifier = {
+				factor = 0.33
+				NOT = { owns = 1880 }
 			}
 		}
 	}
@@ -1667,9 +1711,15 @@ emp_hab_balkans = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1681,10 +1731,6 @@ emp_hab_balkans = {
 
 		position = 7
 
-		ai_weight = {
-			factor = 2
-		}
-		
 		required_missions = { austrian_croatia }
 		provinces_to_highlight = {
 			OR = {
@@ -1760,9 +1806,15 @@ emp_hab_balkans_2 = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1774,10 +1826,6 @@ emp_hab_balkans_2 = {
 
 		position = 8
 
-		ai_weight = {
-			factor = 2
-		}
-		
 		required_missions = { emp_hab_take_serbia conquer_transylvania }
 		provinces_to_highlight = {
 			OR = {
@@ -1834,10 +1882,6 @@ emp_hab_balkans_2 = {
 
 		position = 10
 
-		ai_weight = {
-			factor = 2
-		}
-		
 		required_missions = { emp_hab_take_wallachia_bulgaria }
 		provinces_to_highlight = {
 			owned_by = TUR
@@ -1884,9 +1928,15 @@ emp_hab_more_italy_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1897,10 +1947,6 @@ emp_hab_more_italy_branch = {
 		icon = kingdom_of_lombardy
 
 		position = 9
-		
-		ai_weight = {
-			factor = 3
-		}
 		
 		required_missions = { austrian_italian_ambition }
 		provinces_to_highlight = {
@@ -2005,10 +2051,6 @@ emp_hab_more_italy_branch = {
 
 		position = 10
 		
-		ai_weight = {
-			factor = 3
-		}
-		
 		required_missions = { emp_hab_veneto_lombardy }
 		provinces_to_highlight = {
 			OR = {
@@ -2074,9 +2116,15 @@ emp_hab_diplo_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}

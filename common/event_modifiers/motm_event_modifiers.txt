@@ -34,8 +34,8 @@ atlantic_slave_import_modifier = {
 }
 
 hausa_fort_modifier = {
-local_defensiveness = 0.2
-garrison_growth = 0.10
+	local_defensiveness = 0.2
+	garrison_growth = 0.10
 }
 
 empty_slaves_raided_modifier = {
@@ -51,4 +51,13 @@ slaves_raided_modifier = {
 	picture = "raided_for_slaves"
 	local_unrest = 5
 	local_tax_modifier = -0.15
+}
+
+improved_drainage_eko_modifier = {
+	supply_limit = 5
+	local_friendly_movement_speed = 0.2
+	local_hostile_movement_speed = 0.2
+	local_attacker_dice_roll_bonus = 1
+	local_development_cost = -0.3
+	allowed_num_of_buildings = 1
 }

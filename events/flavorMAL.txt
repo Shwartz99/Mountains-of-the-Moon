@@ -707,6 +707,7 @@ country_event = {
 	major = yes
 
 	immediate = {
+		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = had_decline_of_mali
 			clr_country_flag = started_decline_of_mali
@@ -885,6 +886,12 @@ country_event = {
 			estate = estate_nobles
 			share = 2
 		}
+		hidden_effect = {
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
+		}
 	}
 }
 
@@ -962,6 +969,12 @@ country_event = {
 		change_estate_land_share = {
 			estate = estate_church
 			share = 2
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
 		}
 		add_estate_loyalty = {
 			estate = estate_church
@@ -1062,6 +1075,12 @@ country_event = {
 			estate = estate_dhimmi
 			share = 2
 		}
+		hidden_effect = {
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
+		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
 			loyalty = 5
@@ -1154,6 +1173,12 @@ country_event = {
 		change_estate_land_share = {
 			estate = estate_burghers
 			share = 2
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = crown_land_initial
+				value = trigger_value:crown_land_share
+			}
 		}
 	}
 }

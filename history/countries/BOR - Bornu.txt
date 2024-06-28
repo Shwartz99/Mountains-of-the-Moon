@@ -6,6 +6,7 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 religion = sunni
 primary_culture = kanuri
+add_accepted_culture = toubou
 capital = 1157	# Gatiga, Gazargamu
 historical_rival = YAO
 religious_school = maliki_school

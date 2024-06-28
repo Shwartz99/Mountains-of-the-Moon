@@ -1,9 +1,9 @@
 owner = LND
 controller = LND
 add_core = LND
-culture = lunda
+culture = luba
 religion = shamanism #Fetishism
-capital = "Kalundwe"
+capital = "Mwilambwe"
 trade_goods = livestock
 hre = no
 base_tax = 2

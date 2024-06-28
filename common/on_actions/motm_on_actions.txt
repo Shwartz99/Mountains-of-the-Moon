@@ -2,95 +2,37 @@
 
 # country
 on_startup = {
-	if = {
-		limit = {
-			current_age = age_of_discovery
-		}
-		LXA = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = lxa_loyalty_flag }
-				}
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = -10
-				}
-				set_country_flag = lxa_loyalty_flag
-			}
-		}
-	}
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
 	if = {
 		limit = {
-			is_emperor_of_china = yes
+			has_dlc = "Mandate of Heaven"
 		}
-		save_global_event_target_as = EmperorOfChina
+		if = {
+			limit = { is_emperor_of_china = yes }
+			save_global_event_target_as = EmperorOfChina
+		}
+	}
+	else = {
+		if = {
+			limit = { has_reform = celestial_empire }
+			save_global_event_target_as = EmperorOfChina
+		}
 	}
 	events = {
 		muslim_school_events.20 #Pick School
+		flavor_mng.42 #Event for the starting situation of the Ming 
 		flavor_got.1 #Event for Gotland to select their mission tree
-	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+		flavor_mos.1 #Event regarding the Tatar Yoke
+		flavor_fra.206 # Setup the general for missions
+		flavor_geo.1 # Disaster info
+		flavor_mam.111 # Mamluks-Syria relations
 	}
-	if = {
-		limit = {
-			has_dlc = "Cradle of Civilization"
-			has_country_modifier = tur_janissary
-		}
-		remove_country_modifier = tur_janissary
-	}
+	on_startup_effect = yes
+	on_startup_dlc_cleanup_effect = yes
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-
-	if = {
-		limit = {
-			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
-			OR = {
-				tag = UBV
-				tag = LBV
-				tag = ING
-			}
-		}
-		set_country_flag = new_flavour_bav_13_has_been_triggered
-		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
-	}
-	if = {
-		limit = {
-			tag = FRA
-			started_in = 1789.7.14
-			NOT = { is_year = 1790 }
-			NOT = { has_disaster = french_revolution }
-		}
-		add_disaster_progress = {
-			value = 100
-			disaster = french_revolution
-		}
-	}
-	if = {
-		limit = {
-			exists = SUK
-		}
-		SUK = {
-			set_ruler_flag = suk_monarch_flag
-		}
-		AYU = {
-			set_country_flag = ayu_monarch_flag
-		}
-	}
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			primary_culture = norse
-	#			AND = {
-	#				culture_group = scandinavian
-	#				religion = norse_pagan_reformed
-	#			}
-	#		}
-	#		NOT = { has_idea_group = norse_ideas }
-	#		is_playing_custom_nation = no
-	#	}
-	#	country_event = { id = ideagroups.1 } #Swap Ideas
-	#}
 	if = {
 		limit = { has_estate = estate_slaves }
 		add_estate_loyalty = {
@@ -107,6 +49,7 @@ on_startup = {
 
 # #Unit Scope OnAction for Battle Lost
 on_battle_lost_unit = {
+	on_battle_lost_unit_effect = yes
     if = {
         limit = {
             unit_owner = {
@@ -145,6 +88,21 @@ on_battle_lost_unit = {
 
 # Nation is integrated after being in union
 on_integrate = {
+	if = {
+		limit = {
+			has_country_flag = hun_integrate_pu_bonus
+			FROM = { junior_union_with = ROOT }
+		}
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = 100
+		}
+		else = {
+			add_dip_power = 100
+		}
+	}
 	events = {
 		610
 	}
@@ -156,19 +114,7 @@ on_integrate = {
 
 # province
 on_adm_development = {
-	if = {
-		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
-		random_list = {
-			20 = { add_base_tax = 1 }
-			80 = { }
-		}
-	}
-	if = {
-		limit = { 
-			owner = { has_country_modifier = lit_increased_dev_modifier }
-		}
-		add_base_tax = 1 
-	}
+	on_development_effect = { type = adm }
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -179,19 +125,7 @@ on_adm_development = {
 
 # province
 on_dip_development = {
-	if = {
-		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
-		random_list = {
-			20 = { add_base_production = 1 }
-			80 = { }
-		}
-	}
-	if = {
-		limit = { 
-			owner = { has_country_modifier = lit_increased_dev_modifier }
-		}
-		add_base_production = 1 
-	}
+	on_development_effect = { type = dip }
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -202,19 +136,7 @@ on_dip_development = {
 
 # province
 on_mil_development = {
-	if = {
-		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
-		random_list = {
-			20 = { add_base_manpower = 1 }
-			80 = { }
-		}
-	}
-	if = {
-		limit = { 
-			owner = { has_country_modifier = lit_increased_dev_modifier }
-		}
-		add_base_manpower = 1 
-	}
+	on_development_effect = { type = mil }
 	owner = {
 		if = {
 			limit = { has_estate = estate_slaves }
@@ -225,6 +147,61 @@ on_mil_development = {
 
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
+	on_religion_change_estate_privileges_effect = yes
+	if = {
+		limit = {
+			tag = TUR
+			HUN = { has_country_modifier = hun_avenge_varna }
+		}
+		HUN = { remove_country_modifier = hun_avenge_varna }
+	}
+	if = {
+		limit = {
+			ai = no
+			tag = BOH
+			has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = BOH_RELIGION }
+			NOT = { mission_completed = boh_hussite_regency }
+		}
+		enable_branching_mission_review_without_ai  = {
+			key = BOH_RELIGION
+		}
+	}
+    if = {
+        limit = {
+			ai = no
+            tag = HSN
+            has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = HSN }
+			NOT = { mission_completed = hsn_fate_of_anatolia }
+        }
+        enable_branching_mission_review_without_ai  = {
+            key = HSN
+        }
+    }
+    if = {
+        limit = {
+			ai = no
+            tag = HSN
+            has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = HSN2 }
+			NOT = { mission_completed = hsn_sultan_shah }
+        }
+        enable_branching_mission_review_without_ai  = {
+            key = HSN2
+        }
+    }
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+			FROM = {
+				is_revolutionary = yes
+			}
+		}
+		change_government = republic
+		add_government_reform = junior_revolutionary_republic_reform
+		set_country_flag = had_revolution
+	}
 	if = {
 		limit = {
 			tag = PAP
@@ -233,6 +210,10 @@ on_create_vassal = {
 		change_religion = catholic
 		add_government_reform = papacy_reform
 		adopt_reform_progress = FROM
+	}
+	if = {
+		limit = { NOT = { is_year = 1445 } }
+		set_country_flag = released_in_1444
 	}
 	FROM = {
 		if = {
@@ -260,6 +241,12 @@ on_create_vassal = {
 # First province in state is set
 on_holy_order_established = {
 	ROOT = {
+		if = {
+			limit = {
+				has_country_flag = ven_establish_scuola_effect_flag
+			}
+			change_innovativeness = 1
+		}
 		if = {
 			limit = { has_estate = estate_slaves }
 			distribute_land_effect = { estate = estate_slaves }
@@ -312,6 +299,42 @@ on_raid_coast = {
 
 # this = Released country, FROM = Releasing country
 on_country_released = {
+	if = {
+		limit = {
+			ai = no
+			tag = BOH
+			has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = BOH_RELIGION }
+			NOT = { mission_completed = boh_hussite_regency }
+		}
+		enable_branching_mission_review_without_ai  = {
+			key = BOH_RELIGION
+		}
+	}
+    if = {
+        limit = {
+			ai = no
+            tag = HSN
+            has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = HSN }
+			NOT = { mission_completed = hsn_fate_of_anatolia }
+        }
+        enable_branching_mission_review_without_ai  = {
+            key = HSN
+        }
+    }
+    if = {
+        limit = {
+			ai = no
+            tag = HSN
+            has_dlc = "Winds of Change"
+			not_in_mission_preview_mode = { key = HSN2 }
+			NOT = { mission_completed = hsn_sultan_shah }
+        }
+        enable_branching_mission_review_without_ai  = {
+            key = HSN2
+        }
+    }
 	if = {
 		limit = {
 			tag = PAP
@@ -368,10 +391,24 @@ on_rebels_break_country = {
 		limit = { has_estate = estate_slaves }
 		distribute_land_effect = { estate = estate_slaves }
 	}
+	events = {
+		flavor_per.64	#No more Zoroastrian
+	}
 }
 
 # this = new client state, from = parent country
 on_create_client_state = {
+	if = { 
+		limit = { 
+			FROM = { mission_completed = fra_grande_armee }
+		}
+		FROM = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+		}
+	}
 	FROM = {
 		if = {
 			limit = { has_estate = estate_slaves }

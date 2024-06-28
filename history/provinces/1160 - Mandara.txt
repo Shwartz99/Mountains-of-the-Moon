@@ -3,7 +3,7 @@
 owner = MND
 controller = MND
 add_core = MND
-culture = jukun
+culture = kanuri
 religion = shamanism #Fetishism
 capital = "Wandala"
 is_city = yes

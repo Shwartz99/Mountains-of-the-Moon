@@ -2,7 +2,7 @@
 
 owner = CYR
 controller = CYR
-culture = mzabi
+culture = tripolitanian
 religion = sunni
 capital = "Awjalat"
 trade_goods = ivory
