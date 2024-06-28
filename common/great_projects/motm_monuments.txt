@@ -74,7 +74,7 @@ stone_circles_senegambia = {
 		country_modifiers = {
 			tolerance_heathen = 1
 			prestige = 0.25
-			dip_tech_cost_modifier = -0.05
+			dip_tech_cost_modifier = -0.1
 		}
 		on_upgraded = {
 		}
@@ -89,7 +89,7 @@ stone_circles_senegambia = {
 		country_modifiers = {
 			tolerance_heathen = 1
 			prestige = 0.25
-			technology_cost = -0.05
+			technology_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -108,6 +108,7 @@ meroe_ruins = {
 		OR = {
 			culture = sudanese_culture
 			culture_group = sudanese
+			culture = old_egyptian
 		}
 		OR = {
 			has_owner_culture = yes
@@ -120,6 +121,7 @@ meroe_ruins = {
 		OR = {
 			culture = sudanese_culture
 			culture_group = sudanese
+			culture = old_egyptian
 		}
 		OR = {
 			has_owner_culture = yes
@@ -130,6 +132,7 @@ meroe_ruins = {
 		OR = {
 			culture = sudanese_culture
 			culture_group = sudanese
+			culture = old_egyptian
 		}
 		OR = {
 			has_owner_culture = yes
@@ -149,10 +152,9 @@ meroe_ruins = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { local_governing_cost = -0.1 }
 		country_modifiers = {
 			prestige = 0.1
-			state_governing_cost = -0.1
 		}
 		on_upgraded = { }
 	}
@@ -163,7 +165,7 @@ meroe_ruins = {
 		area_modifier = { }
 		country_modifiers = {
 			prestige = 0.25
-			state_governing_cost = -0.2
+			state_governing_cost = -0.1
 			stability_cost_modifier = -0.1
 		}
 		on_upgraded = { }
@@ -263,9 +265,24 @@ tomb_of_askia = {
 			devotion = 1
 			horde_unity = 1
 			meritocracy = 0.5
-			prestige_decay = -0.2
+			prestige_decay = -0.01
 		}
-		on_upgraded = { }
+		on_upgraded = {
+			owner = { 
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
 	}
 }
 bandiagara_escarpment = {

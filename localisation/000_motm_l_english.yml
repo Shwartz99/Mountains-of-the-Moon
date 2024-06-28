@@ -1244,6 +1244,7 @@
  GREAT_ETSU: "Great Etsu"
 
  #music
+ CHANNEL_music_motm: "Mountains of the Moon Music"
  eu3_africa: "Europa Universalis III Music of the World: Africa"
 
  #province modifiers

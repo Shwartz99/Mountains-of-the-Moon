@@ -3,7 +3,7 @@
 owner = KOT
 controller = KOT
 add_core = KOT
-culture = kanuri 
+culture = jukun 
 religion = shamanism
 capital = "Kotoko"
 trade_goods = grain

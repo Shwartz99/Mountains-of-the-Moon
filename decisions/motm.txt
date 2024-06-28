@@ -380,7 +380,7 @@ country_decisions = {
 					duration = -1
 				}
 				change_trade_goods = spices
-				rename_capital = "Lagos"
+				rename_capital = "Eko"
 			}
 		}
 		ai_will_do = {

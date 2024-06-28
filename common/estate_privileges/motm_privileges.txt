@@ -175,7 +175,7 @@ estate_slaves_atlantic_slave_trade = {
 }
 estate_slaves_allowed_diet = {
 	icon = privilege_royal_authority
-	loyalty = 0.1
+	loyalty = 0.15
 	influence = 0.3
 	is_valid = {
 	}
@@ -196,16 +196,7 @@ estate_slaves_allowed_diet = {
 	on_invalid = {
 	}
 	penalties = {
-		church_loyalty_modifier = -0.05
-		nobles_loyalty_modifier = -0.05
-		burghers_loyalty_modifier = -0.05
-		rajput_loyalty_modifier = -0.05
-		nomadic_tribes_loyalty_modifier = -0.05
-		vaisyas_loyalty_modifier = -0.05
-		maratha_loyalty_modifier = -0.05
-		brahmins_hindu_loyalty_modifier = -0.05
-		brahmins_muslim_loyalty_modifier = -0.05
-		brahmins_other_loyalty_modifier = -0.05
+		all_estate_loyalty_equilibrium = -0.05
 	}
 	benefits = {
 	}
