@@ -1,0 +1,19 @@
+#4767 - Harro Walabu
+
+owner = BOA
+controller = BOA
+add_core = BOA
+culture = oromo
+religion = shamanism
+capital = "Harro Walabu"
+is_city = yes
+base_manpower = 3
+trade_goods = ivory
+hre = no
+base_tax = 4 
+base_production = 4
+add_local_autonomy = 0
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = east_african

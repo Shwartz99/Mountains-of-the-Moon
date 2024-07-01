@@ -1,0 +1,22 @@
+#4760 - Maji 
+
+owner = DZI
+controller = DZI
+add_core = DZI
+culture = sidamo
+religion = shamanism
+capital = "Maji"
+is_city = yes
+base_manpower = 2
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2 
+native_size = 80
+native_ferocity = 4
+native_hostileness = 9 
+
+discovered_by = east_african
+discovered_by = muslim
+
+

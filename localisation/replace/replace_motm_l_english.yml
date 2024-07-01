@@ -132,6 +132,11 @@
 
  PROV1292: "Cape St. Vincent"
  
+ #horn of africa
+ PROV1799: "Ethiopian Highlands"
+ PROV4052: "Jubba"
+ PROV_ADJ4052: "Jubba"
+ 
  #areas
  sennar_area: "White Nile"
  sennar_area_name: "White Nile"

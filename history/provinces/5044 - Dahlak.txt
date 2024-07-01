@@ -7,9 +7,9 @@ culture = tigray
 religion = sunni
 capital = "Dahlak Kebir"
 hre = no
-base_tax = 1
-base_production = 2
-base_manpower = 1
+base_tax = 2
+base_production = 3
+base_manpower = 2
 trade_goods = gems
 is_city = yes
 discovered_by = muslim
@@ -19,6 +19,8 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
+1499.1.1 = { discovered_by = POR }
+1550.1.1 = { discovered_by = TUR }
 1557.1.1 = { #annexed by ottomans
 	owner = TUR
 	controller = TUR

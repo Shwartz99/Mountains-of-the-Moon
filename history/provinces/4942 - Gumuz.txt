@@ -1,0 +1,24 @@
+#4943 - Ingessana
+
+owner = GMZ
+controller = GMZ
+add_core = GMZ
+culture = nubian 
+religion = shamanism #Fetishism
+capital = "Ingessana" 
+trade_goods = gold
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 80
+native_ferocity = 4
+native_hostileness = 9 
+
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+
+1633.1.1 = { unrest = 6 } #Jieng migrations disrupt region
+1696.1.1 = { unrest = 3 } #Disruptions caused by Shilluk migrations from famine areas to South
+1705.1.1 = { capital = "Fashoda" } #New Shilluk center established in wake of migrations

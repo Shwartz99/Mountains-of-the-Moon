@@ -1,0 +1,20 @@
+#4778 - Korre 
+
+owner = KRR
+controller = KRR
+add_core = KRR
+culture = sidamo
+religion = shamanism
+capital = "Dhegeze"
+is_city = yes
+base_manpower = 2
+trade_goods = cotton
+hre = no
+base_tax = 3
+base_production = 3 
+native_size = 80
+native_ferocity = 4
+native_hostileness = 9 
+
+discovered_by = east_african
+discovered_by = muslim

@@ -7,3 +7,12 @@ song = {
 		}		
 	}
 }
+song = {
+	name = "ck2_VassalofTripoli"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}

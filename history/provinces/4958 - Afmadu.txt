@@ -1,0 +1,25 @@
+#4790 - Afmadu
+
+owner = ORA
+controller = ORA
+add_core = ORA
+culture = oromo
+religion = shamanism
+capital = "Afmadoow"
+trade_goods = grain
+is_city = yes
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 1
+extra_cost = 15
+fort_15th = yes
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+
+discovered_by = east_african
+
+
+
+

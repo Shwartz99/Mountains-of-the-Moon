@@ -1500,10 +1500,6 @@ kenya_area = {	#5
 	1273 1925 4053 4054 4060
 }
 
-jubba_area = { #3
-	2777 4051 4052
-}
-
 tanzania_area = { #5
 	4055 4056 4057 4058 4073
 }
@@ -1557,10 +1553,6 @@ lower_kasai = { #4
 	4081 4085 4086 4088 4087
 }
 
-ogaden_area = { #5
-	1207 1208 1210 2778 2779
-}
-
 upper_nubia_area = { #3
 	2798 2799 2800
 }
@@ -1569,16 +1561,8 @@ tigray_area = { #4
 	1227 2766 2767 2771
 }
 
-ifat_area = { #4
-	1211 1212 2773 2793 
-}
-
 somaliland_area = { #5
 	1209 2786 2789 2792 2790 
-}
-
-southern_ethiopia_area = { #4
-	2757 2758 2759 4158
 }
 
 hadiya_area = { #3
@@ -1587,10 +1571,6 @@ hadiya_area = { #3
 
 central_ethiopia_area = { #5
 	1214 1223 1224 2769 2772
-}
-
-damot_area = { #3
-	2762 2763 2770 
 }
 
 aussa_area = { #4
@@ -1604,10 +1584,6 @@ shewa_area = { #3
 mogadishu_area = { #5
 	color = { 239 36 74 }
 	1205 2775 2782 2794 2795
-}
-
-ajuuran_area = { #4
-	2776 2780 2781 2785
 }
 
 majarteen_area = { #5
@@ -3598,11 +3574,11 @@ butana_area = { 1222 1225 2797 4033 } #4
 darfur_central_sahara_area = { 1219 5037 5038 5039 } #4
 waddai_area = { 774 2932 5042 5043 } #4
 fitri_area = { 1159 2288 5041 } #3
-sennar_area = { 1217 5031 5034 5035 } #4
+sennar_area = { 1217 5031 5034 5035 4942 } #5
 kurdufan_area = { color = { 97 110 203 } 1216 1221 2802 5032 5033 } #5
 lower_nubia_area = { 1234 2322 2323 5026 } #4
 dongola_area = { 1220 1228 5027 5028 } #4
-red_sea_coast_area = { 1230 2787 5044 } #3
+red_sea_coast_area = { 1230 2787 5044 4943 } #4
 dar_fertit_area = { 5036 5060 5061 } #3
 
 ahaggar_area = { 5045 5046 5047 5048 5049 } #5
@@ -3655,4 +3631,14 @@ gambia_area = { 1114 5020 5070 5073 } #4
 gao_area = { 1133 5066 5087 5113 } #4
 benue_area = { 1153 1161 1249 2283 5107 } #5
 biafara_area = { 1151 5094 5120 5121 } #4
-south_akanman = { 1138 2257 5115 5116 } #4
+south_akanman_area = { 1138 2257 5115 5116 } #4
+
+damot_area = { 2762 2763 2770 4945 } #4
+southern_ethiopia_area = { 2757 2758 2759 4158 4946 } #5
+omotia_area = { 4947 4948 4949 4950 } #4
+jubba_area = { 2777 4051 4052 4957 4958 } #5
+ajuuran_area = { 2776 2780 2781 2785 4959 } #5
+ifat_area = { 1211 1212 2773 2793 1208 } #5
+ogaden_area = { 1207 1210 2778 2779 4960 } #5
+oromia_area = { 4951 4954 4955 } #3
+gabra_area = { 4952 4953 4956 } #3

@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = nubian
+religion = shamanism
+technology_group = east_african
+unit_type = sub_saharan
+capital = 4942
+
+1444.1.1 = {
+	monarch = {
+		name = "Komander" #Fictional
+		dynasty = "Gumuz"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

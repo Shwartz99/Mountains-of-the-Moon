@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = oromo
+add_accepted_culture = sidamo
+religion = shamanism #waaq
+technology_group = east_african
+unit_type = sub_saharan
+capital = 4948 #Sasse Rogo
+
+1444.11.11 = {
+      monarch = {
+           name = "Gada"
+           adm = 3
+           dip = 3
+           mil = 2
+           regent = yes
+      }
+} # Noble councils. 

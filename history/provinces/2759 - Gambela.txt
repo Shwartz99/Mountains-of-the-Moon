@@ -1,17 +1,21 @@
 #2759 - Gambela
 
-culture = acholi 
+owner = KAF
+controller = KAF
+add_core = KAF
+culture = sidamo 
 religion = shamanism #Fetishism
 capital = "Gambela"
-is_city = no
+is_city = yes
 base_manpower = 1
 trade_goods = slaves
 hre = no
 base_tax = 1 
 base_production = 1
-native_size = 50
+add_local_autonomy = 25
+native_size = 80
 native_ferocity = 4
-native_hostileness = 9
+native_hostileness = 9 
 discovered_by = east_african
 discovered_by = muslim
 

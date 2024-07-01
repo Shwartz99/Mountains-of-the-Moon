@@ -2,3 +2,7 @@ music = {
 	name = "eu3_africa"
 	file = "Africa.ogg"
 }
+music = {
+	name = "ck2_VassalofTripoli"
+	file = "Vassal Of Tripoli.ogg"
+}

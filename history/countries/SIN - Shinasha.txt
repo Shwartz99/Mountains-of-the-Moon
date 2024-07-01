@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = sidamo
+religion = shamanism
+technology_group = east_african
+unit_type = sub_saharan
+capital = 4945
+
+1444.1.1 = {
+	monarch = {
+		name = "Boro"
+		dynasty = "Shinasha"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

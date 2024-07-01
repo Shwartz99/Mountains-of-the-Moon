@@ -1,0 +1,20 @@
+#4752 - Najjo
+
+owner = NJJ
+controller = NJJ
+add_core = NJJ
+culture = sidamo 
+religion = shamanism
+capital = "Najjo"
+is_city = yes
+base_manpower = 1
+trade_goods = livestock
+hre = no
+base_tax = 3 
+base_production = 3
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+
+

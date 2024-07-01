@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = east_african
+unit_type = sub_saharan
+religion = sunni
+primary_culture = afar
+capital = 4943
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name= "Mohammed Ahmed"
+		dynasty = "Rahayta"
+		birth_date = 1420.1.1
+		dip = 3
+		mil = 1
+		adm = 2
+	}
+	add_piety = 0.25
+}

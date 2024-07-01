@@ -65,3 +65,15 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1517.1.1
 }
+vassal = {
+	first = ETH
+	second = BLE
+	start_date = 1444.1.1
+	end_date = 1470.1.1
+}
+alliance = {
+	first = BOR
+	second = BRN
+	start_date = 1444.1.1
+	end_date = 1600.1.1
+}

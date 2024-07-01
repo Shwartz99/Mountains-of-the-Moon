@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 1
-add_government_reform = autocracy_reform
+add_government_reform = feudalism_reform
 primary_culture = nubian
 religion = coptic
 technology_group = east_african
@@ -8,10 +8,10 @@ capital = 1217
 
 1444.1.1 = { #generated
 	monarch = {
-		name = "Panigiros"
-		dynasty = "Dotawo"
-		DIP = 3
+		name = "Adlan"
+		dynasty = "Hamej"
+		DIP = 2
 		ADM = 2
-		MIL = 3
+		MIL = 2
 	}
 }

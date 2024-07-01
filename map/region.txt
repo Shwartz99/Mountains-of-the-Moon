@@ -496,6 +496,10 @@ horn_of_africa_region = {
 		damot_area
 		aussa_area
 		shewa_area
+		jubba_area
+		omotia_area
+		oromia_area
+		gabra_area
 	}
 }
 
@@ -514,7 +518,6 @@ east_africa_region = {
 		sakalava_area
 		southern_madagascar
 		uticulo_makuana_area
-		jubba_area
 		shire_area
 		mombasa_area
 	}
@@ -1585,7 +1588,7 @@ volta_region = {
 		upper_volta_area
 		lower_volta_area
 		dagbon_area
-		south_akanman
+		south_akanman_area
 	}
 	monsoon = {
 		00.06.01
